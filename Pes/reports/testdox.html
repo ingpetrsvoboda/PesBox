@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 1vw;
+            }
+
+            body > ul {
+                max-width: 60vw;
+            }
+
+            body > ul > li {
+                font-family: Source Serif Pro, PT Sans, Trebuchet MS, Helvetica, Arial;
+                font-weight: 400;
+                font-size: 1vw;
+                line-height: 1.5vw;
+            }
+
+            h2 {
+                font-family: Tahoma, Helvetica, Arial;
+                font-size: 1.5vw;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="EntityCollectionTest">EntityCollection</h2>
+        <ul>
+            <li style="color: #555753;">✓ Constructor</li>
+            <li style="color: #555753;">✓ Set and remove entity without identity</li>
+            <li style="color: #555753;">✓ Set with identity and getbyidentity and remove and remove by identity for entity with identity</li>
+            <li style="color: #555753;">✓ Set with validation</li>
+            <li style="color: #555753;">✓ Exchange content and count and get iterator</li>
+            <li style="color: #555753;">✓ Exchange content and count and get iterator with validation</li>
+            <li style="color: #555753;">✓ Order</li>
+            <li style="color: #555753;">✓ Sort</li>
+        </ul>
+        <h2 id="MapCollectionTest">MapCollection</h2>
+        <ul>
+            <li style="color: #555753;">✓ Constructor</li>
+            <li style="color: #555753;">✓ Set get remove</li>
+            <li style="color: #555753;">✓ Set get with validation</li>
+            <li style="color: #555753;">✓ Exchange content and count and get iterator</li>
+            <li style="color: #555753;">✓ Order</li>
+            <li style="color: #555753;">✓ Sort</li>
+        </ul>
+        <h2 id="SetCollectionTest">SetCollection</h2>
+        <ul>
+            <li style="color: #555753;">✓ Constructor</li>
+            <li style="color: #555753;">✓ Set remove</li>
+            <li style="color: #555753;">✓ Set with validation</li>
+            <li style="color: #555753;">✓ Exchange content and count and get iterator</li>
+            <li style="color: #555753;">✓ Order</li>
+            <li style="color: #555753;">✓ Sort</li>
+        </ul>
+        <h2 id="CriteriaTest">Criteria</h2>
+        <ul>
+            <li style="color: #555753;">✓ Conditions match values provider</li>
+            <li style="color: #555753;">✓ Conditions match</li>
+            <li style="color: #555753;">✓ Criteria and condition match</li>
+        </ul>
+        <h2 id="OrderTest">Order</h2>
+        <ul>
+            <li style="color: #555753;">✓ Get sql string</li>
+            <li style="color: #555753;">✓ Iterator</li>
+        </ul>
+        <h2 id="CompareMatcherTest">CompareMatcher</h2>
+        <ul>
+            <li style="color: #555753;">✓ Match</li>
+        </ul>
+        <h2 id="InMatcherTest">InMatcher</h2>
+        <ul>
+            <li style="color: #555753;">✓ Match</li>
+            <li style="color: #555753;">✓ Match with scalar and null pattern</li>
+        </ul>
+        <h2 id="LikeMatcherTest">LikeMatcher</h2>
+        <ul>
+            <li style="color: #555753;">✓ Match string</li>
+            <li style="color: #555753;">✓ Match escaped string</li>
+            <li style="color: #555753;">✓ Match string with wildcards</li>
+            <li style="color: #555753;">✓ Match escaped string with changed escape character</li>
+        </ul>
+        <h2 id="NotInMatcherTest">NotInMatcher</h2>
+        <ul>
+            <li style="color: #555753;">✓ Match</li>
+            <li style="color: #555753;">✓ Match with scalar and null pattern</li>
+        </ul>
+        <h2 id="ColumnAccessEnumTest">ColumnAccessEnum</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception value not in enum</li>
+            <li style="color: #555753;">✓ Get const list</li>
+            <li style="color: #555753;">✓ Get type value</li>
+            <li style="color: #555753;">✓ Get default access type</li>
+            <li style="color: #555753;">✓ Get writing prohibited type</li>
+            <li style="color: #555753;">✓ Get update prohibited type</li>
+            <li style="color: #555753;">✓ Get always writeable type</li>
+        </ul>
+        <h2 id="DbTypeEnumTest">DbTypeEnum</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception value not in enum</li>
+            <li style="color: #555753;">✓ Get const list</li>
+            <li style="color: #555753;">✓ Get type value</li>
+            <li style="color: #555753;">✓ Get mysql type</li>
+            <li style="color: #555753;">✓ Get mssql type</li>
+        </ul>
+        <h2 id="LogicOperatorEnumTest">LogicOperatorEnum</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception value not in enum</li>
+            <li style="color: #555753;">✓ Get const list</li>
+            <li style="color: #555753;">✓ Get type value</li>
+            <li style="color: #555753;">✓ Get default access type</li>
+            <li style="color: #555753;">✓ Get writing prohibited type</li>
+        </ul>
+        <h2 id="IsTypeValidatorTest">IsTypeValidator</h2>
+        <ul>
+            <li style="color: #555753;">✓ Constructor</li>
+            <li style="color: #555753;">✓ Is valid</li>
+        </ul>
+        <h2 id="HandlerMSSQLTest">HandlerMSSQL</h2>
+        <ul>
+            <li style="color: #ef2929;">❌ Incomplete</li>
+        </ul>
+        <h2 id="HandlerMySQLTest">HandlerMySQL</h2>
+        <ul>
+            <li style="color: #555753;">✓ Connection info</li>
+            <li style="color: #555753;">✓ Mysql dsn provider</li>
+            <li style="color: #555753;">✓ Handler for mysql</li>
+            <li style="color: #555753;">✓ Mysql option provider</li>
+            <li style="color: #555753;">✓ Attributes setter</li>
+        </ul>
+        <h2 id="IdentificatorFormatterTest">IdentificatorFormatter</h2>
+        <ul>
+            <li style="color: #555753;">✓ Mysql identificator formatter</li>
+        </ul>
+        <h2 id="StatementTest">Statement</h2>
+        <ul>
+            <li style="color: #555753;">✓ Statement</li>
+            <li style="color: #555753;">✓ Statement cache</li>
+        </ul>
+    </body>
+</html>

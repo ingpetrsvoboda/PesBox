@@ -1,0 +1,69 @@
+Toto vypadá dobře:
+
+https://ianchanning.wordpress.com/2014/10/04/windows-netbeans-composer-notes/
+
+
+Windows Netbeans Composer notes
+October 4, 2014ianchanning	
+
+This is for installing the main packages that Netbeans suggests in the Tools > Options > PHP (tab)
+
+I’m running the following setup currently [21st April 2015]:
+
+    Windows 8.1 (64-bit)
+    Netbeans 8.0.2
+    The version of Composer doesn’t really matter
+    PHP 5.3.28 (It’s sooo last decade, I know…)
+
+tldr;
+
+Just the commands:
+1
+2
+3
+4
+5
+	
+composer global require "phpunit/phpunit=4.6.*"
+composer global require "phpunit/phpunit-skeleton-generator=*"
+composer global require "squizlabs/php_codesniffer=*"
+composer global require "phpmd/phpmd=@stable"
+composer global require apigen/apigen:~2.8
+
+Then the files to call are in C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\
+Global packages
+
+running composer global installs the packages into %APPDATA%\Composer (or ~/.composer/ in Linux)
+PHPUnit
+
+From the installation instructions (https://phpunit.de/manual/current/en/installation.html) do:
+
+composer global require "phpunit/phpunit=4.6.*"
+
+This installs PHPUnit to C:\Users\[username]\AppData\Roaming\Composer\vendor\phpunit and puts the binary to use in Netbeans in C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpunit.bat
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpunit.bat into Netbeans Tools > Options > PHP (tab) > Frameworks & Tools (tab) > PHPUnit section.
+Skeleton Generator
+
+From the installation instructions (https://github.com/sebastianbergmann/phpunit-skeleton-generator) run:
+
+composer global require "phpunit/phpunit-skeleton-generator=*"
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpunit-skelgen.bat into Netbeans Tools > Options > PHP (tab) > Frameworks & Tools (tab) > PHPUnit section.
+PHP_CodeSniffer
+
+composer global require "squizlabs/php_codesniffer=*"
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpcs.bat into Netbeans Tools > Options > PHP (tab) > Code Analysis (tab) > Code Sniffer section.
+Mess Detector
+
+composer global require "phpmd/phpmd=@stable"
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpmd.bat into Netbeans Tools > Options > PHP (tab) > Code Analysis (tab) > Mess Detector section.
+apigen
+
+composer global require apigen/apigen:~2.8
+
+For me this failed see apigen issue #316. The answer to that was to use ~4.0, but that requires PHP >= 5.4
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\apigen.bat into Netbeans Tools > Options > PHP (tab) > Code Analysis (tab) > ApiGen section.

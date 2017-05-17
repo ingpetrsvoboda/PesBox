@@ -1,0 +1,4 @@
+ Ÿt 13.04.2017- 7:50:09,46  
+
+Parse error: syntax error, unexpected 'interface' (T_INTERFACE), expecting identifier (T_STRING) or '{' in C:\xampp\htdocs\Pes\Pes\tests\Readers\SetCollectionTest.php on line 4
+
