@@ -343,35 +343,6 @@ class Hydrator {
 #############################################################################################################################
 
 //require '../../vendor/autoload.php';
-
-function setUp() {
-    //fixture:
-    //vymaaže tabulku, zapíše tři řádky v UTF8
-    $dsn = 'mysql:host=' . self::DB_HOST . ';dbname=' . self::DB_NAME ; 
-    $dbh = new PDO($dsn, self::USER, self::PASS, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
-    $dbh->exec('DELETE FROM person');
-    $dbh->exec('INSERT INTO person (name, surname) VALUES ("Adam","Adamov")');
-    $dbh->exec('INSERT INTO person (name, surname) VALUES ("Božena","Boženová")');
-    $dbh->exec('INSERT INTO person (name, surname) VALUES ("Cyril","'.self::TESTOVACI_STRING.'")');
-}
-    
-    const DB_NAME = 'p4_unit_integration_tests_db';
-    const DB_HOST = 'localhost';
-    const DB_PORT = '3306';
-    const CHARSET_WINDOWS = 'cp1250';
-    const COLLATION_WINDOWS = 'cp1250_czech_cs';
-    const CHARSET_UTF8 = 'utf8';
-    const COLLATION_UTF8 = 'utf8_czech_ci';
-    const CHARSET_UTF8MB4 = 'utf8mb4';
-    const COLLATION_UTF8MB4 = 'utf8mb4_czech_ci';
-    
-    const TESTOVACI_STRING = "Cyrilekoěščřžýáíéúů";
-
-    const NICK = 'tester';    
-    const USER = 'p4_tester';
-    const PASS = 'p4_tester';
-
-    setUp();
     
     $dataManager = new DataManager();
     $entityManager = new EntityManager($dataManager);
