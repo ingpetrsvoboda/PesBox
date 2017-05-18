@@ -4,13 +4,9 @@ interface RowDataInterface extends \IteratorAggregate, \ArrayAccess, \Serializab
     // extenduje všechna rozhraní, která implementuje \ArrayObject mimo \Traversable - to nelze neb je prázdné
     public function isChanged();
     public function getChanged();
-    public function isNulled();
-    public function getNulled();
+    public function deleteChanged();
 }
 
-trait RowDataTrait {
-
-}
 
 /**
  * Ukládá data, která byla nastavena po instancování RowData (i nezměněná). 
@@ -19,9 +15,9 @@ trait RowDataTrait {
  */
 class RowData extends \ArrayObject implements RowDataInterface {
             
-
+    const CODE_FOR_NULL_VALUE = 'special_string_for_NULL_value';
+    
     private $changed;
-    private $nulled;
     
     public function __construct($data = []) {
         parent::__construct($data, \ArrayObject::ARRAY_AS_PROPS);
@@ -35,12 +31,8 @@ class RowData extends \ArrayObject implements RowDataInterface {
         return $this->changed;
     }
     
-    public function isNulled() {
-        return count($this->null) ? TRUE : FALSE;        
-    }
-    
-    public function getNulled() {
-        return $this->nulled;
+    public function deleteChanged() {
+        unset($this->changed);
     }
     
     public function offsetGet($index) {
@@ -88,8 +80,7 @@ class RowData extends \ArrayObject implements RowDataInterface {
         } elseif (parent::offsetExists($index)) {
             // smazat data
             parent::offsetUnset($index);
-            $this->changed[$index] = NULL;
-            $this->nulled[$index] = TRUE;
+            $this->changed[$index] = self::CODE_FOR_NULL_VALUE;
         }
     }
 }
@@ -106,7 +97,7 @@ class Dao implements DaoInterface {
     
     private $database = array(
         'To je moje identita.' => array('identity'=>'To je moje identita.', 'hlava'=>'Je to hlava má.', 'krk'=>'Krk jí nevnímá.'),
-        'To je tvoje identita.' => array('identity'=>'To je tvoje identita.', 'hlava'=>'Je to hlava tvá.', 'krk'=>'Krk ji ovládá.')
+        'To je tvoje identita.' => array('identity'=>'To je tvoje identita.', 'hlava'=>'Je to hlava tvá.', 'krk'=>'Krk ji ovládá.', 'ruce'=>'Ty ti seberem.')
         
     );
     
@@ -117,14 +108,24 @@ class Dao implements DaoInterface {
     public function insert(RowDataInterface $rowData) {
         echo '<p>Insert data:</p>';
         var_dump($rowData->getChanged());
-    }
+
+        $rowData->deleteChanged();
+   }
     
     public function update(RowDataInterface $rowData) {
         echo '<p>Update data:</p>';
         echo '<p>Updated values:</p>';
+        foreach ($rowData->getChanged() as $key=>$value) {
+            if ($value != RowData::CODE_FOR_NULL_VALUE) {
+                $set[] = $key.' = '.$value;
+            } else {
+                $set[] = $key.' = NULL';
+            }
+        }
+        echo '<p>SET '.implode(', ', $set).'</p>';
         var_dump($rowData->getChanged());
-        echo '<p>NULL data:</p>';
-        var_dump($rowData->getNulled());
+        
+        $rowData->deleteChanged();
     }
 }
 
@@ -142,15 +143,26 @@ class DataManager {
     }
 
     public function get($index) {
-        if (!$this->oldDataStorage->offsetExists($index)) {
+        if ($this->newDataStorage->offsetExists($index)) {
+            return $this->newDataStorage->offsetGet($index);
+        } elseif (!$this->oldDataStorage->offsetExists($index)) {
             $data = $this->dao->get($index);
             $this->oldDataStorage->offsetSet($index, $data);
         }
-        return $this->oldDataStorage->offsetGet($index);
+        if ($this->oldDataStorage->offsetExists($index)) {
+            return $this->oldDataStorage->offsetGet($index);
+        } else {
+            throw new UnexpectedValueException("V úložišti (databázi) neexistují data se požadovaným indexem.");
+        }
     }    
     
     public function set($index, $data) {
-        $this->newDataStorage->offsetSet($index, $data);
+        if ($this->oldDataStorage->offsetExists($index)) {
+            $this->oldDataStorage->offsetSet($index, $data);
+        } else {
+            $this->newDataStorage->offsetSet($index, $data);
+        }
+        return $this;
     }
     
     public function flush() {
@@ -177,6 +189,11 @@ class EntityManager {
         $this->dataManager = $dataManager;
     }
         
+    public function get($identity) {
+        $data = $this->dataManager->get($identity);
+        return $this->hydrate(new Entity($identity));
+    }
+    
     public function persist(Entity $entity, $identity) {
         if ($entity->getIdentity()) {
             throw new LogicException('Chybný pokus o persistování entity, která má identitu (entita předtím načtená z databáze) metodou persist(), která je určena je pro nově vytvořené entity.');
@@ -214,6 +231,7 @@ class EntityManager {
                     $this->dataManager->set($index, $data);
                 }
             }
+            unset($this->newEntitiesStorage);  // v případě opakování flush() se budou insertovat jen další nové entity
             $this->dataManager->flush();
     }
     
@@ -228,6 +246,10 @@ class Entity {
     private $krk;
     private $ruce;
     private $nohy;
+    
+    public function __construct($identity=NULL) {
+        $this->identity = $identity;
+    }
     
     public function getIdentity() {
         return $this->identity;
@@ -251,11 +273,6 @@ class Entity {
 
     public function setHlava($hlava) {
         $this->hlava = $hlava;
-        return $this;
-    }
-    
-    public function setIdentity($identity) {
-        $this->identity = $identity;
         return $this;
     }
 
@@ -327,18 +344,19 @@ class Hydrator {
 
 $dataManager = new DataManager();
 $entityManager = new EntityManager($dataManager);
-$mojeEntity = (new Entity())->setIdentity('To je moje identita.');
-$entityManager->hydrate($mojeEntity);
+$mojeEntity = $entityManager->get('To je moje identita.');
 var_dump($mojeEntity);
 //update
 $mojeEntity->setHlava('To je hlava cizí.'); //value
-$mojeEntity->setKrk(NULL); //smazání krku
+$mojeEntity->setKrk(NULL); //smazání krku staré entitě -> mělo by vzniknout set krk=NULL
 var_dump($mojeEntity);
-$tvojeEntity = (new Entity())->setIdentity('To je tvoje identita.');
-$entityManager->hydrate($tvojeEntity);
+
+$tvojeEntity = $entityManager->get('To je tvoje identita.');
 var_dump($tvojeEntity);
+$tvojeEntity->setRuce(NULL);
+
 //insert
 $newEntity = new Entity();
-$newEntity->setNohy('Má jen nohy.')->setRuce('A taky ruce.');
+$newEntity->setNohy('Má jen nohy.')->setRuce('A taky ruce.')->setKrk('Půjčím ti na chvilu krk.')->setKrk(NULL);  //smazání krku nové entitě -> smaže se jen vlastnost entity, až se budou vytvářet data, tak už tak davno vlastnost není 
 var_dump($newEntity);
 $entityManager->persist($newEntity, 'To je nová identita.');
