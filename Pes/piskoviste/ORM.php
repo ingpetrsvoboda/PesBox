@@ -1,27 +1,30 @@
 <?php
 
-interface RowDataInterface extends \IteratorAggregate, \ArrayAccess, \Serializable, \Countable {   
+require '../../vendor/autoload.php';
+
+use Pes\Database\Handler\ConnectionInfo;
+use Pes\Type\DbTypeEnum;
+use Pes\Database\Handler\DsnProvider\DsnProviderMysql;
+use Pes\Database\Handler\OptionsProvider\OptionsProviderMysql;
+use Pes\Database\Handler\AttributesProvider\AttributesProviderDefault;
+use Pes\Database\Handler\Handler;
+
+use Psr\Log\NullLogger;
+
+interface RowDataInterface extends \IteratorAggregate, \ArrayAccess, \Serializable, \Countable { 
+    
+    const CODE_FOR_NULL_VALUE = 'special_string_for_NULL_value';
+
     // extenduje všechna rozhraní, která implementuje \ArrayObject mimo \Traversable - to nelze neb je prázdné
     public function isChanged();
     public function getChanged();
     public function deleteChanged();
 }
 
-
-/**
- * Ukládá data, která byla nastavena po instancování RowData (i nezměněná). 
- * Data jsou v paměti duplikována, ale není třeba je pak vybírat nebo odmazávat z původního array objectu. 
- * Třída tak upřednostňuje rychlost za cenu vyšší paměťové náročnosti. Je vhodná, pokud se ukládá jen málo a data nejsou velká.
- */
-class RowData extends \ArrayObject implements RowDataInterface {
-            
-    const CODE_FOR_NULL_VALUE = 'special_string_for_NULL_value';
-    
+trait RowDataTrait {
+                
     private $changed;
-    
-    public function __construct($data = []) {
-        parent::__construct($data, \ArrayObject::ARRAY_AS_PROPS);
-    }
+    private $nulled;
     
     public function isChanged() {
         return count($this->changed) ? TRUE : FALSE;
@@ -53,11 +56,11 @@ class RowData extends \ArrayObject implements RowDataInterface {
     }    
     
     /**
-     * Ukládá indexy dat, která byla změněna po instancování. Metodě offsetSet nevadí, když je zavolána s hodnotou $value=NULL.
+     * Ukládá data, která byla změněna po instancování. Metodě offsetSet nevadí, když je zavolána s hodnotou $value=NULL.
      * Postupuje takto:
      * Stará data jsou, metoda vrací jinou hodnotu -> unset data + nastavit changed=value
-     * Stará data jsou, value je NULL -> unset data + nastavit changed=value + nastavit nulled=TRUE -> umožní provést zápis NULL do db = smazání sloupce (pokud db neumožňuje null, je to chyba návrhu aplikace)
-     *  tak, že v SQL INSERT musí být INSERT INTO tabulka (sloupec) VALUES (NULL) - NULL je řetězec 'NULL' -> nemůžu je vkládat proměnnou s "hodnotou" NULL 
+     * Stará data jsou, value je NULL -> nastavit  speciální hodnotuchanged = self::CODE_FOR_NULL_VALUE -> umožní provést zápis NULL do db = smazání sloupce 
+     *  tak, že v SQL INSERT musí být INSERT INTO tabulka (sloupec) VALUES (NULL) - NULL je klíčová (rezervované) slovo -> nemůžu je vkládat jako proměnnou s "hodnotou" NULL 
      *  pak mám INSERT INTO tabulka (sloupec) VALUES () a to NULL nevyrobí
      * Stará data nejsou, metoda vrací hodnotu (ne NULL) -> nastavit changed=value
      * Stará data nejsou, metoda vrací NULL -> stará data nejsou protože je v db NULL nebo se sloupec v selectu nečetl -> v obou případech nedělat nic
@@ -74,15 +77,66 @@ class RowData extends \ArrayObject implements RowDataInterface {
             if (parent::offsetExists($index) AND parent::offsetGet($index) != $value) { 
                 parent::offsetUnset($index);
                 $this->changed[$index] = $value;
-            } elseif (!parent::offsetExists($index)) {
+            } elseif (!parent::offsetExists($index)) {  // nová data nebo opakovaně měněná data
                 $this->changed[$index] = $value;                
             }
-        } elseif (parent::offsetExists($index)) {
-            // smazat data
-            parent::offsetUnset($index);
+        } elseif (parent::offsetExists($index) AND parent::offsetGet($index) !== NULL) {  
+        // kontrola !== NULL je nutná, extract volá všechny settery a pokud vlastnost nebyla vůbec nastavena setter vrací NULL
+        // musím kontrolavat, že data jsou NULL, ale původně nebyla - proto nelze volat offseUnset (ale data se neduplikují, v changed je jen konstanta)
+            // smazat existující data
             $this->changed[$index] = self::CODE_FOR_NULL_VALUE;
         }
+    }    
+}
+/**
+ * Ukládá data, která byla nastavena po instancování RowData (i nezměněná). 
+ * Data jsou v paměti duplikována, ale není třeba je pak vybírat nebo odmazávat z původního array objectu. 
+ * Třída tak upřednostňuje rychlost za cenu vyšší paměťové náročnosti. Je vhodná, pokud se ukládá jen málo a data nejsou velká.
+ */
+class RowData extends \ArrayObject implements RowDataInterface {
+
+    use RowDataTrait;
+    
+    /**
+     * V kostruktoru se mastaví způsob zapisu dat do RowData objektu na ARRAY_AS_PROPS a pokud je zadán parametr $data, zapíší se tato data
+     * do interní storage objektu. Nastavení ARRAY_AS_PROPS způsobí, že každý zápis dalších dat je prováděn metodou offsetSet.
+     * @param type $data
+     */
+    public function __construct($data=[]) {
+        parent::__construct($data, \ArrayObject::ARRAY_AS_PROPS);
     }
+
+}
+
+class PdoRowData extends \ArrayObject implements RowDataInterface {
+
+    use RowDataTrait;
+    
+    /**
+     * V kostruktoru se mastaví způsob zapisu dat do RowData objektu na ARRAY_AS_PROPS. Od té chvíle jsou data zapisována metodou offsetSet() 
+     * a to znamená, že jsou vždy změněná nebo nová data uložena do interního pole changed, nikdy do vlastní storage ArrayObjectu. Data do storage ArrayObjectu 
+     * se zapíší před voláním konstruktoru a tedy před nastavením způsobu zapisu dat do RowData objektu na ARRAY_AS_PROPS. To dokáže PDOStatement, který dafaultně nejprve nastavuje 
+     * vlastnosti objektu a teprve potom volá konstruktor.
+     * 
+     */
+    public function __construct() {
+        $this->setFlags(\ArrayObject::ARRAY_AS_PROPS);
+    }
+    
+    /**
+     * Magický setter je volán jen před nastavením setFlags(\ArrayObject::ARRAY_AS_PROPS). Nastavení setFlags(\ArrayObject::ARRAY_AS_PROPS) je provedeno
+     * v konstruktoru. To znamená, že pokud je nejpreve volán konstruktor, nevolá se už pak nikdy __set(), ale offsetSet(). Magická metoda __set() je volána
+     * pouze objektem PDOStatement s nastavením: $statement->setFetchMode(\PDO::FETCH_CLASS, 'RowData'); volání $stmt->fetch(); pak nejdříve nastavuje properties RowDAta
+     * objektu a v tu chvíli je volána __set(), pak teprve zavolá konstruktor. V konstruktoru RowData se nastaví $this->setFlags(\ArrayObject::ARRAY_AS_PROPS);
+     * a od té chvíle pak každé další volání (jak RowData $data[$index], tak i $data->index) volá metodu offsetSet().
+     * 
+     * 
+     * @param type $name
+     * @param type $value
+     */
+    public function __set($name, $value) {
+        parent::offsetSet($name, $value);
+    }     
 }
 
 interface DaoInterface {
@@ -95,14 +149,47 @@ interface DaoInterface {
 
 class Dao implements DaoInterface {
     
-    private $database = array(
-        'To je moje identita.' => array('identity'=>'To je moje identita.', 'hlava'=>'Je to hlava má.', 'krk'=>'Krk jí nevnímá.'),
-        'To je tvoje identita.' => array('identity'=>'To je tvoje identita.', 'hlava'=>'Je to hlava tvá.', 'krk'=>'Krk ji ovládá.', 'ruce'=>'Ty ti seberem.')
-        
-    );
+    const DB_NAME = 'p4_unit_integration_tests_db';
+    const DB_HOST = 'localhost';
+    const DB_PORT = '3306';
+    const CHARSET_WINDOWS = 'cp1250';
+    const COLLATION_WINDOWS = 'cp1250_czech_cs';
+    const CHARSET_UTF8 = 'utf8';
+    const COLLATION_UTF8 = 'utf8_czech_ci';
+    const CHARSET_UTF8MB4 = 'utf8mb4';
+    const COLLATION_UTF8MB4 = 'utf8mb4_czech_ci';
     
+    const TESTOVACI_STRING = "Cyrilekoěščřžýáíéúů";
+
+    const NICK = 'tester';    
+    const USER = 'p4_tester';
+    const PASS = 'p4_tester';
+    
+    /**
+     *
+     * @var Handler 
+     */
+    private $dbHandler;
+    
+    public function __construct() {
+        $this->dbHandler = $this->createHandler();
+    }
+    
+    private function createHandler() {
+        $connectionInfoUtf8 = new ConnectionInfo(self::NICK, DbTypeEnum::MySQL, self::DB_HOST, self::USER, self::PASS, self::CHARSET_UTF8, self::COLLATION_UTF8, self::DB_NAME, self::DB_PORT);        
+        $dsnProvider = new DsnProviderMysql();
+        $optionsProvider = new OptionsProviderMysql();
+        $logger = new NullLogger();
+        $attributesProviderDefault = new AttributesProviderDefault();
+        return new Handler($connectionInfoUtf8, $dsnProvider, $optionsProvider, $attributesProviderDefault, $logger);         
+    }
+
+
     public function get($index) {
-        return new RowData($this->database[$index]);
+        $stmt = $this->dbHandler->query('SELECT identity, hlava, krk, ruce, nohy FROM orm');
+        $stmt->setFetchMode(\PDO::FETCH_CLASS, 'PdoRowData');
+        $rowData = $stmt->fetch();
+        return $rowData;
     }
     
     public function insert(RowDataInterface $rowData) {
@@ -116,7 +203,7 @@ class Dao implements DaoInterface {
         echo '<p>Update data:</p>';
         echo '<p>Updated values:</p>';
         foreach ($rowData->getChanged() as $key=>$value) {
-            if ($value != RowData::CODE_FOR_NULL_VALUE) {
+            if ($value != RowDataInterface::CODE_FOR_NULL_VALUE) {
                 $set[] = $key.' = '.$value;
             } else {
                 $set[] = $key.' = NULL';
@@ -342,34 +429,24 @@ class Hydrator {
 
 #############################################################################################################################
 
-//require '../../vendor/autoload.php';
 
-function setUp() {
-    //fixture:
-    //vymaaže tabulku, zapíše tři řádky v UTF8
-    $dsn = 'mysql:host=' . self::DB_HOST . ';dbname=' . self::DB_NAME ; 
-    $dbh = new PDO($dsn, self::USER, self::PASS, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
-    $dbh->exec('DELETE FROM person');
-    $dbh->exec('INSERT INTO person (name, surname) VALUES ("Adam","Adamov")');
-    $dbh->exec('INSERT INTO person (name, surname) VALUES ("Božena","Boženová")');
-    $dbh->exec('INSERT INTO person (name, surname) VALUES ("Cyril","'.self::TESTOVACI_STRING.'")');
-}
-    
     const DB_NAME = 'p4_unit_integration_tests_db';
     const DB_HOST = 'localhost';
-    const DB_PORT = '3306';
-    const CHARSET_WINDOWS = 'cp1250';
-    const COLLATION_WINDOWS = 'cp1250_czech_cs';
-    const CHARSET_UTF8 = 'utf8';
-    const COLLATION_UTF8 = 'utf8_czech_ci';
-    const CHARSET_UTF8MB4 = 'utf8mb4';
-    const COLLATION_UTF8MB4 = 'utf8mb4_czech_ci';
-    
-    const TESTOVACI_STRING = "Cyrilekoěščřžýáíéúů";
-
-    const NICK = 'tester';    
     const USER = 'p4_tester';
     const PASS = 'p4_tester';
+    
+function setUp() {
+    //fixture:
+    //vymaaže tabulku, zapíše řádky v UTF8
+    $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME ; 
+    $dbh = new PDO($dsn, USER, PASS, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+    $dbh->exec("DELETE FROM orm");
+    $dbh->exec("INSERT INTO orm (identity, hlava, krk) VALUES ('To je moje identita.', 'Je to hlava má uááá.', 'Krk jí nevnímá.')");
+    $dbh->exec("INSERT INTO orm (identity, hlava, krk, ruce) VALUES ('To je tvoje identita.', 'Je to hlava tvá.', 'Krk ji ovládá.', 'Ty ti seberem.')");
+
+}
+    
+
 
     setUp();
     
