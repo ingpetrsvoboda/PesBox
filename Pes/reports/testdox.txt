@@ -1,12 +1,11 @@
+Pes\Autoloader\Autoloader
+ [x] Existing file
+ [x] Missing file
+ [x] Deep file
+ [x] Confusion
+
 EntityCollection
- [x] Constructor
- [x] Set and remove entity without identity
- [x] Set with identity and getbyidentity and remove and remove by identity for entity with identity
- [x] Set with validation
- [x] Exchange content and count and get iterator
- [x] Exchange content and count and get iterator with validation
- [x] Order
- [x] Sort
+ [ ] Incomplete
 
 MapCollection
  [x] Constructor

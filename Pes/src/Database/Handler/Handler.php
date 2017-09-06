@@ -1,8 +1,8 @@
 <?php
 /**
  * Základní handler objekt pro SQL databáze. Využívá hotovou abstrakci PHP PDO a jde o adapter a wrapper pro PDO.
- * Pro vytvoření instance využívá dsn provider, který musí generovat dsn pro připojení k databázi a attribute setter, který může nastavit 
- * atrinuty vytvořeného objektu (potomka PDO).
+ * Pro vytvoření instance využívá dsn provider, který musí generovat dsn pro připojení k databázi, options provider, který pokytuje options pro volání PDO
+ * konstruktoru (před vytvořením PDO) a attribute setter, který může nastavit atrinuty vytvořeného objektu (po vytvoření PDO).
  * Objekt implementuje všechny metody PDO (jako wrapper) a přidává metody vlastní (jako adapter).
  *
  * @author pes2704
@@ -35,7 +35,7 @@ class Handler extends \PDO implements HandlerInterface {
      * Pokud některý z těchto objektů není potřeba i tak je nutné jej dodat a pro tento účel lze použít Null varianty těchto objektů.
      * 
      * <b>Bezpečnostní rizika:</b>
-     * Objekt ConnectionInfo obsahuje informace o připojení včetně jména a hesla. Zde je bezpečnostní riziko, protože lze takový objekt někde omylem zobrazit.
+     * Objekt ConnectionInfo obsahuje informace pro připojení včetně jména a hesla. Zde je bezpečnostní riziko, protože lze takový objekt někde omylem zobrazit.
      * Handler je obvykle používán na mnoha místech aplikace a často "globálně" dostupný. Proto handler objekt ConnectionInfo neukládá a jen použije pro 
      * vytvoření rodičovského PDO objektu. Objekt ConnectionInfo je také použit při volání metod objektů DsnProvider, OptionsProvider, AttributesProvider
      * a proto je žádoucí, aby ani tyto objekty ConnectionInfo ani citlivé informace z něj neukládaly.
@@ -135,9 +135,10 @@ class Handler extends \PDO implements HandlerInterface {
     /**
      * Exception handler obsluhuje pouze výjimky vyhozené v konstruktoru handleru - tedy výjimky PDO. Nezachycená výjimka PDO vede obvykle k výpisu výjimky 
      * tak, že výpis vidí uživatel. Tento výpis obvykle obsahuje údaje o připojení. Zobrazování takového výpisu je zřejmé bezpečnostní riziko. 
-     * Nastevení obsluhy chyb na vyhazování chyb místo výjimek nijak neovliní chování konstruktoru PDO - i nadálevyhazuje výjimky. 
-     * Proto tato třída přidává jako bezpečnostní patření svůj vlastní exception_handler, který zachycuje výjimky všech typů a hlásí 
-     * jen zákadní hlášení. Tento exception_handler musí být volán v konstruktoru této třídy před instancováním PDO poté je nahrazen zpět případný přerdít nastaveným exception handlerem.
+     * Nastevení obsluhy chyb PHP na vyhazování chyb místo výjimek nijak neovliní chování konstruktoru PDO - ten i nadále vyhazuje výjimky. 
+     * Proto tato třída přidává jako bezpečnostní opatření svůj vlastní exception_handler, který zachycuje výjimky všech typů a hlásí 
+     * jen zákadní hlášení. Tento exception_handler musí být volán v konstruktoru této třídy před instancováním PDO poté je nahrazen zpět předtím 
+     * nastaveným exception handlerem.
      * 
      * @param type $exception
      */

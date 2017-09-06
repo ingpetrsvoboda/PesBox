@@ -22,15 +22,15 @@ class HandlerMSSQLTest extends PHPUnit_Framework_TestCase {
           'This test has not been implemented yet.'
         );
     }
-//    const DB_NAME = 'p4_unit_integration_tests_db';
+//    const DB_NAME = 'pes';
 //    const DB_HOST = '(local)';//'localhost';
 //    const DB_PORT = 1433;
 //    const CHARSET_WINDOWS = 'cp1250';
 //    const TESTOVACI_STRING = "Cyrilekoěščřžýáíéúů";
 //    
 //    const NICK = 'tester';
-//    const USER = 'p4_tester';
-//    const PASS = 'p4_tester';
+//    const USER = 'pes_tester';
+//    const PASS = 'pes_tester';
 //    
 //    public function setUp() {
 //        //fiture:

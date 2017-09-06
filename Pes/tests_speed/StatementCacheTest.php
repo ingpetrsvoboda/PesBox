@@ -27,7 +27,7 @@ class PersonForCacheTest {
  * @author pes2704
  */
 class StatementSpeedTest {
-    const DB_NAME = 'p4_unit_integration_tests_db';
+    const DB_NAME = 'pes';
     const DB_HOST = 'localhost';
     const DB_PORT = '3306';
     const CHARSET_WINDOWS = 'cp1250';
@@ -40,8 +40,8 @@ class StatementSpeedTest {
     const TESTOVACI_STRING = "Cyrilekoěščřžýáíéúů";
     
     const NICK = 'tester';
-    const USER = 'p4_tester';
-    const PASS = 'p4_tester';
+    const USER = 'pes_tester';
+    const PASS = 'pes_tester';
     
     private $helper;
     

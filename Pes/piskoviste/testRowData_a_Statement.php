@@ -20,7 +20,7 @@ use Pes\Database\Statement\Cache;
 use Psr\Log\NullLogger;
 
 
-    const DB_NAME = 'p4_unit_integration_tests_db';
+    const DB_NAME = 'pes';
     const DB_HOST = 'localhost';
     const DB_PORT = '3306';
     const CHARSET_WINDOWS = 'cp1250';
@@ -33,8 +33,8 @@ use Psr\Log\NullLogger;
     const TESTOVACI_STRING = "Cyrilekoěščřžýáíéúů";
 
     const NICK = 'tester';    
-    const USER = 'p4_tester';
-    const PASS = 'p4_tester';
+    const USER = 'pes_tester';
+    const PASS = 'pes_tester';
     
     /**
      * Model

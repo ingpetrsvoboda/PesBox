@@ -89,9 +89,7 @@ trait RowDataTrait {
     }    
 }
 /**
- * Ukládá data, která byla nastavena po instancování RowData (i nezměněná). 
- * Data jsou v paměti duplikována, ale není třeba je pak vybírat nebo odmazávat z původního array objectu. 
- * Třída tak upřednostňuje rychlost za cenu vyšší paměťové náročnosti. Je vhodná, pokud se ukládá jen málo a data nejsou velká.
+ * 
  */
 class RowData extends \ArrayObject implements RowDataInterface {
 
@@ -149,7 +147,7 @@ interface DaoInterface {
 
 class Dao implements DaoInterface {
     
-    const DB_NAME = 'p4_unit_integration_tests_db';
+    const DB_NAME = 'pes';
     const DB_HOST = 'localhost';
     const DB_PORT = '3306';
     const CHARSET_WINDOWS = 'cp1250';
@@ -162,8 +160,8 @@ class Dao implements DaoInterface {
     const TESTOVACI_STRING = "Cyrilekoěščřžýáíéúů";
 
     const NICK = 'tester';    
-    const USER = 'p4_tester';
-    const PASS = 'p4_tester';
+    const USER = 'pes_tester';
+    const PASS = 'pes_tester';
     
     /**
      *
@@ -289,7 +287,7 @@ class EntityManager {
         $this->newEntitiesStorage[$index] = $entity;
     }
     
-    public function hydrate(Entity $entity) {
+    private function hydrate(Entity $entity) {
         $identity = $entity->getIdentity();
         if (!$identity) {
             throw new UnexpectedValueException("Není entity bez identity! Entity musí mít identitu před pokusem o hydrataci.");
@@ -430,10 +428,10 @@ class Hydrator {
 #############################################################################################################################
 
 
-    const DB_NAME = 'p4_unit_integration_tests_db';
+    const DB_NAME = 'pes';
     const DB_HOST = 'localhost';
-    const USER = 'p4_tester';
-    const PASS = 'p4_tester';
+    const USER = 'pes_tester';
+    const PASS = 'pes_tester';
     
 function setUp() {
     //fixture:

@@ -30,9 +30,11 @@ final class ConnectionInfo implements ConnectionInfoInterface, \Serializable {
 
     /**
      * Konstruktor. 
+     * Všechny vlastnosti objektu jsou zadány jako instanční proměnnné do konstruktoru. Nelze je později měnit, třída nenobsahuje settery.
+     * Pro získání hodnot vlastností třída používá gettery, výjimkou je vlastnost pass, která z bezpečnostních důvodů getter nemá.
+     * <h4>charset a collation</h4>
      * Některé parametry mají defaultní hodnoty, které předpokládají předávání dat v kódování utf8 a s řazením utf8_czech_ci. 
      * Pro jiné kódování a řazení je třeba zadat příslušné hodnoty, zadání NULL způsobí použití default hodnot databáze nebo MySQL aplikace.
-     * <h4>CHARSET a COLLATION</h4>
      * Pokud $charset nebo $collation jsou nastaveny na NULL, použije MySQL defaultní hodnoty pro konkrétní databázi nastavené při vytváření
      * databáze např.:
      *  CREATE DATABASE mydb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
@@ -42,17 +44,16 @@ final class ConnectionInfo implements ConnectionInfoInterface, \Serializable {
      *  character-set-server=utf8
      *  collation-server=utf8_general_ci
      * </pre>
-     * <h4>PORT</h4>
+     * <h4>port</h4>
      * Nepovinný parametr, pokud není zadán nikde v handleru se nepoužije a MySQL driver sám použije default (well known) port 3306. 
      * Pokud chceš používat jiný port, musí se vždy jako parametr dbHost použít IP adresa. Např. nesmí být host zadán jako "localhost", musí být 127.0.0.1
-
-     * Parametr $dbName je skutečné aktuální jméno databáze a je nepovinný. Pokud databáze dosud neexistuje je parametr prázdný. S takto vytvořeným připojením je
-     * možné vytvořit novou databázi (CREATE DATABASE). Třída je navržena tak, že neumožňuje změnit vlastnost pass. ConnectionInfo objekt použitý pro připojení pak
-     * nikdy nebude obsahovat skutečné jméno databáze. Nelze tak použít postup: new ConnectionInfo bez dbName -> new Handler(ConnectionInfo) -> CREATE DATABASE dabaname ->
-     * USE dabaname -> ConnectionInfo->setDbName(dabaname). Namísto toho je třeba spojení zahodit a vytvořit nové s použitím nového ConnectionInfo již obsahujícího
+     * <h4>dbName</h4>
+     * Parametr $dbName je skutečné aktuální jméno databáze a je nepovinný. Pokud databáze dosud neexistuje je parametr prázdný. S připojením vytvořeným bez jména databáze je
+     * možné vytvořit novou databázi (CREATE DATABASE). Nelze však použít postup: new ConnectionInfo bez dbName -> new Handler(ConnectionInfo) -> CREATE DATABASE dabaname ->
+     * USE dabaname -> ConnectionInfo->setDbName(dabaname). Namísto toho je třeba spojení zahodit a vytvořit nové s použitím nového ConnectionInfo, již obsahujícího
      * dbName. Toto nové připojení by obvykle mělo mít také jiné parametry user a pass, protože práva pro vytváření databází budou asi jiná než práva ke konkrétní 
      * nové databázi.
-     * 
+     *  
      * @param string $dbNick Přezdívka databáze
      * @param string $dbType Typ databáze jako hodnota výčtového typu Pes\Type\DbTypeEnum
      * @param string $dbHost IP adresa nebo doménové jméno hostitelského stroje. Při použití parametru dbPort je nutné použít IP adresu.
