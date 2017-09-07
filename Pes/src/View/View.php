@@ -4,6 +4,7 @@ namespace Pes\View;
 
 use Psr\Log\LoggerInterface;
 use Pes\View\Renderer\RendererInterface;
+
 /**
  * Description of Framework_View_Abstract
  *
