@@ -33,7 +33,7 @@ class View implements ViewInterface {
      * @param type $contextData data přijímaná zadaným rendererem
      */
     public function render($contextData) {
-        $this->renderer->render($contextData);
+        return $this->renderer->render($contextData);
     }
     
     /**

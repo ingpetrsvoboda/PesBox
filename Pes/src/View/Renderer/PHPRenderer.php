@@ -9,6 +9,8 @@ namespace Pes\View\Renderer;
  */
 class PHPRenderer implements TemplateRendererInterface {
 
+    const FILTER_DELIMITER = '|';
+    
     /**
      * @var string 
      */
@@ -65,5 +67,31 @@ class PHPRenderer implements TemplateRendererInterface {
 //        echo '</pre>';
         return $result;        
         
+    }
+    
+    private function filter($filters, $text) {
+        $names = explode(self::FILTER_DELIMITER, $filters);
+        foreach ($names as $name) {
+            if (method_exists($this, $name)) {
+                $text = $this->$name($text);
+            }
+        }
+        return $text;
+    }
+
+    private function esc($text, $filters=NULL) {
+        return htmlspecialchars($text);            
+    }
+    
+    private function mono($text) {
+        return preg_replace('|(\s[ksvzouiaKSVZOUIA])\s|', '$1&nbsp;', trim($text));
+    }
+    
+    private function p($text) {
+        return '<p>'.PHP_EOL.str_replace(array("\r\n", "\r", "\n"), '</p>'.PHP_EOL.'<p>', $text).PHP_EOL.'</p>';
+    }
+    
+    private function nl2br($text) {
+        return str_replace(array("\r\n", "\r", "\n"), "<br />", $text);
     }
 }
