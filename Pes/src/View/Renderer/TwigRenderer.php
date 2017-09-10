@@ -2,7 +2,7 @@
 
 namespace Pes\View\Renderer;
 
-use ??Twig_Environment;
+use Twig_Environment;
 
 /**
  * Framework_View_Template_TemplateTwig je decorator pro Twig_Environment template objekt

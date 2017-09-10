@@ -2,7 +2,7 @@
 
 namespace Pes\View\Renderer;
 
-use ??PHPTAL;
+use PHPTAL;
 
 /**
  * Framework_View_Template_TemplatePHPTAL je rendere využívající PHPTAL template objekt.

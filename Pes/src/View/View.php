@@ -97,7 +97,7 @@ class View implements ViewInterface {
     }
     
     /**
-     * Převede pole na html. Všechny prvky pole se přetypují na string. Prvky pole mohou být proměnné libovolného typu,
+     * Převede pole na text. Všechny prvky pole se přetypují na string. Prvky pole mohou být proměnné libovolného typu,
      * umožňující převod na string. Pro skalární proměnné se použije výchozí typecasting php, pro prvky ostatních typů musí přetypovábí zajistit uživatel.
      * Například pro typ objekt je možno použít magickou metodu __toString().
      * Takto přetypované pole se následně převede na řetězec tak, že jednotlivé prvky jsou odděleny znakem (znaky) PHP_EOL.

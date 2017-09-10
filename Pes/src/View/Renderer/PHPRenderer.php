@@ -79,7 +79,7 @@ class PHPRenderer implements TemplateRendererInterface {
         return $text;
     }
 
-    private function esc($text, $filters=NULL) {
+    private function esc($text) {
         return htmlspecialchars($text);            
     }
     
