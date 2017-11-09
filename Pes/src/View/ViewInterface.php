@@ -1,6 +1,17 @@
 <?php
 
+/*
+ * Copyright (C) 2017 pes2704
+ *
+ * This is no software. This is quirky text and you may do anything with it, if you like doing
+ * anything with quirky texts. This text is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
 namespace Pes\View;
+
+use Pes\View\Renderer\RendererInterface;
 
 /**
  *
@@ -8,10 +19,10 @@ namespace Pes\View;
  */
 interface ViewInterface {
     /**
-     * S použitím dat v kontextu vytvoří obsah připravený k převodu na string metodou __toString().
+     * S použitím dat v kontextu vytvoří obsah - vrací string.
      */
-    public function render($contextData);
-    public function getString();
-    public function __toString();
+    public function render();
+    public function getRenderer(): RendererInterface;
+    public function setRenderer(RendererInterface $renderer);    
 }
 

@@ -12,6 +12,10 @@ use Psr\Log\AbstractLogger;
  */
 class FileLogger extends AbstractLogger {
 
+    /**
+     *
+     * @var FileLogger array of 
+     */
     private static $instances = array();
 
     private $loggerFullLogFileName;
@@ -19,11 +23,14 @@ class FileLogger extends AbstractLogger {
 
     const ODSAZENI = "    ";    
     
+    const REWRITE_LOG = 'Soubor je při zahájení logování přepsán novým obsahem - log obsahuje zápisy jen z jdnoho běhu skriptu.';
+    const APPEND_TO_LOG = 'Nový obsah je přidáván na konec souboru - log obsahuje všechny zápisy.';
+    
     /**
      * Privátní konstruktor. Objekt je vytvářen voláním factory metody getInstance().
      * @param Resource $logFileHandle
      */
-    private function __construct($logFileHandle, $fullLogFileName){
+    private function __construct($logFileHandle, $fullLogFileName, $mode){
         if (!is_resource($logFileHandle)) {
             throw new \InvalidArgumentException('Cannot create '.__CLASS__.'. Invalid resource handle: '.print_r($logFileHandle, TRUE));
         }
@@ -37,14 +44,16 @@ class FileLogger extends AbstractLogger {
 
     /**
      * Factory metoda, metoda vrací instanci objektu. 
-     * Objekt je vytvářen jako singleton vždy pro jeden logovací soubor. Metoda vrací jeden unikátní 
-     * objekt pro jednu kombinaci parametrů $pathPrefix a $logFileName.
+     * Objekt je vytvářen jako singleton - vždy pro jeden logovací soubor. Parametr $mode určuje zda soubor je při zahájení logování přepsán novým obsahem - log 
+     * obsahuje zápisy jen z jednoho běhu skriptu nebo zda nový obsah je přidáván na konec souboru - log obsahuje všechny zápisy.
+     * 
      * @param string $logDirectoryPath Pokud parametr není zadán, třída loguje do složky, ve které je soubor s definicí třídy.
      * @param string $logFileName Název logovacího souboru (řetězec ve formátu jméno.přípona např. Mujlogsoubor.log). 
+     * @param type $mode
      * 
      * @return FileLogger
      */
-    public static function getInstance($logDirectoryPath, $logFileName) {
+    public static function getInstance($logDirectoryPath, $logFileName, $mode = self::REWRITE_LOG) {
         $logDirectoryPath = str_replace('/', '\\', $logDirectoryPath);  //obrácená lomítka
         if (substr($logDirectoryPath, -1)!=='\\') {  //pokud path nekončí znakem obrácené lomítko, přidá ho
             $logDirectoryPath .='\\';
@@ -56,7 +65,7 @@ class FileLogger extends AbstractLogger {
         $fullLogFileName = $logDirectoryPath.$logFileName;
         if(!isset(self::$instances[$fullLogFileName])){
             $handle = fopen($fullLogFileName, 'w+'); //vymaže obsah starého logu
-            self::$instances[$fullLogFileName] = new self($handle, $fullLogFileName);
+            self::$instances[$fullLogFileName] = new self($handle, $fullLogFileName, $mode);
         }
         return self::$instances[$fullLogFileName];
     }
@@ -71,7 +80,7 @@ class FileLogger extends AbstractLogger {
      */
     public function log($level, $message, array $context = array()) {
         $completedMessage = isset($context) ? $this->interpolate($message, $context) : $message;
-        $completedMessage = preg_replace("/\r\n|\n|\r/", self::ODSAZENI.PHP_EOL, $completedMessage);
+        $completedMessage = preg_replace("/\r\n|\n|\r/", self::ODSAZENI.PHP_EOL, $completedMessage);  //předsazení první rádky víceřádkového message
 
         $newString = '['.$level.'] '.$completedMessage.PHP_EOL;
         fwrite($this->logFileHandle, $newString);

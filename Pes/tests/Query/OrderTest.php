@@ -19,6 +19,7 @@ class OrderTest extends PHPUnit_Framework_TestCase {
             ->addOrdering('n', OrderingEnum::ASCENDING)
             ->addOrdering('x', OrderingEnum::DESCENDING);  
     }
+    
     public function testGetSqlString() {
     
         $str = $this->order->getSqlString();
@@ -29,6 +30,6 @@ class OrderTest extends PHPUnit_Framework_TestCase {
         foreach ($this->order as $ordering) {
             $arr[$ordering['attribute']] = $ordering['type'];
         }
-        $this->assertEquals(array('a'=>'DESC', 'n'=>'ASC', 'x'=>'DESC'), $arr);
+        $this->assertEquals(['a'=>'DESC', 'n'=>'ASC', 'x'=>'DESC'], $arr);
     }
 }

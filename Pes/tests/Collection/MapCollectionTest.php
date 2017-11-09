@@ -30,13 +30,14 @@ class EntitkaForMapCollectionTest {
  * @author pes2704
  */
 class MapCollectionTest extends PHPUnit_Framework_TestCase {
+    
     public function testConstructor() {
         $collection = new MapCollection();
         $this->assertInstanceOf('Pes\Collection\MapCollection', $collection);
         $validator = new IsTypeValidator('InterfaceForMapCollectionTest');
 //        $validatorMock = $this->getMockBuilder('IsTypeValidator')->getMock();
 //        $validatorMock->eexpects($this->any())-
-        $collection = new MapCollection(NULL, $validator);
+        $collection = new MapCollection([], $validator);
         $this->assertInstanceOf('Pes\Collection\MapCollection', $collection);
     }
     
@@ -55,7 +56,7 @@ class MapCollectionTest extends PHPUnit_Framework_TestCase {
     
     public function testSetGetWithValidation() {
         $validator = new IsTypeValidator('InterfaceForMapCollectionTest');
-        $collection = new MapCollection(NULL, $validator);        
+        $collection = new MapCollection([], $validator);        
         $validObj = new InterfacedObjectForMapCollectionTest();
         $invalidObj = new ObjectForMapCollectionTest();
         $collection->set('valida', $validObj); //přidá 
@@ -99,6 +100,9 @@ class MapCollectionTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($source, $ret);
     }
     
+    /**
+     * Test řazení kolekce s použitím SortComparator
+     */
     public function testOrder() {
         $source = array(
             new EntitkaForMapCollectionTest('004', '03', '1'),
@@ -138,6 +142,9 @@ class MapCollectionTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($ordered, $ret);        
     }
 
+    /**
+     * Test řazení kolekce s použitím SortComparator
+     */
     public function testSort() {
         $source = array(
             new EntitkaForMapCollectionTest('004', '03', '1'),

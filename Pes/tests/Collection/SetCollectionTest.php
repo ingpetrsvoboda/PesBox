@@ -39,7 +39,7 @@ class SetCollectionTest extends PHPUnit_Framework_TestCase {
         $validator = new IsTypeValidator('InterfaceForSetCollectionTest');
 //        $validatorMock = $this->getMockBuilder('IsTypeValidator')->getMock();
 //        $validatorMock->eexpects($this->any())-
-        $collection = new SetCollection(NULL, $validator);
+        $collection = new SetCollection([], $validator);
         $this->assertInstanceOf('Pes\Collection\SetCollection', $collection);
     }
     
@@ -55,7 +55,7 @@ class SetCollectionTest extends PHPUnit_Framework_TestCase {
     
     public function testSetWithValidation() {
         $validator = new IsTypeValidator('InterfaceForSetCollectionTest');
-        $collection = new SetCollection(NULL, $validator);        
+        $collection = new SetCollection([], $validator);        
         $validObj = new InterfacedObjectForSetCollectionTest();
         $invalidObj = new ObjectForSetCollectionTest();
         $collection->set($validObj); //přidá 

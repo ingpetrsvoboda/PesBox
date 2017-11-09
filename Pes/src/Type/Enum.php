@@ -19,13 +19,13 @@ namespace Pes\Type;
  * <code>
  * try {
  *     $dbType = new DbType();
- *     $msType = $dbType(DbType::MSSQL)   //OK, vrací hodnotu 'mssql'
- *     $blaType = $dbType('bla'); // Vyhodí výjimku
+ *     $msType = $dbType('mssql')   //OK, vrací řetězec 'mssql'
+ *     $blaType = $dbType('bla'); // Vyhodí výjimku - za běhu
  * } catch (UnexpectedValueException $uve) {
  *     echo $uve->getMessage() . PHP_EOL;
  * }
  * </code>
- * <p>Bezpečné vytvoření proměnné (bez rizika vyhozené výjimky)</p>
+ * <p>Bezpečné vytvoření proměnné (bez rizika vyhozené výjimky) - použití konstanty třídy</p>
  * <code>
  *     $dbType = new DbType();
  *     $msType = $dbType(DbType::MSSQL)   //OK, vrací hodnotu 'mssql'
@@ -68,6 +68,9 @@ abstract class Enum {
         return $this->constants;
     }
     
+    /**
+     * Pomocí reflexe získa konstnty třídy a nastaví vlastnost constants (jako asociativní pole)
+     */
     private function setConstants() {
         if (!isset($this->constants)) {
             $reflexCls = new \ReflectionClass(get_called_class());

@@ -2,10 +2,14 @@
 
 namespace Pes\View\Renderer;
 
+use Pes\View\Template\TemplateInterface;
 /**
- * Framework_View_TemplateViewInterface je rozhraní rendereru pro template objekty
+ * TemplateRendererInterface je rozhraní rendereru pro template objekty
  * @author pes2704
  */
 interface TemplateRendererInterface extends RendererInterface {
-    public function loadTemplate($templateFileName);
+    /**
+     * @return TemplateInterface Template object
+     */
+    public function getTemplate();
 }

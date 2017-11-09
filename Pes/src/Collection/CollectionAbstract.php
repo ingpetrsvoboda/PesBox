@@ -28,7 +28,7 @@ abstract class CollectionAbstract implements CollectionInterface {
      * 
      * @param ValidatorInterface $validator
      */
-    public function __construct(array $array=NULL, ValidatorInterface $validator = NULL) {
+    public function __construct(array $array=[], ValidatorInterface $validator = NULL) {
         $this->validator = $validator;   // validator je používán v konkrétních implementacích
         $this->internalStorage = new ArrayObject;
         if ($array) {

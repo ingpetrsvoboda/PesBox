@@ -17,7 +17,6 @@
         </testsuite>
     </testsuites>
     <logging>
-      <log type="testdox-text" target="Pes/reports/testdox.txt"/>
-      <log type="testdox-html" target="Pes/reports/testdox.html"/>  
+
     </logging>    
 </phpunit>

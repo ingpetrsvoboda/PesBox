@@ -2,6 +2,8 @@
 
 namespace Pes\Type;
 
+use Psr\Log\LoggerInterface;
+
 /**
  * Description of ContextData
  *
@@ -11,7 +13,7 @@ class ContextData extends \ArrayObject implements ContextDataInterface {
     
     const GET_EXISTING_VALUE = 'get';
     const GET_NONEXISTING_VALUE = 'try to get unsetted value';
-    const IS_EXISTiNG_VALUE = 'isset on existing value';
+    const IS_EXISTING_VALUE = 'isset on existing value';
     const IS_NONEXISTING_VALUE = 'isset on nonexisting value';
     
     
@@ -21,19 +23,30 @@ class ContextData extends \ArrayObject implements ContextDataInterface {
      */
     protected $context;
     
+    /**
+     * @var LoggerInterface 
+     */
+    protected $logger;
+    
     private $debugMode=FALSE;
     
     private $status;
     
-    public function __construct($data=NULL) {
-        parent::__construct();
-        if (isset($data)) {
-            if (is_array($data) OR $data instanceof \ArrayObject) {
-                $this->appendData($data);
-            } else {
-                throw new UnexpectedValueException('Argument musí být pole nebo ArrayObject.');
-            }
+    /**
+     * Třífa je wrapper pro ArrayObject. Tato třída přijímá data pouze buď jako pole nebo jako ArrayObject.
+     * Zaznamenává užití dat - t.j. čtení, zápis dat pokud se s objektem pracuje jako s polem 
+     * (např. $x = $data['jmeno']  $data['jmeno'] = $y) a dotazy na existenci dat (např. isset($data['jmeno']))
+     * 
+     * @param \ArrayObject $data
+     * @param int $flags
+     * @param string $iterator_class
+     * @throws UnexpectedValueException
+     */
+    public function __construct($data = '[]', int $flags = 0, string $iterator_class = "ArrayIterator") {
+        if (!(is_array($data) OR $data instanceof \ArrayObject)) {
+            throw new UnexpectedValueException('Argument musí být pole nebo ArrayObject.');
         }
+        parent::__construct($data, $flags, $iterator_class);
     }
     
     public function setDebugMode($debug=TRUE) {
@@ -65,7 +78,7 @@ class ContextData extends \ArrayObject implements ContextDataInterface {
         $e = parent::offsetExists($index);
         if ($this->debugMode) {
             if ($e) {
-                $this->status[$index][] = self::IS_EXISTiNG_VALUE;
+                $this->status[$index][] = self::IS_EXISTING_VALUE;
             } else {
                 $this->status[$index][] = self::IS_NONEXISTING_VALUE;                
             }
@@ -73,7 +86,11 @@ class ContextData extends \ArrayObject implements ContextDataInterface {
         return $e;
     }
     
-    public function exchangeArray($data) {
+    public function setData($data) {
+        ;
+    }
+    
+    public function exchangeData($data) {
         if (is_array($data)) {
             $ret = parent::exchangeArray($data);
         } elseif ($data instanceof \ArrayObject) {
@@ -86,7 +103,7 @@ class ContextData extends \ArrayObject implements ContextDataInterface {
     
     /**
      * Metoda přidá data z pole nebo ArrayObject zadaného jako parametr.
-     * @param mixed $appendedContext array nebo ArrayObject s daty.
+     * @param mixed $appendedData array nebo ArrayObject s daty.
      * @return \ContextData
      * @throws UnexpectedValueException
      */
