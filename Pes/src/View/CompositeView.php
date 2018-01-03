@@ -3,6 +3,7 @@
 namespace Pes\View;
 
 use Pes\View\Renderer\RendererInterface;
+use Pes\View\Renderer\RecordableRendererInterface;
 
 /**
  *
@@ -12,7 +13,7 @@ class CompositeView extends View implements CompositeViewInterface {
     
     /**
      *
-     * @var \SplObjectStorage 
+     * @var ViewInterface in \SplObjectStorage 
      */
     private $componentViews;
     
@@ -24,7 +25,7 @@ class CompositeView extends View implements CompositeViewInterface {
     public function __construct(RendererInterface $renderer) {
         parent::__construct($renderer);
         $this->componentViews = new \SplObjectStorage();
-    }
+    }    
     
     /**
      * Metoda pro přidání komponentních view. Jednotliví komponentní view budou renderována a vygenerovaný výsledek bude vložen 
@@ -52,9 +53,17 @@ class CompositeView extends View implements CompositeViewInterface {
      * @return string
      */
     public function render($data=[]) {
+
         $composeViewData = array();
+        if ($this->renderer instanceof RecordableRendererInterface) {
+            $recorderProvider = $this->renderer->getRecorderProvider();
+        }
         if (count($this->componentViews)>0) {
             foreach ($this->componentViews as $componentView) {
+                $componentRenderer = $componentView->getRenderer();
+                if (isset($recorderProvider) AND $componentRenderer instanceof RecordableRendererInterface) {
+                    $componentRenderer->setRecorderProvider($recorderProvider); 
+                }
                 $composeViewData[$this->componentViews->getInfo()] = $componentView->render();
             }
         }

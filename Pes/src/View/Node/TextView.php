@@ -15,14 +15,22 @@ class TextView implements TextViewInterface {
      * @var ViewInterface 
      */
     private $view;
-    
-    private $data = [];
 
+    /**
+     * Prijímá View určený ge generování textového obsahu. View generuje (lazy) textový obsah s použitím dat zadaných při 
+     * volání matody getText($data).
+     * 
+     * @param ViewInterface $view
+     */
     public function __construct(ViewInterface $view) {
         $this->view = $view;
     }
     
-    public function getView() {
+    /**
+     * 
+     * @return ViewInterface
+     */
+    public function getView(): ViewInterface {
         return $this->view;
     }
         

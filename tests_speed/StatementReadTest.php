@@ -1,6 +1,6 @@
 <?php
 use Pes\Database\Handler\ConnectionInfo;
-use Pes\Type\DbTypeEnum;
+use Pes\Database\Handler\DbTypeEnum;
 use Pes\Database\Handler\DsnProvider\DsnProviderMysql;
 use Pes\Database\Handler\OptionsProvider\OptionsProviderMysql;
 use Pes\Database\Handler\AttributesProvider\AttributesProviderNull;

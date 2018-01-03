@@ -14,7 +14,7 @@ class AttributesProviderMssql extends AttributesProviderDefault {
      * @param \Pes\Database\Handler\Handler $handler Metoda využívá parametr handler
      * @return array
      */
-    public static function getAttributesArray(ConnectionInfo $connectionInfo) {
+    public function getAttributesArray($attributes) {
         
 //https://docs.microsoft.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server
 //        
@@ -33,10 +33,10 @@ class AttributesProviderMssql extends AttributesProviderDefault {
 //
 //Use the connection’s encoding if specified in a prepare statement.        
         
-        $attributes = parent::getAttributesArray($connectionInfo);
-        if (strcasecmp($connectionInfo->getCharset(), 'UTF8')) {
-            $attributes[\PDO::SQLSRV_ATTR_ENCODING] = \PDO::SQLSRV_ENCODING_UTF8;  // použij výhradně kódování utf8  
+        $defaultAttributes = parent::getAttributesArray();
+        if (strcasecmp($this->connectionInfo->getCharset(), 'UTF8')) {
+            $defaultAttributes[\PDO::SQLSRV_ATTR_ENCODING] = \PDO::SQLSRV_ENCODING_UTF8;  // použij výhradně kódování utf8  
         }
-        return $attributes;        
+        return $defaultAttributes + $attributes;  // lokálně nastavené attr jsou přepsány attr z parametru, pokud mají stejný klíč
     }
 }

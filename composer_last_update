@@ -1,0 +1,29 @@
+"c:\ProgramData\ComposerSetup\bin\composer.bat" "--ansi" "--no-interaction" "update"
+You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Removing sebastian/comparator (2.1.0)
+  - Installing sebastian/comparator (2.1.1)
+    Downloading: 100%
+
+  - Removing phpunit/phpunit-mock-objects (5.0.4)
+  - Installing phpunit/phpunit-mock-objects (5.0.5)
+    Downloading: 100%
+
+  - Removing phpunit/php-code-coverage (5.2.4)
+  - Installing phpunit/php-code-coverage (5.3.0)
+    Downloading: 100%
+
+  - Removing phpunit/phpunit (6.5.2)
+  - Installing phpunit/phpunit (6.5.5)
+    Downloading: 100%
+
+  - Installing http-interop/http-server-handler (1.0.1)
+    Loading from cache
+
+  - Installing http-interop/http-server-middleware (1.0.0)
+    Loading from cache
+
+Writing lock file
+Generating autoload files
+Done.

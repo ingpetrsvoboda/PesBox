@@ -1,5 +1,8 @@
 <?php
+
 namespace Pes\Autoloader;
+
+use PHPUnit\Framework\TestCase;
 
 class MockAutoloader extends Autoloader
 {
@@ -16,8 +19,7 @@ class MockAutoloader extends Autoloader
     }
 }
 
-class AutoloaderTest extends \PHPUnit_Framework_TestCase
-{
+class AutoloaderTest extends TestCase {
     protected $loader;
 
     protected function setUp()

@@ -12,7 +12,7 @@
 namespace Pes\View\Renderer;
 
 use Pes\View\Tag\TagInterface;
-use Pes\View\Recorder\RecordLogger;
+use Pes\View\Recorder\RecorderProvider;
 
 /**
  *
@@ -20,5 +20,4 @@ use Pes\View\Recorder\RecordLogger;
  */
 interface TagRendererInterface extends RendererInterface {
     public function getTag(): TagInterface;
-    public function setRecordLogger(RecordLogger $recordLogger);   
 }

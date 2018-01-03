@@ -1,13 +1,15 @@
 <?php
+use PHPUnit\Framework\TestCase;
+
 use Pes\Query\Order;
-use Pes\Type\OrderingEnum;
+use Pes\Query\OrderingEnum;
 
 /**
  * Description of testOrder
  *
  * @author pes2704
  */
-class OrderTest extends PHPUnit_Framework_TestCase {
+class OrderTest extends TestCase {
     /**
      * @var Order 
      */

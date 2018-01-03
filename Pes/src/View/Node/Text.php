@@ -9,7 +9,7 @@ use Pes\View\Tag\Attributes\NullAttributes;
  *
  * @author pes2704
  */
-class Text implements TextInterface {
+class Text implements NodeInterface {
     
     /**
      * @var string Textový obsah elementu
@@ -24,6 +24,10 @@ class Text implements TextInterface {
         $this->text = $text;
     }
     
+    /**
+     * Vrací text zadaný v konstruktoru
+     * @return string
+     */
     public function getText() {
         return $this->text;
     } 

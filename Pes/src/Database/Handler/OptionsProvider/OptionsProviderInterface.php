@@ -7,5 +7,5 @@ use Pes\Database\Handler\ConnectionInfo;
  * @author pes2704
  */
 interface OptionsProviderInterface {
-    public static function getOptionsArray(ConnectionInfo $connectionInfo);
+    public function getOptionsArray(ConnectionInfo $connectionInfo);
 }

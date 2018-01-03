@@ -4,7 +4,7 @@ namespace Pes\View\Tag;
 
 use Pes\View\Tag\Attributes\GlobalAttributes;
 use Pes\View\Tag\MetadataContent;
-use Pes\View\Node\TextInterface;
+use Pes\View\Node\NodeInterface;
 
 /**
  * Description of Head

@@ -3,7 +3,7 @@
 namespace Pes\View\Tag;
 
 use Pes\View\Tag\TagInterface;
-use Pes\View\Node\TextInterface;
+use Pes\View\Node\NodeInterface;
 
 
 /**
@@ -23,62 +23,53 @@ abstract class TagAbstract implements TagInterface {
     
     protected $name;
     
-    /**
-     * @var string Vnitřní obsah elementu
-     */    
-    protected $textContent='';
-    
     protected $childrens = array();
     
-    /**
-     * Jméno tagu. Jméno tagu je nastavováno v konstruktoru a nelze ho měnit.
-     * @return string
-     */
+
     public function getName() {
         return $this->name;
     }
     
-    /**
-     * Informace o tom, zda je tag "párový" a má otevírací i koncovou značku (např. <tag> a </tag>) nebo povinně "nepárový" 
-     * a má tedy značku např. <tag />. Nepárové jsou pouze povinně nepárové tagy, párové jsou jak povinně párové tagy, tak i volitelně párové tagy.
-     * Povinně a nepovinně párové tagy se nerozlišují a jsou defaultně renderovány vždy s otevírací i koncovou značkou.
-     * 
-     * @return type
-     */
+
     public function isPairTag() {
         return $this->pairTag;
     }
     
     /**
-     * Vrací objekt atributů. Metody potomků jsou prakticky všechny stejné, ale mají v doc bloku nastavenou jinou návratorvou hodnotu 
-     * - příslušná objekt atributů. Našeptávání tak je funkční.
-     * Objekt atributů je vytvářen v konstruktoru a lze měnit jen hodnoty jeho jednotlivých vlastností - atributů.
-     * 
-     * @return AttributesInterface Description
+     * Metody potomků jsou prakticky všechny stejné, ale mají v doc bloku nastavenou jinou návratovou hodnotu 
+     * - příslušný objekt atributů. Našeptávání tak je funkční.
      */
     abstract function getAttributes();
 
-    /**
-     * Přidá dalšího potomka - tag na konec seznamu potomků.
-     * @param TagInterface $tag
-     * @return $this
-     */
+
     public function addChildTag(TagInterface $tag) {
-        $this->childrens[] = $tag;
-        return $this;
+        return $this->addChildNode($tag);
     }
     
-    public function addChildNode(TextInterface $node) {
+    public function addChildNode(NodeInterface $node) {
         $this->childrens[] = $node;
         return $this;        
     }
     
-    /**
-     * Vrací pole potomků tagu - pole tagů nebo nodů.
-     * @return TagInterface array of
-     */
+
     public function getChildrens() {
         return $this->childrens;
+    }
+    
+    public function getText() {
+        return $this->recursiveGetTextContent($this);
+    }
+    
+    private function recursiveGetTextContent(NodeInterface $node) {
+        $text = '';
+        foreach($node->getChildrens() as $child) {
+            if ($child instanceof TagInterface) {
+                $text .= $child->getText();
+            }
+        }
+        if ($node instanceof NodeInterface) {
+            $text .= $node->getText();
+        }        
     }
 }
 

@@ -1,0 +1,4 @@
+[alert] Jeden řádek.
+[critical] Dva řádky. Tohle je první.
+    A tohle druhý.
+[debug] Interpolovaná zpráva z testu FileLoggerTest::testGetInstanceAndLog v čase 1512427401.

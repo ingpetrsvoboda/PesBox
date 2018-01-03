@@ -21,7 +21,7 @@ class DsnProviderMysql implements DsnProviderInterface {
      * 
      * @return string
      */
-    public static function getDsn(ConnectionInfoInterface $connectionInfo) {
+    public function getDsn(ConnectionInfoInterface $connectionInfo) {
         $dsn = self::PDO_DRIVER_NAME.':host=' . $connectionInfo->getDbHost() .
                       ($connectionInfo->getDbPort() ? (';port=' . $connectionInfo->getDbPort()) : '') .
                       ($connectionInfo->getDbName() ? (';dbname=' . $connectionInfo->getDbName()) : '');

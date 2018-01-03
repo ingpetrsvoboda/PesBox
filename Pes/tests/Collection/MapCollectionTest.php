@@ -1,10 +1,12 @@
 <?php
+use PHPUnit\Framework\TestCase;
+
 use Pes\Collection\MapCollection;
-use Pes\Validator\IsTypeValidator;
+use Pes\Validator\IsObjectTypeValidator;
 use Pes\Comparator\OrderComparator;
 use Pes\Comparator\SortComparator;
 use Pes\Query\Order;
-use Pes\Type\OrderingEnum;
+use Pes\Query\OrderingEnum;
 
 interface InterfaceForMapCollectionTest {}
 
@@ -29,12 +31,12 @@ class EntitkaForMapCollectionTest {
  *
  * @author pes2704
  */
-class MapCollectionTest extends PHPUnit_Framework_TestCase {
+class MapCollectionTest extends TestCase {
     
     public function testConstructor() {
         $collection = new MapCollection();
         $this->assertInstanceOf('Pes\Collection\MapCollection', $collection);
-        $validator = new IsTypeValidator('InterfaceForMapCollectionTest');
+        $validator = new IsObjectTypeValidator('InterfaceForMapCollectionTest');
 //        $validatorMock = $this->getMockBuilder('IsTypeValidator')->getMock();
 //        $validatorMock->eexpects($this->any())-
         $collection = new MapCollection([], $validator);
@@ -55,7 +57,7 @@ class MapCollectionTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testSetGetWithValidation() {
-        $validator = new IsTypeValidator('InterfaceForMapCollectionTest');
+        $validator = new IsObjectTypeValidator('InterfaceForMapCollectionTest');
         $collection = new MapCollection([], $validator);        
         $validObj = new InterfacedObjectForMapCollectionTest();
         $invalidObj = new ObjectForMapCollectionTest();

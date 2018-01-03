@@ -7,8 +7,8 @@ namespace Pes\Collection;
  */
 class MapCollection extends CollectionAbstract implements MapCollectionInterface {
     /**
-     * Provede validavi hodnoty zadaného prvku a validní prvek přidá dok kolekce se zadaným indexem. Pro nevalidní prvek nedělá nic.
-     * Podle indexu, se lterým byl prvek přidán lze prvek získa metodou get().
+     * Provede validaci hodnoty zadaného prvku a validní prvek přidá dok kolekce se zadaným indexem. Pro nevalidní prvek nedělá nic.
+     * Podle indexu, se kterým byl prvek přidán lze prvek získa metodou get().
      * 
      * @param mixed $index Index, se kterým bude prvek přidán.
      * @param mixed $value Hodnota prvku.

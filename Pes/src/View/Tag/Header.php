@@ -16,9 +16,9 @@ class Header extends TagAbstract {
      */
     private $attributes;
 
-    public function __construct() {
+    public function __construct(array $attributes=[]) {
         $this->name = 'header';
-        $this->attributes = new GlobalAttributes();
+        $this->attributes = new GlobalAttributes($attributes);
     }
     
     /**

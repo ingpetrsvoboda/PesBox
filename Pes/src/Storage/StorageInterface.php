@@ -1,15 +1,12 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace Pes\Storage;
 
 /**
  *
  * @author pes2704
  */
-interface Framework_Storage_StorageInterface {
+interface StorageInterface {
 
     public function get($key);
     public function set($key, $value);

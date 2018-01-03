@@ -2,7 +2,7 @@ running composer global installs the packages into %APPDATA%\Composer (or ~/.com
 
 Just the commands:
 	
-composer global require "phpunit/phpunit=^6.2"
+composer global require "phpunit/phpunit=^6.4"
 composer global require "phpunit/phpunit-skeleton-generator=*"
 composer global require "squizlabs/php_codesniffer=*"
 composer global require "phpmd/phpmd=@stable"
@@ -16,7 +16,7 @@ PHPUnit
 
 From the installation instructions (https://phpunit.de/manual/current/en/installation.html) do:
 
-composer global require "phpunit/phpunit=4.6.*"
+composer global require "phpunit/phpunit=6.4"
 
 This installs PHPUnit to C:\Users\[username]\AppData\Roaming\Composer\vendor\phpunit and puts the binary to use in Netbeans in C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpunit.bat
 

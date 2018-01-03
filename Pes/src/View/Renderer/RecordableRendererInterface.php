@@ -11,13 +11,16 @@
 
 namespace Pes\View\Renderer;
 
-use Pes\View\Recorder\VariablesUsageRecorderInterface;
+use Pes\View\Recorder\RecorderProviderInterface;
 
 /**
  *
  * @author pes2704
  */
 interface RecordableRendererInterface extends RendererInterface {
-    public function setVariablesUsageRecorder(VariablesUsageRecorderInterface $recorder);    
-    public function getVariablesUsageRecorder(): VariablesUsageRecorderInterface ; 
+    public function setRecorderProvider(RecorderProviderInterface $recorderProvider);  
+    /**
+     * @return RecorderProviderInterface || NULL
+     */
+    public function getRecorderProvider(); 
 }

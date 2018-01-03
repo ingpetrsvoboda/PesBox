@@ -25,7 +25,18 @@ class SetCollection extends CollectionAbstract implements SetCollectionInterface
         }
         return $this;
     }
-  
+    
+    /**
+     * Přidá do kolekce objekty zadané jako pole objektů.
+     * @param array $newArray
+     */
+    public function mergeArrayContent(array $newArray=[]) {
+        foreach ($newArray as $object) {
+            $this->set($object);
+        }
+        return $this;
+    } 
+    
     /**
      * Zjistí, zda je zadaný prvek v kolekci.
      * @param mixed $element Prvek, jehož přítomnost v kolekci zjišťuji.

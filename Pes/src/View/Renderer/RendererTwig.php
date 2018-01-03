@@ -25,7 +25,7 @@ class RendererTwig implements RendererInterface {
      * @param Twig_Environment $templateSystemObject
      * @param array $data
      */
-    public function __construct(Twig_Environment $templateSystemObject, array $data=[]) {
+    public function __construct(Twig_Environment $templateSystemObject) {
         $this->templateObject = $templateSystemObject;
         $this->data = $data;
     }
@@ -34,10 +34,10 @@ class RendererTwig implements RendererInterface {
      * Vrací výstup získaný ze zadaného template objektu. 
      * Metoda implementuje metodu rozhraní render(). Volá metodu render() Twig objektu.
      * 
-     * @param type $data
+     * @param array $data
      * @return type
      */
-    public function render() {
+    public function render(array $data=[]) {
         $content = $this->templateObject->render($this->data);
         return $content;
     }

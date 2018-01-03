@@ -29,7 +29,7 @@ class InputFactory {
         $inputView = self::text($context, $name, $readonly, $maxlength, $size);
         $labelAttributes = new Attributes\Label();                
         $labelView = new Projektor2_View_HTML_Tag_Label($context, $labelAttributes);
-        return $labelView->addInnerText($label)->addChildTag($inputView);
+        return $labelView->addInnerText($label)->addChildNode($inputView);
     }
     
     public static function date($context, $name, $readonly=FALSE) {
@@ -44,7 +44,7 @@ class InputFactory {
         $inputView = self::date($context, $name, $readonly);
         $labelAttributes = new Projektor2_View_HTML_Tag_Attributes_Label();                
         $labelView = new Projektor2_View_HTML_Tag_Label($context, $labelAttributes);
-        return $labelView->addInnerText($label)->addChildTag($inputView);
+        return $labelView->addInnerText($label)->addChildNode($inputView);
     }    
     public static function submit($context, $name, $readonly=FALSE) {
         $inputAttributes = (new Attributes\InputAttributes())->setAttributesArray(array('type'=>'submit', 'name'=>$name, 'value'=>$context[$name]));

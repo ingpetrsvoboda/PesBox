@@ -2,6 +2,7 @@
 namespace Pes\Logger;
 
 use Psr\Log\AbstractLogger;
+use Pes\Utils\Directory;
 
 /**
  * Description of FileLogger
@@ -23,17 +24,14 @@ class FileLogger extends AbstractLogger {
 
     const ODSAZENI = "    ";    
     
-    const REWRITE_LOG = 'Soubor je při zahájení logování přepsán novým obsahem - log obsahuje zápisy jen z jdnoho běhu skriptu.';
-    const APPEND_TO_LOG = 'Nový obsah je přidáván na konec souboru - log obsahuje všechny zápisy.';
+    const REWRITE_LOG = 'w+';
+    const APPEND_TO_LOG = 'a+';
     
     /**
      * Privátní konstruktor. Objekt je vytvářen voláním factory metody getInstance().
      * @param Resource $logFileHandle
      */
-    private function __construct($logFileHandle, $fullLogFileName, $mode){
-        if (!is_resource($logFileHandle)) {
-            throw new \InvalidArgumentException('Cannot create '.__CLASS__.'. Invalid resource handle: '.print_r($logFileHandle, TRUE));
-        }
+    private function __construct($logFileHandle, $fullLogFileName){
         $this->logFileHandle = $logFileHandle;
         $this->loggerFullLogFileName = $fullLogFileName;  //proměnná jen pro přehlednost při debugování - i vrácená instance obsahuje název souboru
     }
@@ -54,40 +52,64 @@ class FileLogger extends AbstractLogger {
      * @return FileLogger
      */
     public static function getInstance($logDirectoryPath, $logFileName, $mode = self::REWRITE_LOG) {
-        $logDirectoryPath = str_replace('/', '\\', $logDirectoryPath);  //obrácená lomítka
-        if (substr($logDirectoryPath, -1)!=='\\') {  //pokud path nekončí znakem obrácené lomítko, přidá ho
-            $logDirectoryPath .='\\';
-        }
-        if (!is_dir($logDirectoryPath)) {  //pokud není složka, vytvoří ji
-            mkdir($logDirectoryPath);
-        }
+        $logDirectoryPath = Directory::normalizePath($logDirectoryPath);
+        Directory::createDirectory($logDirectoryPath);
 
         $fullLogFileName = $logDirectoryPath.$logFileName;
         if(!isset(self::$instances[$fullLogFileName])){
-            $handle = fopen($fullLogFileName, 'w+'); //vymaže obsah starého logu
-            self::$instances[$fullLogFileName] = new self($handle, $fullLogFileName, $mode);
+            switch ($mode) {
+                case self::REWRITE_LOG:
+                    $fopenMode = self::REWRITE_LOG;
+                    break;
+            case self::APPEND_TO_LOG:
+                    $fopenMode = self::APPEND_TO_LOG;
+                    break;
+                default:
+                    $fopenMode = self::APPEND_TO_LOG;                    
+                    user_error('Zadán neznámý parametr $mode při vytváření loggeru. Použit mode APPEND_TO_LOG.', E_USER_WARNING);
+                    break;
+            }
+            $handle = fopen($fullLogFileName, $fopenMode); 
+            if ($handle===FALSE) {
+                throw new \InvalidArgumentException('Nelze vytvořit '.__CLASS__.' pro soubor: '.$fullLogFileName.', nepodařilo se soubor vytvořit.');
+            }
+            self::$instances[$fullLogFileName] = new self($handle, $fullLogFileName);
         }
         return self::$instances[$fullLogFileName];
     }
     
     /**
-     * Zápis jednoho záznamu do logu. Metoda přijímá argumenty, které lze převést do čitelné podoby.
+     * Zápis jednoho záznamu do logu. 
      * 
-     * @param mixed $level
-     * @param string $message
-     * @param array $context
+     * Záznam začíná prefixem uzavřeným do hranatých závorek, následuje zpráva.
+     * 
+     * Podřetězce zprávy mohou být nahrazeny hodnotami z asociativního pole context. Metoda použije zprávu jako šablonu a ve zprávě nahradí řetězce uzavřené 
+     * ve složených závorkách hodnotami pole $context s klíčem rovným nahrazovanému řetězci. 
+     * 
+     * Víceřádková zpráva je uložena do více řádek logu tak, že první řádka obsahuje prefix v hranatých závorkách a další řádky jsou zleva odsazeny.
+     * 
+     * Příklad:
+     * volání logger->log('POZOR!', 'Toto je hlášení o chybě '.PHP_EOL.'v souboru file na řádku line.', ['file=>'Ukázka.ext', 'line'=>159]
+     * vytvoří záznam: 
+     * <pre>
+     * [POZOR!] Toto je hlášení o chybě 
+     *     v souboru Ukázka.ext na řádku 159.
+     * </pre>
+     * 
+     * @param string $level Prefix záznamu zdůrazněný uzavřením do hranatých závorek 
+     * @param string $message Zpráva pro zaznamenání do logu
+     * @param array $context Pole náhrad.
      * @return null
      */
     public function log($level, $message, array $context = array()) {
         $completedMessage = isset($context) ? $this->interpolate($message, $context) : $message;
-        $completedMessage = preg_replace("/\r\n|\n|\r/", self::ODSAZENI.PHP_EOL, $completedMessage);  //předsazení první rádky víceřádkového message
-
+        $completedMessage = preg_replace("/\r\n|\n|\r/", PHP_EOL.self::ODSAZENI, $completedMessage);  //odsazení druhé a dalších řádek víceřádkového message
         $newString = '['.$level.'] '.$completedMessage.PHP_EOL;
         fwrite($this->logFileHandle, $newString);
     }
 
     /**
-     * Interpolates context values into the message placeholders.
+     * Použije $message jako šablonu a nahradí slova ve složených závorkách hodnotami pole $context s klíčem rovným nahrazovanému slovu.
      */
     public function interpolate($message, array $context = array()) {
         // build a replacement array with braces around the context keys
@@ -106,6 +128,7 @@ class FileLogger extends AbstractLogger {
     public function getLogFilePath() {
         return $this->loggerFullLogFileName;
     }
+    
     /**
      * Metoda vrací aktuální obsah logovacího souboru..
      * @return string
@@ -131,7 +154,12 @@ class FileLogger extends AbstractLogger {
      * Destruktor. Zavře logovací soubor.
      */
     public function __destruct() {
-        if ($this->logFileHandle) fclose($this->logFileHandle);
+        foreach (self::$instances as $key => $instance) {
+            if (is_resource($instance->logFileHandle)) {
+                fclose($instance->logFileHandle);
+            }
+        }
+
     }    
 }
 

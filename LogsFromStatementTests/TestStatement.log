@@ -1,0 +1,33 @@
+[info] Handler tester8 Nastaveny hodnoty atributů handleru (PDO): Array
+    (
+        [3] => 2
+        [13] => Array
+            (
+                [0] => Pes\Database\Statement\Statement
+                [1] => Array
+                    (
+                        [0] => Pes\Logger\FileLogger Object
+                            (
+                                [loggerFullLogFileName:Pes\Logger\FileLogger:private] => LogsFromStatementTests/TestStatement.log
+                                [logFileHandle:Pes\Logger\FileLogger:private] => Resource id #205
+                            )
+    
+                    )
+    
+            )
+    
+        [20] => 
+    )
+    
+[debug] Handler tester8 prepare(SELECT name, surname FROM person WHERE number=:number)
+[debug] Statement 3 execute()
+[debug] Statement 3 setFetchMode(1048584, Person)
+[debug] Statement 3 fetch(, 0, 0)
+[debug] Handler tester8 prepare(SELECT name, surname FROM person WHERE number=:number)
+[debug] Statement 4 execute()
+[debug] Statement 4 setFetchMode(1048584, Person)
+[debug] Statement 4 fetch(, 0, 0)
+[debug] Handler tester8 prepare(SELECT name, surname FROM person WHERE number=:number)
+[debug] Statement 5 execute()
+[debug] Statement 5 setFetchMode(1048584, Person)
+[debug] Statement 5 fetch(, 0, 0)

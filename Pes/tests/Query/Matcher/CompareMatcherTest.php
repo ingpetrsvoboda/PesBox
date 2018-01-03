@@ -1,4 +1,5 @@
 <?php
+use PHPUnit\Framework\TestCase;
 
 use Pes\Query\Matcher\CompareMatcher;
 /**
@@ -6,7 +7,7 @@ use Pes\Query\Matcher\CompareMatcher;
  *
  * @author pes2704
  */
-class CompareMatcherTest extends PHPUnit_Framework_TestCase {
+class CompareMatcherTest extends TestCase {
     /**
      * testuje "=", "!=":, "<>":, "<", "<=":, ">", ">="
      */

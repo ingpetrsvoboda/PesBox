@@ -1,45 +1,41 @@
 <?php
 namespace Pes\Storage;
 
-use Pes\Storage\Serializer\SerializerInterface;
-use Pes\Storage\KeyValidator\KeyValidatorInterface;
+use Pes\Validator\ValidatorInterface;
 
 /**
  * Description of StorageAbstract
  *
  * @author pes2704
  */
-abstract class Framework_Storage_StorageAbstract implements IteratorAggregate {
+abstract class StorageAbstract implements StorageInterface, IteratorAggregate {
     
-    protected $serializer;
+    /**
+     * @var ValidatorInterface 
+     */
     protected $keyValidator;
 
-    public function __construct(SerializerInterface $serializer, KeyValidatorInterface $keyValidator) {
-        $this->serializer = $serializer;
+    /**
+     * Přijímá validátor klíčů (např. IsArrayKeyValidator pro ukládání do pole)
+     * @param ValidatorInterface $keyValidator
+     */
+    public function __construct(ValidatorInterface $keyValidator) {
         $this->keyValidator = $keyValidator;
     }
     
-    protected function valueToStore($value) {
+    protected function valueSerialize($value) {
         return \serialize($value);
     }
     
-    protected function valueRestored($value) {
-        // http://php.net/manual/en/function.unserialize.php chris AT cmbuckley DOT co DOT uk ¶
+    protected function valueUnserialize($value) {
         //unserialize returns false in the event of an error and for boolean false.
         $unserstring =  \unserialize($value);
         if ($unserstring == false AND $value !== serialize(false)) {
-            throw new UnexpectedValueException("Value unserialization failed. Value isn\'t coorectly serialized or corrupted, this is first 200 characters:"
+            throw new UnexpectedValueException("Nepodařilo se deserializovat hodnotu. Hodnota nevznikla korektní serializací nebo je poškozena, zde je prvních 200 znaků hodnoty:"
                     .  substr(print_r($value, TRUE), 0, 200));       
         }        
         return $unserstring;
-    }
-    
-    protected function checkKeyValidity($key) {
-        $nameString = (string) $key;
-        if (!is_string($nameString)) {
-            throw new UnexpectedValueException("Key must be string or convertible to string".print_r($key, TRUE));        }
-        return $nameString;
-    }    
+    }  
     
     public function getIterator() {
         return new ArrayIterator($this->arrayContent);

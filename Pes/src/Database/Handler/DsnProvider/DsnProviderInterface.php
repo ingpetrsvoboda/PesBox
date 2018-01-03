@@ -11,5 +11,5 @@ interface DsnProviderInterface {
     /**
      * @return string Řetězec vhodný jako parametr dsn pro vytvoření objektu PDO.
      */
-    public static function getDsn(ConnectionInfoInterface $connectionInfo);
+    public function getDsn(ConnectionInfoInterface $connectionInfo);
 }

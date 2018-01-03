@@ -7,7 +7,7 @@ use Pes\Query\Matcher\LikeMatcher;
 use Pes\Query\Matcher\InMatcher;   
 use Pes\Query\Matcher\NotInMatcher;   
 
-use Pes\Type\LogicOperatorEnum;
+use Pes\Query\LogicOperatorEnum;
 
 /**
  * Description of Criteria

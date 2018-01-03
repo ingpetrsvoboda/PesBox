@@ -15,28 +15,25 @@ class RendererPhptal implements RendererInterface {
      * @var PHPTAL 
      */
     private $templateObject;
-    
-    private $data;
-
 
     /**
      * Nastaví pro renderování template objekt. Přijímá parametr typu PHPTAL.
      * @param PHPTAL $templateSystemObject
      */
-    public function __construct(PHPTAL $templateSystemObject, array $data=[]) {
+    public function __construct(PHPTAL $templateSystemObject) {
         $this->templateObject = $templateSystemObject;
-        $this->data = $data;
     }
 
     /**
      * Vrací výstup získaný ze zadaného template objektu. 
      * Metoda implementuje metodu rozhraní render(). Volá metodu execute() PHPTAL objektu.
      * 
+     * @param \ArrayAccess $data
      * @return string
      */
-    public function render() {
+    public function render(\ArrayAccess $data=[]) {
         if ($data) {
-            foreach($this->data as $klic => $hodnota) {
+            foreach($data as $klic => $hodnota) {
                 $this->templateObject->$klic = $hodnota;
             }
             return $this->templateObject->execute();

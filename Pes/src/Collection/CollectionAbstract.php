@@ -29,23 +29,14 @@ abstract class CollectionAbstract implements CollectionInterface {
      * @param ValidatorInterface $validator
      */
     public function __construct(array $array=[], ValidatorInterface $validator = NULL) {
-        $this->validator = $validator;   // validator je používán v konkrétních implementacích
+        $this->validator = $validator;
         $this->internalStorage = new ArrayObject;
         if ($array) {
             $this->mergeArrayContent($array);
         }
     }     
-    
-    /**
-     * Exchange the collection for another one content given as array.
-     * @param array $newArray
-     */
-    public function mergeArrayContent(array $newArray=[]) {
-        foreach ($newArray as $object) {
-            $this->set($object);
-        }
-        return $this;
-    }    
+
+    abstract public function mergeArrayContent(array $newArray = NULL);
     
     public function count() {
         return $this->internalStorage->count();

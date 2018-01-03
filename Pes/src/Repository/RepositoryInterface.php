@@ -48,7 +48,7 @@
  * DAO neznají nic takového jako je "neuhrazené".
  * @author pes2704
  */
-namespace Framework\Model;
+namespace Pes\Repository;
 
 interface RepositoryInterface extends \Countable, \IteratorAggregate, \ArrayAccess {
 

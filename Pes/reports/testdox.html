@@ -8,23 +8,17 @@
                 text-rendering: optimizeLegibility;
                 font-variant-ligatures: common-ligatures;
                 font-kerning: normal;
-                margin-left: 1vw;
-            }
-
-            body > ul {
-                max-width: 60vw;
+                margin-left: 2em;
             }
 
             body > ul > li {
                 font-family: Source Serif Pro, PT Sans, Trebuchet MS, Helvetica, Arial;
-                font-weight: 400;
-                font-size: 1vw;
-                line-height: 1.5vw;
+                font-size: 2em;
             }
 
             h2 {
                 font-family: Tahoma, Helvetica, Arial;
-                font-size: 1.5vw;
+                font-size: 3em;
             }
 
             ul {
@@ -63,11 +57,87 @@
             <li style="color: #555753;">✓ Order</li>
             <li style="color: #555753;">✓ Sort</li>
         </ul>
+        <h2 id="ConnectionInfoTest">ConnectionInfo</h2>
+        <ul>
+            <li style="color: #555753;">✓ Connection info</li>
+        </ul>
+        <h2 id="DbTypeEnumTest">DbTypeEnum</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception value not in enum</li>
+            <li style="color: #555753;">✓ Get const list</li>
+            <li style="color: #555753;">✓ Get type value </li>
+            <li style="color: #555753;">✓ Get mysql type</li>
+            <li style="color: #555753;">✓ Get mssql type</li>
+        </ul>
+        <h2 id="HandlerMSSQLTest">HandlerMSSQL</h2>
+        <ul>
+            <li style="color: #ef2929;">❌ Incomplete</li>
+        </ul>
+        <h2 id="HandlerMySQLTest">HandlerMySQL</h2>
+        <ul>
+            <li style="color: #555753;">✓ Handler for mysql</li>
+        </ul>
+        <h2 id="AttributesProviderMysqlTest">AttributesProviderMysql</h2>
+        <ul>
+            <li style="color: #555753;">✓ Attributes provider mysql</li>
+        </ul>
+        <h2 id="AttrubutesProviderNullTest">AttrubutesProviderNull</h2>
+        <ul>
+            <li style="color: #555753;">✓ Attributes provider null</li>
+        </ul>
+        <h2 id="DsnProviderMysqlTest">DsnProviderMysql</h2>
+        <ul>
+            <li style="color: #555753;">✓ Dsn provider mysql</li>
+        </ul>
+        <h2 id="OptionsProviderMysqlTest">OptionsProviderMysql</h2>
+        <ul>
+            <li style="color: #555753;">✓ Option provider mysql</li>
+        </ul>
+        <h2 id="OptionsProviderNullTest">OptionsProviderNull</h2>
+        <ul>
+            <li style="color: #555753;">✓ Mysql option provider</li>
+        </ul>
+        <h2 id="IdentificatorFormatterTest">IdentificatorFormatter</h2>
+        <ul>
+            <li style="color: #555753;">✓ Mysql identificator formatter</li>
+        </ul>
+        <h2 id="StatementTest">Statement</h2>
+        <ul>
+            <li style="color: #555753;">✓ Statement</li>
+            <li style="color: #ef2929;">❌ Statement with file logger</li>
+        </ul>
+        <h2 id="FileLoggerTest">FileLogger</h2>
+        <ul>
+            <li style="color: #555753;">✓ Get instance and log</li>
+        </ul>
+        <h2 id="PasswordTest">Password</h2>
+        <ul>
+            <li style="color: #555753;">✓ Get password hash</li>
+            <li style="color: #555753;">✓ Verify password</li>
+            <li style="color: #555753;">✓ Rehash old hash</li>
+        </ul>
+        <h2 id="ColumnAccessEnumTest">ColumnAccessEnum</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception value not in enum</li>
+            <li style="color: #555753;">✓ Get const list</li>
+            <li style="color: #555753;">✓ Get type value </li>
+            <li style="color: #555753;">✓ Get default access type</li>
+            <li style="color: #555753;">✓ Get writing prohibited type</li>
+            <li style="color: #555753;">✓ Get update prohibited type</li>
+            <li style="color: #555753;">✓ Get always writeable type</li>
+        </ul>
         <h2 id="CriteriaTest">Criteria</h2>
         <ul>
-            <li style="color: #555753;">✓ Conditions match values provider</li>
-            <li style="color: #555753;">✓ Conditions match</li>
+            <li style="color: #555753;">✓ Conditions match </li>
             <li style="color: #555753;">✓ Criteria and condition match</li>
+        </ul>
+        <h2 id="LogicOperatorEnumTest">LogicOperatorEnum</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception value not in enum</li>
+            <li style="color: #555753;">✓ Get const list</li>
+            <li style="color: #555753;">✓ Get type value </li>
+            <li style="color: #555753;">✓ Get default access type</li>
+            <li style="color: #555753;">✓ Get writing prohibited type</li>
         </ul>
         <h2 id="OrderTest">Order</h2>
         <ul>
@@ -95,57 +165,18 @@
             <li style="color: #555753;">✓ Match</li>
             <li style="color: #555753;">✓ Match with scalar and null pattern</li>
         </ul>
-        <h2 id="ColumnAccessEnumTest">ColumnAccessEnum</h2>
+        <h2 id="IsArrayKeyValidatorTest">IsArrayKeyValidator</h2>
         <ul>
-            <li style="color: #555753;">✓ Exception value not in enum</li>
-            <li style="color: #555753;">✓ Get const list</li>
-            <li style="color: #555753;">✓ Get type value</li>
-            <li style="color: #555753;">✓ Get default access type</li>
-            <li style="color: #555753;">✓ Get writing prohibited type</li>
-            <li style="color: #555753;">✓ Get update prohibited type</li>
-            <li style="color: #555753;">✓ Get always writeable type</li>
+            <li style="color: #555753;">✓ Is valid</li>
         </ul>
-        <h2 id="DbTypeEnumTest">DbTypeEnum</h2>
-        <ul>
-            <li style="color: #555753;">✓ Exception value not in enum</li>
-            <li style="color: #555753;">✓ Get const list</li>
-            <li style="color: #555753;">✓ Get type value</li>
-            <li style="color: #555753;">✓ Get mysql type</li>
-            <li style="color: #555753;">✓ Get mssql type</li>
-        </ul>
-        <h2 id="LogicOperatorEnumTest">LogicOperatorEnum</h2>
-        <ul>
-            <li style="color: #555753;">✓ Exception value not in enum</li>
-            <li style="color: #555753;">✓ Get const list</li>
-            <li style="color: #555753;">✓ Get type value</li>
-            <li style="color: #555753;">✓ Get default access type</li>
-            <li style="color: #555753;">✓ Get writing prohibited type</li>
-        </ul>
-        <h2 id="IsTypeValidatorTest">IsTypeValidator</h2>
+        <h2 id="IsObjectTypeValidatorTest">IsObjectTypeValidator</h2>
         <ul>
             <li style="color: #555753;">✓ Constructor</li>
             <li style="color: #555753;">✓ Is valid</li>
         </ul>
-        <h2 id="HandlerMSSQLTest">HandlerMSSQL</h2>
+        <h2 id="IsSerializableValidatorTest">IsSerializableValidator</h2>
         <ul>
-            <li style="color: #ef2929;">❌ Incomplete</li>
-        </ul>
-        <h2 id="HandlerMySQLTest">HandlerMySQL</h2>
-        <ul>
-            <li style="color: #555753;">✓ Connection info</li>
-            <li style="color: #555753;">✓ Mysql dsn provider</li>
-            <li style="color: #555753;">✓ Handler for mysql</li>
-            <li style="color: #555753;">✓ Mysql option provider</li>
-            <li style="color: #555753;">✓ Attributes setter</li>
-        </ul>
-        <h2 id="IdentificatorFormatterTest">IdentificatorFormatter</h2>
-        <ul>
-            <li style="color: #555753;">✓ Mysql identificator formatter</li>
-        </ul>
-        <h2 id="StatementTest">Statement</h2>
-        <ul>
-            <li style="color: #555753;">✓ Statement</li>
-            <li style="color: #555753;">✓ Statement cache</li>
+            <li style="color: #555753;">✓ Is valid</li>
         </ul>
     </body>
 </html>

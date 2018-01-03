@@ -3,30 +3,31 @@
 namespace Pes\View\Renderer;
 
 use Pes\View\Tag\TagInterface;
-use Pes\View\Node\TextInterface;
-use Pes\View\Node\TextViewInterface;
 
-use Pes\View\Recorder\RecordLogger;
+use Pes\View\Recorder\RecorderProviderInterface;
+use Pes\View\Node\TextViewInterface;
 
 /**
  * Description of TagRenderer
  *
  * @author pes2704
  */
-class TagRenderer  implements TagRendererInterface {
+class TagRenderer  implements TagRendererInterface, RecordableRendererInterface {
     
-    const INDENT = '    ';
-    
+    use RecordableRendererTrait;    
+        
     /**
      * @var TagInterface 
      */
     private $tag;
-        
-    /**
-     * @var RecordLogger 
-     */
-    private $variablesUsageLogger;
 
+    /**
+     * 
+     * @param TagInterface $tag
+     * @param RecordLoggerInterface $recorderProvider <p>Nastaví objekt pro logování informací o užití 
+     *      proměnných v šabloně. Pokud je nastaven, všechny renderery typu RecordableRendererInterface
+     *      použité jako renderery v nodech typu TextView požádají tento RocordLogger o rekorder a zaznamenají užití dat při renderování šablon.</p>
+     */
     public function __construct(TagInterface $tag) {
         $this->tag = $tag;
     }
@@ -38,15 +39,6 @@ class TagRenderer  implements TagRendererInterface {
     public function getTag(): TagInterface {
         return $this->tag;
     }
-
-    /**
-     * Nastaví objekt pro logování informací o užití proměnných v šabloně. Pokud je tentojekt nastaven, všechny objekty typů Template
-     * @param RecordLogger $variablesUsageLogger
-     */
-    public function setRecordLogger(RecordLogger $variablesUsageLogger) {
-        $this->variablesUsageLogger = $variablesUsageLogger;
-        return $this;
-    }
     
     public function render() {       
         return $this->recursiveRender($this->tag);
@@ -57,28 +49,29 @@ class TagRenderer  implements TagRendererInterface {
     }    
     
     private function recursiveRender(TagInterface $tag) {
-        $attributes = $tag->getAttributes();
-        $attributesString = isset($attributes) ? ' '.$attributes->getString() : '';
+        $attributes = $tag->getAttributes()->getString();
+        $attributesString = $attributes ? ' '.$attributes : '';
+        
         if ($tag->isPairTag()) {
-            // tag je párový - všechny tagy jsou párové s výjimkou pouze povinně nepárových tagů
+            // tag je párový - všechny tagy ve frameworku jsou párové s výjimkou pouze povinně nepárových tagů (dobrovolně párové tagu jsou implementovány jako párové
             // párový tag má počáteční a koncovou značku a může mít obsah - buď text (Tag\Text) nebo potmkovské tagy
             $pieces[] = "<{$tag->getName()}$attributesString>";
 
             foreach ($tag->getChildrens() as $child) {
-                if ($child instanceof TextInterface) {
-                    
-                    // potomek je textový node, ten je vždy list stromu nodů
-                    // vrací nastavený text (Tag\Text) nebo vytvoří text pomocí factory (Tag\TextFactory) 
-                    // nebo vytvoří text renderováním Template objektu (Tag\TextTemplate)
-                    $pieces[] = $child->getText();
-                    // pokud je potomek Tag\TextViewInterface a mám nastaven logger užití proměnných v templatě, pokusím se provést logování
-                    // logování proběhne jen pokud Template objekty měly zapnutý záznam o užití proměnných.
-                    if (isset($this->variablesUsageLogger) AND $template instanceof RecordableTemplateInterface) {
-                        $this->variablesUsageLogger->logTemplateDebugInfo($template);
-                    }                        
-                } else {
+                if ($child instanceof TagInterface) {
                     // potomek je tag (ne textový node) - rekurzivně volám renderování
-                    $pieces[] = $this->recursiveRender($child);
+                    $pieces[] = $this->recursiveRender($child);                    
+                } else {
+                    // pokud je potomek Tag\TextViewInterface a mám nastaven recorder provider, nastavím template rendereru recorder
+                    if (isset($this->recorderProvider) AND $child instanceof TextViewInterface) {
+                        $textRenderer = $child->getView()->getRenderer();
+                        if ($textRenderer instanceof RecordableRendererInterface ) {
+                            $textRenderer->setRecorderProvider($this->recorderProvider);
+                        }
+                    }
+                    // potomek je textový node, ten je vždy list stromu nodů
+                    // getText() vrací text
+                    $pieces[] = $child->getText();
                 }
             }
             

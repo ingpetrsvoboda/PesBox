@@ -1,13 +1,1 @@
- Ÿt 28.09.2017-12:41:05,09  
-
-Fatal error: Uncaught Error: Call to undefined method PHPUnit_Util_Configuration::getTestdoxGroupConfiguration() in C:\xampp\htdocs\Pes\vendor\phpunit\phpunit\src\TextUI\TestRunner.php on line 1066
-
-Error: Call to undefined method PHPUnit_Util_Configuration::getTestdoxGroupConfiguration() in C:\xampp\htdocs\Pes\vendor\phpunit\phpunit\src\TextUI\TestRunner.php on line 1066
-
-Call Stack:
-    0.0003     354160   1. {main}() C:\Users\pes2704\AppData\Roaming\Composer\vendor\phpunit\phpunit\phpunit:0
-    0.0112     910448   2. PHPUnit_TextUI_Command::main() C:\Users\pes2704\AppData\Roaming\Composer\vendor\phpunit\phpunit\phpunit:47
-    0.0112     912704   3. PHPUnit_TextUI_Command->run() C:\Users\pes2704\AppData\Roaming\Composer\vendor\phpunit\phpunit\src\TextUI\Command.php:110
-    0.1411    3448136   4. PHPUnit_TextUI_TestRunner->doRun() C:\Users\pes2704\AppData\Roaming\Composer\vendor\phpunit\phpunit\src\TextUI\Command.php:159
-    0.1411    3448160   5. PHPUnit_TextUI_TestRunner->handleConfiguration() C:\xampp\htdocs\Pes\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:163
-
+ Ÿt 30.11.2017-19:16:00,22  

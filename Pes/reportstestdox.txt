@@ -1,0 +1,122 @@
+Pes\Autoloader\Autoloader
+ [x] Existing file
+ [x] Missing file
+ [x] Deep file
+ [x] Confusion
+
+EntityCollection
+ [ ] Incomplete
+
+MapCollection
+ [x] Constructor
+ [x] Set get remove
+ [x] Set get with validation
+ [x] Exchange content and count and get iterator
+ [x] Order
+ [x] Sort
+
+SetCollection
+ [x] Constructor
+ [x] Set remove
+ [x] Set with validation
+ [x] Exchange content and count and get iterator
+ [x] Order
+ [x] Sort
+
+ConnectionInfo
+ [x] Connection info
+
+DbTypeEnum
+ [x] Exception value not in enum
+ [x] Get const list
+ [x] Get type value 
+ [x] Get mysql type
+ [x] Get mssql type
+
+HandlerMSSQL
+ [ ] Incomplete
+
+HandlerMySQL
+ [x] Handler for mysql
+
+AttributesProviderMysql
+ [x] Attributes provider mysql
+
+AttrubutesProviderNull
+ [x] Attributes provider null
+
+DsnProviderMysql
+ [x] Dsn provider mysql
+
+OptionsProviderMysql
+ [x] Option provider mysql
+
+OptionsProviderNull
+ [x] Mysql option provider
+
+IdentificatorFormatter
+ [x] Mysql identificator formatter
+
+Statement
+ [x] Statement
+ [ ] Statement with file logger
+
+FileLogger
+ [x] Get instance and log
+
+Password
+ [x] Get password hash
+ [x] Verify password
+ [x] Rehash old hash
+
+ColumnAccessEnum
+ [x] Exception value not in enum
+ [x] Get const list
+ [x] Get type value 
+ [x] Get default access type
+ [x] Get writing prohibited type
+ [x] Get update prohibited type
+ [x] Get always writeable type
+
+Criteria
+ [x] Conditions match 
+ [x] Criteria and condition match
+
+LogicOperatorEnum
+ [x] Exception value not in enum
+ [x] Get const list
+ [x] Get type value 
+ [x] Get default access type
+ [x] Get writing prohibited type
+
+Order
+ [x] Get sql string
+ [x] Iterator
+
+CompareMatcher
+ [x] Match
+
+InMatcher
+ [x] Match
+ [x] Match with scalar and null pattern
+
+LikeMatcher
+ [x] Match string
+ [x] Match escaped string
+ [x] Match string with wildcards
+ [x] Match escaped string with changed escape character
+
+NotInMatcher
+ [x] Match
+ [x] Match with scalar and null pattern
+
+IsArrayKeyValidator
+ [x] Is valid
+
+IsObjectTypeValidator
+ [x] Constructor
+ [x] Is valid
+
+IsSerializableValidator
+ [x] Is valid
+

@@ -1,13 +1,14 @@
 <?php
+use PHPUnit\Framework\TestCase;
 
 use Pes\Query\Criteria;
 
 /**
- * Test Pes\Query\Criteria
+ * Test Criteria
  *
  * @author pes2704
  */
-class CriteriaTest extends PHPUnit_Framework_TestCase {
+class CriteriaTest extends TestCase {
 
     private $arrayParam;
     private $objectParam;
@@ -28,7 +29,7 @@ class CriteriaTest extends PHPUnit_Framework_TestCase {
      * Generuje jednotlivá kritérie - paremtry pro volání metody testConditionsMatch()
      * @return type
      */
-    public function testConditionsMatchValuesProvider() {
+    public function conditionsMatchValuesProvider() {
 //  Podmínky jsou: "=":"!=";"<>":"<":"<=":">":">=":"LIKE":"IN":"NOT IN":        
 
         $data[] = [[['a', '=', 555]], '', TRUE];
@@ -63,7 +64,7 @@ class CriteriaTest extends PHPUnit_Framework_TestCase {
      * @param type $logicalOperator
      * @param type $properResult
      *  
-     * @dataProvider testConditionsMatchValuesProvider
+     * @dataProvider conditionsMatchValuesProvider
      */
     public function testConditionsMatch($arrayConditions, $logicalOperator, $properResult) {
         $criteria = new Criteria($logicalOperator);

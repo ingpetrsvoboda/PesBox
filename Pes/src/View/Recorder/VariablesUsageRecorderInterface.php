@@ -16,12 +16,12 @@ namespace Pes\View\Recorder;
  * @author pes2704
  */
 interface VariablesUsageRecorderInterface {
-    public function getTemplateInfo();
-    public function setTemplateInfo($templateInfo);    
-    public function addUndefinedVar($index, $name, $file, $line);
+    public function getRecordInfo();
+    public function setRecordInfo($nfo):self;    
+    public function addUndefinedVar($index, $name, $file, $line):self;
     public function getUndefinedVars();
     public function getUnusedVars();
     public function getContextVars();
-    public function setUnusedVars($index, $unusedVars);
-    public function setContextVars($index, $contextVars);    
+    public function setUnusedVars($index, $unusedVars):self;
+    public function setContextVars($index, $contextVars): self;    
 }

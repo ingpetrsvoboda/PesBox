@@ -1,11 +1,13 @@
 <?php
+use PHPUnit\Framework\TestCase;
+
 use Pes\Collection\EntityCollection;
-use Pes\Validator\IsTypeValidator;
+use Pes\Validator\IsObjectTypeValidator;
 // používá OrderComparatorClassMethods, SortComparatorClassMethods protože použitá entita má gettery a settery a private vlastnosti
 use Pes\Comparator\OrderComparatorClassMethods;
 use Pes\Comparator\SortComparatorClassMethods;
 use Pes\Query\Order;
-use Pes\Type\OrderingEnum;
+use Pes\Query\OrderingEnum;
 
 use Pes\Entity\Persistable\PersistableEntityInterface;
 use Pes\Entity\Persistable\PersistableEntityAbstract;
@@ -51,7 +53,7 @@ class EntitkaForEntityCollectionTest extends PersistableEntityAbstract {
  * Nejde o čistý jednotkový test - testuje předevčím EntityCollection, ale používá řadu dalších objektů.
  * @author pes2704
  */
-class EntityCollectionTest extends PHPUnit_Framework_TestCase {
+class EntityCollectionTest extends TestCase {
     public function testIncomplete()
     {    // Stop here and mark this test as incomplete.
         $this->markTestIncomplete(

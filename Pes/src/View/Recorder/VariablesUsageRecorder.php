@@ -18,23 +18,24 @@ namespace Pes\View\Recorder;
  */
 class VariablesUsageRecorder implements VariablesUsageRecorderInterface {
     
-    private $templateInfo;
+    private $info;
     private $undefinedVars;
     private $unusedVars;
     private $contextVars;
     
-    public function getTemplateInfo() {
-        return $this->templateInfo;
+    public function getRecordInfo() {
+        return $this->info;
     }
-
-    public function setTemplateInfo($templateInfo) {
-        $this->templateInfo = $templateInfo;
+    
+    public function setRecordInfo($info):VariablesUsageRecorderInterface {
+        $this->info = $info;
         return $this;
     }
 
         
-    public function addUndefinedVar($index, $name, $file='?', $line='?') {
-        $this->undefinedVars[$index][] = ['name'=>$name, 'file'=>$file, 'line'=>$line];        
+    public function addUndefinedVar($index, $name, $file='?', $line='?'):VariablesUsageRecorderInterface {
+        $this->undefinedVars[$index][] = ['name'=>$name, 'file'=>$file, 'line'=>$line]; 
+        return $this;
     }
 
     public function getUndefinedVars() {
@@ -49,12 +50,12 @@ class VariablesUsageRecorder implements VariablesUsageRecorderInterface {
         return $this->contextVars;
     }
 
-    public function setUnusedVars($index, $unusedVars) {
+    public function setUnusedVars($index, $unusedVars):VariablesUsageRecorderInterface {
         $this->unusedVars[$index] = $unusedVars;
         return $this;
     }
 
-    public function setContextVars($index, $contextVars) {
+    public function setContextVars($index, $contextVars):VariablesUsageRecorderInterface {
         $this->contextVars[$index] = $contextVars;
         return $this;
     }

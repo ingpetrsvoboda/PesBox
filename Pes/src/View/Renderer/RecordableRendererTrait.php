@@ -11,7 +11,7 @@
 
 namespace Pes\View\Renderer;
 
-use Pes\View\Recorder\VariablesUsageRecorderInterface;
+use Pes\View\Recorder\RecorderProviderInterface;
 
 /**
  *
@@ -20,19 +20,19 @@ use Pes\View\Recorder\VariablesUsageRecorderInterface;
 trait RecordableRendererTrait {
     
     /**
-     * @var VariablesUsageRecorderInterface ;
+     * @var RecorderProviderInterface ;
      */
-    private $variablesUsageRecorder;
+    protected $recorderProvider;
     
     /**
      * Metoda nastaví rekorder pro zaznamenávání informací u užití zadaných dat v šabloně v průbšhu renderování.
      * Záznam se provádí do zadaného rekorderu, který je možné po renderování získat metodou template objekt getVariablesUsageRecorder().
      *  
-     * @param VariablesUsageRecorderInterface $recorder
+     * @param RecorderProviderInterface $recorderProvider
      * @return $this
      */
-    public function setVariablesUsageRecorder(VariablesUsageRecorderInterface $recorder) {
-        $this->variablesUsageRecorder = $recorder;
+    public function setRecorderProvider(RecorderProviderInterface $recorderProvider) {
+        $this->recorderProvider = $recorderProvider;
         return $this;
     }
 
@@ -40,10 +40,10 @@ trait RecordableRendererTrait {
      * Vrací objekt se záznamem o užití proměnných šablony. Tento objekt vznikne a je naplněn informacemi v průběhu renderování, 
      * pokud byla před renderováním zavolána metoda setRecordVariableUsageInfo(TRUE).
      * 
-     * @return VariablesUsageRecorderInterface
+     * @return RecorderProviderInterface || NULL
      */
-    public function getVariablesUsageRecorder(): VariablesUsageRecorderInterface {
-        return $this->variablesUsageRecorder;
+    public function getRecorderProvider() {
+        return $this->recorderProvider;
     }
     
 }

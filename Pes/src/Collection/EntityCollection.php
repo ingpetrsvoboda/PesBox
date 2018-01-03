@@ -28,6 +28,17 @@ class EntityCollection extends CollectionAbstract implements EntityCollectionInt
     }
     
     /**
+     * Přidá do kolekce objekty zadané jako pole objektů.
+     * @param array $newArray
+     */
+    public function mergeArrayContent(array $newArray=[]) {
+        foreach ($newArray as $object) {
+            $this->set($object);
+        }
+        return $this;
+    } 
+    
+    /**
      * Metoda provede validaci parametru s použitím validátoru a pokud je parametr validní prvek, přidá jej do kolekce. Pokud ne, nedělá nic.
      * Pokud prvek je již v kolekco obsažen, metoda nahradí starý prvek novým.
      * 

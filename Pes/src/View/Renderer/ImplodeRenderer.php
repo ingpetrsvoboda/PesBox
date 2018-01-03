@@ -12,7 +12,7 @@
 namespace Pes\View\Renderer;
 
 /**
- * ImplodeRenderer pouze zřetězí data s použitím zadaného separátoru, pouýije php funkci implode().
+ * ImplodeRenderer pouze zřetězí data s použitím zadaného separátoru, použije php funkci implode().
  *
  * @author pes2704
  */

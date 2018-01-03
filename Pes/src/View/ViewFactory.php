@@ -12,24 +12,28 @@
 namespace Pes\View;
 
 //tyto deklarace jsou použity pro definování typu nově vytvářených view, rendereru a template
-use Pes\View\View as View;
-use Pes\View\StringableView as StringableView;
-use Pes\View\Renderer\RendererPhp as Renderer;
-use Pes\View\Template\TemplatePhp as Template;
+use Pes\View\View;
+use Pes\View\StringableView;
+use Pes\View\Renderer\RendererPhp;
+use Pes\View\Renderer\TagRenderer;
+use Pes\View\Template\TemplatePhp;
 
 //standartně užité deklarace
-use Pes\View\Recorder\VariablesUsageRecorder;
+use Psr\Log\LoggerInterface;
+use Pes\View\Recorder\RecorderProviderInterface;
+
+use Pes\View\Tag\TagInterface;
 use Pes\View\Renderer\RecordableRendererInterface;
 
 /**
  * Description of ViewFactory
  * 
  * Vytvoří nový view, nastaví mu nově vytvořený renderer a template. 
- * Typ view, rendereru a template je dán zadanými deklaracemi use uvedenými ve třídě ViewFactory. Zde jsou deklarována čtyři jména: 
- * View pro standartní view objekt
- * StringableView pro view objekt, který je typem StringableViewInterface a je tedy převoditený na string
- * Renderer pro renderer 
- * Template pro template objekt 
+ * Typ view, rendereru a template je dán zadanými deklaracemi use uvedenými ve třídě ViewFactory. Zde jsou deklarována čtyři jména: <br/>
+ * - View pro standartní view objekt<br/>
+ * - StringableView pro view objekt, který je typem StringableViewInterface a je tedy převoditený na string<br/>
+ * - Renderer pro renderer <br/>
+ * - Template pro template objekt <br/>
  * 
  * @author pes2704
  */
@@ -40,43 +44,48 @@ class ViewFactory {
      * Typ view je View::class.
      * 
      * @param type $templateFilename
+     * @param RecordLoggerInterface $recordLogger <p>Nastaví objekt pro logování informací o užití 
+     *      proměnných v šabloně. Pokud je nastaven a zde vytvářený template renderer je typu RecordableRendererInterface
+     *      poskytne tento RocordLogger rekorder a renderer zaznamená užití dat při renderování šablon.</p>
      * @return View
      */
-    public static function viewForTemplate($templateFilename, VariablesUsageRecorder $recorder=NULL) {
+    public static function viewWithTemplate($templateFilename, RecorderProviderInterface $recordLogger=NULL) {
         $viewClass = View::class;
-        $rendererClass = Renderer::class;
-        $templateClass = Template::class;
+        $rendererClass = RendererPhp::class;
+        $templateClass = TemplatePhp::class;
         
         $renderer = new $rendererClass(new $templateClass($templateFilename));
-        if (isset($recorder) AND $renderer instanceof RecordableRendererInterface) {
-            $renderer->setVariablesUsageRecorder($recorder);
+        if (isset($recordLogger) AND $renderer instanceof RecordableRendererInterface) {
+            $renderer->setVariablesUsageRecorder($recordLogger->provideRecorder());
         }
         return new $viewClass($renderer);
     }
     
     /**
-     * Vytvoří nový view, přímo přetypovatelný na text. Pokud jsou zadána data, nastaví tomuto view i data, to třeba, pokud zadaná čablona obsahuje proměnné. 
+     * Vytvoří nový view, přímo přetypovatelný na text. Pokud jsou zadána data, nastaví tomuto view i data, to je třeba, pokud zadaná šablona obsahuje proměnné. 
      * Vytvořený objekt view je vhodný jako proměnná do šablony nebo jako view pro node typu TextView.
      * 
      * Podrobně:
      * Vytvoří nový objekt view typu StringableViewInterface, nastaví mu nově vytvořený renderer a template. 
      * Typy view, rendereru a template jsou dány deklaracemi use uvedenými ve třídě ViewFactory. Metoda vytvořenému view nastaví 
-     * data potřebná pro renderování a případně i zaznamový objekt pro záznam o užití dat při renderování.
+     * data potřebná pro renderování a případně i záznamový objekt pro záznam o užití dat při renderování.
      * Výsledný view obsahuje vše potřebné pro renderování a lze ho kdykoli přetypovat na text. 
      * 
      * @param type $templateFilename
      * @param type $data
-     * @param VariablesUsageRecorder $recorder
+     * @param RecordLoggerInterface $recordLogger <p>Nastaví objekt pro logování informací o užití 
+     *      proměnných v šabloně. Pokud je nastaven a zde vytvářený template renderer je typu RecordableRendererInterface
+     *      poskytne tento RocordLogger rekorder a renderer zaznamená užití dat při renderování šablon.</p>
      * @return StringableView
      */
-    public static function stringableViewForTemplate($templateFilename, $data=[], VariablesUsageRecorder $recorder=NULL) {
+    public static function stringableViewWithTemplate($templateFilename, $data=[], RecorderProviderInterface $recordLogger=NULL) {
         $viewClass = StringableView::class;
-        $rendererClass = Renderer::class;
-        $templateClass = Template::class;
+        $rendererClass = RendererPhp::class;
+        $templateClass = TemplatePhp::class;
         
         $renderer = new $rendererClass(new $templateClass($templateFilename));
-        if (isset($recorder) AND $renderer instanceof RecordableRendererInterface) {
-            $renderer->setVariablesUsageRecorder($recorder);
+        if (isset($recordLogger) AND $renderer instanceof RecordableRendererInterface) {
+            $renderer->setVariablesUsageRecorder($recordLogger->provideRecorder());
         }
         
         $view = new $viewClass($renderer);
@@ -84,4 +93,14 @@ class ViewFactory {
 
         return $view;
     }    
+    
+    /**
+     * Vytvoří nový view a nastaví mu rendererer a zadaný tag.
+     * @param TagInterface $tag
+     * @return View
+     */
+    public static function viewWithTag(TagInterface $tag, RecorderProviderInterface $recorderProvider=NULL) {
+        $renderer = new TagRenderer($tag, $recorderProvider);
+        return new View($renderer);        
+    }
 }

@@ -144,12 +144,14 @@ trait TemplatePhpTrait {
      * @param mixed $value
      * @return type
      */
-    public function attribute($type, $value) {
-        if (isset($value) AND is_bool($value)) {
-            $attr = ' '.$type;
-        } else {
-            $attr = isset($value) ? ' '.$type.'="'.$value.'"' : '';
+    public function attributes(array $attributesArray) {
+        foreach ($attributesArray as $type => $value) {
+            if (is_bool($value)) {
+                $attr[] = $type;
+            } else {
+                $attr[] = $type.'="'.$value.'"';
+            }
         }
-        return $attr;
+        return implode(' ',$attr);
     }    
 }

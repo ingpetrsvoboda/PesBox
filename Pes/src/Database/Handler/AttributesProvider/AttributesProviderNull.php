@@ -9,12 +9,12 @@ use Pes\Database\Handler\ConnectionInfo;
  * Pro případ, kdy skutečně nechci nastavivat žádné atributy, je možno použít tento Attributes provider.
  * @author pes2704
  */
-class AttributesProviderNull implements AttributesProviderInterface {
+class AttributesProviderNull extends AttributesProviderAbstract {
 
     /**
      * @return array
      */
-    public static function getAttributesArray(ConnectionInfo $connectionInfo) {
-        return array();
+    public function getAttributesArray($attributes=[]) {
+        return $attributes;  
     }
 }

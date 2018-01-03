@@ -13,22 +13,28 @@ use Pes\Database\Handler\ConnectionInfoInterface;
 use Pes\Database\Handler\DsnProvider\DsnProviderInterface;
 use Pes\Database\Handler\OptionsProvider\OptionsProviderInterface;
 use Pes\Database\Handler\AttributesProvider\AttributesProviderInterface;
-use Pes\Database\Statement\CacheInterface;
+use Pes\Database\Statement\StatementInterface;
 use Psr\Log\LoggerInterface;
 
 class Handler extends \PDO implements HandlerInterface {
     
     /**
      *
-     * @var LoggerAwareInterface 
+     * @var LoggerInterface 
      */
     private $logger;
     
     /**
-     *
-     * @var CacheInterface
+     * Uschovaná hodnota pro identifikaci handleru při logování
+     * @var string
      */
-    private $statementCache;   
+    private $dbNick;
+    
+    /**
+     * Čítač instancí pro logování
+     * @var int 
+     */
+    private static $handlerCounter=0;
 
     /**
      * Konstruktor, přijímá povinné instanční proměnné objekty ConnectionInfo, DsnProvider, OptionsProvider, AttributesProvider a Logger. 
@@ -45,18 +51,17 @@ class Handler extends \PDO implements HandlerInterface {
      * @param OptionsProviderInterface $optionsProvider Provider poskytuje pole options pro nastavení options při vytváření Handleru (PDO).
      * @param AttributesProviderInterface $attributesProvider Provider poskytuje pole atributů pro nastavení atributů Handleru (PDO) po jeho vytvoření
      * @param LoggerInterface $logger Psr Logger
-     * @param CacheInterface $statementCache Cache pro ukládání vzniklých objektů Statement
      */
     public function __construct(ConnectionInfoInterface $connectionInfo, 
                                 DsnProviderInterface $dsnProvider,  
                                 OptionsProviderInterface $optionsProvider,
                                 AttributesProviderInterface $attributesProvider,
-                                LoggerInterface $logger,
-                                CacheInterface $statementCache = NULL
+                                LoggerInterface $logger
             ) {
-
+        self::$handlerCounter++;
+        $this->dbNick = $connectionInfo->getDbNick();
         $this->logger = $logger;
-        $this->statementCache = $statementCache;
+        
         // Z bezpečnostních důvodů connection info nemá getter pro pass a hodnota private vlastnosti pass se zde získává reflexí. 
         // Tato hodnota se předává přímo do PDO, v objektu se neukládá.
         $rc = new \ReflectionClass($connectionInfo);
@@ -64,7 +69,7 @@ class Handler extends \PDO implements HandlerInterface {
             $property = $rc->getProperty('pass');
         } catch (\ReflectionException $re) {
             // Pravděpodobně se změnilo jméno vlastnosti pass ve třídě ConnectionInfo
-            throw new \UnexpectedValueException('Nepodařilose získat skryté údaje z connection info.');
+            throw new \UnexpectedValueException('Nepodařilo se získat skryté údaje z connection info.');
         }
         $property->setAccessible(TRUE);
         $value = $property->getValue($connectionInfo);
@@ -72,31 +77,34 @@ class Handler extends \PDO implements HandlerInterface {
         
         // před voláním PDO nastaví vlastní exception handler
         set_exception_handler(array(__CLASS__, 'safeExceptionHandler'));
-        parent::__construct($dsnProvider::getDsn($connectionInfo), $connectionInfo->getUser(), $value, $optionsProvider::getOptionsArray($connectionInfo));      
+        parent::__construct($dsnProvider->getDsn($connectionInfo), $connectionInfo->getUser(), $value, $optionsProvider->getOptionsArray($connectionInfo));      
         // po volání PDO vrátí zpět předchozí exception handler
         restore_exception_handler();
         if ($attributesProvider) {
-            $this->setAttributes($attributesProvider::getAttributesArray($connectionInfo));
+            $this->setAttributes($attributesProvider->getAttributesArray());
         }
 
     }
     
     /**
-     * Metoda se pokusí nastavit handleru atributy voláním PDO metody setAttrinutes().
-     * Pokud se nepodaří některý atribut nastavit, metody vyhazuje výjimku.
+     * PRIVÁTNÍ Metoda se pokusí nastavit handleru atributy voláním PDO metody setAttrinutes().
+     * Pokud se nepodaří některý atribut nastavit, metoda vyhazuje výjimku.
      * Pokud výjimka nastala díky chybě 'SQLSTATE[IM001]: Driver does not support this function: driver does not support that attribute',
      * pak metoda doplní zprávu ve výjimce o podrobný důvod.
-     * @param \Pes\Database\Handler\Handler $handler
+     * 
+     * @param array $attributes
      * @throws \RuntimeException
      */
     private function setAttributes($attributes) {
         foreach ($attributes as $key => $value) {
-            $succ = $this->setAttribute($key, $value);            
+            $succ = $this->setAttribute($key, $value); 
             if (!$succ) {
-                $dump = $this->dumpPDOParameters($handler);
-                throw new \RuntimeException('Selhalo nastavení atributu '.$key.'. '.$dump);
+                $dump = $this->dumpPDOParameters();
+                $this->logger->alert($this->getInstanceInfo().' Selhalo nastavení hodnoty atributu handleru (PDO): {key} na hodnotu {value}', array('key'=>$key, 'value'=>print_r($dump, TRUE))); 
+                throw new \RuntimeException($this->getInstanceInfo().' Selhalo nastavení atributu '.$key.'. '.$dump);
             }
         }
+        $this->logger->info($this->getInstanceInfo().' Nastaveny hodnoty atributů handleru (PDO): {attributes}', array('attributes'=>print_r($attributes, TRUE)));            
     }
     
     /**
@@ -107,20 +115,20 @@ class Handler extends \PDO implements HandlerInterface {
      * 
      * @return string Výpis
      */
-    private function dumpPDOParameters(Handler $handler) {
+    private function dumpPDOParameters() {
         //TODO: pro PDO::PARAM_ v options
         
         // všechny PDO ATTR atributy
         $attributes = array(
-            "ATTR_AUTOCOMMIT", "ATTR_ERRMODE", "ATTR_CASE", "ATTR_CLIENT_VERSION", "ATTR_CONNECTION_STATUS",
-            "ATTR_ORACLE_NULLS", "ATTR_PERSISTENT", "ATTR_SERVER_INFO", "ATTR_SERVER_VERSION",
-//            "TIMEOUT"
+	 "ATTR_AUTOCOMMIT", "ATTR_CASE", "ATTR_CLIENT_VERSION", "ATTR_CONNECTION_STATUS", 
+         "ATTR_DRIVER_NAME", "ATTR_ERRMODE", "ATTR_ORACLE_NULLS", "ATTR_PERSISTENT",
+	 "ATTR_PREFETCH", "ATTR_SERVER_INFO", "ATTR_SERVER_VERSION", "ATTR_TIMEOUT"
         );
 
         foreach ($attributes as $attribute) {
             try {
-                $attr = $handler->getAttribute(constant("\PDO::$attribute"));
-                $dump[] = "PDO::$attribute: (atribut číslo ".constant("\PDO::_$attribute").") má hodnotu ".$attr;
+                $attr = $this->getAttribute(constant("\PDO::$attribute"));
+                $dump[] = "PDO::$attribute: (atribut číslo ".constant("\PDO::$attribute").") má hodnotu ".$attr;
             } catch (PDOException $pdoex) {
                 if (strpos($pdoex->getMessage, self::CATCHED_ERROR_MESSAGE) !== FALSE) {
                     $dump[] = "Použitý PHP interpret neakceptuje atribut PDO::$attribute";
@@ -133,12 +141,15 @@ class Handler extends \PDO implements HandlerInterface {
     }
     
     /**
-     * Exception handler obsluhuje pouze výjimky vyhozené v konstruktoru handleru - tedy výjimky PDO. Nezachycená výjimka PDO vede obvykle k výpisu výjimky 
-     * tak, že výpis vidí uživatel. Tento výpis obvykle obsahuje údaje o připojení. Zobrazování takového výpisu je zřejmé bezpečnostní riziko. 
-     * Nastevení obsluhy chyb PHP na vyhazování chyb místo výjimek nijak neovliní chování konstruktoru PDO - ten i nadále vyhazuje výjimky. 
+     * Bezpečnostní exception handler obsluhuje pouze výjimky vyhozené v konstruktoru handleru - tedy výjimky při instancování PDO. 
+     * 
+     * Nezachycená výjimka PDO vede obvykle k výpisu výjimky tak, že výpis vidí uživatel. Tento výpis obvykle obsahuje údaje o připojení. 
+     * Zobrazování takového výpisu je zřejmé bezpečnostní riziko. 
+     * 
+     * Nastavení obsluhy chyb PHP na vyhazování chyb místo výjimek nijak neovliní chování konstruktoru PDO - ten i nadále vyhazuje výjimky. 
      * Proto tato třída přidává jako bezpečnostní opatření svůj vlastní exception_handler, který zachycuje výjimky všech typů a hlásí 
-     * jen zákadní hlášení. Tento exception_handler musí být volán v konstruktoru této třídy před instancováním PDO poté je nahrazen zpět předtím 
-     * nastaveným exception handlerem.
+     * jen základní hlášení bez podrobnách informací. Tento exception_handler musí být volán v konstruktoru této třídy před instancováním PDO, 
+     * po instancování PDO je nahrazen zpět předtím nastaveným exception handlerem.
      * 
      * @param type $exception
      */
@@ -151,11 +162,20 @@ class Handler extends \PDO implements HandlerInterface {
             $i++;
         }
 
-        $this->logger->critical($exception->getMessage().\PHP_EOL.$exception->getTraceAsString().\PHP_EOL.$str2);
+        $this->logger->critical($this->getInstanceInfo().' '.$exception->getMessage().\PHP_EOL.$exception->getTraceAsString().\PHP_EOL.$str2);
 
         // Output the exception details
-        throw new \UnexpectedValueException('Problém s připojením k databázi - chyba v Handleru. Kontaktujte správce systému.');//. $exception->getMessage()); //????? getMessage
+        throw new \UnexpectedValueException($this->getInstanceInfo().' Problém s připojením k databázi - chyba v Handleru. Kontaktujte správce systému.');//. $exception->getMessage()); //????? getMessage
     } 
+    
+    /**
+     * Identifikace handleru pro logování
+     * @return type
+     */
+    private function getInstanceInfo() {
+        return 'Handler '.$this->dbNick.self::$handlerCounter;
+    }     
+
     /**
      * Metoda JE použita! 
      * Volána jako funkce v metodě safeExceptionHandler()
@@ -165,40 +185,35 @@ class Handler extends \PDO implements HandlerInterface {
     private static function varExport($param) {
         return var_export($param, TRUE);
     }
-    
-    /**
-     * Metoda mění adapter na kombinaci adapteru a wrapperu. Pro metody implementované v této třídě se objekt chová jako adapter, 
-     * volá se implementovaná metoda třídy. Pro neimplementované metody se volá metoda "obaleného" objektu, v tomto případě tedy metoda PDO.
-     * @param type $method
-     * @param array $arguments
-     * @return type
-     */
-    public function __call($method, array $arguments )
-    {
-        return \call_user_func_array(array($this, $method), $arguments);
-    } 
 
     /**
-     * Rozsiřuje funkčnost PDO prepare o možnost cachování připravených (prepare) objektů statement.
-     * @param string $sqlStatement SQL příkaz s případnými pojmenovanými nebo otazníkem značenými paramatery (SQL template
+     * {@inheritDoc}
+     * 
+     * @param string $sqlStatement SQL příkaz s případnými pojmenovanými nebo otazníkem značenými paramatery (SQL template)
      * @param type $driver_options
-     * @return type
+     * @return StatementInterface 
      */
     public function prepare($sqlStatement, $driver_options = array()) {
-        if ($this->statementCache) {
-            $signature = $sqlStatement.serialize($driver_options);
-            if ($this->statementCache->hasStatement($signature)) {
-                $sqlStatement = $this->statementCache->getStatement($signature);
-            } else {
-                $sqlStatement = parent::prepare($sqlStatement, $driver_options);
-                $this->statementCache->setStatement($signature, $sqlStatement);
-            }
+        if ($driver_options) {
+            $this->logger->debug($this->getInstanceInfo().' prepare({sqlStatement}, {driver_options})', array('sqlStatement'=>$sqlStatement, 'driver_options'=>$driver_options));            
         } else {
-            $sqlStatement = parent::prepare($sqlStatement, $driver_options);            
+            $this->logger->debug($this->getInstanceInfo().' prepare({sqlStatement})', array('sqlStatement'=>$sqlStatement));
         }
-        return $sqlStatement;
+        $prepStatement = parent::prepare($sqlStatement, $driver_options); 
+        return $prepStatement;
     }
-
+    
+    /**
+     * {@inheritDoc}
+     * 
+     * @param string $sqlStatement
+     * @return type
+     */
+    public function query(string $sqlStatement='') {
+        $this->logger->debug($this->getInstanceInfo().' query({sqlStatement})', array('sqlStatement'=>$sqlStatement));
+        return parent::query($sqlStatement);
+    }
+        
     ###############  METODY PRO DEBUG  ######################
     
     public function getDatabaseHandlerErrorInfo() {

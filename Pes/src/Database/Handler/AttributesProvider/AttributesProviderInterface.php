@@ -1,17 +1,16 @@
 <?php
 namespace Pes\Database\Handler\AttributesProvider;
 
-use Pes\Database\Handler\ConnectionInfo;
-
 /**
  *
  * @author pes2704
  */
 interface AttributesProviderInterface {
+
     /**
      * 
-     * @param Handler $handler Pro případnou vnitřní potřebu providera.
+     * @param array $attributes 
      */
-    public static function getAttributesArray(ConnectionInfo $connectionInfo);
+    public function getAttributesArray();
     
 }

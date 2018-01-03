@@ -1,10 +1,12 @@
 <?php
+use PHPUnit\Framework\TestCase;
+
 use Pes\Collection\SetCollection;
-use Pes\Validator\IsTypeValidator;
+use Pes\Validator\IsObjectTypeValidator;
 use Pes\Comparator\OrderComparator;
 use Pes\Comparator\SortComparator;
 use Pes\Query\Order;
-use Pes\Type\OrderingEnum;
+use Pes\Query\OrderingEnum;
 
 interface InterfaceForSetCollectionTest {
     
@@ -32,11 +34,11 @@ class EntitkaForSetCollectionTest {
  *
  * @author pes2704
  */
-class SetCollectionTest extends PHPUnit_Framework_TestCase {
+class SetCollectionTest extends TestCase {
     public function testConstructor() {
         $collection = new SetCollection();
         $this->assertInstanceOf('Pes\Collection\SetCollection', $collection);
-        $validator = new IsTypeValidator('InterfaceForSetCollectionTest');
+        $validator = new IsObjectTypeValidator('InterfaceForSetCollectionTest');
 //        $validatorMock = $this->getMockBuilder('IsTypeValidator')->getMock();
 //        $validatorMock->eexpects($this->any())-
         $collection = new SetCollection([], $validator);
@@ -54,7 +56,7 @@ class SetCollectionTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testSetWithValidation() {
-        $validator = new IsTypeValidator('InterfaceForSetCollectionTest');
+        $validator = new IsObjectTypeValidator('InterfaceForSetCollectionTest');
         $collection = new SetCollection([], $validator);        
         $validObj = new InterfacedObjectForSetCollectionTest();
         $invalidObj = new ObjectForSetCollectionTest();

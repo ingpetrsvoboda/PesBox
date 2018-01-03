@@ -1,7 +1,7 @@
 <?php
 namespace Pes\Query;
 
-use Pes\Type\OrderingEnum;
+use Pes\Query\OrderingEnum;
 /**
  *
  * @author pes2704

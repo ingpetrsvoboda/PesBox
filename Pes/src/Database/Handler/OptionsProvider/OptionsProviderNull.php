@@ -10,7 +10,7 @@ use Pes\Database\Handler\ConnectionInfo;
  * @author pes2704
  */
 final class OptionsProviderNull implements OptionsProviderInterface {
-    public static function getOptionsArray(ConnectionInfo $connectionInfo) { 
+    public function getOptionsArray(ConnectionInfo $connectionInfo) { 
         return array();
     }
 }

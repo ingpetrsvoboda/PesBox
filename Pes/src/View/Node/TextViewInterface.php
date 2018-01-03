@@ -11,15 +11,15 @@
 
 namespace Pes\View\Node;
 
-use Pes\View\Renderer\RendererPhp;
+use Pes\View\ViewInterface;
 
 /**
  *
  * @author pes2704
  */
-interface TextViewInterface extends TextInterface{
+interface TextViewInterface extends NodeInterface {
     /**
-     * @return RendererPhp 
+     * @return ViewInterface
      */
-    public function getView();
+    public function getView(): ViewInterface;
 }

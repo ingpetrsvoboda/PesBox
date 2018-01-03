@@ -1,4 +1,5 @@
 <?php
+use PHPUnit\Framework\TestCase;
 
 use Pes\Query\Matcher\LikeMatcher;
 
@@ -7,7 +8,7 @@ use Pes\Query\Matcher\LikeMatcher;
  *
  * @author pes2704
  */
-class LikeMatcherTest extends PHPUnit_Framework_TestCase {
+class LikeMatcherTest extends TestCase {
     /**
      * testuje x IN array
      */
