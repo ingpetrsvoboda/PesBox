@@ -1,0 +1,86 @@
+\hypertarget{class_aura_1_1_session_1_1_csrf_token}{}\section{Csrf\+Token Class Reference}
+\label{class_aura_1_1_session_1_1_csrf_token}\index{Csrf\+Token@{Csrf\+Token}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aura_1_1_session_1_1_csrf_token_a347e34d1cb670c60f952f61e00b1ab3e}{\+\_\+\+\_\+construct}} (Segment\+Interface \$segment, Random\+Value\+Interface \$randval)
+\item 
+\mbox{\hyperlink{class_aura_1_1_session_1_1_csrf_token_a72063d2e922edda5321b1970297eb0c3}{is\+Valid}} (\$value)
+\item 
+\mbox{\hyperlink{class_aura_1_1_session_1_1_csrf_token_ac0bc18784b182c89fcfd276625aef435}{get\+Value}} ()
+\item 
+\mbox{\hyperlink{class_aura_1_1_session_1_1_csrf_token_ab839d177349b3374a9348ad77f884f88}{regenerate\+Value}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_aura_1_1_session_1_1_csrf_token_a8894e3a0375b8470fd717113bea66940}\label{class_aura_1_1_session_1_1_csrf_token_a8894e3a0375b8470fd717113bea66940}} 
+{\bfseries \$randval}
+\item 
+\mbox{\Hypertarget{class_aura_1_1_session_1_1_csrf_token_a21bd0912596fa7de51f44e8bdaf74e83}\label{class_aura_1_1_session_1_1_csrf_token_a21bd0912596fa7de51f44e8bdaf74e83}} 
+{\bfseries \$segment}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_aura_1_1_session_1_1_csrf_token_a347e34d1cb670c60f952f61e00b1ab3e}\label{class_aura_1_1_session_1_1_csrf_token_a347e34d1cb670c60f952f61e00b1ab3e}} 
+\index{Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Segment\+Interface}]{\$segment,  }\item[{Random\+Value\+Interface}]{\$randval }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Segment\+Interface & {\em \$segment} & A segment for values in this class.\\
+\hline
+Randval\+Interface & {\em \$randval} & A cryptographically-\/secure random value generator. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_aura_1_1_session_1_1_csrf_token_ac0bc18784b182c89fcfd276625aef435}\label{class_aura_1_1_session_1_1_csrf_token_ac0bc18784b182c89fcfd276625aef435}} 
+\index{Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the value of the outgoing C\+S\+RF token.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aura_1_1_session_1_1_csrf_token_a72063d2e922edda5321b1970297eb0c3}\label{class_aura_1_1_session_1_1_csrf_token_a72063d2e922edda5321b1970297eb0c3}} 
+\index{Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}}
+\subsubsection{\texorpdfstring{is\+Valid()}{isValid()}}
+{\footnotesize\ttfamily is\+Valid (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Checks whether an incoming C\+S\+RF token value is valid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & The incoming token value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if valid, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aura_1_1_session_1_1_csrf_token_ab839d177349b3374a9348ad77f884f88}\label{class_aura_1_1_session_1_1_csrf_token_ab839d177349b3374a9348ad77f884f88}} 
+\index{Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}!regenerate\+Value@{regenerate\+Value}}
+\index{regenerate\+Value@{regenerate\+Value}!Aura\+::\+Session\+::\+Csrf\+Token@{Aura\+::\+Session\+::\+Csrf\+Token}}
+\subsubsection{\texorpdfstring{regenerate\+Value()}{regenerateValue()}}
+{\footnotesize\ttfamily regenerate\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Regenerates the value of the outgoing C\+S\+RF token.
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Session/vzory/Csrf\+Token.\+php\end{DoxyCompactItemize}

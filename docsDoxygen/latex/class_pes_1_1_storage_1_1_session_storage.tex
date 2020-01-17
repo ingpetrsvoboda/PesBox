@@ -1,0 +1,121 @@
+\hypertarget{class_pes_1_1_storage_1_1_session_storage}{}\section{Session\+Storage Class Reference}
+\label{class_pes_1_1_storage_1_1_session_storage}\index{Session\+Storage@{Session\+Storage}}
+Inheritance diagram for Session\+Storage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_storage_1_1_session_storage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_session_storage_af5ea6a083ddb07beb8a30dd32e309ceb}{get}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_session_storage_aa4c6a0b87c6e47fa6f863eedb300e707}{set}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_session_storage_aebff052f548656a86f5b9e0048a5c325}{remove}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_session_storage_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_storage_1_1_session_storage_ac93fbec81f07e5d15f80db907e63dc10}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_session_storage_a75b25196fbbf8f1fe25aa2f131e1418b}\label{class_pes_1_1_storage_1_1_session_storage_a75b25196fbbf8f1fe25aa2f131e1418b}} 
+const {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+A\+ME} = \textquotesingle{}S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+O\+R\+A\+GE\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Třída pro ukládání informací do session. Jedná se wrapper pro pole \$\+S\+E\+S\+S\+I\+ON, informace jsou ukládány do pole \$\+\_\+\+S\+E\+S\+S\+I\+ON poskytovaného P\+HP. Třída tak využívá standartní mechanizmus P\+HP pro session. Instance třídy je singleton a je vytvářena jen jedna pro jednu relaci (session).
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_session_storage_a421831a265621325e1fdd19aace0c758}\label{class_pes_1_1_storage_1_1_session_storage_a421831a265621325e1fdd19aace0c758}} 
+\index{Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destruktor Zavře session, nemaže proměnné session. Session je tak možné obnovit požději za běhu skriptu, například v jiném destruktoru. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_session_storage_af5ea6a083ddb07beb8a30dd32e309ceb}\label{class_pes_1_1_storage_1_1_session_storage_af5ea6a083ddb07beb8a30dd32e309ceb}} 
+\index{Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}!get@{get}}
+\index{get@{get}!Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Metoda přečte a vrátí hodnotu uloženou pod daným jménem (identifikátorem). 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Jméno (identifikátor) hodnoty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed/null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_storage_1_1_storage_interface}{Storage\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_session_storage_ac93fbec81f07e5d15f80db907e63dc10}\label{class_pes_1_1_storage_1_1_session_storage_ac93fbec81f07e5d15f80db907e63dc10}} 
+\index{Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Factory metoda třídy. Instance třídy je singleton a je vytvářena jen jedna pro jednu relaci (session). \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_session_storage_aebff052f548656a86f5b9e0048a5c325}\label{class_pes_1_1_storage_1_1_session_storage_aebff052f548656a86f5b9e0048a5c325}} 
+\index{Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}!remove@{remove}}
+\index{remove@{remove}!Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily remove (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Metoda odstraní (unset) hodnotu ze session. 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$name} & Jméno (identifikátor) hodnoty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Vrací N\+U\+LL. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_storage_1_1_storage_interface}{Storage\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_session_storage_aa4c6a0b87c6e47fa6f863eedb300e707}\label{class_pes_1_1_storage_1_1_session_storage_aa4c6a0b87c6e47fa6f863eedb300e707}} 
+\index{Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}!set@{set}}
+\index{set@{set}!Pes\+::\+Storage\+::\+Session\+Storage@{Pes\+::\+Storage\+::\+Session\+Storage}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Metoda uloží zadanou hodnotu pod jménem (identifikátorem). Metoda vrací poslední uloženou hodnotu 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Jméno (identifikátor) \\
+\hline
+mixed & {\em \$value} & Hodnota musí být serializovatelná. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_storage_1_1_storage_interface}{Storage\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Storage/Session\+Storage.\+php\end{DoxyCompactItemize}

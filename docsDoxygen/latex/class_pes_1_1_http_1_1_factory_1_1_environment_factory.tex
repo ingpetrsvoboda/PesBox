@@ -1,0 +1,95 @@
+\hypertarget{class_pes_1_1_http_1_1_factory_1_1_environment_factory}{}\section{Environment\+Factory Class Reference}
+\label{class_pes_1_1_http_1_1_factory_1_1_environment_factory}\index{Environment\+Factory@{Environment\+Factory}}
+Inheritance diagram for Environment\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_http_1_1_factory_1_1_environment_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_environment_factory_a0c9fd6ecd2d19d53bdbaa89c08428564}{create\+From\+Globals}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_environment_factory_aaf064f4cfd8fa6ba2e87755aa7f03b26}{create\+From\+Server\+Params}} (array \$server\+Params=array())
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_environment_factory_a33804929de8d2b0b9d198957b8ffaf0a}{create}} (array \$server\+Params, \$input\+Stream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_environment_factory}{Environment\+Factory}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_factory_1_1_environment_factory_a33804929de8d2b0b9d198957b8ffaf0a}\label{class_pes_1_1_http_1_1_factory_1_1_environment_factory_a33804929de8d2b0b9d198957b8ffaf0a}} 
+\index{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory}!create@{create}}
+\index{create@{create}!Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily create (\begin{DoxyParamCaption}\item[{array}]{\$server\+Params,  }\item[{}]{\$input\+Stream }\end{DoxyParamCaption})}
+
+\{Vytvoří objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} ze zadaného pole vstupních proměnných a zadaného streamu.
+
+Očekává pole vstupních proměnných s položkami, jaké jsou v poli \$\+\_\+\+S\+E\+R\+V\+ER. Očekává, že stream obsahuje body vstupního requestu.
+
+\$\+\_\+\+S\+E\+R\+V\+ER is an array containing information such as headers, paths, and script locations. The entries in this array are created by the web server. Pokud v poli \$\+\_\+\+S\+E\+R\+V\+ER neexistuje proměnná H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+A\+T\+I\+ON, metoda se pokusí získat hodnotu H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+A\+T\+I\+ON z H\+T\+TP hlavičky Authorization. Hlavičky získá P\+HP funkcí getallheaders() -\/ alias k apache\+\_\+request\+\_\+headers() -\/ pokud tato funkce existuje.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$server\+Params} & \\
+\hline
+Stream\+Interface & {\em \$input\+Stream} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}}
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_factory_1_1_environment_factory_interface_a33804929de8d2b0b9d198957b8ffaf0a}{Environment\+Factory\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_factory_1_1_environment_factory_a0c9fd6ecd2d19d53bdbaa89c08428564}\label{class_pes_1_1_http_1_1_factory_1_1_environment_factory_a0c9fd6ecd2d19d53bdbaa89c08428564}} 
+\index{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory}!create\+From\+Globals@{create\+From\+Globals}}
+\index{create\+From\+Globals@{create\+From\+Globals}!Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Globals()}{createFromGlobals()}}
+{\footnotesize\ttfamily create\+From\+Globals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\{Vytvoří objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} z superglobálního pole \$\+\_\+\+S\+E\+R\+V\+ER a streamu, který vytvoří jako kopii php\+://input.
+
+Očekává pole vstupních proměnných s položkami, jaké jsou v poli \$\+\_\+\+S\+E\+R\+V\+ER.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}}
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_factory_1_1_environment_factory_interface_a0c9fd6ecd2d19d53bdbaa89c08428564}{Environment\+Factory\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_factory_1_1_environment_factory_aaf064f4cfd8fa6ba2e87755aa7f03b26}\label{class_pes_1_1_http_1_1_factory_1_1_environment_factory_aaf064f4cfd8fa6ba2e87755aa7f03b26}} 
+\index{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory}!create\+From\+Server\+Params@{create\+From\+Server\+Params}}
+\index{create\+From\+Server\+Params@{create\+From\+Server\+Params}!Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Environment\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Server\+Params()}{createFromServerParams()}}
+{\footnotesize\ttfamily create\+From\+Server\+Params (\begin{DoxyParamCaption}\item[{array}]{\$server\+Params = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+\{Vytvoří objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} z pole vstupních proměnných a streamu, který vytvoří jako kopii php\+://input.
+
+Očekává pole vstupních proměnných s položkami, jaké jsou v poli \$\+\_\+\+S\+E\+R\+V\+ER.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$server\+Params} & \\
+\hline
+\end{DoxyParams}
+\} 
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_factory_1_1_environment_factory_interface_aaf064f4cfd8fa6ba2e87755aa7f03b26}{Environment\+Factory\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Factory/Environment\+Factory.\+php\end{DoxyCompactItemize}

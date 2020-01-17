@@ -1,0 +1,103 @@
+\hypertarget{class_pes_1_1_security_1_1_coder_1_1_coder}{}\section{Coder Class Reference}
+\label{class_pes_1_1_security_1_1_coder_1_1_coder}\index{Coder@{Coder}}
+Inheritance diagram for Coder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_security_1_1_coder_1_1_coder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_coder_1_1_coder_a93d0d504908584921e71e17e4bbf0924}{\+\_\+\+\_\+construct}} (\$encoding)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_coder_1_1_coder_a16f142f25f95700f25e05ae0f3b45377}{encode}} (\$plain\+Text)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_coder_1_1_coder_aa4be2a14b7ecb0e18e4fde52012f9a47}{decode}} (\$encoded\+Text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_security_1_1_coder_1_1_coder}{Coder}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_coder_1_1_coder_a93d0d504908584921e71e17e4bbf0924}\label{class_pes_1_1_security_1_1_coder_1_1_coder_a93d0d504908584921e71e17e4bbf0924}} 
+\index{Pes\+::\+Security\+::\+Coder\+::\+Coder@{Pes\+::\+Security\+::\+Coder\+::\+Coder}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Security\+::\+Coder\+::\+Coder@{Pes\+::\+Security\+::\+Coder\+::\+Coder}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$encoding }\end{DoxyParamCaption})}
+
+Kostruktor.
+
+Parametrem je typ kódování, což musí být hodnota, která je obsažena ve výčtovém typu \mbox{\hyperlink{class_pes_1_1_security_1_1_coder_1_1_enum_encoding}{Enum\+Encoding}}. Výčtový typ \mbox{\hyperlink{class_pes_1_1_security_1_1_coder_1_1_enum_encoding}{Enum\+Encoding}} definuje možné typy kódování používané touto třídou.
+
+Implementované typy kódování\+: Enum\+Encoding\+::\+B\+A\+S\+E64 = Kóduje metodou Base64 encoding Enum\+Encoding\+::\+H\+EX = Kóduje vstupní string jako hexadecimální string, horní byte jako první Enum\+Encoding\+::\+R\+AW = Bez kódování -\/ kopíruje vstupní text beze změny
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoding} & Zvolené kódování. Hodnota výčtového typu \mbox{\hyperlink{class_pes_1_1_security_1_1_coder_1_1_enum_encoding}{Enum\+Encoding}}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_coder_1_1_coder_aa4be2a14b7ecb0e18e4fde52012f9a47}\label{class_pes_1_1_security_1_1_coder_1_1_coder_aa4be2a14b7ecb0e18e4fde52012f9a47}} 
+\index{Pes\+::\+Security\+::\+Coder\+::\+Coder@{Pes\+::\+Security\+::\+Coder\+::\+Coder}!decode@{decode}}
+\index{decode@{decode}!Pes\+::\+Security\+::\+Coder\+::\+Coder@{Pes\+::\+Security\+::\+Coder\+::\+Coder}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily decode (\begin{DoxyParamCaption}\item[{}]{\$encoded\+Text }\end{DoxyParamCaption})}
+
+Rozkóduje zakódovaný text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoded\+Text} & Kódovaný text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Dekódovaný text. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_coder_1_1_coder_interface}{Coder\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_coder_1_1_coder_a16f142f25f95700f25e05ae0f3b45377}\label{class_pes_1_1_security_1_1_coder_1_1_coder_a16f142f25f95700f25e05ae0f3b45377}} 
+\index{Pes\+::\+Security\+::\+Coder\+::\+Coder@{Pes\+::\+Security\+::\+Coder\+::\+Coder}!encode@{encode}}
+\index{encode@{encode}!Pes\+::\+Security\+::\+Coder\+::\+Coder@{Pes\+::\+Security\+::\+Coder\+::\+Coder}}
+\subsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily encode (\begin{DoxyParamCaption}\item[{}]{\$plain\+Text }\end{DoxyParamCaption})}
+
+Zakóduje vstupní text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$plain\+Text} & Vstupní text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Kódovaný text. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_coder_1_1_coder_interface}{Coder\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Security/\+Coder/Coder.\+php\end{DoxyCompactItemize}

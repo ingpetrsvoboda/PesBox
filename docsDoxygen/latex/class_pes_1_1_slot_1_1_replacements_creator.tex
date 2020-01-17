@@ -1,0 +1,56 @@
+\hypertarget{class_pes_1_1_slot_1_1_replacements_creator}{}\section{Replacements\+Creator Class Reference}
+\label{class_pes_1_1_slot_1_1_replacements_creator}\index{Replacements\+Creator@{Replacements\+Creator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_slot_1_1_replacements_creator_a10b97abe25ad29223222b49048fd53eb}\label{class_pes_1_1_slot_1_1_replacements_creator_a10b97abe25ad29223222b49048fd53eb}} 
+{\bfseries \+\_\+\+\_\+construct} (\$slot\+Left, \$slot\+Right)
+\item 
+\mbox{\hyperlink{class_pes_1_1_slot_1_1_replacements_creator_a3fe43eb8955d537d4b1f34443a1d93da}{create\+From\+Array}} (array \$assotiative\+Array)
+\item 
+\mbox{\hyperlink{class_pes_1_1_slot_1_1_replacements_creator_a1257646460ed92c8cbcedd5ab45552c2}{create\+From\+Object}} ( \$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_slot_1_1_replacements_creator}{Replacements\+Creator}} Utilita pro vytváření pole replacements vhodného pro \mbox{\hyperlink{class_pes_1_1_slot_1_1_replacer}{Replacer}}. Vytváří pole replacemets z asociativního pole nebo z objektu s použitím zadaných značek začátku a konce slotu.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_slot_1_1_replacements_creator_a3fe43eb8955d537d4b1f34443a1d93da}\label{class_pes_1_1_slot_1_1_replacements_creator_a3fe43eb8955d537d4b1f34443a1d93da}} 
+\index{Pes\+::\+Slot\+::\+Replacements\+Creator@{Pes\+::\+Slot\+::\+Replacements\+Creator}!create\+From\+Array@{create\+From\+Array}}
+\index{create\+From\+Array@{create\+From\+Array}!Pes\+::\+Slot\+::\+Replacements\+Creator@{Pes\+::\+Slot\+::\+Replacements\+Creator}}
+\subsubsection{\texorpdfstring{create\+From\+Array()}{createFromArray()}}
+{\footnotesize\ttfamily create\+From\+Array (\begin{DoxyParamCaption}\item[{array}]{\$assotiative\+Array }\end{DoxyParamCaption})}
+
+Vytvoří pole pro záměnu slotů z asociativního pole. Z klíčů pole vytvoří klíče pole pro záměny tak, že vlavo přidá hodnoty použije jako hodnory pole pro záměny. Např. pro slot slot\+Left= \textquotesingle{}--\textquotesingle{} a slot\+Left=\textquotesingle{}\%--\textquotesingle{} a pro klíč asociativního pole co\+Dela\+To\+Zvire s hodnotou \textquotesingle{}kváká" vytvoří položku \textquotesingle{}--co\+Dela\+To\+Zvire\%--\textquotesingle{}=$>$\textquotesingle{}kváká\textquotesingle{}. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$assotiative\+Array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_slot_1_1_replacements_creator_a1257646460ed92c8cbcedd5ab45552c2}\label{class_pes_1_1_slot_1_1_replacements_creator_a1257646460ed92c8cbcedd5ab45552c2}} 
+\index{Pes\+::\+Slot\+::\+Replacements\+Creator@{Pes\+::\+Slot\+::\+Replacements\+Creator}!create\+From\+Object@{create\+From\+Object}}
+\index{create\+From\+Object@{create\+From\+Object}!Pes\+::\+Slot\+::\+Replacements\+Creator@{Pes\+::\+Slot\+::\+Replacements\+Creator}}
+\subsubsection{\texorpdfstring{create\+From\+Object()}{createFromObject()}}
+{\footnotesize\ttfamily create\+From\+Object (\begin{DoxyParamCaption}\item[{}]{\$object }\end{DoxyParamCaption})}
+
+Z objektu. Použije pouze public vlastnosti objektu 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Slot/Replacements\+Creator.\+php\end{DoxyCompactItemize}

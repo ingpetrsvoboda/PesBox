@@ -1,0 +1,74 @@
+\hypertarget{class_pes_1_1_router_1_1_router}{}\section{Router Class Reference}
+\label{class_pes_1_1_router_1_1_router}\index{Router@{Router}}
+Inheritance diagram for Router\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_router_1_1_router}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_router_1_1_router_a4d086b03f47931c183f0414bf2da5103}\label{class_pes_1_1_router_1_1_router_a4d086b03f47931c183f0414bf2da5103}} 
+{\bfseries \+\_\+\+\_\+construct} (Logger\+Interface \$logger=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_router_1_1_router_ae93c78e32bf28f47fa150a7278b71519}{add\+Route}} (\$method, \$url\+Pattern, callable \$action, \$name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_pes_1_1_router_1_1_router_aa6b44d5906fa3d97b3c9bd94a92df045}{route}} (Server\+Request\+Interface \$request)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_router_1_1_router}{Router}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_router_1_1_router_ae93c78e32bf28f47fa150a7278b71519}\label{class_pes_1_1_router_1_1_router_ae93c78e32bf28f47fa150a7278b71519}} 
+\index{Pes\+::\+Router\+::\+Router@{Pes\+::\+Router\+::\+Router}!add\+Route@{add\+Route}}
+\index{add\+Route@{add\+Route}!Pes\+::\+Router\+::\+Router@{Pes\+::\+Router\+::\+Router}}
+\subsubsection{\texorpdfstring{add\+Route()}{addRoute()}}
+{\footnotesize\ttfamily add\+Route (\begin{DoxyParamCaption}\item[{}]{\$method,  }\item[{}]{\$url\+Pattern,  }\item[{callable}]{\$action,  }\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & Existující hodnota výčtového typu \mbox{\hyperlink{class_pes_1_1_router_1_1_method_enum}{Method\+Enum}}. \\
+\hline
+string & {\em \$url\+Pattern} & U\+RL pattern \\
+\hline
+callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pes_1_1_router_1_1_router_aa6b44d5906fa3d97b3c9bd94a92df045}\label{class_pes_1_1_router_1_1_router_aa6b44d5906fa3d97b3c9bd94a92df045}} 
+\index{Pes\+::\+Router\+::\+Router@{Pes\+::\+Router\+::\+Router}!route@{route}}
+\index{route@{route}!Pes\+::\+Router\+::\+Router@{Pes\+::\+Router\+::\+Router}}
+\subsubsection{\texorpdfstring{route()}{route()}}
+{\footnotesize\ttfamily route (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request }\end{DoxyParamCaption})}
+
+Vybere objekt \mbox{\hyperlink{class_pes_1_1_router_1_1_route}{Route}} podle metody a url\+Pattern routy, přidá zadanému parametru \$request atribut je jménem \textquotesingle{}route\textquotesingle{}, do kterého vloží použitý objekt \mbox{\hyperlink{class_pes_1_1_router_1_1_route}{Route}} pro případné využití v akci routy (například v kontroléru), vykoná action routy a vrací návratovou hodnotu vrácenou action routy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_router_1_1_router_interface}{Router\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Router/Router.\+php\end{DoxyCompactItemize}

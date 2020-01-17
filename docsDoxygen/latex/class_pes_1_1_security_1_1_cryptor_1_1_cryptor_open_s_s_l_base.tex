@@ -1,0 +1,107 @@
+\hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base}{}\section{Cryptor\+Open\+S\+S\+L\+Base Class Reference}
+\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base}\index{Cryptor\+Open\+S\+S\+L\+Base@{Cryptor\+Open\+S\+S\+L\+Base}}
+Inheritance diagram for Cryptor\+Open\+S\+S\+L\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a77c2a2122cb5b976d6e40c704ea4b3b4}{\+\_\+\+\_\+construct}} (\$key, \$cipher\+Method=Enum\+Cipher\+Method\+::\+A\+E\+S256\+C\+BC, \$hash\+Method=Enum\+Key\+Hash\+Method\+::\+S\+H\+A256)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a1dd4de135736b6fb90d21c7f6f354909}{encrypt}} (\$plain\+Text)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a0d70e063189372896e31676e372c7eab}{decrypt}} (\$cipher\+Text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Upraveno z\+: \href{https://github.com/ioncube/php-openssl-cryptor/blob/master/cryptor.php}{\tt https\+://github.\+com/ioncube/php-\/openssl-\/cryptor/blob/master/cryptor.\+php}
+
+Třída pro šifrování a dešifrování. Používá openssl encrypt/decrypt funkce.
+
+\href{https://en.wikipedia.org/wiki/Authenticated_encryption}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Authenticated\+\_\+encryption}
+
+\href{https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Block\+\_\+cipher\+\_\+mode\+\_\+of\+\_\+operation} \href{https://en.wikipedia.org/wiki/CCM_mode}{\tt https\+://en.\+wikipedia.\+org/wiki/\+C\+C\+M\+\_\+mode} \href{https://crypto.stackexchange.com/questions/25249/where-is-the-authentication-tag-stored-in-file-encrypted-using-aes-gcm}{\tt https\+://crypto.\+stackexchange.\+com/questions/25249/where-\/is-\/the-\/authentication-\/tag-\/stored-\/in-\/file-\/encrypted-\/using-\/aes-\/gcm}
+
+Pro A\+ES -\/128, -\/192, -\/256 Zdá se, že na délce moc nezáleží, 256 asi není bezpečnější než kratší díky \char`\"{}špatnému uspořádání bitů\char`\"{} ve variantě 256 (??) Zřejmě nejvhodnější metody jsou A\+E\+S-\/256-\/\+G\+CM (až od P\+HP 7.\+1), A\+E\+S-\/256-\/\+C\+TR nebo A\+E\+S-\/256-\/\+C\+BC, utčitě nebezpečná je varianta E\+CB. Musí být náhodně generován iv pro každou zprávu! Musí být ověřena integrita zprávy -\/ mohlo dojít k manipulaci man in the middle -\/ zprávu je třaba tzv. autentizovat. Přidává se ke zprávě Message Authentication Code (M\+AC) -\/ řetězec, který závisí na zprávě a na klíči. M\+AC je třeba přidat takto\+: Encrypt then M\+AC\+: encrypt the plaintext, compute the M\+AC of the ciphertext, and append the M\+AC of the ciphertext to the ciphertext. Klíč -\/ možná\+: you want binary strings, not human-\/readabale strings, for your keys -\/ např. hex2bin(\textquotesingle{}000102030405060708090a0b0c0d0e0f1011121314151617181‌​91a1b1c1d1e1f\textquotesingle{})
+
+\href{https://stackoverflow.com/questions/9262109/simplest-two-way-encryption-using-php}{\tt https\+://stackoverflow.\+com/questions/9262109/simplest-\/two-\/way-\/encryption-\/using-\/php} (Scott Arciszewski) \href{https://tonyarcieri.com/all-the-crypto-code-youve-ever-written-is-probably-broken}{\tt https\+://tonyarcieri.\+com/all-\/the-\/crypto-\/code-\/youve-\/ever-\/written-\/is-\/probably-\/broken} \href{https://crypto.stackexchange.com/questions/6523/what-is-the-difference-between-mac-and-hmac}{\tt https\+://crypto.\+stackexchange.\+com/questions/6523/what-\/is-\/the-\/difference-\/between-\/mac-\/and-\/hmac} knihovna\+: \href{https://github.com/defuse/php-encryption}{\tt https\+://github.\+com/defuse/php-\/encryption} Available under the M\+IT License
+
+The M\+IT License (M\+IT) Copyright (c) 2016 ion\+Cube Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a77c2a2122cb5b976d6e40c704ea4b3b4}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a77c2a2122cb5b976d6e40c704ea4b3b4}} 
+\index{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$cipher\+Method = {\ttfamily EnumCipherMethod\+:\+:AES256CBC},  }\item[{}]{\$hash\+Method = {\ttfamily EnumKeyHashMethod\+:\+:SHA256} }\end{DoxyParamCaption})}
+
+Konstruktor bázové třídy -\/ defaultně používá aes256 šifrování -\/ mód A\+E\+S256\+C\+BC, sha256 pro hash klíče, base64 kódování výstupního řetězce.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cipher\+Method} & Šifrovací metoda. \\
+\hline
+string & {\em \$hash\+Method} & Metoda pro hashování klíče. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a0d70e063189372896e31676e372c7eab}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a0d70e063189372896e31676e372c7eab}} 
+\index{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily decrypt (\begin{DoxyParamCaption}\item[{}]{\$cipher\+Text }\end{DoxyParamCaption})}
+
+Decrypt a string. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cipher\+Text} & String to decrypt. \\
+\hline
+int & {\em \$fmt} & Optional override for the input encoding. One of F\+O\+R\+M\+A\+T\+\_\+\+R\+AW, F\+O\+R\+M\+A\+T\+\_\+\+B64 or F\+O\+R\+M\+A\+T\+\_\+\+H\+EX. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The decrypted string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_cryptor_1_1_cryptor_interface}{Cryptor\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a1dd4de135736b6fb90d21c7f6f354909}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_open_s_s_l_base_a1dd4de135736b6fb90d21c7f6f354909}} 
+\index{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Open\+S\+S\+L\+Base}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily encrypt (\begin{DoxyParamCaption}\item[{}]{\$plain\+Text }\end{DoxyParamCaption})}
+
+Šifruje vstupní text. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plain\+Text} & Vstupní text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The encrypted string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_cryptor_1_1_cryptor_interface}{Cryptor\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Security/\+Cryptor/Cryptor\+Open\+S\+S\+L\+Base.\+php\end{DoxyCompactItemize}

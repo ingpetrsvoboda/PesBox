@@ -1,0 +1,31 @@
+[info] [2018-12-30 13:01:37]Start logger: Logs/Errors/ErrorsLogger.log.
+[warning] E_USER_WARNING [512] [2018-12-30 13:01:37] Session data byla smazána, došlo ke změně fingerprintu. on line 161 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Session\SessionHandler.php
+[info] [2019-01-13 10:16:45]Start logger: Logs/Errors/ErrorsLogger.log.
+[warning] E_USER_WARNING [512] [2019-01-13 10:16:45] Session data byla smazána, došlo ke změně fingerprintu. on line 160 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Session\SessionStatusHandler.php
+[info] [2019-01-13 10:32:16]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-13 10:32:16] Undefined property: Pes\Http\Cookies\RequestCookies::$extractFromCookieHeader on line 74 in file C:\xampp\htdocs\PesBox\testApplication\index.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-13 10:32:37] Undefined property: Pes\Http\Cookies\RequestCookies::$extractFromCookieHeader on line 77 in file C:\xampp\htdocs\PesBox\testApplication\index.php
+[info] [2019-01-13 10:33:05]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-13 10:33:05] Undefined property: Pes\Http\Cookies\RequestCookies::$extractFromCookieHeader on line 74 in file C:\xampp\htdocs\PesBox\testApplication\index.php
+[info] [2019-01-13 21:11:19]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-13 21:11:19] Undefined property: Pes\Http\Cookies\RequestCookies::$extractFromCookieHeader on line 74 in file C:\xampp\htdocs\PesBox\testApplication\index.php
+[info] [2019-01-15 00:00:40]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:00:40] Undefined property: Pes\Http\Cookies\ResponseCookie::$getName on line 123 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:00:40] Undefined variable: attribute on line 132 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:00:41] Undefined property: Pes\Http\Cookies\ResponseCookie::$getName on line 123 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:00:41] Undefined variable: attribute on line 132 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:00:41] Undefined property: Pes\Http\Cookies\ResponseCookie::$getName on line 123 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:00:41] Undefined variable: attribute on line 132 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:00:41] Undefined variable: responseCookie on line 82 in file C:\xampp\htdocs\PesBox\testApplication\index.php
+[info] [2019-01-15 00:06:27]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-15 00:06:27] Undefined variable: responseCookie on line 82 in file C:\xampp\htdocs\PesBox\testApplication\index.php
+[info] [2019-01-17 09:50:27]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-01-17 09:50:27] array_replace(): Argument #3 is not an array on line 124 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-01-17 09:50:29] array_replace(): Argument #3 is not an array on line 124 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-01-17 09:50:30] array_replace(): Argument #3 is not an array on line 124 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php
+[info] [2019-01-17 09:51:56]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-01-17 09:51:56] array_replace(): Argument #3 is not an array on line 124 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-01-17 09:51:57] array_replace(): Argument #3 is not an array on line 124 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-01-17 09:51:58] array_replace(): Argument #3 is not an array on line 124 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php
+[info] [2019-01-19 23:09:24]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-01-19 23:09:24] Undefined variable: attributes on line 148 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php

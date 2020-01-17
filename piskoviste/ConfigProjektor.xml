@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Konfigurační informace aplikace
+-->
+<root>
+    <export>
+        <pdf>
+            <directory>C:/_Export Projektor/PDF/</directory>
+        </pdf>
+    </export>
+    <directories>
+        <twigtemplates>./Projektor/Templates/Twig</twigtemplates>
+        <twigcache>./Projektor/Templates/Twig/Cache</twigcache>
+        <phptaltemplates>./Projektor/Templates/Phptal</phptaltemplates>
+        <phptemplates>./Projektor/Templates/Php</phptemplates>
+    </directories>
+    <auth>
+        <useauthcookie>1</useauthcookie>
+    </auth>
+    <autocode>
+        <dbfieldprefix>dbField°</dbfieldprefix>
+        <objectidname>id</objectidname>
+        <autocodeStart>###START_AUTOCODE</autocodeStart>
+        <autocodeEnd>###END_AUTOCODE</autocodeEnd>
+    </autocode>
+    <database>
+        <connectioninfo name='Projektor'>
+            <user>root</user>
+            <pass>spravce</pass>
+            <dbhost>localhost</dbhost>
+            <dbschema>projektor_3_1</dbschema>
+            <dbtype>MySQL</dbtype>
+        </connectioninfo>
+        <connectioninfo name='InformationSchema'>
+            <user>root</user>
+            <pass>spravce</pass>
+            <dbhost>localhost</dbhost>
+            <dbschema>information_schema</dbschema>
+            <dbtype>MySQL</dbtype>
+        </connectioninfo>
+        <connectioninfo name='PersonalService'>
+            <user>root</user>
+            <pass>spravce</pass>
+            <dbhost>localhost</dbhost>
+            <dbschema>personalservice_web</dbschema>
+            <dbtype>MySQL</dbtype>
+        </connectioninfo>
+        <connectioninfo name='test_projektor'>
+            <user>root</user>
+            <pass>spravce</pass>
+            <dbhost>NB-SVOBODA\SQLEXPRESS2008</dbhost>
+            <dbschema>test_projektor</dbschema>
+            <dbtype>MSSQL</dbtype>
+        </connectioninfo>
+    </database>
+</root>

@@ -1,0 +1,241 @@
+\hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface}{}\section{P\+D\+O\+Interface Interface Reference}
+\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface}\index{P\+D\+O\+Interface@{P\+D\+O\+Interface}}
+Inheritance diagram for P\+D\+O\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af212c3950522906fe864096a27c24156}{prepare}} (\$statement, \$driver\+\_\+options=array())
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af3380f3b13931d581fa973a382946b32}{begin\+Transaction}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af5674c27d4a92f6228565010eacbb9cb}{commit}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aebaea4cae21e0e75ec1489c1648caeb3}{roll\+Back}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aaf34a959f7c26d1f97713adab5a6c429}{in\+Transaction}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aa4ddbee482d43ef83316a45744be018e}{set\+Attribute}} (\$attribute, \$value)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aa14a8f8ef2c7ed2b8985d28b336941c9}{exec}} (\$statement)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a8dbd35d765e8ff0d1c34461ef67c5abf}{query}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a9f9cb8ca720d7bbcb03869def521336e}{last\+Insert\+Id}} (\$name=null)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a928a98b280c4dd8971ce6998eb157409}{error\+Code}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ac5230ce6cd46c5e922146a441d807877}{error\+Info}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ac8ff6f1aa68f8462ac6c3593c8071cc6}{get\+Attribute}} (\$attribute)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a974d5921d0480c64f94c09994b8c0b48}{quote}} (\$string, \$parameter\+\_\+type=P\+D\+O\+::\+P\+A\+R\+A\+M\+\_\+\+S\+TR)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ad9bdac1c5dfa2d96210795e7711b8b93}{get\+Available\+Drivers}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af3380f3b13931d581fa973a382946b32}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af3380f3b13931d581fa973a382946b32}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!begin\+Transaction@{begin\+Transaction}}
+\index{begin\+Transaction@{begin\+Transaction}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{begin\+Transaction()}{beginTransaction()}}
+{\footnotesize\ttfamily begin\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Initiates a transaction \mbox{\hyperlink{}{bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure. }}
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af3380f3b13931d581fa973a382946b32}{Nested\+Transaction\+Handler}}.
+
+\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af5674c27d4a92f6228565010eacbb9cb}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af5674c27d4a92f6228565010eacbb9cb}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!commit@{commit}}
+\index{commit@{commit}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Commits a transaction \mbox{\hyperlink{}{bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure. }}
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af5674c27d4a92f6228565010eacbb9cb}{Nested\+Transaction\+Handler}}.
+
+\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a928a98b280c4dd8971ce6998eb157409}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a928a98b280c4dd8971ce6998eb157409}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!error\+Code@{error\+Code}}
+\index{error\+Code@{error\+Code}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{error\+Code()}{errorCode()}}
+{\footnotesize\ttfamily error\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Fetch the S\+Q\+L\+S\+T\+A\+TE associated with the last operation on the database handle \mbox{\hyperlink{}{mixed an S\+Q\+L\+S\+T\+A\+TE, a five characters alphanumeric identifier defined in the A\+N\+SI S\+Q\+L-\/92 standard. Briefly, an S\+Q\+L\+S\+T\+A\+TE consists of a two characters class value followed by a three characters subclass value. A class value of 01 indicates a warning and is accompanied by a return code of S\+Q\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+W\+I\+T\+H\+\_\+\+I\+N\+FO. Class values other than \textquotesingle{}01\textquotesingle{}, except for the class \textquotesingle{}IM\textquotesingle{}, indicate an error. The class \textquotesingle{}IM\textquotesingle{} is specific to warnings and errors that derive from the implementation of P\+DO (or perhaps O\+D\+BC, if you\textquotesingle{}re using the O\+D\+BC driver) itself. The subclass value \textquotesingle{}000\textquotesingle{} in any class indicates that there is no subclass for that S\+Q\+L\+S\+T\+A\+TE. }} 
+
+{\bfseries P\+D\+O\+::error\+Code} only retrieves error codes for operations performed directly on the database handle. If you create a P\+D\+O\+Statement object through {\bfseries P\+D\+O\+::prepare} or {\bfseries P\+D\+O\+::query} and invoke an error on the statement handle, {\bfseries P\+D\+O\+::error\+Code} will not reflect that error. You must call {\bfseries P\+D\+O\+Statement\+::error\+Code} to return the error code for an operation performed on a particular statement handle. 
+
+Returns {\bfseries N\+U\+LL} if no operation has been run on the database handle. \mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ac5230ce6cd46c5e922146a441d807877}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ac5230ce6cd46c5e922146a441d807877}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!error\+Info@{error\+Info}}
+\index{error\+Info@{error\+Info}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{error\+Info()}{errorInfo()}}
+{\footnotesize\ttfamily error\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Fetch extended error information associated with the last operation on the database handle \mbox{\hyperlink{}{array {\bfseries P\+D\+O\+::error\+Info} returns an array of error information about the last operation performed by this database handle. The array consists of the following fields\+: }} 
+
+Element 
+
+Information  
+
+0 
+
+S\+Q\+L\+S\+T\+A\+TE error code (a five characters alphanumeric identifier defined in the A\+N\+SI S\+QL standard).  
+
+1 
+
+Driver-\/specific error code.  
+
+2 
+
+Driver-\/specific error message.  
+
+If the S\+Q\+L\+S\+T\+A\+TE error code is not set or there is no driver-\/specific error, the elements following element 0 will be set to {\bfseries N\+U\+LL}. 
+
+{\bfseries P\+D\+O\+::error\+Info} only retrieves error information for operations performed directly on the database handle. If you create a P\+D\+O\+Statement object through {\bfseries P\+D\+O\+::prepare} or {\bfseries P\+D\+O\+::query} and invoke an error on the statement handle, {\bfseries P\+D\+O\+::error\+Info} will not reflect the error from the statement handle. You must call {\bfseries P\+D\+O\+Statement\+::error\+Info} to return the error information for an operation performed on a particular statement handle. \mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aa14a8f8ef2c7ed2b8985d28b336941c9}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aa14a8f8ef2c7ed2b8985d28b336941c9}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!exec@{exec}}
+\index{exec@{exec}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily exec (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Execute an S\+QL statement and return the number of affected rows \mbox{\hyperlink{}{string \$statement }} The S\+QL statement to prepare and execute. 
+
+Data inside the query should be properly escaped. 
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries P\+D\+O\+::exec} returns the number of rows that were modified or deleted by the S\+QL statement you issued. If no rows were affected, {\bfseries P\+D\+O\+::exec} returns 0. 
+\end{DoxyReturn}
+This function may return Boolean {\bfseries F\+A\+L\+SE}, but may also return a non-\/\+Boolean value which evaluates to {\bfseries F\+A\+L\+SE}. Please read the section on Booleans for more information. Use the === operator for testing the return value of this function. 
+
+The following example incorrectly relies on the return value of {\bfseries P\+D\+O\+::exec}, wherein a statement that affected 0 rows results in a call to {\bfseries die}\+: {\ttfamily  \$db-\/$>$\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aa14a8f8ef2c7ed2b8985d28b336941c9}{exec()}} or die(print\+\_\+r(\$db-\/$>$\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ac5230ce6cd46c5e922146a441d807877}{error\+Info()}}, true)); } \mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ac8ff6f1aa68f8462ac6c3593c8071cc6}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ac8ff6f1aa68f8462ac6c3593c8071cc6}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!get\+Attribute@{get\+Attribute}}
+\index{get\+Attribute@{get\+Attribute}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{get\+Attribute()}{getAttribute()}}
+{\footnotesize\ttfamily get\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+2.\+0)~\newline
+ Retrieve a database connection attribute \mbox{\hyperlink{}{int \$attribute }} One of the P\+D\+O\+::\+A\+T\+T\+R\+\_\+$\ast$ constants. The constants that apply to database connections are as follows\+: P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+C\+A\+SE P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+V\+E\+R\+S\+I\+ON P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+US P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+ME P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+E\+R\+R\+M\+O\+DE P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+O\+R\+A\+C\+L\+E\+\_\+\+N\+U\+L\+LS P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+NT P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+P\+R\+E\+F\+E\+T\+CH P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+FO P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+V\+E\+R\+S\+I\+ON P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+T\+I\+M\+E\+O\+UT 
+
+\begin{DoxyReturn}{Returns}
+mixed A successful call returns the value of the requested P\+DO attribute. An unsuccessful call returns null. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ad9bdac1c5dfa2d96210795e7711b8b93}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_ad9bdac1c5dfa2d96210795e7711b8b93}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!get\+Available\+Drivers@{get\+Available\+Drivers}}
+\index{get\+Available\+Drivers@{get\+Available\+Drivers}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{get\+Available\+Drivers()}{getAvailableDrivers()}}
+{\footnotesize\ttfamily static get\+Available\+Drivers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+(P\+HP 5 $>$= 5.\+1.\+3, P\+HP 7, P\+E\+CL pdo $>$= 1.\+0.\+3)~\newline
+ Return an array of available P\+DO drivers \mbox{\hyperlink{}{array {\bfseries P\+D\+O\+::get\+Available\+Drivers} returns an array of P\+DO driver names. If no drivers are available, it returns an empty array. }}\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aaf34a959f7c26d1f97713adab5a6c429}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aaf34a959f7c26d1f97713adab5a6c429}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!in\+Transaction@{in\+Transaction}}
+\index{in\+Transaction@{in\+Transaction}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{in\+Transaction()}{inTransaction()}}
+{\footnotesize\ttfamily in\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+3.\+3, Bundled pdo\+\_\+pgsql, P\+HP 7)~\newline
+ Checks if inside a transaction \mbox{\hyperlink{}{bool {\bfseries T\+R\+UE} if a transaction is currently active, and {\bfseries F\+A\+L\+SE} if not. }}\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a9f9cb8ca720d7bbcb03869def521336e}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a9f9cb8ca720d7bbcb03869def521336e}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!last\+Insert\+Id@{last\+Insert\+Id}}
+\index{last\+Insert\+Id@{last\+Insert\+Id}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{last\+Insert\+Id()}{lastInsertId()}}
+{\footnotesize\ttfamily last\+Insert\+Id (\begin{DoxyParamCaption}\item[{}]{\$name = {\ttfamily null} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Returns the ID of the last inserted row or sequence value \mbox{\hyperlink{}{string \$name \mbox{[}optional\mbox{]} }} Name of the sequence object from which the ID should be returned. 
+
+\begin{DoxyReturn}{Returns}
+string If a sequence name was not specified for the {\itshape name} parameter, {\bfseries P\+D\+O\+::last\+Insert\+Id} returns a string representing the row ID of the last row that was inserted into the database. 
+\end{DoxyReturn}
+
+
+If a sequence name was specified for the {\itshape name} parameter, {\bfseries P\+D\+O\+::last\+Insert\+Id} returns a string representing the last value retrieved from the specified sequence object. 
+
+If the P\+DO driver does not support this capability, {\bfseries P\+D\+O\+::last\+Insert\+Id} triggers an I\+M001 S\+Q\+L\+S\+T\+A\+TE. \mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af212c3950522906fe864096a27c24156}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af212c3950522906fe864096a27c24156}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!prepare@{prepare}}
+\index{prepare@{prepare}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily prepare (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$driver\+\_\+options = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Statement\+Interface (P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Prepares a statement for execution and returns a statement object \mbox{\hyperlink{}{string \$statement }} This must be a valid S\+QL statement template for the target database server. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$driver\+\_\+options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This array holds one or more key=$>$value pairs to set attribute values for the P\+D\+O\+Statement object that this method returns. You would most commonly use this to set the P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+C\+U\+R\+S\+OR value to P\+D\+O\+::\+C\+U\+R\+S\+O\+R\+\_\+\+S\+C\+R\+O\+LL to request a scrollable cursor. Some drivers have driver specific options that may be set at prepare-\/time. 
+
+\begin{DoxyReturn}{Returns}
+Statement\+Interface If the database server successfully prepares the statement, returned type differs from P\+DO object. Returns Pes. {\bfseries P\+D\+O\+::prepare} returns a {\bfseries Statement\+Interface} object. If the database server cannot successfully prepare the statement, {\bfseries P\+D\+O\+::prepare} returns {\bfseries F\+A\+L\+SE} or emits {\bfseries P\+D\+O\+Exception} (depending on error handling). 
+\end{DoxyReturn}
+
+
+Emulated prepared statements does not communicate with the database server so {\bfseries P\+D\+O\+::prepare} does not check the statement. 
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler_a813f4f79dd359e1e6f4f45263868a8f4}{Handler}}.
+
+\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a8dbd35d765e8ff0d1c34461ef67c5abf}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a8dbd35d765e8ff0d1c34461ef67c5abf}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!query@{query}}
+\index{query@{query}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+2.\+0)~\newline
+ Executes an S\+QL statement, returning a result set as a P\+D\+O\+Statement object \mbox{\hyperlink{}{string \$statement }} The S\+QL statement to prepare and execute. 
+
+Data inside the query should be properly escaped. 
+
+\begin{DoxyReturn}{Returns}
+P\+D\+O\+Statement {\bfseries P\+D\+O\+::query} returns a P\+D\+O\+Statement object, or {\bfseries F\+A\+L\+SE} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a974d5921d0480c64f94c09994b8c0b48}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_a974d5921d0480c64f94c09994b8c0b48}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!quote@{quote}}
+\index{quote@{quote}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{quote()}{quote()}}
+{\footnotesize\ttfamily quote (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$parameter\+\_\+type = {\ttfamily PDO\+:\+:PARAM\+\_\+STR} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+2.\+1)~\newline
+ Quotes a string for use in a query. \mbox{\hyperlink{}{string \$string }} The string to be quoted. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$parameter\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Provides a data type hint for drivers that have alternate quoting styles. 
+
+\begin{DoxyReturn}{Returns}
+string a quoted string that is theoretically safe to pass into an S\+QL statement. Returns {\bfseries F\+A\+L\+SE} if the driver does not support quoting in this way. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aebaea4cae21e0e75ec1489c1648caeb3}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aebaea4cae21e0e75ec1489c1648caeb3}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!roll\+Back@{roll\+Back}}
+\index{roll\+Back@{roll\+Back}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{roll\+Back()}{rollBack()}}
+{\footnotesize\ttfamily roll\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Rolls back a transaction \mbox{\hyperlink{}{bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure. }}\mbox{\Hypertarget{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aa4ddbee482d43ef83316a45744be018e}\label{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_aa4ddbee482d43ef83316a45744be018e}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}!set\+Attribute@{set\+Attribute}}
+\index{set\+Attribute@{set\+Attribute}!Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface@{Pes\+::\+Database\+::\+Handler\+::\+P\+D\+O\+Interface}}
+\subsubsection{\texorpdfstring{set\+Attribute()}{setAttribute()}}
+{\footnotesize\ttfamily set\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Set an attribute \mbox{\hyperlink{}{int \$attribute  mixed \$value  bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure. }}
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/P\+D\+O\+Interface.\+php\end{DoxyCompactItemize}

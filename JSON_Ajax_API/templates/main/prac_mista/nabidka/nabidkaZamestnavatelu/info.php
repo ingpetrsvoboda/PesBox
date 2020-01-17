@@ -1,0 +1,1 @@
+                                <?= "<a class='vypis-odkaz' href=\"http://$www\" target=\"blank\">$nazev</a>" ?>

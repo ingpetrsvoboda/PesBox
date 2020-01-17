@@ -1,0 +1,5 @@
+[info] [2019-05-16 23:16:01] Logger start. Log file: Logs/SessionLogger.log.
+[debug] Session save handler: open(C:\xampp\tmp, Test_Pes_Session) - success:1
+[debug] Session save handler: read(jc1fqamr1lenmjn3vuipgrlabh) - success:__session_handler_vars|a:5:{s:6:"is_new";b:0;s:13:"creation_time";i:1557523906;s:11:"fingerprint";s:40:"64f59efb87dbdb06a869cf4460d83cf1b25c83f5";s:19:"previous_start_time";i:1558041360;s:18:"current_start_time";i:1558041361;}test|a:2:{s:5:"count";i:5;s:4:"time";s:19:"23:16:01 16.05.2019";}
+[debug] Session save handler: write(jc1fqamr1lenmjn3vuipgrlabh, __session_handler_vars|a:5:{s:6:"is_new";b:0;s:13:"creation_time";i:1557523906;s:11:"fingerprint";s:40:"64f59efb87dbdb06a869cf4460d83cf1b25c83f5";s:19:"previous_start_time";i:1558041361;s:18:"current_start_time";i:1558041361;}test|a:2:{s:5:"count";i:6;s:4:"time";s:19:"23:16:01 16.05.2019";}) - success:1
+[debug] Session save handler: close - success:1

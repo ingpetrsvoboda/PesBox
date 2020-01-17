@@ -1,0 +1,183 @@
+\hypertarget{class_pes_1_1_storage_1_1_array_file}{}\section{Array\+File Class Reference}
+\label{class_pes_1_1_storage_1_1_array_file}\index{Array\+File@{Array\+File}}
+Inheritance diagram for Array\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_storage_1_1_array_file}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_ad0cb87b388bc74d63dc884accdca8713}\label{class_pes_1_1_storage_1_1_array_file_ad0cb87b388bc74d63dc884accdca8713}} 
+{\bfseries \+\_\+\+\_\+clone} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_a19dd44fe063cfd1cbafe97452e57666c}\label{class_pes_1_1_storage_1_1_array_file_a19dd44fe063cfd1cbafe97452e57666c}} 
+{\bfseries \+\_\+\+\_\+wakeup} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_array_file_a24a9bf83a1002d46ece83a93d14bd921}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_array_file_aab787bd83f84f4215dceb35f7c305eee}{set}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_array_file_a95483af4e2c07dc9893fe058b026bd5d}{remove}} (\$key)
+\item 
+\mbox{\hyperlink{class_pes_1_1_storage_1_1_array_file_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_storage_1_1_array_file_a08fb2636fbdda74d4a1f1c65a47d05eb}{get\+Instance}} (\$storage\+Directory=N\+U\+LL, \$storage\+File\+Name=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_pes_1_1_storage_1_1_array_file_afc1a2b640017c3b11284ed24451cef33}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+O\+R\+A\+G\+E\+\_\+\+F\+I\+LE}} = \char`\"{}Storage.\+file\char`\"{}
+\item 
+const \mbox{\hyperlink{class_pes_1_1_storage_1_1_array_file_a9680694d8b7e30c9c288a50b2b4df306}{D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+W\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY}} = \char`\"{}Storage\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_a4f0ce3c113b9995166f361d8d7a2b1e2}\label{class_pes_1_1_storage_1_1_array_file_a4f0ce3c113b9995166f361d8d7a2b1e2}} 
+{\bfseries \$array\+Content} = array()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Třída pro ukládání informací do souboru.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_a421831a265621325e1fdd19aace0c758}\label{class_pes_1_1_storage_1_1_array_file_a421831a265621325e1fdd19aace0c758}} 
+\index{Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destruktor. Zavře soubor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_a24a9bf83a1002d46ece83a93d14bd921}\label{class_pes_1_1_storage_1_1_array_file_a24a9bf83a1002d46ece83a93d14bd921}} 
+\index{Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}!get@{get}}
+\index{get@{get}!Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Metoda přečte a vrátí hodnotu uloženou pod daným klíčem (identifikátorem). 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Klíč (identifikátor) hodnoty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed/null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Value\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_storage_1_1_storage_interface}{Storage\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_a08fb2636fbdda74d4a1f1c65a47d05eb}\label{class_pes_1_1_storage_1_1_array_file_a08fb2636fbdda74d4a1f1c65a47d05eb}} 
+\index{Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static get\+Instance (\begin{DoxyParamCaption}\item[{}]{\$storage\+Directory = {\ttfamily NULL},  }\item[{}]{\$storage\+File\+Name = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Factory metoda, metoda vrací instanci objektu třídy Framework\+\_\+\+Storage\+\_\+\+File. Objekt storage je vytvářen jako singleton vždy pro jeden soubor. Metoda vrací jeden unikátní objekt pro jednu kombinaci parametrů \$storage\+Directory\+Path a \$storage\+File\+Name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$storage\+Directory} & Pokud parametr není zadán, třída loguje do složky, ve které je soubor s definicí třídy. \\
+\hline
+string & {\em \$storage\+File\+Name} & Název logovacího souboru (řetězec ve formátu jméno.\+přípona např. Mujlogsoubor.\+log). Pokud parametr není zadán, třída loguje do souboru se jménem v konstantě třídy L\+O\+G\+\_\+\+S\+O\+U\+B\+OR. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Framework\+\_\+\+Storage\+\_\+\+Array\+File 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_a95483af4e2c07dc9893fe058b026bd5d}\label{class_pes_1_1_storage_1_1_array_file_a95483af4e2c07dc9893fe058b026bd5d}} 
+\index{Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}!remove@{remove}}
+\index{remove@{remove}!Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily remove (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Metoda odstraní (unset) hodnotu ze session. 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$key} & Klíč (identifikátor) hodnoty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Výsledná hodnota v session. Pokud je metoda úspěšná vrací N\+U\+LL. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Value\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_storage_1_1_storage_interface}{Storage\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_aab787bd83f84f4215dceb35f7c305eee}\label{class_pes_1_1_storage_1_1_array_file_aab787bd83f84f4215dceb35f7c305eee}} 
+\index{Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}!set@{set}}
+\index{set@{set}!Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Metoda uloží zadanou hodnotu pod klíčem (identifikátorem). 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Klíč (identifikátor) \\
+\hline
+mixed & {\em \$value} & Hodnota musí být skalární. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed/null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Value\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$key} & \\
+\hline
+type & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_storage_1_1_storage_interface}{Storage\+Interface}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_a9680694d8b7e30c9c288a50b2b4df306}\label{class_pes_1_1_storage_1_1_array_file_a9680694d8b7e30c9c288a50b2b4df306}} 
+\index{Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}!D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+W\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY@{D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+W\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+W\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY@{D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+W\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY}!Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+W\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY}{DEFAULT\_NEW\_DIRECTORY}}
+{\footnotesize\ttfamily const D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+W\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY = \char`\"{}Storage\char`\"{}}
+
+Default nově vytvářená složka \mbox{\Hypertarget{class_pes_1_1_storage_1_1_array_file_afc1a2b640017c3b11284ed24451cef33}\label{class_pes_1_1_storage_1_1_array_file_afc1a2b640017c3b11284ed24451cef33}} 
+\index{Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}!D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+O\+R\+A\+G\+E\+\_\+\+F\+I\+LE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+O\+R\+A\+G\+E\+\_\+\+F\+I\+LE}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+O\+R\+A\+G\+E\+\_\+\+F\+I\+LE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+O\+R\+A\+G\+E\+\_\+\+F\+I\+LE}!Pes\+::\+Storage\+::\+Array\+File@{Pes\+::\+Storage\+::\+Array\+File}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+O\+R\+A\+G\+E\+\_\+\+F\+I\+LE}{DEFAULT\_STORAGE\_FILE}}
+{\footnotesize\ttfamily const D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+O\+R\+A\+G\+E\+\_\+\+F\+I\+LE = \char`\"{}Storage.\+file\char`\"{}}
+
+Default soubor 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Storage/Array\+File.\+php\end{DoxyCompactItemize}

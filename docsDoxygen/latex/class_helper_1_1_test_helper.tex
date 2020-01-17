@@ -1,0 +1,74 @@
+\hypertarget{class_helper_1_1_test_helper}{}\section{Test\+Helper Class Reference}
+\label{class_helper_1_1_test_helper}\index{Test\+Helper@{Test\+Helper}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_helper_1_1_test_helper_aa80871699b43fe3a4ae7b980c5872451}{interval}} (\$reset=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_helper_1_1_test_helper_adc4fe1f0937a02b8401dde9186fa730f}{get\+Method\+Source\+Code}} (\$class\+Name, \$method\+Name)
+\item 
+\mbox{\hyperlink{class_helper_1_1_test_helper_aa89d814c8bd469bdcd7f65cba32e9917}{get\+Method\+Code}} (\$class\+Name, \$method\+Name, \$highlighted\+H\+T\+ML=T\+R\+UE, \$complete=F\+A\+L\+SE)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Třída pro spuštění testů Projektor2\+\_\+\+Controller\+\_\+\+Test\+\_\+\+Helper. Obsahuje také pomocné funkce pro použití v testech.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_helper_1_1_test_helper_aa89d814c8bd469bdcd7f65cba32e9917}\label{class_helper_1_1_test_helper_aa89d814c8bd469bdcd7f65cba32e9917}} 
+\index{Helper\+::\+Test\+Helper@{Helper\+::\+Test\+Helper}!get\+Method\+Code@{get\+Method\+Code}}
+\index{get\+Method\+Code@{get\+Method\+Code}!Helper\+::\+Test\+Helper@{Helper\+::\+Test\+Helper}}
+\subsubsection{\texorpdfstring{get\+Method\+Code()}{getMethodCode()}}
+{\footnotesize\ttfamily get\+Method\+Code (\begin{DoxyParamCaption}\item[{}]{\$class\+Name,  }\item[{}]{\$method\+Name,  }\item[{}]{\$highlighted\+H\+T\+ML = {\ttfamily TRUE},  }\item[{}]{\$complete = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Vrací formátovaný html výpis obsahu funkce zadané jako parametr. 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$function\+Name} & Jméno (identifikátor) funkce (string) nebo proměnná typu callable \\
+\hline
+bool & {\em \$highlighted\+H\+T\+ML} & Pokud je T\+R\+UE, funkce vrací kód ve formátu H\+T\+ML a se zvýrazněním pomocí P\+E\+AR třídy Text\+\_\+\+Highlighter. Default T\+R\+UE. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+\href{http://stackoverflow.com/questions/7026690/reconstruct-get-code-of-php-function}{\tt http\+://stackoverflow.\+com/questions/7026690/reconstruct-\/get-\/code-\/of-\/php-\/function} \& Petr Svoboda 
+\end{DoxyAuthor}
+\textquotesingle{}php\textquotesingle{} funguje jen na kód začínající $<$?php a končící ?$>$ ~\newline
+ \textquotesingle{}php\textquotesingle{} funguje jen na kód začínající $<$?php a končící ?$>$ \mbox{\Hypertarget{class_helper_1_1_test_helper_adc4fe1f0937a02b8401dde9186fa730f}\label{class_helper_1_1_test_helper_adc4fe1f0937a02b8401dde9186fa730f}} 
+\index{Helper\+::\+Test\+Helper@{Helper\+::\+Test\+Helper}!get\+Method\+Source\+Code@{get\+Method\+Source\+Code}}
+\index{get\+Method\+Source\+Code@{get\+Method\+Source\+Code}!Helper\+::\+Test\+Helper@{Helper\+::\+Test\+Helper}}
+\subsubsection{\texorpdfstring{get\+Method\+Source\+Code()}{getMethodSourceCode()}}
+{\footnotesize\ttfamily get\+Method\+Source\+Code (\begin{DoxyParamCaption}\item[{}]{\$class\+Name,  }\item[{}]{\$method\+Name }\end{DoxyParamCaption})}
+
+vypíše výstup funkce \mbox{\hyperlink{class_helper_1_1_test_helper_aa80871699b43fe3a4ae7b980c5872451}{interval()}}, zobrazí formátovaný html výpis obsahu funkce zadané jako parametr, funkci spustí a po skončení běhu funkce vypíše výstup funkce \mbox{\hyperlink{class_helper_1_1_test_helper_aa80871699b43fe3a4ae7b980c5872451}{interval()}}. 
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$closure} & Vrací formátovaný html výpis obsahu funkce zadané jako parametr. \\
+\hline
+callable & {\em \$closure} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_helper_1_1_test_helper_aa80871699b43fe3a4ae7b980c5872451}\label{class_helper_1_1_test_helper_aa80871699b43fe3a4ae7b980c5872451}} 
+\index{Helper\+::\+Test\+Helper@{Helper\+::\+Test\+Helper}!interval@{interval}}
+\index{interval@{interval}!Helper\+::\+Test\+Helper@{Helper\+::\+Test\+Helper}}
+\subsubsection{\texorpdfstring{interval()}{interval()}}
+{\footnotesize\ttfamily interval (\begin{DoxyParamCaption}\item[{}]{\$reset = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Vrací textovou informaci o čase uplynulém od posledního volání této metody. Při prvním zavolání (po instancování objektu helper) nastaví do interní proměnné počáteční čas a vrací informaci o resetování intervalu. Nastavení parametru lze vyvolat reset intervalu.  float \$lasttime 
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$reset} & Nastavení na T\+R\+UE vyvolá reset intervalu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Debug/\+Helper\+\_\+\+O\+D\+L\+O\+Z\+E\+N\+O/Test\+Helper.\+php\end{DoxyCompactItemize}

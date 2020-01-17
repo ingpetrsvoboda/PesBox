@@ -1,0 +1,122 @@
+\hypertarget{class_pes_1_1_collection_1_1_map_collection}{}\section{Map\+Collection Class Reference}
+\label{class_pes_1_1_collection_1_1_map_collection}\index{Map\+Collection@{Map\+Collection}}
+Inheritance diagram for Map\+Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.516129cm]{class_pes_1_1_collection_1_1_map_collection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_map_collection_a051ddc27b65d0b3d514a7b832bb60912}{\+\_\+\+\_\+construct}} (array \$array=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_map_collection_aab787bd83f84f4215dceb35f7c305eee}{set}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_map_collection_a95483af4e2c07dc9893fe058b026bd5d}{remove}} (\$key)
+\item 
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_map_collection_a24a9bf83a1002d46ece83a93d14bd921}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_map_collection_a8b23dbb48f0c3c94725695191d06981a}{has}} (\$key)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Kolekce párů klíč-\/hodnota 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_map_collection_a051ddc27b65d0b3d514a7b832bb60912}\label{class_pes_1_1_collection_1_1_map_collection_a051ddc27b65d0b3d514a7b832bb60912}} 
+\index{Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$array = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Vytvoří novou kolekci 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_map_collection_a24a9bf83a1002d46ece83a93d14bd921}\label{class_pes_1_1_collection_1_1_map_collection_a24a9bf83a1002d46ece83a93d14bd921}} 
+\index{Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}!get@{get}}
+\index{get@{get}!Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Vrací hodnotu člena kolekce se zadaným klíčem. Pokud prvek se zadaným klíčem v kolekci neexistuje, metoda vrací N\+U\+LL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & Klíč prvku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Hodnota prvku se zadaným klíčem nebo N\+U\+LL. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_map_collection_interface}{Map\+Collection\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_map_collection_a8b23dbb48f0c3c94725695191d06981a}\label{class_pes_1_1_collection_1_1_map_collection_a8b23dbb48f0c3c94725695191d06981a}} 
+\index{Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}!has@{has}}
+\index{has@{has}!Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}}
+\subsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily has (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Zjistí, zda prvek se zadaným klíčem je v kolekci. 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & Klíč prvku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_map_collection_interface}{Map\+Collection\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_map_collection_a95483af4e2c07dc9893fe058b026bd5d}\label{class_pes_1_1_collection_1_1_map_collection_a95483af4e2c07dc9893fe058b026bd5d}} 
+\index{Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}!remove@{remove}}
+\index{remove@{remove}!Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily remove (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Odstraní člena kolekce podle zadaného klíče. Pokud prvek se zadaným klíčem v kolekci neexistuje, metoda nedělá nic.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & Klíč prvku, který má být odstraněn. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void Nevrací žádnou návratovou hodnotu. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_map_collection_interface}{Map\+Collection\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_map_collection_aab787bd83f84f4215dceb35f7c305eee}\label{class_pes_1_1_collection_1_1_map_collection_aab787bd83f84f4215dceb35f7c305eee}} 
+\index{Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}!set@{set}}
+\index{set@{set}!Pes\+::\+Collection\+::\+Map\+Collection@{Pes\+::\+Collection\+::\+Map\+Collection}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Přidá do kolekce hodnotu se zadaným klíčem. Podle klíče, se kterým byl prvek přidán lze hodnotu získa metodou \mbox{\hyperlink{class_pes_1_1_collection_1_1_map_collection_a24a9bf83a1002d46ece83a93d14bd921}{get()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & Klíč, se kterým bude hodnota přidána. \\
+\hline
+mixed & {\em \$value} & Hodnota prvku.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void Nevrací žádnou návratovou hodnotu. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_map_collection_interface}{Map\+Collection\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Collection/Map\+Collection.\+php\end{DoxyCompactItemize}

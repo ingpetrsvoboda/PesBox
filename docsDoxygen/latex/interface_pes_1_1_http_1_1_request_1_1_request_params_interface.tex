@@ -1,0 +1,125 @@
+\hypertarget{interface_pes_1_1_http_1_1_request_1_1_request_params_interface}{}\section{Request\+Params\+Interface Interface Reference}
+\label{interface_pes_1_1_http_1_1_request_1_1_request_params_interface}\index{Request\+Params\+Interface@{Request\+Params\+Interface}}
+Inheritance diagram for Request\+Params\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_pes_1_1_http_1_1_request_1_1_request_params_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a3293ae069cee967716d29c8d5ab14755}{get\+Param}} (Server\+Request\+Interface \$request, \$key, \$default=N\+U\+LL)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a29e01720b8186851ed442d4631b84801}{get\+Parsed\+Body\+Param}} (Server\+Request\+Interface \$request, \$key, \$default=N\+U\+LL)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a2e5741fedbbdec989996e8e31d1f4b45}{get\+Query\+Param}} (Server\+Request\+Interface \$request, \$key, \$default=N\+U\+LL)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_ab8608dd4c8a0447d65e8f48dcec561b7}{get\+Params}} (Server\+Request\+Interface \$request)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a3293ae069cee967716d29c8d5ab14755}\label{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a3293ae069cee967716d29c8d5ab14755}} 
+\index{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}!get\+Param@{get\+Param}}
+\index{get\+Param@{get\+Param}!Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}}
+\subsubsection{\texorpdfstring{get\+Param()}{getParam()}}
+{\footnotesize\ttfamily get\+Param (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request,  }\item[{}]{\$key,  }\item[{}]{\$default = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Vrací parametr requestu získaný z body nebo query (v tomto pořadí).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+string & {\em \$key} & Klíč (index, jméno) parametru. \\
+\hline
+type & {\em \$default} & Návratová hodnota, kterou metoda vrací, pokud parametr se zadaným klíčem v requestu neexistuje.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Hodnota paremetru. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_1_1_request_params_a3293ae069cee967716d29c8d5ab14755}{Request\+Params}}.
+
+\mbox{\Hypertarget{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_ab8608dd4c8a0447d65e8f48dcec561b7}\label{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_ab8608dd4c8a0447d65e8f48dcec561b7}} 
+\index{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}!get\+Params@{get\+Params}}
+\index{get\+Params@{get\+Params}!Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}}
+\subsubsection{\texorpdfstring{get\+Params()}{getParams()}}
+{\footnotesize\ttfamily get\+Params (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request }\end{DoxyParamCaption})}
+
+Vrací asociativní pole parametrů requestu získaných z body nebo query (v tomto pořadí).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Request\+Interface & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_1_1_request_params_ab8608dd4c8a0447d65e8f48dcec561b7}{Request\+Params}}.
+
+\mbox{\Hypertarget{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a29e01720b8186851ed442d4631b84801}\label{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a29e01720b8186851ed442d4631b84801}} 
+\index{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}!get\+Parsed\+Body\+Param@{get\+Parsed\+Body\+Param}}
+\index{get\+Parsed\+Body\+Param@{get\+Parsed\+Body\+Param}!Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}}
+\subsubsection{\texorpdfstring{get\+Parsed\+Body\+Param()}{getParsedBodyParam()}}
+{\footnotesize\ttfamily get\+Parsed\+Body\+Param (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request,  }\item[{}]{\$key,  }\item[{}]{\$default = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Vrací parametr získaný z parsovaného request body.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+string & {\em \$key} & Klíč (index, jméno) parametru. \\
+\hline
+type & {\em \$default} & Návratová hodnota, kterou metoda vrací, pokud parametr se zadaným klíčem v body neexistuje.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Hodnota paremetru. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_1_1_request_params_a29e01720b8186851ed442d4631b84801}{Request\+Params}}.
+
+\mbox{\Hypertarget{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a2e5741fedbbdec989996e8e31d1f4b45}\label{interface_pes_1_1_http_1_1_request_1_1_request_params_interface_a2e5741fedbbdec989996e8e31d1f4b45}} 
+\index{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}!get\+Query\+Param@{get\+Query\+Param}}
+\index{get\+Query\+Param@{get\+Query\+Param}!Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface@{Pes\+::\+Http\+::\+Request\+::\+Request\+Params\+Interface}}
+\subsubsection{\texorpdfstring{get\+Query\+Param()}{getQueryParam()}}
+{\footnotesize\ttfamily get\+Query\+Param (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request,  }\item[{}]{\$key,  }\item[{}]{\$default = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Vrací parametr získaný z query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+string & {\em \$key} & Klíč (index, jméno) parametru. \\
+\hline
+type & {\em \$default} & Návratová hodnota, kterou metoda vrací, pokud parametr se zadaným klíčem v query neexistuje.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Hodnota paremetru. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_1_1_request_params_a2e5741fedbbdec989996e8e31d1f4b45}{Request\+Params}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Request/Request\+Params\+Interface.\+php\end{DoxyCompactItemize}

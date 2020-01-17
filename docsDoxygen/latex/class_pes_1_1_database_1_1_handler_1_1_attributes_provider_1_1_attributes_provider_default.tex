@@ -1,0 +1,79 @@
+\hypertarget{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default}{}\section{Attributes\+Provider\+Default Class Reference}
+\label{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default}\index{Attributes\+Provider\+Default@{Attributes\+Provider\+Default}}
+Inheritance diagram for Attributes\+Provider\+Default\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default_a4d086b03f47931c183f0414bf2da5103}{\+\_\+\+\_\+construct}} (Logger\+Interface \$logger=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default_a78e4a9edf711d48cd3ec22eaadf560ea}{get\+Attributes\+Array}} (array \$attributes=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default}{Attributes\+Provider\+Default}} poskytuje základní nastavení, které očekávají ostatní části frameworku.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default_a4d086b03f47931c183f0414bf2da5103}\label{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default_a4d086b03f47931c183f0414bf2da5103}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default@{Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default@{Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Logger\+Interface}]{\$logger = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Připraví nastavení pro handler (potomek P\+DO) takto\+: 
+\begin{DoxyItemize}
+\item Při chybě vyhazuj výjimky 
+\item Metodami query() a prepare() vracej V\+L\+A\+S\+T\+NÍ T\+YP objektu statement (Pes). Typ je dán deklarací use \mbox{\hyperlink{namespace_pes_1_1_database_1_1_statement}{Statement}} v definici této třídy. 
+\item Nastav logger pro \mbox{\hyperlink{namespace_pes_1_1_database_1_1_statement}{Statement}}. Třída očekává, že nastavený objekt \mbox{\hyperlink{namespace_pes_1_1_database_1_1_statement}{Statement}} přijímá v konstruktoru logger a nastaví handler tak, aby při query() a prepare() předával vytvářeným objektům logger, který handler dostal v konstruktoru. 
+\item Pokoušej se používat nativní poporu prepare statements poskytovanou driverem 
+\begin{DoxyItemize}
+\item nativní P\+DO prepare má výhodu v ochraně proti sql injection 
+\item nativní P\+DO prepare má výkonostní výhodu 
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+Doporučení\+:
+
+
+
+P\+DO se někdy chová nedokumentovaným způsobem. Např. P\+D\+O\+::\+M\+Y\+S\+Q\+L\+\_\+\+A\+T\+T\+R\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS nelze nastavovat pdo-\/$>$set\+Attribute(\+::\+M\+Y\+S\+Q\+L\+\_\+\+A\+T\+T\+R\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS, true); metoda vždy vrací F\+A\+L\+SE a nic se nenastaví. Proto doporučuji nastavovat všechny atributy specifické pro daný driver jako options v příslušném objektu Xxx\+Options\+Provider. Například atributy s konstantami začínajícími prefixem M\+Y\+S\+QL..., tedy atributy specifcké pro mysql driver v objektu Mysql\+Options\+Provider jako options (nikoli po instancování P\+DO jako set\+Attributes). To funguje. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default_a78e4a9edf711d48cd3ec22eaadf560ea}\label{class_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_default_a78e4a9edf711d48cd3ec22eaadf560ea}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default@{Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default}!get\+Attributes\+Array@{get\+Attributes\+Array}}
+\index{get\+Attributes\+Array@{get\+Attributes\+Array}!Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default@{Pes\+::\+Database\+::\+Handler\+::\+Attributes\+Provider\+::\+Attributes\+Provider\+Default}}
+\subsubsection{\texorpdfstring{get\+Attributes\+Array()}{getAttributesArray()}}
+{\footnotesize\ttfamily get\+Attributes\+Array (\begin{DoxyParamCaption}\item[{array}]{\$attributes = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_interface}{Attributes\+Provider\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/\+Attributes\+Provider/Attributes\+Provider\+Default.\+php\end{DoxyCompactItemize}

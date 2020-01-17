@@ -1,0 +1,80 @@
+\hypertarget{class_pes_1_1_view_1_1_composite_view}{}\section{Composite\+View Class Reference}
+\label{class_pes_1_1_view_1_1_composite_view}\index{Composite\+View@{Composite\+View}}
+Inheritance diagram for Composite\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_view_1_1_composite_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_composite_view_af62e04a1fa847074a86af330864028d3}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}} \$renderer=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_composite_view_a2ab16e76a45210ebd3f14c0df914f3b9}{append\+Component\+View}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}} \$component\+View, \$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_composite_view_a62b5a3861ff3b1f8a28911db4c11ae47}{render}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}} \$template=N\+U\+LL, \$data=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_composite_view_af62e04a1fa847074a86af330864028d3}\label{class_pes_1_1_view_1_1_composite_view_af62e04a1fa847074a86af330864028d3}} 
+\index{Pes\+::\+View\+::\+Composite\+View@{Pes\+::\+View\+::\+Composite\+View}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+View\+::\+Composite\+View@{Pes\+::\+View\+::\+Composite\+View}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}}}]{\$renderer = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Konstruktor -\/ přijímá kompozitní renderer, renderer používaný pro renderování kompozice (nadřazený, layout renderer).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Renderer\+Interface & {\em \$renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_composite_view_a2ab16e76a45210ebd3f14c0df914f3b9}\label{class_pes_1_1_view_1_1_composite_view_a2ab16e76a45210ebd3f14c0df914f3b9}} 
+\index{Pes\+::\+View\+::\+Composite\+View@{Pes\+::\+View\+::\+Composite\+View}!append\+Component\+View@{append\+Component\+View}}
+\index{append\+Component\+View@{append\+Component\+View}!Pes\+::\+View\+::\+Composite\+View@{Pes\+::\+View\+::\+Composite\+View}}
+\subsubsection{\texorpdfstring{append\+Component\+View()}{appendComponentView()}}
+{\footnotesize\ttfamily append\+Component\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}}}]{\$component\+View,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Metoda pro přidání komponentních view. Jednotlivá komponentní view budou renderována a vygenerovaný výsledek bude vložen do kompozitního view na místo proměnné zadané zde jako jméno. Jednotlivá komponentní view budou renderována bez předání (nastavení) template a dat, musí mít tedy před renderováním kompozitního view nastavenu šablonu a data pokud je potřebují pro své renderování.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}} & {\em \$component\+View} & Komponetní view \\
+\hline
+string & {\em \$name} & Jméno proměnné v kompozitním view, která má být nahrazena výstupem zadané komponentní view \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_composite_view_interface_a2ab16e76a45210ebd3f14c0df914f3b9}{Composite\+View\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_composite_view_a62b5a3861ff3b1f8a28911db4c11ae47}\label{class_pes_1_1_view_1_1_composite_view_a62b5a3861ff3b1f8a28911db4c11ae47}} 
+\index{Pes\+::\+View\+::\+Composite\+View@{Pes\+::\+View\+::\+Composite\+View}!render@{render}}
+\index{render@{render}!Pes\+::\+View\+::\+Composite\+View@{Pes\+::\+View\+::\+Composite\+View}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}}}]{\$template = {\ttfamily NULL},  }\item[{}]{\$data = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Metoda renderuje všechny vložené component renderery. Výstupní kód z jednotlivých renderování vkládá do kontextu composer rendereru vždy pod jménem proměnné, se kterým byl component renderer přidán. Nakonec renderuje compose renderer. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface_ab273a8d7deb9bb9235161c4f8419e402}{View\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+View/Composite\+View.\+php\end{DoxyCompactItemize}

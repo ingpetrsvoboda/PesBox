@@ -1,6 +1,0 @@
-
-Warning: PHP Startup: Unable to load dynamic library 'C:\xampp\php\ext\php_pdo_sqlsrv_56_ts' - Uvedený modul nebyl nalezen.
- in Unknown on line 0
-
-Warning: PHP Startup: Unable to load dynamic library 'C:\xampp\php\ext\php_mysql.dll' - Uvedený modul nebyl nalezen.
- in Unknown on line 0

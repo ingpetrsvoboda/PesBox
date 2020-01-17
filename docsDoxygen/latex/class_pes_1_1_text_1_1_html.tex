@@ -1,0 +1,214 @@
+\hypertarget{class_pes_1_1_text_1_1_html}{}\section{Html Class Reference}
+\label{class_pes_1_1_text_1_1_html}\index{Html@{Html}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_text_1_1_html_ab811cc8c9ee6d5a10ad5cfa5073b0c58}{mono}} (\$text=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a6901ad57f053e0db94de132286ea8b29}{filter}} (\$filters=\textquotesingle{}\textquotesingle{}, \$text=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a66f9ba71608ca9d72eeb7a83f3653179}{e}} (\$text=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_ac33811074e05e46a937899da7a858e70}{esc}} (\$text=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a78c9ebed5fc953d2eeb3801738777d54}{p}} (\$text=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a58fbeeef482da397c3066e42cfb421f8}{nl2br}} (\$text=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a52cc586be5c6248939b081a8fd7f187d}{attributes}} (\$attributes\+Array=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_afff073be7d252662c101c78d011f33c1}{tag}} (\$name, array \$\mbox{\hyperlink{class_pes_1_1_text_1_1_html_a52cc586be5c6248939b081a8fd7f187d}{attributes}}=\mbox{[}$\,$\mbox{]}, \$inner\+Html=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a211f58d5a8928e1d23858cd9c8d8e022}{tag\+Nopair}} (\$name, array \$\mbox{\hyperlink{class_pes_1_1_text_1_1_html_a52cc586be5c6248939b081a8fd7f187d}{attributes}}=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Obsahuje statické metody, které generují html nebo tzv. filtry, které jsou určeny jako pomocné metody pro transformování textu. Obvykle se takovým metodám v template systémech říká filtry.
+
+Jedná se o klon Php\+Template\+Trait.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_a52cc586be5c6248939b081a8fd7f187d}\label{class_pes_1_1_text_1_1_html_a52cc586be5c6248939b081a8fd7f187d}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!attributes@{attributes}}
+\index{attributes@{attributes}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{attributes()}{attributes()}}
+{\footnotesize\ttfamily static attributes (\begin{DoxyParamCaption}\item[{}]{\$attributes\+Array = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda generuje textovou reprezentaci atributů html tagu z dataných jako asocitivní pole. Podle typu hodnoty atributu\+: 
+\begin{DoxyItemize}
+\item Atributy s logickou hodnotou uvede jen jako jméno parametru 
+\item Atributy s hodnotou typu array jako dvojici jméno=\char`\"{}řetězec hodnot oddělených mezerou\char`\"{}, řetězec hodnot vytvoří zřetězením hodnot v poli oddělených mezerou a obalí uvozovkami 
+\item Ostatní atributy jako dvojici jméno=\char`\"{}hodnota\char`\"{} s tím, že hodnotup rvku obalí uvozovkami. 
+\end{DoxyItemize}Výsledná návrácený řetězec začíná mezerou a atributy v řetězci jsou odděleny mezerami.
+
+Příklad\+: \mbox{[}\textquotesingle{}id\textquotesingle{}=$>$\textquotesingle{}alert\textquotesingle{}, \textquotesingle{}class\textquotesingle{}=$>$\mbox{[}\textquotesingle{}ui\textquotesingle{}, \textquotesingle{}item\textquotesingle{}, \textquotesingle{}alert\textquotesingle{}\mbox{]}, \textquotesingle{}readonly\textquotesingle{}=$>$T\+R\+UE, data-\/info=$>$\textquotesingle{}a neni b\textquotesingle{}\mbox{]} převede na\+: id=\char`\"{}alert\char`\"{} class=\char`\"{}ui item alert\char`\"{} readonly data-\/info=\char`\"{}a neni b\char`\"{}. Víceslovné řetězce (typicky class) lze tedy zadávat jako pole nebo víceslovný řetězec. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes\+Array} & Asocitivní pole \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_a66f9ba71608ca9d72eeb7a83f3653179}\label{class_pes_1_1_text_1_1_html_a66f9ba71608ca9d72eeb7a83f3653179}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!e@{e}}
+\index{e@{e}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{e()}{e()}}
+{\footnotesize\ttfamily static e (\begin{DoxyParamCaption}\item[{}]{\$text = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Alias k metodě \mbox{\hyperlink{class_pes_1_1_text_1_1_html_ac33811074e05e46a937899da7a858e70}{esc()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_ac33811074e05e46a937899da7a858e70}\label{class_pes_1_1_text_1_1_html_ac33811074e05e46a937899da7a858e70}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!esc@{esc}}
+\index{esc@{esc}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{esc()}{esc()}}
+{\footnotesize\ttfamily static esc (\begin{DoxyParamCaption}\item[{}]{\$text = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metodu použijte na ošetření textů, které obsahují text zadaný uživatelem (např. ve formuláři). Jde o základní ochranu proti X\+SS útokům. Metoda provede tzv escapování. Všechny znaky, které mohou v H\+T\+ML mít význam, tzv. rezervované znaky H\+T\+ML, převede na H\+T\+ML entity. Např. znak $<$ na $<$ apod. Metoda nestačí na ošetření textů vkládaných kamkoli jinam než jen do textového obsahu tagu určeného k zobrazení. Nikdy nevkládejte uživatelem zadaný text do obsahu tagu $<$script$>$, do html komentáře , do názvu atributu, do jména tagu, do css. Tato místa nelze nikdy dokonale ošetřit.
+
+Tato metoda escapuje i html entity, které byly v opravovaném textu, např. pokud text obsahuje \char`\"{}mluví o~všem\char`\"{} vznikne \char`\"{}mluví o\&nbsp;všem\char`\"{}. pozor tedy také na pořadí filtrovacích metod\+: self\+::filter(\textquotesingle{}e$\vert$mono\textquotesingle{}, \textquotesingle{}v neděli\textquotesingle{}); je v pořádku, zatímco self\+::filter(\textquotesingle{}mono$\vert$e\textquotesingle{}, \textquotesingle{}v neděli\textquotesingle{}); oescapuje i ~ vytvořené filtrem \char`\"{}mono\char`\"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_a6901ad57f053e0db94de132286ea8b29}\label{class_pes_1_1_text_1_1_html_a6901ad57f053e0db94de132286ea8b29}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!filter@{filter}}
+\index{filter@{filter}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily static filter (\begin{DoxyParamCaption}\item[{}]{\$filters = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$text = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda použije postupně zleva jednotlivé filtry uvedené jako posloupnost názvů filtrů oddělených znakem F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER.
+
+Příklad\+: Pro F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER = \textquotesingle{}$\vert$\textquotesingle{} volání self\+::filter(e$\vert$mono$\vert$p, \textquotesingle{}Text, který bude filtrován.\textquotesingle{}) způsobí postupné volání filtru (metody) \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a66f9ba71608ca9d72eeb7a83f3653179}{e()}}, \mbox{\hyperlink{class_pes_1_1_text_1_1_html_ab811cc8c9ee6d5a10ad5cfa5073b0c58}{mono()}}, \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a78c9ebed5fc953d2eeb3801738777d54}{p()}}. Ekvivalentně zápisu\+: 
+\begin{DoxyPre}
+self::p(self::mono(self::e('Text, který bude filtrován.')));
+\end{DoxyPre}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$filters} & \\
+\hline
+type & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_ab811cc8c9ee6d5a10ad5cfa5073b0c58}\label{class_pes_1_1_text_1_1_html_ab811cc8c9ee6d5a10ad5cfa5073b0c58}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!mono@{mono}}
+\index{mono@{mono}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{mono()}{mono()}}
+{\footnotesize\ttfamily mono (\begin{DoxyParamCaption}\item[{}]{\$text = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Jednoznakové předložky a spojky pro český text. Metoda vloží mezi jednoznakové předložky nebo spojky a následující slovo nedělitelnou mezeru. Jednoznakové předložky a spojky jsou\+: k, s, v, z, o, u, i, a.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_a58fbeeef482da397c3066e42cfb421f8}\label{class_pes_1_1_text_1_1_html_a58fbeeef482da397c3066e42cfb421f8}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!nl2br@{nl2br}}
+\index{nl2br@{nl2br}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{nl2br()}{nl2br()}}
+{\footnotesize\ttfamily static nl2br (\begin{DoxyParamCaption}\item[{}]{\$text = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Převede odřádkování v textu na značku (tag) ~\newline
+. Převádí každé odřádkování, vícenásobné odřádkování způsobí vícenásobné vložení značky.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_a78c9ebed5fc953d2eeb3801738777d54}\label{class_pes_1_1_text_1_1_html_a78c9ebed5fc953d2eeb3801738777d54}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!p@{p}}
+\index{p@{p}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{p()}{p()}}
+{\footnotesize\ttfamily static p (\begin{DoxyParamCaption}\item[{}]{\$text = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Převede text s dvakrát odřádkovanými odstavci na html paragrafy (
+
+) Vstupní text obalí na začátku a na konci otevíracím tagem 
+
+a koncovým tagem 
+
+, výskyty dvou odřádkovýní uvnitř textu chápe jako konec odstavce a z každého takto odděleného úseku textu vytvoří paragraf. Jednoho odřádkování v textu si nijak nevšímá, váš vstupní text můžete jedním odřádkováním zalamovat libovolně, např. proto, aby byl vidět ve vašem editoru. Chcete-\/li skutečně vytvořit odstavec, použijte dvojí odřádkování.
+
+Metoda nijak nemění jakékoli html značky (tagy) ani žádné viditelné znaky v textu, naopak mění odřádkování (CR, LF alias , ~\newline
+) a whitespaces (mezery, tabelátory ad.). 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_afff073be7d252662c101c78d011f33c1}\label{class_pes_1_1_text_1_1_html_afff073be7d252662c101c78d011f33c1}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!tag@{tag}}
+\index{tag@{tag}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{tag()}{tag()}}
+{\footnotesize\ttfamily static tag (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{array}]{\$attributes = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$inner\+Html = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Genuruje html kód párového tagu.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Jméno tagu. Bude použito bez změny malách a velkých písmen \\
+\hline
+array & {\em \$attributes} & Asociativní pole. Viz metoda \mbox{\hyperlink{class_pes_1_1_text_1_1_html_a52cc586be5c6248939b081a8fd7f187d}{attributes()}}. \\
+\hline
+string & {\em \$inner\+Html} & Text, bude bez úprav vložen jako textový obsah tagu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_text_1_1_html_a211f58d5a8928e1d23858cd9c8d8e022}\label{class_pes_1_1_text_1_1_html_a211f58d5a8928e1d23858cd9c8d8e022}} 
+\index{Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}!tag\+Nopair@{tag\+Nopair}}
+\index{tag\+Nopair@{tag\+Nopair}!Pes\+::\+Text\+::\+Html@{Pes\+::\+Text\+::\+Html}}
+\subsubsection{\texorpdfstring{tag\+Nopair()}{tagNopair()}}
+{\footnotesize\ttfamily static tag\+Nopair (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{array}]{\$attributes = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Genuruje html kód párového tagu.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Text/Html.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{class_pes_1_1_query_1_1_matcher_1_1_like_matcher}{}\section{Like\+Matcher Class Reference}
+\label{class_pes_1_1_query_1_1_matcher_1_1_like_matcher}\index{Like\+Matcher@{Like\+Matcher}}
+Inheritance diagram for Like\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_query_1_1_matcher_1_1_like_matcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_query_1_1_matcher_1_1_like_matcher_a11119d8e9d3e88844b5dd2ed47657758}{\+\_\+\+\_\+construct}} (\$escape=\textquotesingle{}\textbackslash{}\textbackslash{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_pes_1_1_query_1_1_matcher_1_1_like_matcher_af38750109828e091458dbb0481a2a0d7}{match}} (\$value, \$pattern)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_query_1_1_matcher_1_1_like_matcher}{Like\+Matcher}} Ověřuje zda hodnota odpovídá vzoru obdobně jako S\+QL operátor L\+I\+KE. Používá stejné wildcard znaky (\textquotesingle{}\+\_\+\textquotesingle{} a \textquotesingle{}$\ast$\textquotesingle{}) a akceptuje escape znak \textquotesingle{}\textbackslash{}\textquotesingle{} pro escapování znaků \textquotesingle{}\textquotesingle{} a \textquotesingle{}\+\_\+\textquotesingle{}, které nemají být chápány jako wildcard znaky. Escape znak je defaultně \textquotesingle{}\textbackslash{}\textquotesingle{} a může být zadán jiný pomocí parametru konstruktoru. Je shodně s S\+QL l\+I\+KE case insensitive.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_query_1_1_matcher_1_1_like_matcher_a11119d8e9d3e88844b5dd2ed47657758}\label{class_pes_1_1_query_1_1_matcher_1_1_like_matcher_a11119d8e9d3e88844b5dd2ed47657758}} 
+\index{Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$escape = {\ttfamily \textquotesingle{}\textbackslash{}\textbackslash{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+V konstruktoru akceptuje případný escape znak jiný než . Tento znak je možné používat jako escape příznak před znaky (\textquotesingle{}\textquotesingle{} nebo \textquotesingle{}\+\_\+\textquotesingle{}, které se jinak vyhodnocují jako sql wildcard znaky 
+
+Užití
+
+Pro S\+QL\+: sloupec L\+I\+KE \textquotesingle{}bla\textquotesingle{}
+
+{\ttfamily  (new Like\+Matcher())-\/$>$match(\$sloupec, \textquotesingle{}bla\textquotesingle{}); {\ttfamily  
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$escape} & Jiný escape znak než defaultní (\textquotesingle{}\textbackslash{}\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+}}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_query_1_1_matcher_1_1_like_matcher_af38750109828e091458dbb0481a2a0d7}\label{class_pes_1_1_query_1_1_matcher_1_1_like_matcher_af38750109828e091458dbb0481a2a0d7}} 
+\index{Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher}!match@{match}}
+\index{match@{match}!Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Like\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily match (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+Matcher simuluje S\+QL L\+I\+KE. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+string & {\em \$pattern} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_query_1_1_matcher_1_1_matcher_interface}{Matcher\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Query/\+Matcher/Like\+Matcher.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5}{}\section{Cryptor\+A\+E\+S\+P\+H\+P5 Class Reference}
+\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5}\index{Cryptor\+A\+E\+S\+P\+H\+P5@{Cryptor\+A\+E\+S\+P\+H\+P5}}
+Inheritance diagram for Cryptor\+A\+E\+S\+P\+H\+P5\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_ae68e3281fdc4689e22a68b4b463c5fa9}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_ae68e3281fdc4689e22a68b4b463c5fa9}} 
+{\bfseries \+\_\+\+\_\+construct} (\$key)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_a07bcc8ef1d23370470ecb5ae8fc07dfa}{encrypt}} (\$data)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_aed69cdc691e1155856c905ee1c08d9b7}{decrypt}} (\$edata)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{namespace_pes_1_1_security_1_1_cryptor}{Cryptor}} Pro A\+ES -\/128, -\/192, -\/256 Zdá se, že na délce moc nezáleží, 256 asi není bezpečnější než kratší díky \char`\"{}špatnému uspořádání bitů\char`\"{} ve variantě 256 (??) Zřejmě nejvhodnější metody jsou A\+E\+S-\/256-\/\+G\+CM (až od P\+HP 7.\+1, metoda typu Authenticated encryption (AE) -\/ přidává se M\+AC pro autentizaci), A\+E\+S-\/256-\/\+C\+TR nebo A\+E\+S-\/256-\/\+C\+BC, utčitě nebezpečná je varianta E\+CB. Musí být náhodně generovaná iv pro opakované šifrování se stejným klíčem -\/ obvykle se generuje pro každou zprávu Musí být ověřena integrita zprávy -\/ mohlo dojít k manipulaci man in the middle -\/ zprávu je třaba tzv. autentizovat. Přidává se ke zprávě Message Authentication Code (M\+AC) -\/ řetězec, který závisí na zprávě a na klíči.
+
+Authenticated encryption\+: \href{https://en.wikipedia.org/wiki/Authenticated_encryption}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Authenticated\+\_\+encryption} \href{https://stackoverflow.com/questions/9262109/simplest-two-way-encryption-using-php}{\tt https\+://stackoverflow.\+com/questions/9262109/simplest-\/two-\/way-\/encryption-\/using-\/php} (Scott Arciszewski) \href{https://tonyarcieri.com/all-the-crypto-code-youve-ever-written-is-probably-broken}{\tt https\+://tonyarcieri.\+com/all-\/the-\/crypto-\/code-\/youve-\/ever-\/written-\/is-\/probably-\/broken} \href{https://crypto.stackexchange.com/questions/6523/what-is-the-difference-between-mac-and-hmac}{\tt https\+://crypto.\+stackexchange.\+com/questions/6523/what-\/is-\/the-\/difference-\/between-\/mac-\/and-\/hmac} knihovna\+: \href{https://github.com/defuse/php-encryption}{\tt https\+://github.\+com/defuse/php-\/encryption}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_aed69cdc691e1155856c905ee1c08d9b7}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_aed69cdc691e1155856c905ee1c08d9b7}} 
+\index{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily decrypt (\begin{DoxyParamCaption}\item[{}]{\$edata }\end{DoxyParamCaption})}
+
+decrypt A\+ES 256
+
+
+\begin{DoxyParams}[1]{Parameters}
+data & {\em \$edata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+decrypted data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_cryptor_1_1_cryptor_interface}{Cryptor\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_a07bcc8ef1d23370470ecb5ae8fc07dfa}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_a_e_s_p_h_p5_a07bcc8ef1d23370470ecb5ae8fc07dfa}} 
+\index{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+A\+E\+S\+P\+H\+P5}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily encrypt (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Crypt A\+ES 256 Šifruje vstupní data metodou A\+E\+S-\/256-\/\+C\+TR, salt generuje interně, výstup kóduje base64. Klíč je zadán v konstruktoru. Používá funkci openssl\+\_\+encrypt().
+
+
+\begin{DoxyParams}[1]{Parameters}
+data & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+base64 encrypted data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_cryptor_1_1_cryptor_interface}{Cryptor\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Security/\+Cryptor/vzory\+\_\+testy/Cryptor\+A\+E\+S\+P\+H\+P5.\+php\end{DoxyCompactItemize}

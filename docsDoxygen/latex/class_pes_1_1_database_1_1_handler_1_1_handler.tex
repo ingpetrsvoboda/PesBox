@@ -1,0 +1,161 @@
+\hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler}{}\section{Handler Class Reference}
+\label{class_pes_1_1_database_1_1_handler_1_1_handler}\index{Handler@{Handler}}
+Inheritance diagram for Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pes_1_1_database_1_1_handler_1_1_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler_acee29348571a4eefdc011645312606e3}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}} \$connection\+Info, \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_interface}{Dsn\+Provider\+Interface}} \$dsn\+Provider, \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_interface}{Options\+Provider\+Interface}} \$options\+Provider, \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_interface}{Attributes\+Provider\+Interface}} \$attributes\+Provider, Logger\+Interface \$logger)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler_ad86fa5498ac1054e414a91fa4a6a7dfd}{get\+Instance\+Info}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler_a813f4f79dd359e1e6f4f45263868a8f4}{prepare}} (\$sql\+Statement, \$driver\+\_\+options=array())
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler_af95be9a555ad9442030489215c290753}{query}} (string \$sql\+Statement=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_ac76c1372f39af2fe77daeca9b3445190}\label{class_pes_1_1_database_1_1_handler_1_1_handler_ac76c1372f39af2fe77daeca9b3445190}} 
+{\bfseries get\+Database\+Handler\+Error\+Info} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler_a304e15cc58ef18bb2819523ef497d18e}{safe\+Exception\+Handler}} (\textbackslash{}Exception \$exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_aebfec76216371ef236acc5910e90933d}\label{class_pes_1_1_database_1_1_handler_1_1_handler_aebfec76216371ef236acc5910e90933d}} 
+{\bfseries \$logger}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_a462dc7e80b8f4f7cedfffda4005cea46}\label{class_pes_1_1_database_1_1_handler_1_1_handler_a462dc7e80b8f4f7cedfffda4005cea46}} 
+{\bfseries \$db\+Nick}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_ad0ddb2725e69c88a729e0cc242a1b2a6}\label{class_pes_1_1_database_1_1_handler_1_1_handler_ad0ddb2725e69c88a729e0cc242a1b2a6}} 
+{\bfseries \$db\+Host}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_aa83618c5a5bb607a365c296701a8a41b}\label{class_pes_1_1_database_1_1_handler_1_1_handler_aa83618c5a5bb607a365c296701a8a41b}} 
+static {\bfseries \$handler\+Counter} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_acee29348571a4eefdc011645312606e3}\label{class_pes_1_1_database_1_1_handler_1_1_handler_acee29348571a4eefdc011645312606e3}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}}}]{\$connection\+Info,  }\item[{\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_interface}{Dsn\+Provider\+Interface}}}]{\$dsn\+Provider,  }\item[{\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_interface}{Options\+Provider\+Interface}}}]{\$options\+Provider,  }\item[{\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_attributes_provider_1_1_attributes_provider_interface}{Attributes\+Provider\+Interface}}}]{\$attributes\+Provider,  }\item[{Logger\+Interface}]{\$logger }\end{DoxyParamCaption})}
+
+Konstruktor, přijímá povinné instanční proměnné objekty \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}, Dsn\+Provider, Options\+Provider, Attributes\+Provider a Logger. Pokud některý z těchto objektů není potřeba i tak je nutné jej dodat a pro tento účel lze použít Null varianty těchto objektů.
+
+{\bfseries Bezpečnostní rizika\+:} Objekt \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}} obsahuje informace pro připojení včetně jména a hesla. Zde je bezpečnostní riziko, protože lze takový objekt někde omylem zobrazit. \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler}{Handler}} je obvykle používán na mnoha místech aplikace a často \char`\"{}globálně\char`\"{} dostupný. Proto handler objekt \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}} neukládá a jen použije pro vytvoření rodičovského P\+DO objektu. Objekt \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}} je také použit při volání metod objektů Dsn\+Provider, Options\+Provider, Attributes\+Provider a proto je žádoucí, aby ani tyto objekty \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}} ani citlivé informace z něj neukládaly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}} & {\em \$connection\+Info} & Objekt obsahuje všechny parametry připojení k databázi \\
+\hline
+Dsn\+Provider\+Interface & {\em \$dsn\+Provider} & Provider vytváří dsn řetězec pro vytvoření Handleru (P\+DO) \\
+\hline
+Options\+Provider\+Interface & {\em \$options\+Provider} & Provider poskytuje pole options pro nastavení options při vytváření Handleru (P\+DO). \\
+\hline
+Attributes\+Provider\+Interface & {\em \$attributes\+Provider} & Provider poskytuje pole atributů pro nastavení atributů Handleru (P\+DO) po jeho vytvoření \\
+\hline
+Logger\+Interface & {\em \$logger} & Psr Logger \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_ad86fa5498ac1054e414a91fa4a6a7dfd}\label{class_pes_1_1_database_1_1_handler_1_1_handler_ad86fa5498ac1054e414a91fa4a6a7dfd}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}!get\+Instance\+Info@{get\+Instance\+Info}}
+\index{get\+Instance\+Info@{get\+Instance\+Info}!Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}}
+\subsubsection{\texorpdfstring{get\+Instance\+Info()}{getInstanceInfo()}}
+{\footnotesize\ttfamily get\+Instance\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Identifikace handleru pro logování \begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_handler_interface}{Handler\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_a813f4f79dd359e1e6f4f45263868a8f4}\label{class_pes_1_1_database_1_1_handler_1_1_handler_a813f4f79dd359e1e6f4f45263868a8f4}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}!prepare@{prepare}}
+\index{prepare@{prepare}!Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily prepare (\begin{DoxyParamCaption}\item[{}]{\$sql\+Statement,  }\item[{}]{\$driver\+\_\+options = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Statement\+Interface (P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Prepares a statement for execution and returns a statement object \mbox{\hyperlink{}{string \$statement }} This must be a valid S\+QL statement template for the target database server. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$driver\+\_\+options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This array holds one or more key=$>$value pairs to set attribute values for the P\+D\+O\+Statement object that this method returns. You would most commonly use this to set the P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+C\+U\+R\+S\+OR value to P\+D\+O\+::\+C\+U\+R\+S\+O\+R\+\_\+\+S\+C\+R\+O\+LL to request a scrollable cursor. Some drivers have driver specific options that may be set at prepare-\/time. 
+
+\begin{DoxyReturn}{Returns}
+Statement\+Interface If the database server successfully prepares the statement, returned type differs from P\+DO object. Returns Pes. {\bfseries P\+D\+O\+::prepare} returns a {\bfseries Statement\+Interface} object. If the database server cannot successfully prepare the statement, {\bfseries P\+D\+O\+::prepare} returns {\bfseries F\+A\+L\+SE} or emits {\bfseries P\+D\+O\+Exception} (depending on error handling). 
+\end{DoxyReturn}
+
+
+Emulated prepared statements does not communicate with the database server so {\bfseries P\+D\+O\+::prepare} does not check the statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql\+Statement} & S\+QL příkaz s případnými pojmenovanými nebo otazníkem značenými paramatery (S\+QL template) \\
+\hline
+type & {\em \$driver\+\_\+options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Statement\+Interface 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af212c3950522906fe864096a27c24156}{P\+D\+O\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_af95be9a555ad9442030489215c290753}\label{class_pes_1_1_database_1_1_handler_1_1_handler_af95be9a555ad9442030489215c290753}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}!query@{query}}
+\index{query@{query}!Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}}
+\subsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily query (\begin{DoxyParamCaption}\item[{string}]{\$sql\+Statement = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql\+Statement} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_handler_a304e15cc58ef18bb2819523ef497d18e}\label{class_pes_1_1_database_1_1_handler_1_1_handler_a304e15cc58ef18bb2819523ef497d18e}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}!safe\+Exception\+Handler@{safe\+Exception\+Handler}}
+\index{safe\+Exception\+Handler@{safe\+Exception\+Handler}!Pes\+::\+Database\+::\+Handler\+::\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Handler}}
+\subsubsection{\texorpdfstring{safe\+Exception\+Handler()}{safeExceptionHandler()}}
+{\footnotesize\ttfamily static safe\+Exception\+Handler (\begin{DoxyParamCaption}\item[{\textbackslash{}Exception}]{\$exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Bezpečnostní exception handler obsluhuje pouze výjimky vyhozené v konstruktoru handleru -\/ tedy výjimky při instancování P\+DO.
+
+Nezachycená výjimka P\+DO vede obvykle k výpisu výjimky tak, že výpis vidí uživatel. Tento výpis obvykle obsahuje údaje o připojení. Zobrazování takového výpisu je zřejmé bezpečnostní riziko.
+
+Nastavení obsluhy chyb P\+HP na vyhazování chyb místo výjimek nijak neovliní chování konstruktoru P\+DO -\/ ten i nadále vyhazuje výjimky. Proto tato třída přidává jako bezpečnostní opatření svůj vlastní exception\+\_\+handler, který zachycuje výjimky všech typů a hlásí jen základní hlášení bez podrobnách informací. Tento exception\+\_\+handler musí být volán v konstruktoru této třídy před instancováním P\+DO, po instancování P\+DO je nahrazen zpět předtím nastaveným exception handlerem.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/Handler.\+php\end{DoxyCompactItemize}

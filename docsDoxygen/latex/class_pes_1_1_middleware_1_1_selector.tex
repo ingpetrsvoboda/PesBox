@@ -1,0 +1,59 @@
+\hypertarget{class_pes_1_1_middleware_1_1_selector}{}\section{Selector Class Reference}
+\label{class_pes_1_1_middleware_1_1_selector}\index{Selector@{Selector}}
+Inheritance diagram for Selector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_middleware_1_1_selector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_selector_a4d086b03f47931c183f0414bf2da5103}\label{class_pes_1_1_middleware_1_1_selector_a4d086b03f47931c183f0414bf2da5103}} 
+{\bfseries \+\_\+\+\_\+construct} (Logger\+Interface \$logger=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_middleware_1_1_selector_ac5aa307263a90cbc78be78bcb360f72a}{add\+Item}} (\$prefix, \$stack, callable \$resolver=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_selector_ab7b53bcad05abdc42206f7b2ac87a88a}\label{class_pes_1_1_middleware_1_1_selector_ab7b53bcad05abdc42206f7b2ac87a88a}} 
+{\bfseries process} (Server\+Request\+Interface \$request, Request\+Handler\+Interface \$handler)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of Switch
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_selector_ac5aa307263a90cbc78be78bcb360f72a}\label{class_pes_1_1_middleware_1_1_selector_ac5aa307263a90cbc78be78bcb360f72a}} 
+\index{Pes\+::\+Middleware\+::\+Selector@{Pes\+::\+Middleware\+::\+Selector}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!Pes\+::\+Middleware\+::\+Selector@{Pes\+::\+Middleware\+::\+Selector}}
+\subsubsection{\texorpdfstring{add\+Item()}{addItem()}}
+{\footnotesize\ttfamily add\+Item (\begin{DoxyParamCaption}\item[{}]{\$prefix,  }\item[{}]{\$stack,  }\item[{callable}]{\$resolver = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Přijímá prefix a přiřazenou definici zásbníku middleware. Definice zásobníku middleware je\+: nebo pole Callable 
+\begin{DoxyItemize}
+\item Proměnná typu Psr -\/ pak je volán tento jeden middleware 
+\item Pole, kde jednotlivé prvky pole jsou proměnné typu Psr
+\begin{DoxyItemize}
+\item pak je automaticky vytvořen objekt \mbox{\hyperlink{class_pes_1_1_middleware_1_1_dispatcher}{Dispatcher}}, který zajistí volání jednotlivých middleware ve stacku. 
+\end{DoxyItemize}
+\item Closure, která vrací některý z výše uvedených typů, t.\+j. buď objekt typu \mbox{\hyperlink{namespace_pes_1_1_middleware}{Middleware}} nebo pole položek typu \mbox{\hyperlink{namespace_pes_1_1_middleware}{Middleware}}. Tato varianta pracuje \char`\"{}lazy load\char`\"{} a jednotlivá middleware jsou instancována až v okamžiku jejich volání. 
+\item 
+\end{DoxyItemize}
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$prefix} & \\
+\hline
+type & {\em \$stack} & Definice zásobníku Middelware. \\
+\hline
+\textbackslash{}\+Pes\textbackslash{}\+Middleware\textbackslash{}callable & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Middleware/Selector.\+php\end{DoxyCompactItemize}

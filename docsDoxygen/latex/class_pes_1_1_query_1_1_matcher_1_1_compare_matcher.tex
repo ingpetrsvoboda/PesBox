@@ -1,0 +1,72 @@
+\hypertarget{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher}{}\section{Compare\+Matcher Class Reference}
+\label{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher}\index{Compare\+Matcher@{Compare\+Matcher}}
+Inheritance diagram for Compare\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher_a67414a467f92d3e285d22552b99708ad}{\+\_\+\+\_\+construct}} (\$operator)
+\item 
+\mbox{\hyperlink{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher_af38750109828e091458dbb0481a2a0d7}{match}} (\$value, \$pattern)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher}{Compare\+Matcher}} Ověřuje zda hodnota odpovídá vzoru běžným způsobem používaným v S\+QL i jinde \begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher_a67414a467f92d3e285d22552b99708ad}\label{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher_a67414a467f92d3e285d22552b99708ad}} 
+\index{Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$operator }\end{DoxyParamCaption})}
+
+V parametru konstruktoru akceptuje běžné sql porovnávací operátory (\char`\"{}=\char`\"{}, \char`\"{}!=\char`\"{}\+:, \char`\"{}$<$$>$\char`\"{}\+:, \char`\"{}$<$\char`\"{}, \char`\"{}$<$=\char`\"{}\+:, \char`\"{}$>$\char`\"{}, \char`\"{}$>$=\char`\"{}). 
+
+Užití
+
+{\ttfamily  (new \mbox{\hyperlink{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher}{Compare\+Matcher}}(\textquotesingle{}!=\textquotesingle{}))-\/$>$match(\$val, 555); $<$ úcode$>$=\char`\"{}\char`\"{}$>$ 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operator} & Nškterá z hodnot (\char`\"{}=\char`\"{}, \char`\"{}!=\char`\"{}\+:, \char`\"{}$<$$>$\char`\"{}\+:, \char`\"{}$<$\char`\"{}, \char`\"{}$<$=\char`\"{}\+:, \char`\"{}$>$\char`\"{}, \char`\"{}$>$=\char`\"{}) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher_af38750109828e091458dbb0481a2a0d7}\label{class_pes_1_1_query_1_1_matcher_1_1_compare_matcher_af38750109828e091458dbb0481a2a0d7}} 
+\index{Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher}!match@{match}}
+\index{match@{match}!Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher@{Pes\+::\+Query\+::\+Matcher\+::\+Compare\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily match (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+string & {\em \$pattern} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_query_1_1_matcher_1_1_matcher_interface}{Matcher\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Query/\+Matcher/Compare\+Matcher.\+php\end{DoxyCompactItemize}

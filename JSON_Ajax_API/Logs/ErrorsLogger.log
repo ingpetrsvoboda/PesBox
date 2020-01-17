@@ -1,0 +1,12 @@
+[info] [2018-11-07 08:35:27]Start logger: Logs/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: E_NOTICE [8] [2018-11-07 08:35:27] Undefined property: Liveblock\Middleware\Web\ContainerConfigurator::$request on line 52 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-19 09:52:24]Start logger: Logs/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: E_NOTICE [8] [2018-11-19 09:52:24] Undefined variable: testHtml on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php
+[debug] PHP error or unknown user error type: E_WARNING [2] [2018-11-19 09:52:24] implode(): Invalid arguments passed on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php
+[info] [2018-11-28 23:09:17]Start logger: Logs/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: E_NOTICE [8] [2018-11-28 23:09:17] Undefined variable: testHtml on line 64 in file C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php
+[debug] PHP error or unknown user error type: E_WARNING [2] [2018-11-28 23:09:17] implode(): Invalid arguments passed on line 64 in file C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php
+[info] [2018-11-28 23:12:00]Start logger: Logs/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: E_WARNING [2] [2018-11-28 23:12:00] implode(): Invalid arguments passed on line 64 in file C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php
+[info] [2018-11-28 23:31:36]Start logger: Logs/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: E_WARNING [2] [2018-11-28 23:31:36] realpath() expects exactly 1 parameter, 0 given on line 49 in file C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php

@@ -1,0 +1,52 @@
+\hypertarget{class_pes_1_1_http_1_1_uri_1_1_uri_string}{}\section{Uri\+String Class Reference}
+\label{class_pes_1_1_http_1_1_uri_1_1_uri_string}\index{Uri\+String@{Uri\+String}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_http_1_1_uri_1_1_uri_string_ae249f5633002e5ed87c17efa34f61f04}{get\+Uri\+String}} (Uri\+Interface \$uri)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_http_1_1_uri}{Uri}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_uri_1_1_uri_string_ae249f5633002e5ed87c17efa34f61f04}\label{class_pes_1_1_http_1_1_uri_1_1_uri_string_ae249f5633002e5ed87c17efa34f61f04}} 
+\index{Pes\+::\+Http\+::\+Uri\+::\+Uri\+String@{Pes\+::\+Http\+::\+Uri\+::\+Uri\+String}!get\+Uri\+String@{get\+Uri\+String}}
+\index{get\+Uri\+String@{get\+Uri\+String}!Pes\+::\+Http\+::\+Uri\+::\+Uri\+String@{Pes\+::\+Http\+::\+Uri\+::\+Uri\+String}}
+\subsubsection{\texorpdfstring{get\+Uri\+String()}{getUriString()}}
+{\footnotesize\ttfamily static get\+Uri\+String (\begin{DoxyParamCaption}\item[{Uri\+Interface}]{\$uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the string representation as a U\+RI reference.
+
+Depending on which components of the U\+RI are present, the resulting string is either a full U\+RI or relative reference according to R\+FC 3986, Section 4.\+1. The method concatenates the various components of the U\+RI, using the appropriate delimiters\+:
+
+
+\begin{DoxyItemize}
+\item If a scheme is present, it M\+U\+ST be suffixed by \char`\"{}\+:\char`\"{}.
+\item If an authority is present, it M\+U\+ST be prefixed by \char`\"{}//\char`\"{}.
+\item The path can be concatenated without delimiters. But there are two cases where the path has to be adjusted to make the U\+RI reference valid as P\+HP does not allow to throw an exception in \mbox{\hyperlink{class_pes_1_1_http_1_1_uri_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String()}}\+:
+\begin{DoxyItemize}
+\item If the path is rootless and an authority is present, the path M\+U\+ST be prefixed by \char`\"{}/\char`\"{}.
+\item If the path is starting with more than one \char`\"{}/\char`\"{} and no authority is present, the starting slashes M\+U\+ST be reduced to one.
+\end{DoxyItemize}
+\item If a query is present, it M\+U\+ST be prefixed by \char`\"{}?\char`\"{}.
+\item If a fragment is present, it M\+U\+ST be prefixed by \char`\"{}\#\char`\"{}.
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://tools.ietf.org/html/rfc3986#section-4.1}{\tt http\+://tools.\+ietf.\+org/html/rfc3986\#section-\/4.\+1} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Uri/Uri\+String.\+php\end{DoxyCompactItemize}

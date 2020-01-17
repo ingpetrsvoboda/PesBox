@@ -1,0 +1,54 @@
+\hypertarget{class_pes_1_1_type_1_1_enum}{}\section{Enum Class Reference}
+\label{class_pes_1_1_type_1_1_enum}\index{Enum@{Enum}}
+Inheritance diagram for Enum\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{class_pes_1_1_type_1_1_enum}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_enum_af52adf7b2038ca0848cb7922f981226e}\label{class_pes_1_1_type_1_1_enum_af52adf7b2038ca0848cb7922f981226e}} 
+{\bfseries \+\_\+\+\_\+invoke} (\$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_type_1_1_enum_a922c1b7210fe6ace59e7be671f91062e}{get\+Const\+List}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Emuluje typ \mbox{\hyperlink{class_pes_1_1_type_1_1_enum}{Enum}} (obdobně jako Spl\+Enum)
+
+Spl\+Enum\+: This » P\+E\+CL extension is not bundled with P\+HP.
+
+Použití -\/ definice typu
+
+{\ttfamily  namespace Framework; use Framework; class Db\+Type extends \mbox{\hyperlink{class_pes_1_1_type_1_1_enum}{Enum}} \{ $\ast$ const My\+S\+QL = \textquotesingle{}mysql\textquotesingle{}; const M\+S\+S\+QL = \textquotesingle{}mssql\textquotesingle{}; \} } 
+
+Vytvoření proměnné
+
+{\ttfamily  try \{ \$db\+Type = new Db\+Type(); \$ms\+Type = \$db\+Type(\textquotesingle{}mssql\textquotesingle{}) //\+OK, vrací řetězec \textquotesingle{}mssql\textquotesingle{} \$bla\+Type = \$db\+Type(\textquotesingle{}bla\textquotesingle{}); // Vyhodí výjimku -\/ za běhu \} catch (Pes \$not\+In\+Enum\+Exc) \{ echo \$not\+In\+Enum\+Exc-\/$>$get\+Message() . P\+H\+P\+\_\+\+E\+OL; \} } 
+
+Bezpečné vytvoření proměnné (bez rizika vyhozené výjimky) -\/ použití konstanty třídy
+
+{\ttfamily  \$db\+Type = new Db\+Type(); \$ms\+Type = \$db\+Type(\+Db\+Type\+::\+M\+S\+S\+Q\+L) //\+OK, vrací hodnotu \textquotesingle{}mssql\textquotesingle{} } 
+
+Test \char`\"{}if\char`\"{}
+
+{\ttfamily  //call\+: \$db\+Type = new Db\+Type(); \$some\+Object-\/$>$some\+Method(\$db\+Type, Db\+Type\+::\+My\+S\+QL); //test\+: function some\+Method(Db\+Type \$enum, \$value) \{ if (\$value == \$enum(\$value)) \{ \}; \} } \begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_enum_a922c1b7210fe6ace59e7be671f91062e}\label{class_pes_1_1_type_1_1_enum_a922c1b7210fe6ace59e7be671f91062e}} 
+\index{Pes\+::\+Type\+::\+Enum@{Pes\+::\+Type\+::\+Enum}!get\+Const\+List@{get\+Const\+List}}
+\index{get\+Const\+List@{get\+Const\+List}!Pes\+::\+Type\+::\+Enum@{Pes\+::\+Type\+::\+Enum}}
+\subsubsection{\texorpdfstring{get\+Const\+List()}{getConstList()}}
+{\footnotesize\ttfamily get\+Const\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kompatibilata s Spl\+Enum 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Type/Enum.\+php\end{DoxyCompactItemize}

@@ -1,4 +1,5 @@
+[info] [2019-01-01 09:00:36]Start logger: LogsFromLoggerTests/Rewrite/RewriteTest.log.
 [alert] Jeden řádek.
 [critical] Dva řádky. Tohle je první.
     A tohle druhý.
-[debug] Interpolovaná zpráva z testu FileLoggerTest::testGetInstanceAndLog v čase 1512427401.
+[debug] Interpolovaná zpráva z testu FileLoggerTest::testGetInstanceAndLog v čase 1546329636.

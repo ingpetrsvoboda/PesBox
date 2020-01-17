@@ -1,0 +1,82 @@
+\hypertarget{class_pes_1_1_logger_1_1_array_logger}{}\section{Array\+Logger Class Reference}
+\label{class_pes_1_1_logger_1_1_array_logger}\index{Array\+Logger@{Array\+Logger}}
+Inheritance diagram for Array\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_logger_1_1_array_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_array_logger_a755a9b9ee8a5044e162a9fd2a0b2a55c}{get\+Log\+Array}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_array_logger_af6241fe7e24b92b848c0341d8e134211}{get\+Log\+Text}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_array_logger_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_array_logger_a142f6bf4e86dc16e0bae4cff1de0dd44}{log}} (\$level, \$message, array \$context=array())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Logger loguje do paměti (zapisuje do pole, které je svlastností instance). \begin{DoxyAuthor}{Author}
+Petr Svoboda 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_array_logger_a7516ca30af0db3cdbf9a7739b48ce91d}\label{class_pes_1_1_logger_1_1_array_logger_a7516ca30af0db3cdbf9a7739b48ce91d}} 
+\index{Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
+\index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+to\+String()}{\_\_toString()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Magická metoda. Umožňuje například předávat objekt loggeru jako proměnnou do kontextu View -\/ pak dojde k volání této metody obvykle až když dochází k převodu view a proměnných kontextu na string. To se v Pes view obvykle dějě až na konci běhu skriptu nebo při vytváření bydy responsu a v té době již log obsahuje údaje zapsané v průběhu běhu skriptu.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_array_logger_a755a9b9ee8a5044e162a9fd2a0b2a55c}\label{class_pes_1_1_logger_1_1_array_logger_a755a9b9ee8a5044e162a9fd2a0b2a55c}} 
+\index{Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}!get\+Log\+Array@{get\+Log\+Array}}
+\index{get\+Log\+Array@{get\+Log\+Array}!Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}}
+\subsubsection{\texorpdfstring{get\+Log\+Array()}{getLogArray()}}
+{\footnotesize\ttfamily get\+Log\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací obsah logu ve formě pole. Každá položka pole obsahuje jeden zápis do logu. Každá položka obsahuje to, co do ní bylo zapsáno. Pokud byly zapsány proměnné různých typů, obsahují položky proměnné těch typů, které byly zapsány. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_array_logger_af6241fe7e24b92b848c0341d8e134211}\label{class_pes_1_1_logger_1_1_array_logger_af6241fe7e24b92b848c0341d8e134211}} 
+\index{Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}!get\+Log\+Text@{get\+Log\+Text}}
+\index{get\+Log\+Text@{get\+Log\+Text}!Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}}
+\subsubsection{\texorpdfstring{get\+Log\+Text()}{getLogText()}}
+{\footnotesize\ttfamily get\+Log\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací obsah logu ve formě textu. Pro převod obsahu do textu je používána funkce print\+\_\+r(). \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_array_logger_a142f6bf4e86dc16e0bae4cff1de0dd44}\label{class_pes_1_1_logger_1_1_array_logger_a142f6bf4e86dc16e0bae4cff1de0dd44}} 
+\index{Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}!log@{log}}
+\index{log@{log}!Pes\+::\+Logger\+::\+Array\+Logger@{Pes\+::\+Logger\+::\+Array\+Logger}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily log (\begin{DoxyParamCaption}\item[{}]{\$level,  }\item[{}]{\$message,  }\item[{array}]{\$context = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Zápis jednoho záznamu do logu. Metoda přijímá argumenty, které lze převést do čitelné podoby.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$level} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+array & {\em \$context} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Logger/Array\+Logger.\+php\end{DoxyCompactItemize}

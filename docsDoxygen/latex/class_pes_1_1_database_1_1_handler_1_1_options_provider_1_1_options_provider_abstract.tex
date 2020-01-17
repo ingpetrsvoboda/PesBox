@@ -1,0 +1,66 @@
+\hypertarget{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract}{}\section{Options\+Provider\+Abstract Class Reference}
+\label{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract}\index{Options\+Provider\+Abstract@{Options\+Provider\+Abstract}}
+Inheritance diagram for Options\+Provider\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract_a4d086b03f47931c183f0414bf2da5103}{\+\_\+\+\_\+construct}} (Logger\+Interface \$logger=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract_aebfec76216371ef236acc5910e90933d}\label{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract_aebfec76216371ef236acc5910e90933d}} 
+{\bfseries \$logger}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provider poskytuje výchozí options pro My\+S\+QL. 
+
+Nastavuje\+:
+
+
+\begin{DoxyItemize}
+\item P\+D\+O\+::\+M\+Y\+S\+Q\+L\+\_\+\+A\+T\+T\+R\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS = T\+R\+UE -\/ příkaz \$statement-\/$>$row\+Count() vrací počet nalezených a nikoli počet skutečně dotčenývh řádků 
+\item P\+D\+O\+::\+M\+Y\+S\+Q\+L\+\_\+\+A\+T\+T\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+O\+M\+M\+A\+ND = S\+ET N\+A\+M\+ES charset C\+O\+L\+L\+A\+TE collation -\/ Nastavuje charset a collation na hodnoty uložené v předaném parametru \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}
+\end{DoxyItemize}
+
+Pro vytvoření options používá objekt \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}} a z něj\+: 
+\begin{DoxyItemize}
+\item znakovou sadu (charset) 
+\item řazení (collation)
+\end{DoxyItemize}
+
+Podrobnosti\+:
+
+Příkaz Pdo\+Statement\+::row\+Count() defaultně vrací počet nalezených řádků a nikoli počet dotčených řádků. Při U\+P\+D\+A\+TE řádku stejnými hodnotami, které již jsou v tabulce zapsány My\+S\+QL vrací count affected rows 0. Pokud chci v kódu testovat úspěšnost zápisu při příkazu U\+P\+D\+A\+TE je lepší vracet počet nalezených řádků.
+
+Pro nastavení kódování a řazení pro připojení se nastaví jako inicializační příkaz (volaný vždy při vytoření handleru) S\+ET N\+A\+M\+ES charset C\+O\+L\+L\+A\+TE collation s hodnotami charset a collation získanými z \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}. Pozn. nastavení kódování a collationv dsn funguje různě v různých verzích P\+HP a někdy vůbec.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract_a4d086b03f47931c183f0414bf2da5103}\label{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_abstract_a4d086b03f47931c183f0414bf2da5103}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Abstract@{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Abstract}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Abstract@{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Abstract}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Logger\+Interface}]{\$logger = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Logger\+Interface & {\em \$logger} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/\+Options\+Provider/Options\+Provider\+Abstract.\+php\end{DoxyCompactItemize}

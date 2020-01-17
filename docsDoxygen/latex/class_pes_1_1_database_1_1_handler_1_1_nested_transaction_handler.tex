@@ -1,0 +1,66 @@
+\hypertarget{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler}{}\section{Nested\+Transaction\+Handler Class Reference}
+\label{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler}\index{Nested\+Transaction\+Handler@{Nested\+Transaction\+Handler}}
+Inheritance diagram for Nested\+Transaction\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af3380f3b13931d581fa973a382946b32}{begin\+Transaction}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af5674c27d4a92f6228565010eacbb9cb}{commit}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_afa549adf79e3f8c09fe8f903dd5fbfa7}{rollback}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler}{Nested\+Transaction\+Handler}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af3380f3b13931d581fa973a382946b32}\label{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af3380f3b13931d581fa973a382946b32}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler}!begin\+Transaction@{begin\+Transaction}}
+\index{begin\+Transaction@{begin\+Transaction}!Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler}}
+\subsubsection{\texorpdfstring{begin\+Transaction()}{beginTransaction()}}
+{\footnotesize\ttfamily begin\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Initiates a transaction \mbox{\hyperlink{}{bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure.}}
+
+První volání metody zahájí transakci voláním metodx P\+D\+O\+::begin\+Transaction(). Všechna další volání jen vytvoří nový bod návratu -\/ provedou sql příkaz S\+A\+V\+E\+P\+O\+I\+NT a jako aktuální bod návratu v handleru nastaví tento bod. 
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af3380f3b13931d581fa973a382946b32}{P\+D\+O\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af5674c27d4a92f6228565010eacbb9cb}\label{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_af5674c27d4a92f6228565010eacbb9cb}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler}!commit@{commit}}
+\index{commit@{commit}!Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler}}
+\subsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Commits a transaction \mbox{\hyperlink{}{bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure.}}
+
+Pokud je nastav bod návratu (S\+A\+V\+E\+P\+O\+I\+NT), metoda jen nastaví jako bod návratu bod předchátející aktuálnímu bodu návratu. Pokud již není žádný bod návratu, metoda provede skutečný příkaz P\+D\+O\+::commit(). 
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface_af5674c27d4a92f6228565010eacbb9cb}{P\+D\+O\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_afa549adf79e3f8c09fe8f903dd5fbfa7}\label{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler_afa549adf79e3f8c09fe8f903dd5fbfa7}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler}!rollback@{rollback}}
+\index{rollback@{rollback}!Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler@{Pes\+::\+Database\+::\+Handler\+::\+Nested\+Transaction\+Handler}}
+\subsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Pokud je nastaven bod návratu, metoda jen vrátí transakci do aktuálního bodu návratu voláním sql příkazu R\+O\+L\+L\+B\+A\+CK TO a nastaví jako bod návratu bod předchátející aktuálnímu bodu návratu. Pokud není bod návratu, metoda provede rollback celé transakce -\/ volá P\+D\+O\+::rollback(). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/Nested\+Transaction\+Handler.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,1 @@
+                    <?=$this->repeat('templates/main/prac_mista/nabidka/nabidkaZamestnavatelu/info.php', $zamestnavatele)?>

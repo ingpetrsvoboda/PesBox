@@ -1,0 +1,63 @@
+\hypertarget{class_pes_1_1_container_1_1_autowiring_container}{}\section{Autowiring\+Container Class Reference}
+\label{class_pes_1_1_container_1_1_autowiring_container}\index{Autowiring\+Container@{Autowiring\+Container}}
+Inheritance diagram for Autowiring\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pes_1_1_container_1_1_autowiring_container}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_autowiring_container_a91d786bf5e60430567a9de84ebbcbfdd}{has}} (\$service\+Name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_autowiring_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get}} (\$service\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_container_1_1_autowiring_container}{Autowiring\+Container}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_autowiring_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}\label{class_pes_1_1_container_1_1_autowiring_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}} 
+\index{Pes\+::\+Container\+::\+Autowiring\+Container@{Pes\+::\+Container\+::\+Autowiring\+Container}!get@{get}}
+\index{get@{get}!Pes\+::\+Container\+::\+Autowiring\+Container@{Pes\+::\+Container\+::\+Autowiring\+Container}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$service\+Name }\end{DoxyParamCaption})}
+
+\{\}
+
+Pokud služba není definovaná, metoda se pokusí vytvořit factory v autowiring kontejneru na základě jména třídy, které použije jako jméno služby. Pokud uspěje vrací hodnotu poskytnutou vyzvořenou službou, jinak dojde k vyhození výjimky.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & Jméno služby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Hodnota vracená službou 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_autowiring_container_a91d786bf5e60430567a9de84ebbcbfdd}\label{class_pes_1_1_container_1_1_autowiring_container_a91d786bf5e60430567a9de84ebbcbfdd}} 
+\index{Pes\+::\+Container\+::\+Autowiring\+Container@{Pes\+::\+Container\+::\+Autowiring\+Container}!has@{has}}
+\index{has@{has}!Pes\+::\+Container\+::\+Autowiring\+Container@{Pes\+::\+Container\+::\+Autowiring\+Container}}
+\subsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily has (\begin{DoxyParamCaption}\item[{}]{\$service\+Name }\end{DoxyParamCaption})}
+
+\{\}
+
+Pokud služba není definovaná, metoda se pokusí vytvořit factory v autowiring kontejneru na základě jména třídy, které použije jako jméno služby. Pokud uspěje vrací T\+R\+UE, jinak dojde k vyhození výjimky v metodě, která se pokouší vytvořit factory pomocí autowiringu. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Container/Autowiring\+Container.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,291 @@
+main.prac_mista{
+    min-height: 70%;
+}
+
+/*nadpisy*/
+main.prac_mista > h2{
+    color: #44bfe2;
+    transform: translateX(-10%);
+    padding-top: 50px;
+}
+main.prac_mista > h2::after{
+    background-color: #ceeaf5;
+}
+main.prac_mista div > h2{
+    color: #000;
+    transform: translateX(0%);
+    padding-top: 50px;
+    margin-top: -120px;
+}
+main.prac_mista div > h2::after{
+    background-color: #878b8d;
+}
+
+/*mapa*/
+.mapa{
+    width: 850px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/mapa-cr_36dpi.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+.mapa > div{
+    position: absolute;
+    z-index: 2000;
+}
+.mapa a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 0.8em;
+    text-align: center;
+}
+.mapa a img{
+    z-index: 200;
+    display: none;
+    position: absolute;
+    max-width: none!important;
+}
+.mapa a img.selected{
+    display: block;
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+.mapa a:hover img{
+    display: block;
+}
+
+/*kraje*/
+#ustecky{
+    height: 120px;
+    width: 155px;
+    top: 50px;
+    left: 140px;
+}
+#ustecky img{
+    height: 171px;
+    top: -30px;
+    left: -16px;
+}
+#liberecky{
+    height: 82px;
+    width: 130px;
+    top: 45px;
+    left: 310px;
+}
+#liberecky img{
+    height: 111px;
+    top: -7px;
+    left: -11px;
+}
+#karlovarsky{
+    height: 104px;
+    width: 115px;
+    top: 100px;
+    left: 25px;
+}
+#karlovarsky img{
+    height: 105px;
+    top: 7px;
+    left: -9px;
+}
+#stredocesky{
+    height: 26%;
+    width: 23.4%;
+    top: 149px;
+    left: 208px;
+    transform: rotate(-15deg);
+    z-index: 200;
+}
+#stredocesky img{
+    height: 206px;
+    top: -36px;
+    left: -38px;
+    transform: rotate(15deg);
+    z-index: 200;
+}
+#praha{
+    height: 50px;
+    width: 60px;
+    top: 190px;
+    left: 270px;
+    z-index: 300;
+}
+#praha img{
+    height: 44px;
+    top: 0px;
+    left: 2px;
+    z-index: 300;
+}
+#kralovehradecky{
+    height: 100px;
+    width: 130px;
+    top: 130px;
+    left: 415px;
+}
+#kralovehradecky img{
+    height: 154px;
+    top: -38px;
+    left: -30px;
+}
+#pardubicky{
+    height: 90px;
+    width: 142px;
+    top: 220px;
+    left: 430px;
+}
+#pardubicky img{
+    height: 126px;
+    top: -9px;
+    left: -21px;
+}
+#olomoucky{
+    height: 220px;
+    width: 75px;
+    top: 180px;
+    left: 580px;
+}
+#olomoucky img{
+    height: 229px;
+    top: -6px;
+    left: -13px;
+}
+#moravskoslezsky{
+    height: 239px;
+    width: 105px;
+    top: 191px;
+    left: 692px;
+    transform: rotate(127deg);
+}
+#moravskoslezsky img{
+    height: 188px;
+    top: 44px;
+    left: -49px;
+    transform: rotate(-127deg);
+}
+#plzensky{
+    height: 180px;
+    width: 146px;
+    top: 210px;
+    left: 40px;
+}
+#plzensky img{
+    height: 225px;
+    top: -27px;
+    left: -3px;
+}
+#jihocesky{
+    height: 180px;
+    width: 150px;
+    top: 310px;
+    left: 190px;
+}
+#jihocesky img{
+    height: 199px;
+    top: -11px;
+    left: -36px;
+}
+#vysocina{
+    height: 100px;
+    width: 139px;
+    top: 300px;
+    left: 360px;
+}
+#vysocina img{
+    height: 179px;
+    top: -34px;
+    left: -27px;
+}
+#jihomoravsky{
+    height: 160px;
+    width: 110px;
+    top: 350px;
+    left: 500px;
+}
+#jihomoravsky img{
+    height: 199.5px;
+    top: -25px;
+    left: -96px;
+}
+#zlinsky{
+    height: 115px;
+    width: 130px;
+    top: 370px;
+    left: 630px;
+}
+#zlinsky img{
+    height: 130px;
+    top: -11px;
+    left: -26px;
+}
+
+/*form - seznam kraju*/
+form.seznam-kraju{
+    display: none;
+}
+form.seznam-kraju select{
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    font-size: 18px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+form.seznam-kraju .button{
+    height: 45px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    display: block;
+}
+
+/*vypis pozic*/
+a.vypis-odkaz{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #4183C4;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+a.vypis-odkaz:last-child{
+    margin-bottom: 80px;
+}
+a.vypis-odkaz:hover{
+    text-decoration: underline;
+    color: #4183C4;
+}
+
+
+
+@media (max-width: 1200px){
+    form.seznam-kraju{
+        display: block;
+    }
+    .mapa{
+        display: none;
+    }
+
+    /*nadpisy*/
+    main.prac_mista > h2{
+        transform: translateX(0%);
+        margin-bottom: 50px;
+    }
+    main.prac_mista div > h2{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 768px){
+    main.prac_mista a.vypis-odkaz{
+        font-size: 15px;
+    }
+}

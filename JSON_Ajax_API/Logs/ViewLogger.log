@@ -1,0 +1,262 @@
+[info] [2018-12-11 11:56:45]Start logger: Logs/ViewLogger.log.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php: Vzniko 22407 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php. Seznam proměnných kontextu: 
+    Proměnná mainAttributes array 1 elements
+    Proměnná main array 8 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/head.php: Vzniko 2528 bytů. Data kontextu jsou prázdná.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/head.php->templates/head/favicons.html: Vzniko 1545 bytů. Data kontextu jsou prázdná.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/header.php: Vzniko 1052 bytů. Data kontextu jsou prázdná.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/nav.php: Vzniko 2173 bytů. Data kontextu jsou prázdná.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/nav.php->templates/nav/menu.php: Vzniko 690 bytů. Data kontextu jsou prázdná.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/nav.php->templates/nav/menu.php: Vzniko 690 bytů. Data kontextu jsou prázdná.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php: Vzniko 15724 bytů. Data kontextu mají 8 položek.
+[info] Template templates/layout.php->templates/main.php. Seznam proměnných kontextu: 
+    Proměnná mainTemplate string 4 bytes: "uvod"
+    Proměnná uvodniStranka array 6 elements
+    Proměnná pracMista array 5 elements
+    Proměnná skolyFirmy array 2 elements
+    Proměnná ohlasyCtenaru array 4 elements
+    Proměnná pribehyPerexy array 1 elements
+    Proměnná pribehAOstatniPerexy array 2 elements
+    Proměnná kontakt array 3 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php: Vzniko 15720 bytů. Data kontextu mají 6 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php. Seznam proměnných kontextu: 
+    Proměnná uvodniSlovo array 2 elements
+    Proměnná anotace array 2 elements
+    Proměnná tematickeOkruhy array 2 elements
+    Proměnná ukazka array 2 elements
+    Proměnná ohlasyCtenaruUvod array 2 elements
+    Proměnná kontakt array 3 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php: Vzniko 2866 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php. Seznam proměnných kontextu: 
+    Proměnná text array 2 elements
+    Proměnná obrazky array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php: Vzniko 122 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php. Seznam proměnných kontextu: 
+    Proměnná otazka string 61 bytes: "Fakt strávím třetinu života v práci? Nešlo by to jinak?"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php: Vzniko 94 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php. Seznam proměnných kontextu: 
+    Proměnná otazka string 38 bytes: "Jak se mám vyznat na pracovním trhu?"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php: Vzniko 126 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php. Seznam proměnných kontextu: 
+    Proměnná otazka string 70 bytes: "Jak vybrat ten správný obor, aby mne za pár let nenahradili roboti?"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php: Vzniko 136 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php. Seznam proměnných kontextu: 
+    Proměnná otazka string 70 bytes: "Co nabízejí zaměstnavatelé v mém kraji a kde chtějí absolventy?"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php: Vzniko 86 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/otazka.php. Seznam proměnných kontextu: 
+    Proměnná otazka string 30 bytes: "Nemám zkusit radši podnikat?"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/text.php: Vzniko 950 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/text.php. Seznam proměnných kontextu: 
+    Proměnná kurziva array 5 elements
+    Proměnná odstavec string 876 bytes: "Na tyto a mnoho dalších otázek budoucích absolventů středních škol a učilišť odpovídá publikace
+                    <b>PLAV! aneb Průvodce absolventa SŠ přípravou na reálný život.</b>
+    
+                    Web <b>PLAV.club</b> vznikl z podnětů jejích čtenářů, kteří si přáli některé dokumenty a odkazy najít online. Postupně budou tedy na těchto stránkách přibývat informace, které knihu doplní. Budeme rádi, když se podělíte i <a class="textovy-odkaz" href="https://goo.gl/forms/v423xnCZojrLB3lU2" target="blank">se svými zkušenostmi s hledáním zaměstnání</a> či <a class="textovy-odkaz" href="https://goo.gl/forms/vwBs11LGtwQKkEUo2" target="blank">přidáte svůj názor na přečtenou knihu</a>. Věříme, že tato stránka naplní význam své koncovky CLUB a stane se takovým klubovým sdílením informací mezi absolventy!"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/odkaz_obrazek.php: Vzniko 352 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/odkaz_obrazek.php. Seznam proměnných kontextu: 
+    Proměnná odkazAttributes array 3 elements
+    Proměnná imgAttributes array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/odkaz_obrazek.php: Vzniko 341 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/uvodniSlovo.php->templates/main/uvod/uvodniSlovo/odkaz_obrazek.php. Seznam proměnných kontextu: 
+    Proměnná odkazAttributes array 3 elements
+    Proměnná imgAttributes array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/anotace.php: Vzniko 1846 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/anotace.php. Seznam proměnných kontextu: 
+    Proměnná nazevSekce string 7 bytes: "Anotace"
+    Proměnná dataSekce array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/anotace.php->templates/main/uvod/anotace/text.php: Vzniko 1075 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/anotace.php->templates/main/uvod/anotace/text.php. Seznam proměnných kontextu: 
+    Proměnná odstavec string 976 bytes: "Kniha vychází z přípravných rozhovorů a focus groups na středních školách a učilištích. Je to průvodce s vysokou informační hodnotou, psaný vtipnou formou s mnoha příklady a odkazy, které studentům pomohou v budoucím profesním životě. Na závěr jsou citovány příběhy konkrétních úspěšných lidí, které mohou pomoci motivovat mladého člověka k rozvoji kariéry. Publikace se každoročně inovuje na základě ohlasů i změn pracovního trhu. Je určena studentům i jejich rodičům a dle učitelů je využívána i při výuce společenskovědních předmětů. Kniha vychází v krajových mutacích.
+    
+                    <b>Studenti posledních ročníků</b> ji dostávají ZDARMA z rukou školy díky spolupráci krajských úřadů a vydavatelství Grafia ve většině krajů ČR.
+    
+                    Ostatní mají možnost si publikaci <a class="textovy-odkaz" href="https://form.simpleshop.cz/v0DP/buy/" target="blank">zakoupit</a>"
+    Proměnná obrazky array 1 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/anotace.php->templates/main/uvod/anotace/obrazek_popisek.php: Vzniko 223 bytů. Data kontextu mají 3 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/anotace.php->templates/main/uvod/anotace/obrazek_popisek.php. Seznam proměnných kontextu: 
+    Proměnná imgAttributes array 3 elements
+    Proměnná pAttributes array 1 elements
+    Proměnná popisek string 49 bytes: "Autorka publikace Plav, <br/> Mgr. Jana Brabcová"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php: Vzniko 3624 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php. Seznam proměnných kontextu: 
+    Proměnná nazevSekce string 18 bytes: "Tématické okruhy"
+    Proměnná dataSekce array 4 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php: Vzniko 812 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php. Seznam proměnných kontextu: 
+    Proměnná sloupec array 7 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 89 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 32 bytes: "Rozhodování o budoucí profesi"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 73 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 21 bytes: "Porozumět sám sobě"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 74 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 22 bytes: "Volba dalšího studia"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 68 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 16 bytes: "Pracovní pozice"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 83 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 31 bytes: "Zaměstnání nebo podnikání?"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 64 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 12 bytes: "Sebemotivace"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 71 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 19 bytes: "Volba typu kariéry"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php: Vzniko 821 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php. Seznam proměnných kontextu: 
+    Proměnná sloupec array 7 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 77 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 20 bytes: "Práce v zahraničí"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 84 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 27 bytes: "Dojíždění a teleworking"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 77 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 25 bytes: "Životopis, který zaujme"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 65 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 13 bytes: "Korespondence"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 90 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 33 bytes: "Image a profesionální chování"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 79 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 27 bytes: "Osobní komunikace, konkurs"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 59 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 7 bytes: "Pohovor"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php: Vzniko 837 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php. Seznam proměnných kontextu: 
+    Proměnná sloupec array 7 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 69 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 17 bytes: "Work-life bilance"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 68 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 16 bytes: "Právní minimum"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 82 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 30 bytes: "Pár příběhů pro inspiraci"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 82 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 30 bytes: "Co pomůže při rozhodování"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 73 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 21 bytes: "Kapitolka pro rodiče"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 83 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 31 bytes: "Doporučená literatura, odkazy"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 90 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 33 bytes: "Pracovní a personální agentury"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php: Vzniko 672 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php. Seznam proměnných kontextu: 
+    Proměnná sloupec array 5 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 79 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 27 bytes: "Co když mne hned nevezmou?"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 76 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 24 bytes: "Nástup do zaměstnání"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 65 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 13 bytes: "Power talking"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 80 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 23 bytes: "Komunikace s vedoucími"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php: Vzniko 86 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/tematickeOkruhy.php->templates/main/uvod/tematickeOkruhy/ul_li.php->templates/main/uvod/tematickeOkruhy/ul_li/li.php. Seznam proměnných kontextu: 
+    Proměnná okruh string 34 bytes: "Základy společenského chování"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php: Vzniko 1231 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php. Seznam proměnných kontextu: 
+    Proměnná nadpisSekce string 7 bytes: "Ukázka"
+    Proměnná dataSekce array 1 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php->templates/main/uvod/ukazka/odkaz_obrazek_popisek.php: Vzniko 314 bytů. Data kontextu mají 3 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php->templates/main/uvod/ukazka/odkaz_obrazek_popisek.php. Seznam proměnných kontextu: 
+    Proměnná odkazAttributes array 3 elements
+    Proměnná imgAttributes array 2 elements
+    Proměnná popisek string 8 bytes: "Zobrazit"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php->templates/main/uvod/ukazka/odkaz_obrazek_popisek.php: Vzniko 314 bytů. Data kontextu mají 3 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php->templates/main/uvod/ukazka/odkaz_obrazek_popisek.php. Seznam proměnných kontextu: 
+    Proměnná odkazAttributes array 3 elements
+    Proměnná imgAttributes array 2 elements
+    Proměnná popisek string 8 bytes: "Zobrazit"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php->templates/main/uvod/ukazka/odkaz_obrazek_popisek.php: Vzniko 314 bytů. Data kontextu mají 3 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ukazka.php->templates/main/uvod/ukazka/odkaz_obrazek_popisek.php. Seznam proměnných kontextu: 
+    Proměnná odkazAttributes array 3 elements
+    Proměnná imgAttributes array 2 elements
+    Proměnná popisek string 8 bytes: "Zobrazit"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php: Vzniko 2810 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php. Seznam proměnných kontextu: 
+    Proměnná nadpisSekce string 18 bytes: "Ohlasy čtenářů"
+    Proměnná dataSekce array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php: Vzniko 1349 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php. Seznam proměnných kontextu: 
+    Proměnná sloupec array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php: Vzniko 692 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php. Seznam proměnných kontextu: 
+    Proměnná ctenar string 16 bytes: "Matěj Žáček:"
+    Proměnná ohlas string 571 bytes: "„Moc se mi líbí, že se hodně zaměřuje na pracovní pohovor. Zatím to vypadá, že pohovor pro mě bude asi největší překážka při hledání práce,
+                                        a že v tom nejsem sám. Také je dobře, že zmiňuje risk studia „zbytečných“ oborů jako antropologie, historie apod. Jedna věc,
+                                        která by podle mě
+                                        stála za zmínku jsou sporty a e-sporty - dnes povolání, která jsou velmi dobře placená, ale také velmi riskantní (a nezdravá)...“"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php: Vzniko 517 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php. Seznam proměnných kontextu: 
+    Proměnná ctenar string 58 bytes: "4. B - Střední zdravotnická škola Jindřichův Hradec:"
+    Proměnná ohlas string 359 bytes: "„Myslíme si, že tato příručka pro nás byla přínosem. Před koncem studia přemýšlíme, kam půjdeme dál, jestli do školy nebo přímo do zaměstnání.
+                                        Proto pro nás byla příručka rozhodně vhodná a nápomocná při rozhodování. Přiměla nás zamyslet se nad sebou samým i nad naší budoucností.“"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php: Vzniko 1244 bytů. Data kontextu mají 1 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php. Seznam proměnných kontextu: 
+    Proměnná sloupec array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php: Vzniko 641 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php. Seznam proměnných kontextu: 
+    Proměnná ctenar string 54 bytes: "Ing. Přikrylová, výchovná poradkyně SŠ, Olomouc:"
+    Proměnná ohlas string 487 bytes: "„Knihu jsem přečetla celou. Pokud si ji studenti přečtou celou, dozví se spoustu informací, na které ve škole není dostatek času ani prostor.
+                                        Publikaci považuji za velmi užitečnou. Studenti se vhodně zorientují v krocích, které je čekají po studiu při hledání zaměstnání,
+                                        dozví se více a zajímavou formou než ve školních předmětech Základy společenských věd nebo Ekonomika.“"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php: Vzniko 463 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/uvod/ohlasyCtenaru.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu.php->templates/main/uvod/ohlasyCtenaru/rozdeleni_sloupcu/ohlas.php. Seznam proměnných kontextu: 
+    Proměnná ctenar string 28 bytes: "Nejvíce čtenáře zaujalo:"
+    Proměnná ohlas string 335 bytes: "Dobře propracovaná kapitola První krůčky v zaměstnání. <br/>
+                                        Přehledné, stručné <br/>
+                                        Pár příběhů reálných lidí pro inspiraci a kapitolka pro rodiče <br/>
+                                        Jak úspěšně získat zaměstnání, které chci."
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php: Vzniko 2708 bytů. Data kontextu mají 3 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php. Seznam proměnných kontextu: 
+    Proměnná nadpisSekce string 7 bytes: "Kontakt"
+    Proměnná dataSekce array 2 elements
+    Proměnná tymGrafia string 57 bytes: "Těšíme se na spolupráci! <p> Tým Grafia, s.r.o. </p>"
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php: Vzniko 2173 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php. Seznam proměnných kontextu: 
+    Proměnná kontaktniUdaje array 3 elements
+    Proměnná dotaznik array 2 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/kontaktni_udaje.php: Vzniko 461 bytů. Data kontextu mají 4 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/kontaktni_udaje.php. Seznam proměnných kontextu: 
+    Proměnná nazevOddeleni string 16 bytes: "Kontakt inzerce:"
+    Proměnná kontakt string 27 bytes: "info@grafia.cz, 377 227 701"
+    Proměnná popis string 35 bytes: "(Objednávky, obchodní komunikace)"
+    Proměnná popisTdAttributes array 1 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/kontaktni_udaje.php: Vzniko 445 bytů. Data kontextu mají 4 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/kontaktni_udaje.php. Seznam proměnných kontextu: 
+    Proměnná nazevOddeleni string 16 bytes: "Kontakt redakce:"
+    Proměnná kontakt string 19 bytes: "absolvent@grafia.cz"
+    Proměnná popis string 22 bytes: "(Připomínky k textu)"
+    Proměnná popisTdAttributes array 1 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/kontaktni_udaje.php: Vzniko 470 bytů. Data kontextu mají 4 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/kontaktni_udaje.php. Seznam proměnných kontextu: 
+    Proměnná nazevOddeleni string 17 bytes: "Kontakt produkce:"
+    Proměnná kontakt string 18 bytes: "produkce@grafia.cz"
+    Proměnná popis string 47 bytes: "(Zaslání inzerátu, pomoc s výrobou inzerce)"
+    Proměnná popisTdAttributes array 1 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/dotaznik.php: Vzniko 466 bytů. Data kontextu mají 2 položek.
+[info] Template templates/layout.php->templates/main.php->templates/main/uvod.php->templates/main/kontakt.php->templates/main/kontakt/tabulka_kontaktu.php->templates/main/kontakt/tabulka_kontaktu/dotaznik.php. Seznam proměnných kontextu: 
+    Proměnná text string 187 bytes: "Měl/a jste publikaci v ruce a chcete nám sdělit svůj názor? Vyplňte prosím
+                               <a href="https://goo.gl/forms/vwBs11LGtwQKkEUo2" target="blank">dotazník</a>"
+    Proměnná dotaznikTdAttributes array 1 elements
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/footer.php: Vzniko 2 bytů. Data kontextu jsou prázdná.
+[debug]  [2018-12-11 11:56:45] Renderování template templates/layout.php->templates/bodyLinks.php: Vzniko 329 bytů. Data kontextu jsou prázdná.

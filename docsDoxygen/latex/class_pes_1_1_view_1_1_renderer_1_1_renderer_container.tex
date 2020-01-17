@@ -1,0 +1,68 @@
+\hypertarget{class_pes_1_1_view_1_1_renderer_1_1_renderer_container}{}\section{Renderer\+Container Class Reference}
+\label{class_pes_1_1_view_1_1_renderer_1_1_renderer_container}\index{Renderer\+Container@{Renderer\+Container}}
+Inheritance diagram for Renderer\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_view_1_1_renderer_1_1_renderer_container}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_renderer_container_a0df693c0d02fe85325f46e6ce9a1ffb6}{get}} (\$class\+Name)
+\item 
+static \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_renderer_container_a068b4012f760f18deb809c5836409a52}{set\+Recorder\+Provider}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_recorder_1_1_recorder_provider_interface}{Recorder\+Provider\+Interface}} \$recorder\+Provider)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of Renderers\+Container
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_renderer_container_a0df693c0d02fe85325f46e6ce9a1ffb6}\label{class_pes_1_1_view_1_1_renderer_1_1_renderer_container_a0df693c0d02fe85325f46e6ce9a1ffb6}} 
+\index{Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container@{Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container}!get@{get}}
+\index{get@{get}!Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container@{Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static get (\begin{DoxyParamCaption}\item[{}]{\$class\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Vrací vždy stejnou instanci rendereru se zadaným jménem třídy.
+
+Při prvním volání je instanceván daný typ rendereru a je mu nastaven recorder provider, pokud byl zadán. Metoda tak vrací stejnou instanci rendereru včetně nastaveného recorder provideru.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_container_interface}{Renderer\+Container\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_renderer_container_a068b4012f760f18deb809c5836409a52}\label{class_pes_1_1_view_1_1_renderer_1_1_renderer_container_a068b4012f760f18deb809c5836409a52}} 
+\index{Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container@{Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container}!set\+Recorder\+Provider@{set\+Recorder\+Provider}}
+\index{set\+Recorder\+Provider@{set\+Recorder\+Provider}!Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container@{Pes\+::\+View\+::\+Renderer\+::\+Renderer\+Container}}
+\subsubsection{\texorpdfstring{set\+Recorder\+Provider()}{setRecorderProvider()}}
+{\footnotesize\ttfamily static set\+Recorder\+Provider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_recorder_1_1_recorder_provider_interface}{Recorder\+Provider\+Interface}}}]{\$recorder\+Provider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Zadaný recorder provider bude nastaven všem rendererům vraceným kontejnerem metodou \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_renderer_container_a0df693c0d02fe85325f46e6ce9a1ffb6}{get()}}, které implementují interface \mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_recordable_interface}{Renderer\+Recordable\+Interface}}. 
+\begin{DoxyParams}[1]{Parameters}
+Recorder\+Provider\+Interface & {\em \$recorder\+Provider} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_container_interface}{Renderer\+Container\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+View/\+Renderer/Renderer\+Container.\+php\end{DoxyCompactItemize}

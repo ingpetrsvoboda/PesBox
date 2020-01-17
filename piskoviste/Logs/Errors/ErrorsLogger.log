@@ -1,0 +1,117 @@
+[info] [2019-02-15 14:31:31]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:31:31] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:32:02]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:32:02] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:34:39]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:34:39] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:37:29]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:37:29] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:38:23]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:38:23] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:41:46]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:41:46] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:41:56]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:41:56] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:43:26]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:43:26] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:43:30]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:43:30] Undefined variable: atributeValue on line 80 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:46:51]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 14:46:51] Undefined variable: atributeValue on line 79 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 19:42:11]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 19:42:11] Undefined variable: atributeValue on line 79 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:11] SimpleXMLElement::__construct(): Entity: line 21: parser error : Opening and ending tag mismatch: connectioninfofieldprefix line 21 and dbfieldprefix on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:11] SimpleXMLElement::__construct():         &lt;connectioninfofieldprefix&gt;dbField°&lt;/dbfieldprefix&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:11] SimpleXMLElement::__construct():                                                             ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct(): Entity: line 30: parser error : Opening and ending tag mismatch: connectioninfohost line 30 and dbhost on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;localhost&lt;/dbhost&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct():                                                   ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct(): Entity: line 31: parser error : Opening and ending tag mismatch: connectioninfoschema line 31 and dbschema on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;projektor_3_1&lt;/dbschema&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct():                                                           ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct(): Entity: line 32: parser error : Opening and ending tag mismatch: connectioninfotype line 32 and dbtype on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MySQL&lt;/dbtype&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct():                                               ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:12] SimpleXMLElement::__construct(): Entity: line 37: parser error : Opening and ending tag mismatch: connectioninfohost line 37 and dbhost on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;localhost&lt;/dbhost&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct():                                                   ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct(): Entity: line 38: parser error : Opening and ending tag mismatch: connectioninfoschema line 38 and dbschema on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;information_schema&lt;/dbschema&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct():                                                                ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct(): Entity: line 39: parser error : Opening and ending tag mismatch: connectioninfotype line 39 and dbtype on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MySQL&lt;/dbtype&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:13] SimpleXMLElement::__construct():                                               ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct(): Entity: line 44: parser error : Opening and ending tag mismatch: connectioninfohost line 44 and dbhost on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;localhost&lt;/dbhost&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct():                                                   ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct(): Entity: line 45: parser error : Opening and ending tag mismatch: connectioninfoschema line 45 and dbschema on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;personalservice_web&lt;/dbschema&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct():                                                                 ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct(): Entity: line 46: parser error : Opening and ending tag mismatch: connectioninfotype line 46 and dbtype on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MySQL&lt;/dbtype&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct():                                               ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:14] SimpleXMLElement::__construct(): Entity: line 51: parser error : Opening and ending tag mismatch: connectioninfohost line 51 and dbhost on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;NB-SVOBODA\SQLEXPRESS2008&lt;/dbhost&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct():                                                                   ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct(): Entity: line 52: parser error : Opening and ending tag mismatch: connectioninfoschema line 52 and dbschema on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;test_projektor&lt;/dbschema&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct():                                                            ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct(): Entity: line 53: parser error : Opening and ending tag mismatch: connectioninfotype line 53 and dbtype on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MSSQL&lt;/dbtype&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:42:15] SimpleXMLElement::__construct():                                               ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 19:46:17]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:46:17] SimpleXMLElement::__construct(): Entity: line 21: parser error : Opening and ending tag mismatch: connectioninfofieldprefix line 21 and dbfieldprefix on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:46:17] SimpleXMLElement::__construct():         &lt;connectioninfofieldprefix&gt;dbField°&lt;/dbfieldprefix&gt; on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 19:46:17] SimpleXMLElement::__construct():                                                             ^ on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 20:18:43]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 20:18:43] Undefined variable: jmenoSekce on line 79 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 20:18:43] Undefined variable: jmenoSekce on line 86 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 22:07:09]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 22:07:09] Undefined variable: query on line 69 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 22:07:09] SimpleXMLElement::xpath(): Invalid expression on line 69 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 22:07:09] Undefined variable: objekt on line 121 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 22:07:10] Undefined variable: query on line 69 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 22:07:10] SimpleXMLElement::xpath(): Invalid expression on line 69 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 22:07:10] Undefined variable: objekt on line 121 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 22:13:01]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 22:13:01] SimpleXMLElement::xpath(): Invalid expression on line 70 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[debug] PHP error or unknown user error type: ?? [8] [2019-02-15 22:13:01] Undefined variable: objekt on line 122 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 22:16:03]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 22:16:03] SimpleXMLElement::xpath(): Invalid expression on line 70 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 22:16:56]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-02-15 22:16:56] SimpleXMLElement::xpath(): Invalid expression on line 70 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-03-10 10:54:45]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 10:54:45] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 10:54:45] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 10:54:45] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 10:54:45] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 10:54:45] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 10:54:45] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[info] [2019-03-10 11:01:06]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 11:01:06] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 11:01:09] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 11:01:09] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 11:01:09] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 11:01:09] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 11:01:09] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[info] [2019-03-10 12:34:57]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:34:57] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:34:57] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:34:57] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:34:57] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:34:57] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:34:57] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[info] [2019-03-10 12:38:04]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:04] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:04] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:04] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:04] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:04] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:04] A non-numeric value encountered on line 37 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[info] [2019-03-10 12:38:31]Start logger: Logs/Errors/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:32] A non-numeric value encountered on line 38 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:32] A non-numeric value encountered on line 38 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:32] A non-numeric value encountered on line 38 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:32] A non-numeric value encountered on line 38 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:32] A non-numeric value encountered on line 38 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php
+[debug] PHP error or unknown user error type: ?? [2] [2019-03-10 12:38:32] A non-numeric value encountered on line 38 in file C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php

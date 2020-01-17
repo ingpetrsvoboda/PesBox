@@ -1,0 +1,51 @@
+\hypertarget{class_pes_1_1_comparator_1_1_sort_comparator_class_methods}{}\section{Sort\+Comparator\+Class\+Methods Class Reference}
+\label{class_pes_1_1_comparator_1_1_sort_comparator_class_methods}\index{Sort\+Comparator\+Class\+Methods@{Sort\+Comparator\+Class\+Methods}}
+Inheritance diagram for Sort\+Comparator\+Class\+Methods\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_comparator_1_1_sort_comparator_class_methods}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_comparator_1_1_sort_comparator_class_methods_a21aeb75d37fce6724b5a60f836dfc85c}{get\+Compare\+Function}} (\mbox{\hyperlink{class_pes_1_1_query_1_1_order}{Order}} \$order)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_comparator_1_1_sort_comparator}{Sort\+Comparator}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_comparator_1_1_sort_comparator_class_methods_a21aeb75d37fce6724b5a60f836dfc85c}\label{class_pes_1_1_comparator_1_1_sort_comparator_class_methods_a21aeb75d37fce6724b5a60f836dfc85c}} 
+\index{Pes\+::\+Comparator\+::\+Sort\+Comparator\+Class\+Methods@{Pes\+::\+Comparator\+::\+Sort\+Comparator\+Class\+Methods}!get\+Compare\+Function@{get\+Compare\+Function}}
+\index{get\+Compare\+Function@{get\+Compare\+Function}!Pes\+::\+Comparator\+::\+Sort\+Comparator\+Class\+Methods@{Pes\+::\+Comparator\+::\+Sort\+Comparator\+Class\+Methods}}
+\subsubsection{\texorpdfstring{get\+Compare\+Function()}{getCompareFunction()}}
+{\footnotesize\ttfamily static get\+Compare\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pes_1_1_query_1_1_order}{Order}}}]{\$order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda vrací komparátor pro pokročilejší řazení skalárů, polí a objektů. Komparátor je callable funkce vhodná pro použití v metodě uasort.
+
+Vrácená callable funkce stanoví pořadí pro \char`\"{}multisort\char`\"{}, tedy třídění podle všech vlastností zadaných v poli \$order. Porovnáná skaláry a objekty tak, že porovnává řetězcové vyjádřenískaláru nebo objektu.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$order} & Pole ve formátu array(\textquotesingle{}nazev1\textquotesingle{}=$>$\textquotesingle{}A\+SC\textquotesingle{}, \textquotesingle{}nazev2=$>$\textquotesingle{}D\+E\+SC\textquotesingle{}). nazev1, nazev 2 jsou názvy metod objektů -\/ členů kolekce a hodnoty \textquotesingle{}A\+SC\textquotesingle{} \textquotesingle{}D\+E\+SC\textquotesingle{} určují směr razení. Přípustné hodnoty směru jsou pouze řetězce \textquotesingle{}A\+SC\textquotesingle{} \textquotesingle{}D\+E\+SC\textquotesingle{}, názvy metod je třeba uvádět bez závorek (např. \char`\"{}get\+A\char`\"{} nikoli \char`\"{}get\+A()\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_comparator_1_1_comparator_interface_a21aeb75d37fce6724b5a60f836dfc85c}{Comparator\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Comparator/Sort\+Comparator\+Class\+Methods.\+php\end{DoxyCompactItemize}

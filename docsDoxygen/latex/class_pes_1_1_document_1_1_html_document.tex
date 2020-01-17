@@ -1,0 +1,138 @@
+\hypertarget{class_pes_1_1_document_1_1_html_document}{}\section{Html\+Document Class Reference}
+\label{class_pes_1_1_document_1_1_html_document}\index{Html\+Document@{Html\+Document}}
+Inheritance diagram for Html\+Document\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_document_1_1_html_document}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_document_1_1_html_document_a70b3d346ee887e5e64cfb9589f0a4130}{\+\_\+\+\_\+construct}} (\$properties\+String=self\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+O\+C\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+P\+E\+R\+TY)
+\item 
+\mbox{\hyperlink{class_pes_1_1_document_1_1_html_document_aaaabeacc0ec5297805e1d716d54cda6d}{set\+Doctype}} (\$text)
+\item 
+\mbox{\hyperlink{class_pes_1_1_document_1_1_html_document_a642a5e39c791d840c8deb894ff706b86}{get\+Doctype}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_document_1_1_html_document_a30320351a7d1f6b27b5540877a20ffde}{set\+Html\+Tag}} (Html \$html)
+\item 
+\mbox{\hyperlink{class_pes_1_1_document_1_1_html_document_a34f9a5311121d8111d87af08d5ea206c}{get\+Html\+Tag}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_document_1_1_html_document_afde980915cc78c408e6ac75b662e631c}{get\+String}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_document_1_1_html_document_aaf106127065467c555cf95ff68ba7ed0}{include\+Document}} (Framework\+\_\+\+Document\+\_\+\+Document\+Interface \$included\+Html\+Document, \$target\+Slot=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_a16a6c633e014fc55acb7e6ecaf1a27c6}\label{class_pes_1_1_document_1_1_html_document_a16a6c633e014fc55acb7e6ecaf1a27c6}} 
+const {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+O\+C\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+P\+E\+R\+TY} = \textquotesingle{}html\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Objekt html dokumentu. Oobsahuje elementy !doctype a html. Elementu !doctype je možno nastavovat vlastnosti pouze souhrnně ve formě řetězce. Výchozí vlastnost je \textquotesingle{}html\textquotesingle{} a defaultně vznikne $<$!\+D\+O\+C\+T\+Y\+PE html$>$ Element html je typu tag Html.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_a70b3d346ee887e5e64cfb9589f0a4130}\label{class_pes_1_1_document_1_1_html_document_a70b3d346ee887e5e64cfb9589f0a4130}} 
+\index{Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$properties\+String = {\ttfamily self\+:\+:DEFAULT\+\_\+DOCTYPE\+\_\+PROPERTY} }\end{DoxyParamCaption})}
+
+Konstruktor nastaví deklaraci !doctype, pokud parametr není zadán, pak na default hodnotu danou konstantou třídy a element html naplní prázným tagem Html 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_a642a5e39c791d840c8deb894ff706b86}\label{class_pes_1_1_document_1_1_html_document_a642a5e39c791d840c8deb894ff706b86}} 
+\index{Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}!get\+Doctype@{get\+Doctype}}
+\index{get\+Doctype@{get\+Doctype}!Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}}
+\subsubsection{\texorpdfstring{get\+Doctype()}{getDoctype()}}
+{\footnotesize\ttfamily get\+Doctype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací hodnotu deklarace !doctype ve formě prostého textu. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_a34f9a5311121d8111d87af08d5ea206c}\label{class_pes_1_1_document_1_1_html_document_a34f9a5311121d8111d87af08d5ea206c}} 
+\index{Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}!get\+Html\+Tag@{get\+Html\+Tag}}
+\index{get\+Html\+Tag@{get\+Html\+Tag}!Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}}
+\subsubsection{\texorpdfstring{get\+Html\+Tag()}{getHtmlTag()}}
+{\footnotesize\ttfamily get\+Html\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací html element html dokumentu. \begin{DoxyReturn}{Returns}
+Html 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_afde980915cc78c408e6ac75b662e631c}\label{class_pes_1_1_document_1_1_html_document_afde980915cc78c408e6ac75b662e631c}} 
+\index{Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}}
+{\footnotesize\ttfamily get\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací html dokument ve formě prostého textu. Pro obsah dokumentu html se použije text elementu !doctype a render elementu html.
+
+\begin{DoxyReturn}{Returns}
+string Obsah dokumentu html ve formě prostého textu. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_document_1_1_document_interface}{Document\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_aaf106127065467c555cf95ff68ba7ed0}\label{class_pes_1_1_document_1_1_html_document_aaf106127065467c555cf95ff68ba7ed0}} 
+\index{Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}!include\+Document@{include\+Document}}
+\index{include\+Document@{include\+Document}!Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}}
+\subsubsection{\texorpdfstring{include\+Document()}{includeDocument()}}
+{\footnotesize\ttfamily include\+Document (\begin{DoxyParamCaption}\item[{Framework\+\_\+\+Document\+\_\+\+Document\+Interface}]{\$included\+Html\+Document,  }\item[{}]{\$target\+Slot = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Vloží html dokument do tohoto dokumentu. Pokud v elementu \textquotesingle{}$<$body$>$\textquotesingle{} tohoto html dokumentu je řetězec \$slot, vloží text elementu \textquotesingle{}$<$body$>$\textquotesingle{} vkládaného html dokumentu místo řetězce \$slot. Jinak vloží text elementu \textquotesingle{}$<$body$>$\textquotesingle{} vkládaného html dokumentu na konec. Obsah elementu \textquotesingle{}$<$head$>$\textquotesingle{} vkládaného dokumentu vloží vždy na konec elementu \textquotesingle{}$<$head$>$\textquotesingle{} tohoto dokumentu. 
+\begin{DoxyParams}[1]{Parameters}
+Framework\+\_\+\+Document\+\_\+\+Document\+Interface & {\em \$included\+Html\+Document} & Metoda akceptuje pouze dokument typu Framework\+\_\+\+Document\+\_\+\+Html \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & \textquotesingle{}Není možno zahrnout dokument \textquotesingle{}.get\+\_\+class(\$merged\+Html\+Document).\textquotesingle{} do dokumentu \textquotesingle{}.get\+\_\+class(\$merged\+Html\+Document).\textquotesingle{}.\textquotesingle{} \\
+\hline
+{\em Logic\+Exception} & Není možno sloučit html dokumenty s různými atributy !doctype. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Framework\+\_\+\+Document\+\_\+\+Html 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_aaaabeacc0ec5297805e1d716d54cda6d}\label{class_pes_1_1_document_1_1_html_document_aaaabeacc0ec5297805e1d716d54cda6d}} 
+\index{Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}!set\+Doctype@{set\+Doctype}}
+\index{set\+Doctype@{set\+Doctype}!Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}}
+\subsubsection{\texorpdfstring{set\+Doctype()}{setDoctype()}}
+{\footnotesize\ttfamily set\+Doctype (\begin{DoxyParamCaption}\item[{}]{\$text }\end{DoxyParamCaption})}
+
+Metoda nastaví hodnotu deklarace !doctype. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & Text, který bude použit jako atributy tagu !doctype \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Framework\+\_\+\+Document\+\_\+\+Html 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_document_1_1_html_document_a30320351a7d1f6b27b5540877a20ffde}\label{class_pes_1_1_document_1_1_html_document_a30320351a7d1f6b27b5540877a20ffde}} 
+\index{Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}!set\+Html\+Tag@{set\+Html\+Tag}}
+\index{set\+Html\+Tag@{set\+Html\+Tag}!Pes\+::\+Document\+::\+Html\+Document@{Pes\+::\+Document\+::\+Html\+Document}}
+\subsubsection{\texorpdfstring{set\+Html\+Tag()}{setHtmlTag()}}
+{\footnotesize\ttfamily set\+Html\+Tag (\begin{DoxyParamCaption}\item[{Html}]{\$html }\end{DoxyParamCaption})}
+
+Nastaví html element dokumentu 
+\begin{DoxyParams}[1]{Parameters}
+Html & {\em \$html} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Document/Html\+Document.\+php\end{DoxyCompactItemize}

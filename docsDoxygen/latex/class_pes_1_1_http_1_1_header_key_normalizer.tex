@@ -1,0 +1,66 @@
+\hypertarget{class_pes_1_1_http_1_1_header_key_normalizer}{}\section{Header\+Key\+Normalizer Class Reference}
+\label{class_pes_1_1_http_1_1_header_key_normalizer}\index{Header\+Key\+Normalizer@{Header\+Key\+Normalizer}}
+Inheritance diagram for Header\+Key\+Normalizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_http_1_1_header_key_normalizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_header_key_normalizer_af39c624090b7badef56311d62a041c50}{normalize\+Key}} (\$key)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_header_key_normalizer_ad96b455525cff93be0dc81b5f6a4f8b9}{get\+Original\+Key}} (\$normalized\+Key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_http_1_1_header_key_normalizer}{Header\+Key\+Normalizer}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_header_key_normalizer_ad96b455525cff93be0dc81b5f6a4f8b9}\label{class_pes_1_1_http_1_1_header_key_normalizer_ad96b455525cff93be0dc81b5f6a4f8b9}} 
+\index{Pes\+::\+Http\+::\+Header\+Key\+Normalizer@{Pes\+::\+Http\+::\+Header\+Key\+Normalizer}!get\+Original\+Key@{get\+Original\+Key}}
+\index{get\+Original\+Key@{get\+Original\+Key}!Pes\+::\+Http\+::\+Header\+Key\+Normalizer@{Pes\+::\+Http\+::\+Header\+Key\+Normalizer}}
+\subsubsection{\texorpdfstring{get\+Original\+Key()}{getOriginalKey()}}
+{\footnotesize\ttfamily get\+Original\+Key (\begin{DoxyParamCaption}\item[{}]{\$normalized\+Key }\end{DoxyParamCaption})}
+
+Vrací původní, nenormalizovaný klíč. Třída musí imoplementovat tuto funkčnost. 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$normalized\+Key} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_normalizer_1_1_key_normalizer_interface_ad96b455525cff93be0dc81b5f6a4f8b9}{Key\+Normalizer\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_header_key_normalizer_af39c624090b7badef56311d62a041c50}\label{class_pes_1_1_http_1_1_header_key_normalizer_af39c624090b7badef56311d62a041c50}} 
+\index{Pes\+::\+Http\+::\+Header\+Key\+Normalizer@{Pes\+::\+Http\+::\+Header\+Key\+Normalizer}!normalize\+Key@{normalize\+Key}}
+\index{normalize\+Key@{normalize\+Key}!Pes\+::\+Http\+::\+Header\+Key\+Normalizer@{Pes\+::\+Http\+::\+Header\+Key\+Normalizer}}
+\subsubsection{\texorpdfstring{normalize\+Key()}{normalizeKey()}}
+{\footnotesize\ttfamily normalize\+Key (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Normalizuje jména hlaviček. Normalizované jméno obsahuje jen malá písmena a pomlčky. Změní písmena na malá, zamění pomlčky za podtržítka a speciální hlavičky s prefixem \char`\"{}http-\/\char`\"{} přejmenuje tak, že odstraní prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Jméno hlavičky\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Normalizované jméno hlavičky 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_normalizer_1_1_key_normalizer_interface}{Key\+Normalizer\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/Header\+Key\+Normalizer.\+php\end{DoxyCompactItemize}

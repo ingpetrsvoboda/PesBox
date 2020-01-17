@@ -1,0 +1,70 @@
+\hypertarget{class_pes_1_1_collection_1_1_collection_abstract}{}\section{Collection\+Abstract Class Reference}
+\label{class_pes_1_1_collection_1_1_collection_abstract}\index{Collection\+Abstract@{Collection\+Abstract}}
+Inheritance diagram for Collection\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_pes_1_1_collection_1_1_collection_abstract}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_collection_abstract_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_collection_abstract_ad0cb87b388bc74d63dc884accdca8713}\label{class_pes_1_1_collection_1_1_collection_abstract_ad0cb87b388bc74d63dc884accdca8713}} 
+{\bfseries \+\_\+\+\_\+clone} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_collection_abstract_ac751e87b3d4c4bf2feb03bee8b092755}\label{class_pes_1_1_collection_1_1_collection_abstract_ac751e87b3d4c4bf2feb03bee8b092755}} 
+{\bfseries count} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_collection_abstract_a9c9bae4e44ee76a926fa7ecdc49dd8b5}\label{class_pes_1_1_collection_1_1_collection_abstract_a9c9bae4e44ee76a926fa7ecdc49dd8b5}} 
+{\bfseries get\+Array\+Copy} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_collection_abstract_a7a9f937c2958e6f4dd7b030f86fb70b7}\label{class_pes_1_1_collection_1_1_collection_abstract_a7a9f937c2958e6f4dd7b030f86fb70b7}} 
+{\bfseries get\+Iterator} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_collection_abstract_ac3d1855cff23b99e728759a333684eb2}{sort}} (callable \$comparator)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_collection_abstract_a57cbf24ec36d868712a8e9c69cbfd0cd}\label{class_pes_1_1_collection_1_1_collection_abstract_a57cbf24ec36d868712a8e9c69cbfd0cd}} 
+{\bfseries \$internal\+Storage}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_collection_1_1_collection_abstract}{Collection\+Abstract}} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_collection_abstract_a095c5d389db211932136b53f25f39685}\label{class_pes_1_1_collection_1_1_collection_abstract_a095c5d389db211932136b53f25f39685}} 
+\index{Pes\+::\+Collection\+::\+Collection\+Abstract@{Pes\+::\+Collection\+::\+Collection\+Abstract}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Collection\+::\+Collection\+Abstract@{Pes\+::\+Collection\+::\+Collection\+Abstract}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vytvoří novou prázdnou kolekci 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_collection_1_1_collection_abstract_ac3d1855cff23b99e728759a333684eb2}\label{class_pes_1_1_collection_1_1_collection_abstract_ac3d1855cff23b99e728759a333684eb2}} 
+\index{Pes\+::\+Collection\+::\+Collection\+Abstract@{Pes\+::\+Collection\+::\+Collection\+Abstract}!sort@{sort}}
+\index{sort@{sort}!Pes\+::\+Collection\+::\+Collection\+Abstract@{Pes\+::\+Collection\+::\+Collection\+Abstract}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily sort (\begin{DoxyParamCaption}\item[{callable}]{\$comparator }\end{DoxyParamCaption})}
+
+Metoda seřadí prvky kolekce s pouřitím porovnávací funkce zadané jako parametr. Porovnávací funkce musí porovnávat členy kolekce, vracet při volání callback(první, druhý) tyto hodnoty\+: 1 pokud \textquotesingle{}první\textquotesingle{} má být před \textquotesingle{}druhý\textquotesingle{}, 0 pokud je pořadí členů stejné, -\/1 pokud má být \textquotesingle{}druhý\textquotesingle{} před \textquotesingle{}první\textquotesingle{}. Metoda interně používá metodu uasort, pro porobnosti o porovnávací funkci viz dokumentace php. Po použití metody probíhá následné iterování kolekce (foreach) v setříděném pořadí, jen pozor -\/ indexy členů kolekce se tříděním nijak nemění.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Pes\textbackslash{}\+Collection\textbackslash{}callable & {\em \$comparator} & Porovnávaví funkce \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_collection_interface}{Collection\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Collection/Collection\+Abstract.\+php\end{DoxyCompactItemize}

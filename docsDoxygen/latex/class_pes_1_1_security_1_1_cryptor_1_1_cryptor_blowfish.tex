@@ -1,0 +1,74 @@
+\hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish}{}\section{Cryptor\+Blowfish Class Reference}
+\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish}\index{Cryptor\+Blowfish@{Cryptor\+Blowfish}}
+Inheritance diagram for Cryptor\+Blowfish\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_ae68e3281fdc4689e22a68b4b463c5fa9}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_ae68e3281fdc4689e22a68b4b463c5fa9}} 
+{\bfseries \+\_\+\+\_\+construct} (\$key)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_a23f471892a96b88b27bcc1cd6100c79b}{decrypt}} (\$crypttext)
+\item 
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_a07bcc8ef1d23370470ecb5ae8fc07dfa}{encrypt}} (\$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish}{Cryptor\+Blowfish}} šifruje s užitím modulu mcrypt. Ten je dlouhodobě nevyvíjený a v P\+H\+P7.\+1 označen jako deprecated. Tento cryptor obsahuje kód z původní projektorové Auth\+Cookie.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_a23f471892a96b88b27bcc1cd6100c79b}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_a23f471892a96b88b27bcc1cd6100c79b}} 
+\index{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily decrypt (\begin{DoxyParamCaption}\item[{}]{\$crypttext }\end{DoxyParamCaption})}
+
+decrypt A\+ES 256
+
+
+\begin{DoxyParams}[1]{Parameters}
+data & {\em \$edata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+decrypted data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_cryptor_1_1_cryptor_interface}{Cryptor\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_a07bcc8ef1d23370470ecb5ae8fc07dfa}\label{class_pes_1_1_security_1_1_cryptor_1_1_cryptor_blowfish_a07bcc8ef1d23370470ecb5ae8fc07dfa}} 
+\index{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish@{Pes\+::\+Security\+::\+Cryptor\+::\+Cryptor\+Blowfish}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily encrypt (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+crypt A\+ES 256
+
+
+\begin{DoxyParams}[1]{Parameters}
+data & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+base64 encrypted data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_security_1_1_cryptor_1_1_cryptor_interface}{Cryptor\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Security/\+Cryptor/vzory\+\_\+testy/Cryptor\+Blowfish.\+php\end{DoxyCompactItemize}

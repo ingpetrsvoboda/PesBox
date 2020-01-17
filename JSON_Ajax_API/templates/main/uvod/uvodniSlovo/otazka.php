@@ -1,0 +1,1 @@
+                                    <p><i>  <?= $this->filter('mono', $otazka) ?> </i></p>   

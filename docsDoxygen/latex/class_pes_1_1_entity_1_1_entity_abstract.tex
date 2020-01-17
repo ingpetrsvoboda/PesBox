@@ -1,0 +1,127 @@
+\hypertarget{class_pes_1_1_entity_1_1_entity_abstract}{}\section{Entity\+Abstract Class Reference}
+\label{class_pes_1_1_entity_1_1_entity_abstract}\index{Entity\+Abstract@{Entity\+Abstract}}
+Inheritance diagram for Entity\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_entity_1_1_entity_abstract}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_a9ee444ac6f563fe13f868c7a4d96f013}{\+\_\+\+\_\+set}} (\$name, \$value=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_aa232b7b1d48256769082d3351dfd5001}{is\+Public\+Property}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_a64e8191090bf560e825966b082e868f0}{get\+Names}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_a70a0fe08035189260c72e32a9e20d30c}{get\+Values}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_a8b5c943485575ffd0388c24998990e22}{get\+Values\+Assoc}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+In Domain Driven Design, an \mbox{\hyperlink{namespace_pes_1_1_entity}{Entity}} is An object that is not defined by its attributes, but rather by a thread of continuity and its identity. So for example, a user is an entity because you can change the user’s email address without changing the identity of the user. This is because the user has an id so even when you change the user’s attributes, it’s still the same user. So an \mbox{\hyperlink{namespace_pes_1_1_entity}{Entity}} is basically just a unique object within the system that has identity. You can’t have two users with the same id and so users are Entities. An entity can be a user, an order, a product, a blog post, really anything with an identity.
+
+Description of Projektor2\+\_\+\+Model\+\_\+\+Row\+Model\+Abstract
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_entity_1_1_entity_abstract_a9ee444ac6f563fe13f868c7a4d96f013}\label{class_pes_1_1_entity_1_1_entity_abstract_a9ee444ac6f563fe13f868c7a4d96f013}} 
+\index{Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}!\+\_\+\+\_\+set@{\+\_\+\+\_\+set}}
+\index{\+\_\+\+\_\+set@{\+\_\+\+\_\+set}!Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+set()}{\_\_set()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+set (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Setter, nastavuje jen hodnoty existujících public vlastností, zamezuje přidání další vlastnosti objektu. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_entity_1_1_entity_abstract_a7a9f937c2958e6f4dd7b030f86fb70b7}\label{class_pes_1_1_entity_1_1_entity_abstract_a7a9f937c2958e6f4dd7b030f86fb70b7}} 
+\index{Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}!get\+Iterator@{get\+Iterator}}
+\index{get\+Iterator@{get\+Iterator}!Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}}
+\subsubsection{\texorpdfstring{get\+Iterator()}{getIterator()}}
+{\footnotesize\ttfamily get\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací iterátor obsahující vlastnosti objektu \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_entity_1_1_entity_abstract_a64e8191090bf560e825966b082e868f0}\label{class_pes_1_1_entity_1_1_entity_abstract_a64e8191090bf560e825966b082e868f0}} 
+\index{Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}!get\+Names@{get\+Names}}
+\index{get\+Names@{get\+Names}!Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}}
+\subsubsection{\texorpdfstring{get\+Names()}{getNames()}}
+{\footnotesize\ttfamily get\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací názvy public vlastností modelu v číselně indexovaném poli. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_entity_1_1_entity_interface}{Entity\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_entity_1_1_entity_abstract_a70a0fe08035189260c72e32a9e20d30c}\label{class_pes_1_1_entity_1_1_entity_abstract_a70a0fe08035189260c72e32a9e20d30c}} 
+\index{Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}!get\+Values@{get\+Values}}
+\index{get\+Values@{get\+Values}!Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}}
+\subsubsection{\texorpdfstring{get\+Values()}{getValues()}}
+{\footnotesize\ttfamily get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací hodnoty public vlastností modelu v číselně indexovaném poli. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_entity_1_1_entity_interface}{Entity\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_entity_1_1_entity_abstract_a8b5c943485575ffd0388c24998990e22}\label{class_pes_1_1_entity_1_1_entity_abstract_a8b5c943485575ffd0388c24998990e22}} 
+\index{Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}!get\+Values\+Assoc@{get\+Values\+Assoc}}
+\index{get\+Values\+Assoc@{get\+Values\+Assoc}!Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}}
+\subsubsection{\texorpdfstring{get\+Values\+Assoc()}{getValuesAssoc()}}
+{\footnotesize\ttfamily get\+Values\+Assoc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací hodnoty a názvy public vlastností modelu jako asociativní pole. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_entity_1_1_entity_interface}{Entity\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_entity_1_1_entity_abstract_aa232b7b1d48256769082d3351dfd5001}\label{class_pes_1_1_entity_1_1_entity_abstract_aa232b7b1d48256769082d3351dfd5001}} 
+\index{Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}!is\+Public\+Property@{is\+Public\+Property}}
+\index{is\+Public\+Property@{is\+Public\+Property}!Pes\+::\+Entity\+::\+Entity\+Abstract@{Pes\+::\+Entity\+::\+Entity\+Abstract}}
+\subsubsection{\texorpdfstring{is\+Public\+Property()}{isPublicProperty()}}
+{\footnotesize\ttfamily is\+Public\+Property (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Metoda oznámí jestli je vlastnost se zadaným jménem public. Takovou vlastnost lze nastavovate metodou \+\_\+\+\_\+set (nap \$entity-\/$>$vlastnost = \$hodnota;) a hodnotu a název takové vlastnosti vracejí metody \mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_a64e8191090bf560e825966b082e868f0}{get\+Names()}}, \mbox{\hyperlink{class_pes_1_1_entity_1_1_entity_abstract_a70a0fe08035189260c72e32a9e20d30c}{get\+Values()}}, get\+Values\+Assoc a obsahuje ji iterátor vracený metodou get\+Iterator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_entity_1_1_entity_interface}{Entity\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Entity/Entity\+Abstract.\+php\end{DoxyCompactItemize}

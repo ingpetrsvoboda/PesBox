@@ -1,0 +1,3 @@
+[16-May-2019 23:15:19 Europe/Prague] PHP Notice:  Undefined index: development in C:\xampp\htdocs\PesBox\testApplication\index.php on line 40
+[16-May-2019 23:15:19 Europe/Prague] PHP Stack trace:
+[16-May-2019 23:15:19 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\testApplication\index.php:0

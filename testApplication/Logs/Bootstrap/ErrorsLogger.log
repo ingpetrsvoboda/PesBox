@@ -1,0 +1,2 @@
+[info] [2019-05-16 23:15:19] Logger start. Log file: Logs/Bootstrap/ErrorsLogger.log.
+[debug] PHP error or unknown user error type: E_NOTICE [8] [2019-05-16 23:15:19] Undefined index: development on line 40 in file C:\xampp\htdocs\PesBox\testApplication\index.php

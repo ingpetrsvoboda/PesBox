@@ -1,0 +1,836 @@
+[15-Feb-2019 14:29:41 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Config\stdClass' not found in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:29
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(16): Pes\Config\Config->__construct('ConfigProjektor...')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 14:30:25 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Config\stdClass' not found in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:29
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(16): Pes\Config\Config->__construct('ConfigProjektor...')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 14:31:31 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:31:31 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:31:31 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:31:31 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:31:31 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:31:31 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Config\stdClass' not found in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:108
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(106): Pes\Config\Config->prevedSimpleXMLObjectNaObjekt(Array)
+#1 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(84): Pes\Config\Config->prevedSimpleXMLObjectNaObjekt(Array)
+#2 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(73): Pes\Config\Config->getSectionFromIni('export')
+#3 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#4 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 14:32:02 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:32:02 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:32:02 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:32:02 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:32:02 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:32:06 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Config\stdClass' not found in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:108
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(106): Pes\Config\Config->prevedSimpleXMLObjectNaObjekt(Array)
+#1 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(84): Pes\Config\Config->prevedSimpleXMLObjectNaObjekt(Array)
+#2 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(73): Pes\Config\Config->getSectionFromIni('export')
+#3 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#4 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 14:34:39 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:34:39 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:34:39 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:34:39 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:34:39 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:37:29 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:37:30 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:37:30 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:37:30 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:37:30 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:38:23 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:38:24 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:38:24 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:38:24 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:38:24 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:41:46 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:41:46 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:41:46 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:41:46 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:41:46 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:41:56 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:41:56 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:41:56 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:41:56 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:41:56 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:43:26 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:43:26 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:43:26 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:43:26 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:43:26 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:43:29 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Config\BadMethodCallException' not found in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:86
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(73): Pes\Config\Config->getSectionFromIni('db')
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(26): Pes\Config\Config->getSection('db')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 14:43:30 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 80
+[15-Feb-2019 14:43:30 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:43:30 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:43:30 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:43:30 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:73
+[15-Feb-2019 14:43:31 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Config\BadMethodCallException' not found in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:86
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(73): Pes\Config\Config->getSectionFromIni('db')
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(26): Pes\Config\Config->getSection('db')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 14:46:51 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 79
+[15-Feb-2019 14:46:51 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 14:46:51 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 14:46:51 Europe/Prague] PHP   2. Pes\Config\Config->getSection($section = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 14:46:51 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni($jmenoSekce = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 14:46:52 Europe/Prague] PHP Fatal error:  Uncaught BadMethodCallException: Sekce konfigurace db je v souboru obsažena vícekrát než jednou. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:85
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(72): Pes\Config\Config->getSectionFromIni('db')
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(26): Pes\Config\Config->getSection('db')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(BadMethodCallException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(BadMethodCallException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Notice:  Undefined variable: atributeValue in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 79
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 21: parser error : Opening and ending tag mismatch: connectioninfofieldprefix line 21 and dbfieldprefix in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():         &lt;connectioninfofieldprefix&gt;dbField°&lt;/dbfieldprefix&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                             ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:11 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:11 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 30: parser error : Opening and ending tag mismatch: connectioninfohost line 30 and dbhost in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;localhost&lt;/dbhost&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                   ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 31: parser error : Opening and ending tag mismatch: connectioninfoschema line 31 and dbschema in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;projektor_3_1&lt;/dbschema&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                           ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 32: parser error : Opening and ending tag mismatch: connectioninfotype line 32 and dbtype in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MySQL&lt;/dbtype&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                               ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 37: parser error : Opening and ending tag mismatch: connectioninfohost line 37 and dbhost in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:12 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:12 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;localhost&lt;/dbhost&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                   ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 38: parser error : Opening and ending tag mismatch: connectioninfoschema line 38 and dbschema in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;information_schema&lt;/dbschema&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                                ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 39: parser error : Opening and ending tag mismatch: connectioninfotype line 39 and dbtype in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MySQL&lt;/dbtype&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                               ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:13 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:13 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 44: parser error : Opening and ending tag mismatch: connectioninfohost line 44 and dbhost in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;localhost&lt;/dbhost&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                   ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 45: parser error : Opening and ending tag mismatch: connectioninfoschema line 45 and dbschema in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;personalservice_web&lt;/dbschema&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                                 ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 46: parser error : Opening and ending tag mismatch: connectioninfotype line 46 and dbtype in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MySQL&lt;/dbtype&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                               ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:14 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:14 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 51: parser error : Opening and ending tag mismatch: connectioninfohost line 51 and dbhost in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfohost&gt;NB-SVOBODA\SQLEXPRESS2008&lt;/dbhost&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                                   ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 52: parser error : Opening and ending tag mismatch: connectioninfoschema line 52 and dbschema in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfoschema&gt;test_projektor&lt;/dbschema&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                            ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 53: parser error : Opening and ending tag mismatch: connectioninfotype line 53 and dbtype in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():             &lt;connectioninfotype&gt;MSSQL&lt;/dbtype&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                               ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:42:15 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:42:15 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:42:16 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:42:16 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:42:16 Europe/Prague] PHP Fatal error:  Uncaught Exception: String could not be parsed as XML in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(136): SimpleXMLElement->__construct('<?xml version="...')
+#1 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(79): Pes\Config\Config->loadConfig(NULL)
+#2 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(72): Pes\Config\Config->getSectionFromIni('export')
+#3 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#4 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Exception), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Exception))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 19:46:17 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 21: parser error : Opening and ending tag mismatch: connectioninfofieldprefix line 21 and dbfieldprefix in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:46:17 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:46:17 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():         &lt;connectioninfofieldprefix&gt;dbField°&lt;/dbfieldprefix&gt; in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:46:17 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:46:17 Europe/Prague] PHP Warning:  SimpleXMLElement::__construct():                                                             ^ in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 136
+[15-Feb-2019 19:46:17 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   3. Pes\Config\Config->getSectionFromIni() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:72
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   4. Pes\Config\Config->loadConfig() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:79
+[15-Feb-2019 19:46:17 Europe/Prague] PHP   5. SimpleXMLElement->__construct() C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+[15-Feb-2019 19:46:17 Europe/Prague] PHP Fatal error:  Uncaught Exception: String could not be parsed as XML in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:136
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(136): SimpleXMLElement->__construct('<?xml version="...')
+#1 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(79): Pes\Config\Config->loadConfig()
+#2 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(72): Pes\Config\Config->getSectionFromIni('export')
+#3 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#4 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Exception), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Exception))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 19:48:55 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Žádná ze sekcí konfigurace db nemá atribut databaze s hodnotou Projektor. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:57
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(23): Pes\Config\Config->getSectionByAtribute('db', 'databaze', 'Projektor')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 19:49:42 Europe/Prague] PHP Fatal error:  Uncaught BadMethodCallException: Sekce konfigurace db není v souboru obsažena. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:88
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(72): Pes\Config\Config->getSectionFromIni('db')
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(27): Pes\Config\Config->getSection('db')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(BadMethodCallException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(BadMethodCallException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 19:50:21 Europe/Prague] PHP Fatal error:  Uncaught BadMethodCallException: Sekce konfigurace connectioninfo není v souboru obsažena. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:88
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(72): Pes\Config\Config->getSectionFromIni('connectioninfo')
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(27): Pes\Config\Config->getSection('connectioninfo')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(BadMethodCallException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(BadMethodCallException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 20:17:57 Europe/Prague] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:128
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(77): Pes\Config\Config->loadConfig()
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(ArgumentCountError), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(ArgumentCountError))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 20:17:57 Europe/Prague] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:128
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(77): Pes\Config\Config->loadConfig()
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(ArgumentCountError), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(ArgumentCountError))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 20:17:57 Europe/Prague] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:128
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(77): Pes\Config\Config->loadConfig()
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(ArgumentCountError), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(ArgumentCountError))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 20:17:57 Europe/Prague] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:128
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php(77): Pes\Config\Config->loadConfig()
+#1 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(ArgumentCountError), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(ArgumentCountError))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 20:18:43 Europe/Prague] PHP Notice:  Undefined variable: jmenoSekce in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 79
+[15-Feb-2019 20:18:43 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 20:18:43 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 20:18:43 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 20:18:43 Europe/Prague] PHP Notice:  Undefined variable: jmenoSekce in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 86
+[15-Feb-2019 20:18:43 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 20:18:43 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 20:18:43 Europe/Prague] PHP   2. Pes\Config\Config->getSection() C:\xampp\htdocs\PesBox\piskoviste\config.php:18
+[15-Feb-2019 20:18:43 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Sekce konfigurace  není v souboru obsažena. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:86
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(18): Pes\Config\Config->getSection('export')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:07:51 Europe/Prague] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected 'public' (T_PUBLIC) in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:76
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Pes\\Config\\Conf...')
+#2 C:\xampp\htdocs\PesBox\piskoviste\config.php(16): spl_autoload_call('Pes\\Config\\Conf...')
+#3 {main}
+
+Next ParseError: syntax error, unexpected 'public' (T_PUBLIC) in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:76
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Autoloader\Autoloader.php(196): Pes\Autoloader\Autoloader->requireFile('../Pes/src/Conf...')
+#1 C:\xampp\htdocs\PesBox\Pes\src\Autoloader\Autoloader.php(150): Pes\Autoloader\Autoloader->loadMappedFile('Pes\\', 'Config\\Config')
+#2 [internal function]: Pes\Autoloader\Autoloader->loadClass('Pes\\Config\\Conf...')
+#3 C:\xampp\htdocs\PesBox\piskoviste\config.php(16): spl_autoload_call('Pes\\Config\\Conf...')
+# in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:08:44 Europe/Prague] PHP Fatal error:  Uncaught Error: Call to undefined method Pes\Config\Config::getSectionByAtribute() in C:\xampp\htdocs\PesBox\piskoviste\config.php:23
+Stack trace:
+#0 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:26:05 Europe/Prague] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:109
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Pes\\Config\\Conf...')
+#2 C:\xampp\htdocs\PesBox\piskoviste\config.php(16): spl_autoload_call('Pes\\Config\\Conf...')
+#3 {main}
+
+Next ParseError: syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:109
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Autoloader\Autoloader.php(196): Pes\Autoloader\Autoloader->requireFile('../Pes/src/Conf...')
+#1 C:\xampp\htdocs\PesBox\Pes\src\Autoloader\Autoloader.php(150): Pes\Autoloader\Autoloader->loadMappedFile('Pes\\', 'Config\\Config')
+#2 [internal function]: Pes\Autoloader\Autoloader->loadClass('Pes\\Config\\Conf...')
+#3 C:\xampp\htdocs\PesBox\piskoviste\config.php(16): spl in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:36:09 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Konfigurace eoobsahuje element connectioninfo s atributem name a hodnotou Pr2ojektor. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:65
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(24): Pes\Config\Config->getElement('connectioninfo', 'name', 'Pr2ojektor')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:51:59 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Konfigurace eoobsahuje element connectioninfo s atributem name a hodnotou Pr2joektor. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:65
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(24): Pes\Config\Config->getElement('connectioninfo', 'name', 'Pr2joektor')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:52:11 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Konfigurace eoobsahuje element connectioninfo s atributem name a hodnotou Pr2joektor. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:64
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(24): Pes\Config\Config->getElement('connectioninfo', 'name', 'Pr2joektor')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:52:49 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Konfigurace obsahuje více elementů database/connectioninfo s atributem  a hodnotou . in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:61
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(27): Pes\Config\Config->getElement('database/connec...')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 21:54:34 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Konfigurace obsahuje více elementů 'database/connectioninfo' s atributem '' a hodnotou ''. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:61
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(27): Pes\Config\Config->getElement('database/connec...')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 22:06:21 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Konfigurace obsahuje více elementů 'database/connectioninfo' s atributem '' a hodnotou ''. in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:61
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\config.php(27): Pes\Config\Config->getElement('database/connec...')
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí loggingExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'loggingExceptio...')
+#1 [internal function]: loggingExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[15-Feb-2019 22:07:09 Europe/Prague] PHP Notice:  Undefined variable: query in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 69
+[15-Feb-2019 22:07:09 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:27
+[15-Feb-2019 22:07:09 Europe/Prague] PHP Warning:  SimpleXMLElement::xpath(): Invalid expression in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 69
+[15-Feb-2019 22:07:09 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:27
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   3. SimpleXMLElement->xpath(*uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:69
+[15-Feb-2019 22:07:09 Europe/Prague] PHP Notice:  Undefined variable: objekt in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 121
+[15-Feb-2019 22:07:09 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:27
+[15-Feb-2019 22:07:09 Europe/Prague] PHP   3. Pes\Config\Config->prevedSimpleXMLObjectNaObjekt($simpleXMLObject = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:70
+[15-Feb-2019 22:07:10 Europe/Prague] PHP Notice:  Undefined variable: query in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 69
+[15-Feb-2019 22:07:10 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[15-Feb-2019 22:07:10 Europe/Prague] PHP Warning:  SimpleXMLElement::xpath(): Invalid expression in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 69
+[15-Feb-2019 22:07:10 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   3. SimpleXMLElement->xpath(*uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:69
+[15-Feb-2019 22:07:10 Europe/Prague] PHP Notice:  Undefined variable: objekt in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 121
+[15-Feb-2019 22:07:10 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[15-Feb-2019 22:07:10 Europe/Prague] PHP   3. Pes\Config\Config->prevedSimpleXMLObjectNaObjekt($simpleXMLObject = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:70
+[15-Feb-2019 22:13:01 Europe/Prague] PHP Warning:  SimpleXMLElement::xpath(): Invalid expression in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 70
+[15-Feb-2019 22:13:01 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:13:01 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:13:01 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[15-Feb-2019 22:13:01 Europe/Prague] PHP   3. SimpleXMLElement->xpath(*uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:70
+[15-Feb-2019 22:13:01 Europe/Prague] PHP Notice:  Undefined variable: objekt in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 122
+[15-Feb-2019 22:13:01 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:13:01 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:13:01 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[15-Feb-2019 22:13:01 Europe/Prague] PHP   3. Pes\Config\Config->prevedSimpleXMLObjectNaObjekt($simpleXMLObject = *uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:71
+[15-Feb-2019 22:16:03 Europe/Prague] PHP Warning:  SimpleXMLElement::xpath(): Invalid expression in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 70
+[15-Feb-2019 22:16:03 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:16:03 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:16:03 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[15-Feb-2019 22:16:03 Europe/Prague] PHP   3. SimpleXMLElement->xpath(*uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:70
+[15-Feb-2019 22:16:56 Europe/Prague] PHP Warning:  SimpleXMLElement::xpath(): Invalid expression in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 70
+[15-Feb-2019 22:16:56 Europe/Prague] PHP Stack trace:
+[15-Feb-2019 22:16:56 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[15-Feb-2019 22:16:56 Europe/Prague] PHP   2. Pes\Config\Config->queryElement($xpathQuery = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[15-Feb-2019 22:16:56 Europe/Prague] PHP   3. SimpleXMLElement->xpath(*uninitialized*) C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php:70
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:22
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:26
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:34
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:38
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 10:54:45 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 10:54:45 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:42
+[10-Mar-2019 11:01:06 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 11:01:06 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 11:01:06 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 11:01:06 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:22
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:26
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:34
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:38
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 11:01:09 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 11:01:09 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:42
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:22
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:26
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:34
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:38
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:34:57 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:34:57 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:42
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:22
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:26
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:34
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:38
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 37
+[10-Mar-2019 12:38:04 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:04 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:42
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 38
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:22
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 38
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:26
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 38
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:30
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 38
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:34
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 38
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:38
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\PesBox\Pes\src\Debug\Timer.php on line 38
+[10-Mar-2019 12:38:32 Europe/Prague] PHP Stack trace:
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\config.php:0
+[10-Mar-2019 12:38:32 Europe/Prague] PHP   2. Pes\Debug\Timer->interval() C:\xampp\htdocs\PesBox\piskoviste\config.php:42

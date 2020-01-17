@@ -1,0 +1,196 @@
+\hypertarget{class_pes_1_1_container_1_1_container}{}\section{Container Class Reference}
+\label{class_pes_1_1_container_1_1_container}\index{Container@{Container}}
+Inheritance diagram for Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pes_1_1_container_1_1_container}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_a8e12a4a1a37991b6fd64ca2eb415d152}{\+\_\+\+\_\+construct}} (Container\+Interface \$delegate\+Container=null)
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_a0a6f88d94e8821447a2e233146b18344}{set}} (\$service\+Name, \$service)
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_af120db1d78ad428681293ca220675616}{factory}} (\$factory\+Name, \$service)
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_a2c929207e3eb4803b5841ad89133cbbe}{alias}} (\$alias, \$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_a91d786bf5e60430567a9de84ebbcbfdd}{has}} (\$service\+Name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get}} (\$service\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_a48a6a65b0ccc5284dd7c87ca496f3f3d}{real\+Name}} (\$service\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_ad2da35288e6f04dc1e89590f4c169641}\label{class_pes_1_1_container_1_1_container_ad2da35288e6f04dc1e89590f4c169641}} 
+{\bfseries \$delegate\+Container}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a1a63b63bdad280ed9a89dfed1fadc771}\label{class_pes_1_1_container_1_1_container_a1a63b63bdad280ed9a89dfed1fadc771}} 
+{\bfseries \$instances} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a7e6d29edbd9ec5d8ec9d478cf98fba03}\label{class_pes_1_1_container_1_1_container_a7e6d29edbd9ec5d8ec9d478cf98fba03}} 
+{\bfseries \$aliases} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_ace7b660a849b86c84e72dba979f2d182}\label{class_pes_1_1_container_1_1_container_ace7b660a849b86c84e72dba979f2d182}} 
+{\bfseries \$generators} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_container_1_1_container}{Container}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a8e12a4a1a37991b6fd64ca2eb415d152}\label{class_pes_1_1_container_1_1_container_a8e12a4a1a37991b6fd64ca2eb415d152}} 
+\index{Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Container\+Interface}]{\$delegate\+Container = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Konstruktor.
+
+Jako parametr přijímá kontejner, na který bude delegován požadavek na službu, pokud tento kontejner službu se zadaným jménem neobsahuje.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Container\+Interface & {\em \$delegate\+Container} & Kontejner \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a2c929207e3eb4803b5841ad89133cbbe}\label{class_pes_1_1_container_1_1_container_a2c929207e3eb4803b5841ad89133cbbe}} 
+\index{Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}!alias@{alias}}
+\index{alias@{alias}!Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{alias()}{alias()}}
+{\footnotesize\ttfamily alias (\begin{DoxyParamCaption}\item[{}]{\$alias,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Nastaví alias ke skutečnému jménu služby. Volání služby jménem alias vede na volání služby se skutečným jménem. Třída nepodporuje víceúrovňové alias (alias k aliasu, který je aliasem ke jménu atd.) Alias je aliasem ke službě kontejneru, kde je definován nebo ke službě vnořeného delegate kontejneru.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alias} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface}{Container\+Settings\+Aware\+Interface}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface_a2c929207e3eb4803b5841ad89133cbbe}{Container\+Settings\+Aware\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_af120db1d78ad428681293ca220675616}\label{class_pes_1_1_container_1_1_container_af120db1d78ad428681293ca220675616}} 
+\index{Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}!factory@{factory}}
+\index{factory@{factory}!Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{factory()}{factory()}}
+{\footnotesize\ttfamily factory (\begin{DoxyParamCaption}\item[{}]{\$factory\+Name,  }\item[{}]{\$service }\end{DoxyParamCaption})}
+
+Nastaví definici služby s daným jménem jako typ factory. Služba je volaná metodou \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}} kontejneru a vrací hodnotu. Služba definovaná metodou \mbox{\hyperlink{class_pes_1_1_container_1_1_container_af120db1d78ad428681293ca220675616}{factory()}} generuje hodnotu vždy znovu, při každém volání metody kontejneru \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}}. Pokud služba generuje objekt, každé volání \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}} vrací novou instanci objektu. Služba musí být Closure nebo přímo zadaná hodnota. Generování hodnoty zadanou službou probíhá až v okamžiku volání metody \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}}. Pokud je služba typu , provede se se až v okamžiku volání metody \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}} kontejneru, jed tedy o lazy load generování hodnoty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$factory\+Name} & \\
+\hline
+mixed & {\em \$service} & Closure nebo hodnota \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface}{Container\+Settings\+Aware\+Interface}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface_af120db1d78ad428681293ca220675616}{Container\+Settings\+Aware\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}\label{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}} 
+\index{Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}!get@{get}}
+\index{get@{get}!Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$service\+Name }\end{DoxyParamCaption})}
+
+Vrací výsledek volání služby zadaného jména.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & Jméno volané služby. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Návratová hodnota vracená službou. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Služba nenalezena \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a91d786bf5e60430567a9de84ebbcbfdd}\label{class_pes_1_1_container_1_1_container_a91d786bf5e60430567a9de84ebbcbfdd}} 
+\index{Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}!has@{has}}
+\index{has@{has}!Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily has (\begin{DoxyParamCaption}\item[{}]{\$service\+Name }\end{DoxyParamCaption})}
+
+Existuje definice služby?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & Jméno hledané služby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a48a6a65b0ccc5284dd7c87ca496f3f3d}\label{class_pes_1_1_container_1_1_container_a48a6a65b0ccc5284dd7c87ca496f3f3d}} 
+\index{Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}!real\+Name@{real\+Name}}
+\index{real\+Name@{real\+Name}!Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{real\+Name()}{realName()}}
+{\footnotesize\ttfamily real\+Name (\begin{DoxyParamCaption}\item[{}]{\$service\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pokud je v instanci kontejneru zadano jméno jako alias, metoda vrací skutečné jméno služby.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$service\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_a0a6f88d94e8821447a2e233146b18344}\label{class_pes_1_1_container_1_1_container_a0a6f88d94e8821447a2e233146b18344}} 
+\index{Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}!set@{set}}
+\index{set@{set}!Pes\+::\+Container\+::\+Container@{Pes\+::\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{}]{\$service\+Name,  }\item[{}]{\$service }\end{DoxyParamCaption})}
+
+Nastaví definici služby s daným jménem. Služba je volaná metodou \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}} kontejneru a vrací hodnotu. Služba definovaná metodou \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a0a6f88d94e8821447a2e233146b18344}{set()}} generuje hodnotu pouze jednou, při prvním volání metody kontejneru \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}}, další volání metody \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}} vrací identickou hodnotu. Pokud služba generuje objekt, každé volání \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}} vrací stejnou instanci objektu. Služba musí být Closure nebo přímo zadaná hodnota. Generování hodnoty zadanou službou probíhá až v okamžiku volání metody \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}}. Pokud je služba typu , provede se se až v okamžiku volání metody \mbox{\hyperlink{class_pes_1_1_container_1_1_container_a1a84a087ff94c2fb4af5e4b25d2b2d53}{get()}} kontejneru, jed tedy o lazy load generování hodnoty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & \\
+\hline
+mixed & {\em \$service} & Closure nebo hodnota \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface}{Container\+Settings\+Aware\+Interface}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface_a0a6f88d94e8821447a2e233146b18344}{Container\+Settings\+Aware\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Container/Container.\+php\end{DoxyCompactItemize}

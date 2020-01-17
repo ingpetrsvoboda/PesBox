@@ -1,0 +1,75 @@
+\hypertarget{class_pes_1_1_middleware_1_1_dispatcher}{}\section{Dispatcher Class Reference}
+\label{class_pes_1_1_middleware_1_1_dispatcher}\index{Dispatcher@{Dispatcher}}
+Inheritance diagram for Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_middleware_1_1_dispatcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_middleware_1_1_dispatcher_ab8e95e75b2f8160b541d9f45e9d5691e}{\+\_\+\+\_\+construct}} (\$stack, callable \$resolver=null)
+\item 
+\mbox{\hyperlink{class_pes_1_1_middleware_1_1_dispatcher_ab7b53bcad05abdc42206f7b2ac87a88a}{process}} (Server\+Request\+Interface \$request, Request\+Handler\+Interface \$handler)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P\+S\+R-\/7 / P\+S\+R-\/15 middleware dispatcher 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_dispatcher_ab8e95e75b2f8160b541d9f45e9d5691e}\label{class_pes_1_1_middleware_1_1_dispatcher_ab8e95e75b2f8160b541d9f45e9d5691e}} 
+\index{Pes\+::\+Middleware\+::\+Dispatcher@{Pes\+::\+Middleware\+::\+Dispatcher}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Middleware\+::\+Dispatcher@{Pes\+::\+Middleware\+::\+Dispatcher}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$stack,  }\item[{callable}]{\$resolver = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Přijímá zásobník middleware a případně resolver. Položky zásobníku middleware jsou jednotlivá middleware nebo callable nebo, v případě zadaného resolveru, libovolné hodnoty. Resolver je anonymní funkce, která je volána při vyhodnocování zásobníku, položka zásobníku je použita jako argument resolveru a resolver vrací middleware nebo callable, které je následně spuštěno. Obecně je parametr resolveru a tedy položka zásobníkulibovolná hodnata, ale
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em (callable$\vert$\+Middleware\+Interface$\vert$mixed)\mbox{[}$\,$\mbox{]}} & \$stack Zásobník middleware (s alespoň jedním prvvkem) ve formě pole, zásobník je vyhodnocován od nejnižšího indexu \\
+\hline
+callable | null & {\em \$resolver} & optional middleware resolver\+: function (string \$name)\+: Middleware\+Interface\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if an empty middleware stack was given \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_dispatcher_ab7b53bcad05abdc42206f7b2ac87a88a}\label{class_pes_1_1_middleware_1_1_dispatcher_ab7b53bcad05abdc42206f7b2ac87a88a}} 
+\index{Pes\+::\+Middleware\+::\+Dispatcher@{Pes\+::\+Middleware\+::\+Dispatcher}!process@{process}}
+\index{process@{process}!Pes\+::\+Middleware\+::\+Dispatcher@{Pes\+::\+Middleware\+::\+Dispatcher}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request,  }\item[{Request\+Handler\+Interface}]{\$handler }\end{DoxyParamCaption})}
+
+Vykoná všechny middleware zařazené do zásobníku middleware předaného do konstruktoru dispatcheru. Vykonávání končí jakmile některá položka middleware v zásobníku vrátí response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & on unexpected result from any middleware on the stack \{\}\\
+\hline
+\end{DoxyExceptions}
+Impementace přijímá P\+SR request a vrací P\+SR response. Vykoná všechny middleware zařazené do zásobníku middleware předaného do konstruktoru dispatcheru. Vykonávání končí jakmile některá položka middleware v zásobníku vrátí response.
+
+\begin{DoxyReturn}{Returns}
+Response\+Interface 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Middleware/Dispatcher.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{class_pes_1_1_http_1_1_headers}{}\section{Headers Class Reference}
+\label{class_pes_1_1_http_1_1_headers}\index{Headers@{Headers}}
+Inheritance diagram for Headers\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.010753cm]{class_pes_1_1_http_1_1_headers}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_headers_aa02306a5f1b8f5dff3b54dd510fd00af}{\+\_\+\+\_\+construct}} (array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_headers_a03fe29986ea8750c4f56dedea98d2bd6}{append\+Value}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_headers_af9d14e4ae6227970ad603987781573ca}{all}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_headers_a48fd9971b1dacbb991a7c35db3b7114a}{set}} (\$key, \$values)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_headers_a24a9bf83a1002d46ece83a93d14bd921}{get}} (\$key)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_headers}{Headers}}
+
+Kolekce H\+T\+TP hlaviček. Je použita v objektech H\+T\+TP request a response. Umožňuje zadávat jména hlaviček jako case insensitive, přesněji v libovolném tvaru, který vede ke stejnému výsledku po normalizaci jména. Třída používá jako interní úložiště kolekci Pes a jako normalizátor jmen této kolekci nastavuje objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_header_key_normalizer}{Header\+Key\+Normalizer}}. Pro přesnější informaci o narmalizaci viz \mbox{\hyperlink{class_pes_1_1_http_1_1_header_key_normalizer}{Header\+Key\+Normalizer}}.
+
+Každá H\+T\+TP hlavička muže obsahovat více skalárních hodnot současně. Tato třída ukládá hodnoty do pole pro každou hlavičku. Metody, které vracejí hodnoty hlaviček, vracejí pole hodnot každé hlavičky (i v případě jedné hodnoty). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_headers_aa02306a5f1b8f5dff3b54dd510fd00af}\label{class_pes_1_1_http_1_1_headers_aa02306a5f1b8f5dff3b54dd510fd00af}} 
+\index{Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Konstruktor. Nastaví jako interní úložiště kolekci Pes a jako normalizátor jmen \mbox{\hyperlink{class_pes_1_1_http_1_1_header_key_normalizer}{Header\+Key\+Normalizer}}. Hlavičky jsou ukládány pod jmény v normalizovaném tvaru.
+
+Obvykle je volán s polem dat získaných z objektu \mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} -\/ viz Pes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & Pole H\+T\+TP hlaviček \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_headers_af9d14e4ae6227970ad603987781573ca}\label{class_pes_1_1_http_1_1_headers_af9d14e4ae6227970ad603987781573ca}} 
+\index{Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}!all@{all}}
+\index{all@{all}!Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}}
+\subsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vrací asociativní pole jmeno=$>$hodnota H\+T\+TP hlaviček. Pole je indexováno původními nenormalizovanými jmény hlaviček zadanými v metodě \mbox{\hyperlink{class_pes_1_1_http_1_1_headers_a48fd9971b1dacbb991a7c35db3b7114a}{set()}}. Předpokládá se, že aplikace, která hlavičky vložila s nějakým jménem se je pokuší číst se stejným jménem.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_headers_a03fe29986ea8750c4f56dedea98d2bd6}\label{class_pes_1_1_http_1_1_headers_a03fe29986ea8750c4f56dedea98d2bd6}} 
+\index{Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}!append\+Value@{append\+Value}}
+\index{append\+Value@{append\+Value}!Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}}
+\subsubsection{\texorpdfstring{append\+Value()}{appendValue()}}
+{\footnotesize\ttfamily append\+Value (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Přidá další 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$key} & \\
+\hline
+type & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_headers_a24a9bf83a1002d46ece83a93d14bd921}\label{class_pes_1_1_http_1_1_headers_a24a9bf83a1002d46ece83a93d14bd921}} 
+\index{Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}!get@{get}}
+\index{get@{get}!Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Vrací hodnoty H\+T\+TP hlavičky jako pole. Pokud hlavička neexistuje, vrací prázdné pole. Hlavičky v kolekci jsou vyhledávány podle normalizovaného tvaru jména.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Jméno hlavičky\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_map_collection_interface}{Map\+Collection\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_headers_a48fd9971b1dacbb991a7c35db3b7114a}\label{class_pes_1_1_http_1_1_headers_a48fd9971b1dacbb991a7c35db3b7114a}} 
+\index{Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}!set@{set}}
+\index{set@{set}!Pes\+::\+Http\+::\+Headers@{Pes\+::\+Http\+::\+Headers}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$values }\end{DoxyParamCaption})}
+
+Nastaví hodnotu H\+T\+TP hlavičky.
+
+Hodnota H\+T\+TP hlavičky jsou vždy ukládány jako pole. Metoda přijímá jako hodnotu hlavičky pole i jednoduchou hodnotu, ale v tom případě hodnotu převede na jednoprvkové pole. Metoda přepíše dříve zadané hodnoty hlavičky s ekvivalentním jménem. Ekvivalentní jména jsou jména se stejným normalizovaným tvarem. Normalizace je prováděna objektem \mbox{\hyperlink{class_pes_1_1_http_1_1_header_key_normalizer}{Header\+Key\+Normalizer}}. Hlavičky v kolekci jsou vyhledávány podle normalizovaného tvaru jména.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Jméno hlavičky \\
+\hline
+string & {\em \$values} & Hodnoty h\+Lavičky \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_collection_1_1_map_collection_interface}{Map\+Collection\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/Headers.\+php\end{DoxyCompactItemize}

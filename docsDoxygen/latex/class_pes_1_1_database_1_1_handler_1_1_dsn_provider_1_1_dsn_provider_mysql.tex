@@ -1,0 +1,60 @@
+\hypertarget{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql}{}\section{Dsn\+Provider\+Mysql Class Reference}
+\label{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql}\index{Dsn\+Provider\+Mysql@{Dsn\+Provider\+Mysql}}
+Inheritance diagram for Dsn\+Provider\+Mysql\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql_a7252e2f23ea50a5061fef81d06d6765a}{get\+Dsn}} (\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}} \$connection\+Info)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql_a0227fdc89c3004d9beb98a9894a3c0ec}\label{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql_a0227fdc89c3004d9beb98a9894a3c0ec}} 
+const {\bfseries P\+D\+O\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+ME} = \textquotesingle{}mysql\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql}{Dsn\+Provider\+Mysql}} Vrací dsn řetězec pro db handler. Pro vytvoření dsn používá objekt \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}} a z něj\+: 
+\begin{DoxyItemize}
+\item jméno hosta (host) 
+\item číslo portu (db\+Port) 
+\item jméno databáze (db\+Name).
+\end{DoxyItemize}
+
+Je připraven pouze na dsn pro připojení k databázi prostřednictvím příslušného P\+DO db handeru. Název handleru je uveden v konstantě třídy.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql_a7252e2f23ea50a5061fef81d06d6765a}\label{class_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_mysql_a7252e2f23ea50a5061fef81d06d6765a}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Dsn\+Provider\+::\+Dsn\+Provider\+Mysql@{Pes\+::\+Database\+::\+Handler\+::\+Dsn\+Provider\+::\+Dsn\+Provider\+Mysql}!get\+Dsn@{get\+Dsn}}
+\index{get\+Dsn@{get\+Dsn}!Pes\+::\+Database\+::\+Handler\+::\+Dsn\+Provider\+::\+Dsn\+Provider\+Mysql@{Pes\+::\+Database\+::\+Handler\+::\+Dsn\+Provider\+::\+Dsn\+Provider\+Mysql}}
+\subsubsection{\texorpdfstring{get\+Dsn()}{getDsn()}}
+{\footnotesize\ttfamily get\+Dsn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}}}]{\$connection\+Info }\end{DoxyParamCaption})}
+
+Sestaví dsn ve formátu My\+S\+QL.
+
+Používá vždy hodnotu db\+Host, hodnoty db\+Port, db\+Name jen pokud jsou v connection\+Info obsaženy.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_dsn_provider_1_1_dsn_provider_interface_a7252e2f23ea50a5061fef81d06d6765a}{Dsn\+Provider\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/\+Dsn\+Provider/Dsn\+Provider\+Mysql.\+php\end{DoxyCompactItemize}

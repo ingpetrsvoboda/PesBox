@@ -1,0 +1,209 @@
+\hypertarget{class_pes_1_1_view_1_1_view}{}\section{View Class Reference}
+\label{class_pes_1_1_view_1_1_view}\index{View@{View}}
+Inheritance diagram for View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_view_1_1_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_af62e04a1fa847074a86af330864028d3}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}} \$renderer=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_a2858c054f485d8b15887f6cbbdc4087b}{set\+Renderer}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}} \$renderer)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_a5ae172026b770b4c669fe7478120591c}{set\+Data}} (\$data)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_aa36ace36242d7477b0f7ad44a05bd292}{set\+Template}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}} \$template)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_a8e0a6cf7028aff1ada59a30dab75adf0}{get\+Recorder\+Provider}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_a62b5a3861ff3b1f8a28911db4c11ae47}{render}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}} \$template=N\+U\+LL, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view_a67d7912a0c897b0b6530b0bd3a849024}{tostring\+Error\+Handler}} (\$errno, \$errstr, \$errfile, \$errline)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a8d061cd61ab0c71fbad5286ee0928a24}\label{class_pes_1_1_view_1_1_view_a8d061cd61ab0c71fbad5286ee0928a24}} 
+{\bfseries \$renderer}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a6efc15b5a2314dd4b5aaa556a375c6d6}\label{class_pes_1_1_view_1_1_view_a6efc15b5a2314dd4b5aaa556a375c6d6}} 
+{\bfseries \$data}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_aa3e9534005fd516d941f6a5569896e01}\label{class_pes_1_1_view_1_1_view_aa3e9534005fd516d941f6a5569896e01}} 
+{\bfseries \$template}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+use použit jako definice fallback rendereru -\/ použit pro renderování, pokud nebyla zadána žádná šablona a tedy není znám default renderer šablony. \mbox{\hyperlink{class_pes_1_1_view_1_1_view}{View}} -\/ objekt je vytvořen se zadaným rendererem a s jeho použitím vytváří textový obsah z aktuálně zadaných dat. Generovaný obsah je dán rendererem.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_af62e04a1fa847074a86af330864028d3}\label{class_pes_1_1_view_1_1_view_af62e04a1fa847074a86af330864028d3}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}}}]{\$renderer = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Konstruktor -\/ přijímá renderer používaný pro renderování jako nepoviný parametr. Pokud renderer není zadán použije se při renderování default renderer, který poskytuje template objekt. 
+\begin{DoxyParams}[1]{Parameters}
+Renderer\+Interface & {\em \$renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a7516ca30af0db3cdbf9a7739b48ce91d}\label{class_pes_1_1_view_1_1_view_a7516ca30af0db3cdbf9a7739b48ce91d}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
+\index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+to\+String()}{\_\_toString()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda umožňuje použít objekt view přímo jako proměnnou (proměnou v šabloně) pro další view.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a8e0a6cf7028aff1ada59a30dab75adf0}\label{class_pes_1_1_view_1_1_view_a8e0a6cf7028aff1ada59a30dab75adf0}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!get\+Recorder\+Provider@{get\+Recorder\+Provider}}
+\index{get\+Recorder\+Provider@{get\+Recorder\+Provider}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{get\+Recorder\+Provider()}{getRecorderProvider()}}
+{\footnotesize\ttfamily get\+Recorder\+Provider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vrací objekt se záznamem o užití proměnných šablony. Tento objekt byl zadán metodou set\+Recorder\+Provider() a je naplněn informacemi v průběhu renderování.
+
+\begin{DoxyReturn}{Returns}
+Recorder\+Provider\+Interface 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a62b5a3861ff3b1f8a28911db4c11ae47}\label{class_pes_1_1_view_1_1_view_a62b5a3861ff3b1f8a28911db4c11ae47}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!render@{render}}
+\index{render@{render}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}}}]{\$template = {\ttfamily NULL},  }\item[{}]{\$data = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Renderuje template s použitím dat a vyvoří obsah.
+
+Template je
+\begin{DoxyItemize}
+\item zadána jako parametr této metody (view-\/$>$render(\$template, ... )
+\item pokud ne, použije se template, která byla zadána metodou set\+Template (view-\/$>$set\+Template(\$template)
+\item pokud ne, view se pokusí renderovat bez template, to předpokládá, že použitý renderer to dokáže.
+\end{DoxyItemize}
+
+Data jsou
+\begin{DoxyItemize}
+\item zadána jako parametr této metody (\$view-\/$>$render(\$t, \$data))
+\item pokud ne, použijí se data zadaná metodou set\+Data (view-\/$>$set\+Data(\$data)) Pokud data jsou zadána jako parametr \mbox{\hyperlink{class_pes_1_1_view_1_1_view_a62b5a3861ff3b1f8a28911db4c11ae47}{render()}}, použijí se pouze tato data, neslučují se s daty zadanými metodou \mbox{\hyperlink{class_pes_1_1_view_1_1_view_a5ae172026b770b4c669fe7478120591c}{set\+Data()}}.
+\end{DoxyItemize}
+
+Renderer je
+\begin{DoxyItemize}
+\item zadán v konstruktoru view
+\item nebo zadán metodou view-\/$>$\mbox{\hyperlink{class_pes_1_1_view_1_1_view_a2858c054f485d8b15887f6cbbdc4087b}{set\+Renderer()}} -\/ ten mná pak přednost, před rendererem zadaným v konstruktoru Pokud není zadán renderer
+\item pokud je zadána template jako parametr metody render (view-\/$>$render(\$template, ... ) nebo voláním view-\/$>$set\+Template(\$t)) a template svojí metodou template-\/$>$get\+Default\+Renderer() vrací renderer, použije se tento defaultní renderer pro typ template
+\item pokud není zadána template nebo nevrací default renderer, použije se renderer, získaný z Renderer\+Container pod jménem, které je zde (ve view) deklarováno v use jako alias Fallback\+Renderer. Fallback\+Renderer by měl být renderer schhopný renderování i bez template.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Template\+Interface & {\em \$template} & \\
+\hline
+type & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface_ab273a8d7deb9bb9235161c4f8419e402}{View\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a5ae172026b770b4c669fe7478120591c}\label{class_pes_1_1_view_1_1_view_a5ae172026b770b4c669fe7478120591c}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{set\+Data()}{setData()}}
+{\footnotesize\ttfamily set\+Data (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Lze nastavit data pro renderování. Tato data budou použita, pokud nejsou zadána jiná jako parametr metody \mbox{\hyperlink{class_pes_1_1_view_1_1_view_a62b5a3861ff3b1f8a28911db4c11ae47}{render()}}. 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a2858c054f485d8b15887f6cbbdc4087b}\label{class_pes_1_1_view_1_1_view_a2858c054f485d8b15887f6cbbdc4087b}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!set\+Renderer@{set\+Renderer}}
+\index{set\+Renderer@{set\+Renderer}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{set\+Renderer()}{setRenderer()}}
+{\footnotesize\ttfamily set\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}}}]{\$renderer }\end{DoxyParamCaption})}
+
+Lze nastavit renderer nebo vyměnit renderer nastavený v konstruktoru. 
+\begin{DoxyParams}[1]{Parameters}
+Renderer\+Interface & {\em \$renderer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_aa36ace36242d7477b0f7ad44a05bd292}\label{class_pes_1_1_view_1_1_view_aa36ace36242d7477b0f7ad44a05bd292}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!set\+Template@{set\+Template}}
+\index{set\+Template@{set\+Template}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{set\+Template()}{setTemplate()}}
+{\footnotesize\ttfamily set\+Template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}}}]{\$template }\end{DoxyParamCaption})}
+
+Lze nastavit template objekt pro renderování. Tento template objekt bude použit, pokud není zadán jiný jako parametr metody \mbox{\hyperlink{class_pes_1_1_view_1_1_view_a62b5a3861ff3b1f8a28911db4c11ae47}{render()}}. 
+\begin{DoxyParams}[1]{Parameters}
+Template\+Interface & {\em \$template} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_a67d7912a0c897b0b6530b0bd3a849024}\label{class_pes_1_1_view_1_1_view_a67d7912a0c897b0b6530b0bd3a849024}} 
+\index{Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}!tostring\+Error\+Handler@{tostring\+Error\+Handler}}
+\index{tostring\+Error\+Handler@{tostring\+Error\+Handler}!Pes\+::\+View\+::\+View@{Pes\+::\+View\+::\+View}}
+\subsubsection{\texorpdfstring{tostring\+Error\+Handler()}{tostringErrorHandler()}}
+{\footnotesize\ttfamily tostring\+Error\+Handler (\begin{DoxyParamCaption}\item[{}]{\$errno,  }\item[{}]{\$errstr,  }\item[{}]{\$errfile,  }\item[{}]{\$errline }\end{DoxyParamCaption})}
+
+Handler pro použití v metodě \+\_\+to\+String ve variantě pro ladění -\/ jen příklad, tento handler vypisuje na výstup!! 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$errno} & \\
+\hline
+type & {\em \$errstr} & \\
+\hline
+type & {\em \$errfile} & \\
+\hline
+type & {\em \$errline} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+View/View.\+php\end{DoxyCompactItemize}

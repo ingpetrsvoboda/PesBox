@@ -1,0 +1,13 @@
+"C:\Users\pes2704\AppData\Roaming\Composer\vendor\bin\phpunit.bat" "--colors" "--log-json" "C:\Users\pes2704\AppData\Local\Temp\nb-phpunit-log.json" "--configuration" "C:\xampp\htdocs\Pes\phpunit.xml" "C:\Program Files\NetBeans 8.2\php\phpunit\NetBeansSuite.php" "--" "--run=C:\xampp\htdocs\Pes\Pes\tests"
+PHPUnit 5.7.26 by Sebastian Bergmann and contributors.
+
+Warning:       Deprecated JSON test listener used
+
+....I..........................I..............................  62 / 107 ( 57%)
+.............................................                  107 / 107 (100%)
+
+Time: 8.43 seconds, Memory: 8.00MB
+
+OK, but incomplete, skipped, or risky tests!
+Tests: 107, Assertions: 310, Incomplete: 2.
+Done.

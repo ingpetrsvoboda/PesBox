@@ -1,0 +1,2 @@
+                                <h2><?= $this->filter('mono',$nadpis) ?></h2>
+                                <?= $this->repeat("templates/main/ohlasy_ctenaru/odpovedi/vypisOdpovedi.php", $dataOdpovedi); ?>                                

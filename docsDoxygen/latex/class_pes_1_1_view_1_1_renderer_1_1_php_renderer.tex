@@ -1,0 +1,203 @@
+\hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer}{}\section{Php\+Renderer Class Reference}
+\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer}\index{Php\+Renderer@{Php\+Renderer}}
+Inheritance diagram for Php\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.895093cm]{class_pes_1_1_view_1_1_renderer_1_1_php_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a8fd12d6021bfe986b2f45230378d6bc2}\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a8fd12d6021bfe986b2f45230378d6bc2}} 
+{\bfseries set\+Recorder\+Provider} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_recorder_1_1_recorder_provider_interface}{Recorder\+Provider\+Interface}} \$recorder\+Provider)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a6d2fb528237476a2ce3467dd12f0448a}{render}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}} \$php\+Template, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ae62d97adedce8c34fa312e0f63b1df26}{insert}} (\$template\+Filename, \$data=\mbox{[}$\,$\mbox{]}, \$empty\+Data\+Template\+Filename=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a59c2c3bcc551a9d1ccf3b49224c985e3}{repeat}} (\$template\+Filename, \$data=\mbox{[}$\,$\mbox{]}, \$variable\+Name=\textquotesingle{}repeat\+Item\textquotesingle{}, \$empty\+Data\+Template\+Filename=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ab4e48eb95d4123201adba472b9f03a20}{template\+Error\+Handler}} (\$errno, \$errstr, \$errfile, \$errline)
+\item 
+\mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_abdba8d6534d8d1f948daeb4d985ef878}{unused\+Error\+Handler}} (\$errno, \$errstr, \$errfile, \$errline)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a829835c5b177092fee5ecb9a2cd14290}\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a829835c5b177092fee5ecb9a2cd14290}} 
+const {\bfseries F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER} = \textquotesingle{}$\vert$\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Renderer -\/ vstupem je html/php šablona, což je spustitelný soubor P\+HP, výstupem je text. Renderer generuje textový výstup tak, že vykonává P\+HP kód uložený v souboru html/php ne obecně text/php šablony. Soubor šablony je standartní P\+HP soubor, tedy může obsahovat text a P\+HP kód v segmentech uzavřených do P\+HP tagů. Text v šabloné může být H\+T\+ML nebo libovolný text.
+
+Objekt pro vytvoření obsahu s pomocí šablony příjímá data ve formě asociativního pole. Toto pole je pomocí P\+HP funkce extract() interně převedeno na jednotlivé proměnné se jmény odpovídajícími indexům v asociativním poli dat. V souborech šablon se pak využívají takto získané jednotlivé proměnné. Se soubory šablon se pracuje tak, že jednotlivé proměnné jsou vždy v lokálním rozsahu proměnných P\+HP (local scope) a nikdy se neovlivňují proměnné v různých šablonách nebo jinde v kódu. Je tak možné v různých šablonách používat stejně pojmenované proměnné.
+
+Objekt je schopen zaznamenat užití zadaných dat při renderování šablony. Zaznamenává informace o proměnných předaných jako data, nedefinovaných proměnných použitých v šabloně a o proměnných předaných v datech, ale v šabloně nepoužitých. Tyto informace je následně možné použít pro ladění nebo logování. Záznam je zaznamenán v specializovaném záznamovém objektu, který lze získat voláním příslušné metody.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ae62d97adedce8c34fa312e0f63b1df26}\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ae62d97adedce8c34fa312e0f63b1df26}} 
+\index{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}!insert@{insert}}
+\index{insert@{insert}!Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily insert (\begin{DoxyParamCaption}\item[{}]{\$template\+Filename,  }\item[{}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$empty\+Data\+Template\+Filename = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\{Vloží šablonu, pokud jsou zadána data renderuje ji s použitím těchto dat. Pokud data nejsou zadána a je zadán třetí parametr -\/ šablona pro případ prázdných dat, použije tuto šablonu.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$template\+Filename} & Plné jmé \\
+\hline
+type & {\em \$data} & \\
+\hline
+type & {\em \$empty\+Data\+Template\+Filename} & \\
+\hline
+\end{DoxyParams}
+\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$template\+Filename} & \\
+\hline
+type & {\em \$data} & \\
+\hline
+type & {\em \$empty\+Data\+Template\+Filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_php_template_functions_interface_ae62d97adedce8c34fa312e0f63b1df26}{Php\+Template\+Functions\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a6d2fb528237476a2ce3467dd12f0448a}\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a6d2fb528237476a2ce3467dd12f0448a}} 
+\index{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}!render@{render}}
+\index{render@{render}!Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_template_1_1_template_interface}{Template\+Interface}}}]{\$php\+Template,  }\item[{}]{\$data = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Renderuje soubor šablony včetně vnořených šablon. Poskytuje metody pro vnořivání šablon a pomocné metody pro transformaci textu.
+
+Vložené soubory jsou vkládány pomocí php příkazu include nebo voláním metod rendereru \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ae62d97adedce8c34fa312e0f63b1df26}{insert()}} a \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a59c2c3bcc551a9d1ccf3b49224c985e3}{repeat()}} v kódu template. Obsah souboru template se vykoná jako php skript, kód obsažený v souboru se vykonává uvnitř metody rendereru, proto jsou pro něj dostupné všechny metody rendereru, například metoda \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ae62d97adedce8c34fa312e0f63b1df26}{insert()}} nebo \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a59c2c3bcc551a9d1ccf3b49224c985e3}{repeat()}}.
+
+Příklad\+: Soubory šablon jsou vkládány použitím php příkazu include takto\+: {\ttfamily $<$?php include sablona.\+php; ?$>$} nebo voláním metody insert template objektu takto\+: {\ttfamily $<$?= \$this-\/$>$insert(\char`\"{}contents/main/main.\+php\char`\"{}, \$data) ?$>$} a repeat takto\+: {\ttfamily $<$?= \$this-\/$>$insert(\char`\"{}contents/main/repeated\+\_\+fragment.\+php\char`\"{}, \$data) ?$>$}.
+
+Data jsou metodě, ve které (lokálně) proběhne vykonání kódu šablony a tedy i volání volání metod \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ae62d97adedce8c34fa312e0f63b1df26}{insert()}} nebo \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a59c2c3bcc551a9d1ccf3b49224c985e3}{repeat()}} předána pomocí parametru se jménem \$context. Pokud je proměnná \$context typu array nebo je iterovatelná is\+\_\+iterable() jsou její prvky extrahovány do lokálních proměnných a ty jsou pak dostupné v kódu šablony. Proměnná \$context je navíc vždy lokální proměnnou v první úrovni šablony je vždy spolu s extrahovanými proměnnými dostupná. V šabloně první úrovně je dostupná vždy a pokud v metodě \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ae62d97adedce8c34fa312e0f63b1df26}{insert()}} nebo \mbox{\hyperlink{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a59c2c3bcc551a9d1ccf3b49224c985e3}{repeat()}} předám jako data tuto proměnou -\/ tedy předám proměnnou \$context např. takto\+: {\ttfamily $<$?= \$this-\/$>$insert(\char`\"{}contents/main/repeated\+\_\+fragment.\+php\char`\"{}, \$context) ?$>$} je pak stejná proměnná \$context dostupná i v příslušné podřízené šabloně. Kontextová data je takto možno řízeně předávat do dalších úrovní šablon. 
+
+Renderer dále nabízí použití pomocných metod pro transformaci textu definovaných v Php\+Template\+Functions\+Trait. Tyto metody jsou obdobně dostupné z kódu šablony voláním {\ttfamily $<$?= \$this-\/$>$esc() ?$>$} a podobně.$<$ úp$>$=\char`\"{}\char`\"{}$>$
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_renderer_interface_ab273a8d7deb9bb9235161c4f8419e402}{Renderer\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a59c2c3bcc551a9d1ccf3b49224c985e3}\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_a59c2c3bcc551a9d1ccf3b49224c985e3}} 
+\index{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}!repeat@{repeat}}
+\index{repeat@{repeat}!Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}}
+\subsubsection{\texorpdfstring{repeat()}{repeat()}}
+{\footnotesize\ttfamily repeat (\begin{DoxyParamCaption}\item[{}]{\$template\+Filename,  }\item[{}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$variable\+Name = {\ttfamily \textquotesingle{}repeatItem\textquotesingle{}},  }\item[{}]{\$empty\+Data\+Template\+Filename = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\{Pokud jsou zadána data iteruje data, při každé iteraci vloží šablonu a renderuje ji s použitím jedné položky těchto dat.
+
+Data musí být iterovatelná příkazem foreach, musí tedy implementovat interface Traversable. Obvykle se jedná o pole. 
+
+Jednotlivé položky dat mohou být asociativní pole s retězcovými (nečíselnými) indexy nebo skalár (typicky string). 
+
+Pokud poležka pole dat je asociativní pole s retězcovými (nečíselnými) indexy, pak se opakovaně vkládaná šablona renderuje tak, že jsou v ní k dispozici jednotlivé položky tohoto asociativnímo pole extrahované do proměnných se jmény odpovídajícími indexům pole. Z toho také plyne zákaz číselnýcj indexů -\/ z číselného indexu nevznikne platná php proměnná (např. \$12) a takpvý prvek pole pak není v šabloně nijak dostupný. 
+
+Pokud položka pole dat je skalár, pak je v šabloně dostupná se jménem zadaným jako třetí parametr metody repeat (\$variable\+Name). 
+
+Pokud data nejsou zadána a je zadán třetí parametr -\/ šablona pro případ prázdných dat, použije tuto šablonu. 
+
+Pokud data nejsou zadána a není zadán třetí parametr, může vracet prázdný řetězec nebo pevnou náhradní hodnotu. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$template\+Filename} & \\
+\hline
+type & {\em \$data} & \\
+\hline
+type & {\em \$empty\+Data\+Template\+Filename} & \\
+\hline
+\end{DoxyParams}
+\} Tato metoda vrací jako náhradní hodnotu (pokud nejsou předána data ani náhradní šablona pro případ prázdných dat \$empty\+Data\+Template\+Filename) řetězec \char`\"{}...\char`\"{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$template\+Filename} & \\
+\hline
+\textbackslash{}\+Array\+Access & {\em \$data} & \\
+\hline
+type & {\em \$empty\+Data\+Template\+Filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_view_1_1_renderer_1_1_php_template_functions_interface_a8870e42f6c064494fd5a8c1aeb0855f9}{Php\+Template\+Functions\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ab4e48eb95d4123201adba472b9f03a20}\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_ab4e48eb95d4123201adba472b9f03a20}} 
+\index{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}!template\+Error\+Handler@{template\+Error\+Handler}}
+\index{template\+Error\+Handler@{template\+Error\+Handler}!Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}}
+\subsubsection{\texorpdfstring{template\+Error\+Handler()}{templateErrorHandler()}}
+{\footnotesize\ttfamily template\+Error\+Handler (\begin{DoxyParamCaption}\item[{}]{\$errno,  }\item[{}]{\$errstr,  }\item[{}]{\$errfile,  }\item[{}]{\$errline }\end{DoxyParamCaption})}
+
+Zaznamenává nedefinované proměnné. Tato metoda musí být po dobu vykonávání template nastavena jako error\+\_\+handler funkcí set\+\_\+error\+\_\+handler(array(\$this, \textquotesingle{}template\+Error\+Handler\textquotesingle{})). Pak je volána při vzniku jakékoli chyby. Rozpoznává chyby typu E\+\_\+\+N\+O\+T\+I\+CE a zjišťuje zda chybové hlášení začíná textem \textquotesingle{}Undefined variable\+: \textquotesingle{}. Pokud ano, zaznamená výskyt nedefinované proměnné do rekorderu.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$errno} & \\
+\hline
+type & {\em \$errstr} & \\
+\hline
+type & {\em \$errfile} & \\
+\hline
+type & {\em \$errline} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_abdba8d6534d8d1f948daeb4d985ef878}\label{class_pes_1_1_view_1_1_renderer_1_1_php_renderer_abdba8d6534d8d1f948daeb4d985ef878}} 
+\index{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}!unused\+Error\+Handler@{unused\+Error\+Handler}}
+\index{unused\+Error\+Handler@{unused\+Error\+Handler}!Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer@{Pes\+::\+View\+::\+Renderer\+::\+Php\+Renderer}}
+\subsubsection{\texorpdfstring{unused\+Error\+Handler()}{unusedErrorHandler()}}
+{\footnotesize\ttfamily unused\+Error\+Handler (\begin{DoxyParamCaption}\item[{}]{\$errno,  }\item[{}]{\$errstr,  }\item[{}]{\$errfile,  }\item[{}]{\$errline }\end{DoxyParamCaption})}
+
+Speciálním způsobem aznamenává nedefinované proměnné. Je určen pro použití výhradně pro zjištění proměnných použitách v šabloně. Je nastaven ja error handler před extrahování proměnných kontextu a pak volání include template.\+php; způsobí E\+\_\+\+N\+O\+T\+I\+CE \textquotesingle{}Undefined variable\+: \textquotesingle{} pro každou proměnnou uvedenoui v template. Výjimkou jsou proměnné uvedená např. jako argument isset(\$variable) apod.
+
+Tato metoda musí být po dobu vykonávání template nastavena jako error\+\_\+handler funkcí set\+\_\+error\+\_\+handler(array(\$this, \textquotesingle{}unused\+Error\+Handler\textquotesingle{})). Pak je volána při vzniku jakékoli chyby. Rozpoznává chyby typu E\+\_\+\+N\+O\+T\+I\+CE a zjišťuje zda chybové hlášení začíná textem \textquotesingle{}Undefined variable\+: \textquotesingle{}. Pokud ano, zaznamená výskyt nedefinované proměnné do rekorderu.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$errno} & \\
+\hline
+type & {\em \$errstr} & \\
+\hline
+type & {\em \$errfile} & \\
+\hline
+type & {\em \$errline} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+View/\+Renderer/Php\+Renderer.\+php\end{DoxyCompactItemize}

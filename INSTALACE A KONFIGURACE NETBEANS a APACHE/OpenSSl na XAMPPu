@@ -1,0 +1,5 @@
+https://seegatesite.com/the-steps-how-to-install-openssl-on-xampp-windows/
+
+Příkazový řádek:
+
+set OPENSSL_CONF=C:\xampp\php\extras\openssl\openssl.cnf pro instalaci XAMPPu do C:/xampp)

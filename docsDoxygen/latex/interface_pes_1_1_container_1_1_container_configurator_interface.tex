@@ -1,0 +1,61 @@
+\hypertarget{interface_pes_1_1_container_1_1_container_configurator_interface}{}\section{Container\+Configurator\+Interface Interface Reference}
+\label{interface_pes_1_1_container_1_1_container_configurator_interface}\index{Container\+Configurator\+Interface@{Container\+Configurator\+Interface}}
+Inheritance diagram for Container\+Configurator\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_pes_1_1_container_1_1_container_configurator_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_configurator_interface_aa010017c090252363602d277501f61f4}{configure}} (\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface}{Container\+Settings\+Aware\+Interface}} \$container)
+\item 
+\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_configurator_interface_ab659d0f399e0df92aac860b4927fc0d5}{get\+Services\+Definitions}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_configurator_interface_afdc890d9a68d9d00590f47908f09ae45}{get\+Factories\+Definitions}} ()
+\item 
+\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_configurator_interface_a1e9e143d493aedb855d3c5edadb17bb2}{get\+Aliases}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_pes_1_1_container_1_1_container_configurator_interface_aa010017c090252363602d277501f61f4}\label{interface_pes_1_1_container_1_1_container_configurator_interface_aa010017c090252363602d277501f61f4}} 
+\index{Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}!configure@{configure}}
+\index{configure@{configure}!Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_container_1_1_container_settings_aware_interface}{Container\+Settings\+Aware\+Interface}}}]{\$container }\end{DoxyParamCaption})}
+
+Konfiguruje objekt kontejneru zadaný v konstruktoru a případně přidá delegate kontejner. 
+
+Implemented in \mbox{\hyperlink{class_pes_1_1_container_1_1_container_configurator_abstract_aa010017c090252363602d277501f61f4}{Container\+Configurator\+Abstract}}.
+
+\mbox{\Hypertarget{interface_pes_1_1_container_1_1_container_configurator_interface_a1e9e143d493aedb855d3c5edadb17bb2}\label{interface_pes_1_1_container_1_1_container_configurator_interface_a1e9e143d493aedb855d3c5edadb17bb2}} 
+\index{Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}!get\+Aliases@{get\+Aliases}}
+\index{get\+Aliases@{get\+Aliases}!Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}}
+\subsubsection{\texorpdfstring{get\+Aliases()}{getAliases()}}
+{\footnotesize\ttfamily get\+Aliases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vrací pole aliasů ke skutečným jménům služeb. \mbox{\Hypertarget{interface_pes_1_1_container_1_1_container_configurator_interface_afdc890d9a68d9d00590f47908f09ae45}\label{interface_pes_1_1_container_1_1_container_configurator_interface_afdc890d9a68d9d00590f47908f09ae45}} 
+\index{Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}!get\+Factories\+Definitions@{get\+Factories\+Definitions}}
+\index{get\+Factories\+Definitions@{get\+Factories\+Definitions}!Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}}
+\subsubsection{\texorpdfstring{get\+Factories\+Definitions()}{getFactoriesDefinitions()}}
+{\footnotesize\ttfamily get\+Factories\+Definitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vrací pole definic továren kontejneru. Továrna kontegneru je zvláštní služba, továrny vracejí při opakovaném volání vždy novou instanci proměnné. \mbox{\Hypertarget{interface_pes_1_1_container_1_1_container_configurator_interface_ab659d0f399e0df92aac860b4927fc0d5}\label{interface_pes_1_1_container_1_1_container_configurator_interface_ab659d0f399e0df92aac860b4927fc0d5}} 
+\index{Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}!get\+Services\+Definitions@{get\+Services\+Definitions}}
+\index{get\+Services\+Definitions@{get\+Services\+Definitions}!Pes\+::\+Container\+::\+Container\+Configurator\+Interface@{Pes\+::\+Container\+::\+Container\+Configurator\+Interface}}
+\subsubsection{\texorpdfstring{get\+Services\+Definitions()}{getServicesDefinitions()}}
+{\footnotesize\ttfamily get\+Services\+Definitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vrací pole definic služeb kontejneru. Služby kontejneru vracejí při opakovaném volání vždy stejnou instanci proměnné. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Container/Container\+Configurator\+Interface.\+php\end{DoxyCompactItemize}

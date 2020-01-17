@@ -1,0 +1,47 @@
+Logika
+Z Wikipedie, otevøené encyklopedie
+Skoèit na: Navigace, Hledání
+
+Logika má více významù – v èeštinì se bìžnì používá ve smyslu myšlenková cesta, která vedla k daným závìrùm. Logika je také formální vìda, zkoumající právì onen zpùsob vyvozování závìrù.
+
+Logika není empirickou vìdou o myšlení; studuje objektivní podmínky správnosti, jinak øeèeno je to disciplína studující relaci „vyplývání“. Logika také nezkoumá úplnì obecnì poznání – to je pøedmìtem filosofické disciplíny epistemologie.
+
+Jako mnoho dalších vìd vznikla logika coby souèást filosofie a èásteènì takové zaøazení stále platí. Logika se výraznì rozvinula i v matematice, a tak je øazena i do matematiky. Nìkteré èásti logiky mají blíž k filosofii, nìkteré k matematice, proto se nìkdy rozlišuje matematická logika.
+
+Logika má prakticky dùležité aplikace v informatice.
+
+[editovat] Dìjiny logiky
+
+Za zakladatele logiky je považován Aristoteles (384–322 pø.n.l). Založil takzvanou sylogistickou logiku. Princip sylogismu se nejlépe vysvìtlí na pøíkladu:
+
+    * Premisa 1: Každý èlovìk je smrtelný.
+    * Premisa 2: Aristoteles je èlovìk.
+    * Závìr: Aristoteles je smrtelný.
+
+Aristoteles dále zkoumal modality (možnosti), èímž dal základ modální logice. Díla o logice:Organon (organon-nástroj, logika je nástroj vìdy) Aristoteles se vìnuje obecným termínùm. Zabývá se jednoduchými univerzálními výroky (èlovìk je smrtelný)
+
+Stoicko- megarská škola: složité výroky (jestliže prší,pak je mokro)
+
+Støedovìká scholastika vychází ze sylogismu. Poprvé zavádí prvky temporální logiky, tedy logiky èasu. Významným pøedstavitelem scholastické školy byl William Occam (1290–1349). Usiloval o oddìlení filosofie od teologie.
+
+Novovìká logika trpí na okraji zájmu ve stínu filosofie, za jejího zakladatele lze stále považovat Aristotela. Více pøihlíží ke zkušenostem z okolního svìta. Významní pøedstavitelé jsou Gottfried Wilhelm Leibniz (1646–1716), Bernard Bolzano (1781–1848), George Boole (1815–1864), Gottlob Frege (1848–1925), Georg Cantor (1845–1912) a Bertrand Russell (1872–1970).
+
+Bernard Bolzano ve svém díle Vìdosloví (Wissenschaftslehre, 1837) pøináší koncept vìty o sobì – toho, co mají spoleèné vìta napsaná (køivka-stopa inkoustu na papíøe), vìta vyslovená (kmitání akustického prostøedí) a vìta myšlená (nervový vzruch). Vìta o sobì je tedy abstraktní vzhledem ke svým konkrétním realizacím.
+
+Gottlob Frege napsal roku 1892 zøejmì první text moderní sémantiky, nazvaný O smyslu a významu (Über Sinn und Bedeutung). Podle Fregeho má každé slovo (vìta) svùj smysl i význam (teorie A; nejznámìjší); smysl je „zpùsob dannosti“. Výraz buïto oznaèuje pøímo svùj význam nebo oznaèuje význam skrze svùj smysl (tzv. teorie B). Modifikací teorie B je, že „slova v nepøímé øeèi mají nepøímý význam. Tím odlišujeme obvyklý význam slova od jeho významu nepøímého a jeho obvyklý smysl od jeho smyslu nepøímého“.
+______________________________________________________________________________
+
+Matematická logika
+Z Wikipedie, otevøené encyklopedie
+Skoèit na: Navigace, Hledání
+
+Matematická logika je vìdní disciplína nacházející se na rozhraní mezi logikou a matematikou. Zabývá se zkoumáním, formalizováním a matematizováním zejména tìch oblastí logiky, na jejichž základech je postavena matematika. V centru jejího zájmu jsou pojmy jako dùkaz, teorie, axiomatizace, model, bezespornost, úplnost, rozhodnutelnost.
+
+[editovat] Základní disciplíny
+
+Souèasná matematická logika se dìlí na tøi rozsáhlé disciplíny, které spolu úzce souvisejí. Jsou to teorie dùkazu, teorie modelù a teorie aritmetiky.
+
+    * Teorie dùkazu se zabývá vytváøením zkoumáním rùzných formálních deduktivních systémù jakožto základù pro pojem formálního dùkazu. Používá èistì finitní metody nejèastìji aplikované na koneèné posloupnosti znakù èi slov.
+    * Teorie modelù se zabývá zkoumáním obecného pojmu matematické struktury a platnosti nìjakého tvrzení v této struktuøe. Zejména se zajímá o pojmy jako jsou homomorfismus struktur, definovatelnost, axiomatizovatelnost, saturovanost, elementární vnoøení. Zcela bìžnì používá infinitní metody teorie množin a výsledky, kterých lze v teorii modelù dosáhnout, jsou èasto závislé na pøijetí èi odmítnutí nìjakého dodateèného množinového axiomu (axiom výbìru, zobecnìná hypotéza kontinua).
+    * Teorie aritmetiky se zabývá zkoumáním formálních aritmetických systémù jako jsou Robinsonova a Peanova aritmetika a struktury v nich definovatelných množin pøirozených èísel. Úzce souvisí s teoretickou informatikou zejména s teorií rekurze a teorií složitosti. Zajímá se také o možnosti „aritmetizace logiky“, tj. vyjádøení nìchterých logických pojmù, postupù a tvrzení v øeèi pøirozených èísel, a o to, jaké dùsledky tato aritmetizace pøináší (jedním z nich jsou napøíklad slavné Gödelovy vìty o neúplnosti).
+_____________________________________________________________________________

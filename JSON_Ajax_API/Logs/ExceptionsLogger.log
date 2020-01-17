@@ -1,0 +1,62 @@
+[info] [2018-11-04 21:42:26]Start logger: Logs/ExceptionsLogger.log.
+[critical] ArgumentCountError [2018-11-04 21:42:26] Too few arguments to function Pes\Http\Environment::__construct(), 1 passed in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php on line 19 and exactly 2 expected on line 32 in file C:\xampp\htdocs\Pes\Pes\src\Http\Environment.php
+[info] [2018-11-04 21:51:14]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-04 21:51:14] Class 'Middleware\Web\ApplicationDevelopment' not found on line 25 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php
+[info] [2018-11-06 23:38:28]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-06 23:38:28] Class 'Middleware\Web\ApplicationDevelopment' not found on line 24 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php
+[info] [2018-11-06 23:45:24]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-06 23:45:24] Class 'Middleware\Web\ApplicationDevelopment' not found on line 24 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php
+[info] [2018-11-06 23:58:55]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-06 23:58:55] Class 'Helper\TestHelper' not found on line 37 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php
+[info] [2018-11-07 00:03:31]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-07 00:03:31] Class 'Liveblock\Middleware\Web\ContainerFactory' not found on line 52 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php
+[info] [2018-11-07 08:30:00]Start logger: Logs/ExceptionsLogger.log.
+[critical] TypeError [2018-11-07 08:30:00] Argument 1 passed to Pes\Container\ContainerConfiguratorHttpAbstract::__construct() must be an instance of Pes\Container\Http\RequestInterface or null, instance of Pes\Http\Request given, called in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 51 on line 31 in file C:\xampp\htdocs\Pes\Pes\src\Container\ContainerConfiguratorHttpAbstract.php
+[info] [2018-11-07 08:32:41]Start logger: Logs/ExceptionsLogger.log.
+[critical] TypeError [2018-11-07 08:32:41] Argument 1 passed to Pes\Container\ContainerConfiguratorHttpAbstract::__construct() must be an instance of Pes\Http\RequestInterface or null, instance of Pes\Http\Request given, called in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 51 on line 33 in file C:\xampp\htdocs\Pes\Pes\src\Container\ContainerConfiguratorHttpAbstract.php
+[info] [2018-11-07 08:35:27]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-07 08:35:27] Call to a member function getQueryParam() on null on line 52 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-07 08:39:35]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-07 08:39:35] Call to undefined method Pes\Http\Request::getQueryParam() on line 52 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-07 08:47:42]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-07 08:47:42] Call to undefined method Pes\Http\Request::getQueryParam() on line 52 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-07 08:51:08]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-07 08:51:08] Call to undefined method Pes\Http\Request::getQueryParam() on line 52 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-07 18:55:01]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-07 18:55:01] Class 'Model\UvodniStranka' not found on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-19 08:56:42]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-19 08:56:42] Class 'Model\UvodniStranka' not found on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-19 09:08:32]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-19 09:08:32] Class 'Model\UvodniStranka' not found on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-19 09:09:10]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-19 09:09:10] Class 'Model\UvodniStranka' not found on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-19 09:11:27]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-19 09:11:27] Class 'Model\UvodniStranka' not found on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-19 09:21:25]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-19 09:21:25] Class 'Model\UvodniStranka' not found on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-19 09:45:10]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-19 09:45:10] Class 'Model\UvodniStranka' not found on line 64 in file C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php
+[info] [2018-11-28 23:24:08]Start logger: Logs/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2018-11-28 23:24:08] Neexistuje nebo není čitelný soubor contents/ajaxindex.php. on line 35 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php
+[info] [2018-11-28 23:25:41]Start logger: Logs/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2018-11-28 23:25:41] Neexistuje nebo není čitelný soubor contents/ajaxindex.php. on line 35 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php
+[info] [2018-11-28 23:26:33]Start logger: Logs/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2018-11-28 23:26:33] Neexistuje nebo není čitelný soubor contents/ajaxindex.php. on line 35 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php
+[info] [2018-11-28 23:31:14]Start logger: Logs/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2018-11-28 23:31:14] Neexistuje nebo není čitelný soubor contents/ajaxindex.php. on line 35 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php
+[info] [2018-11-28 23:32:21]Start logger: Logs/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2018-11-28 23:32:21] Neexistuje nebo není čitelný soubor contents/ajaxindex.php. on line 35 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php
+[info] [2018-11-28 23:33:13]Start logger: Logs/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2018-11-28 23:33:13] Neexistuje nebo není čitelný soubor contents/ajaxindex.php. on line 35 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php
+[info] [2018-11-30 17:08:58]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-30 17:08:58] Class 'Liveblock\Middleware\Web\ApplicationDevelopment' not found on line 24 in file C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php
+[info] [2018-11-30 17:17:03]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-11-30 17:17:03] Class 'Liveblock\Middleware\Web\ApplicationDevelopment' not found on line 24 in file C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php
+[info] [2018-12-11 09:27:01]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-12-11 09:27:01] Class 'Pes\Http\Factory\ResponseFactory' not found on line 64 in file C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php
+[info] [2018-12-11 11:46:57]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-12-11 11:46:57] Class 'Pes\Http\Factory\ResponseFactory' not found on line 64 in file C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php
+[info] [2018-12-11 11:51:54]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-12-11 11:51:54] Class 'Pes\Http\Factory\ResponseFactory' not found on line 64 in file C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php
+[info] [2018-12-11 11:55:30]Start logger: Logs/ExceptionsLogger.log.
+[critical] Error [2018-12-11 11:55:30] Call to undefined function Liveblock\Middleware\Web\getBody() on line 65 in file C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php

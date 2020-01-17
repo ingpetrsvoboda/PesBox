@@ -1,0 +1,80 @@
+\hypertarget{class_pes_1_1_middleware_1_1_selector_item}{}\section{Selector\+Item Class Reference}
+\label{class_pes_1_1_middleware_1_1_selector_item}\index{Selector\+Item@{Selector\+Item}}
+Inheritance diagram for Selector\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_middleware_1_1_selector_item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_selector_item_a7a333affb97cf092d50f3e59edaa9066}\label{class_pes_1_1_middleware_1_1_selector_item_a7a333affb97cf092d50f3e59edaa9066}} 
+{\bfseries get\+Prefix} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_middleware_1_1_selector_item_af09a4d42693ca813040ddf1ebb7a306f}{get\+Middleware}} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_selector_item_a523b9bda674fc27df98f0da0b3f3276c}\label{class_pes_1_1_middleware_1_1_selector_item_a523b9bda674fc27df98f0da0b3f3276c}} 
+{\bfseries set\+Prefix} (\$prefix)
+\item 
+\mbox{\hyperlink{class_pes_1_1_middleware_1_1_selector_item_a45338158e6ea2a7b58612339ccc85717}{set\+Stack}} (\$stack, callable \$resolver=N\+U\+LL)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of Prefix
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_selector_item_af09a4d42693ca813040ddf1ebb7a306f}\label{class_pes_1_1_middleware_1_1_selector_item_af09a4d42693ca813040ddf1ebb7a306f}} 
+\index{Pes\+::\+Middleware\+::\+Selector\+Item@{Pes\+::\+Middleware\+::\+Selector\+Item}!get\+Middleware@{get\+Middleware}}
+\index{get\+Middleware@{get\+Middleware}!Pes\+::\+Middleware\+::\+Selector\+Item@{Pes\+::\+Middleware\+::\+Selector\+Item}}
+\subsubsection{\texorpdfstring{get\+Middleware()}{getMiddleware()}}
+{\footnotesize\ttfamily get\+Middleware (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Middleware\+Interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_middleware_1_1_selector_item_interface}{Selector\+Item\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_middleware_1_1_selector_item_a45338158e6ea2a7b58612339ccc85717}\label{class_pes_1_1_middleware_1_1_selector_item_a45338158e6ea2a7b58612339ccc85717}} 
+\index{Pes\+::\+Middleware\+::\+Selector\+Item@{Pes\+::\+Middleware\+::\+Selector\+Item}!set\+Stack@{set\+Stack}}
+\index{set\+Stack@{set\+Stack}!Pes\+::\+Middleware\+::\+Selector\+Item@{Pes\+::\+Middleware\+::\+Selector\+Item}}
+\subsubsection{\texorpdfstring{set\+Stack()}{setStack()}}
+{\footnotesize\ttfamily set\+Stack (\begin{DoxyParamCaption}\item[{}]{\$stack,  }\item[{callable}]{\$resolver = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Nastaví definici zásbníku middleware. Definice zásobníku middleware je\+: 
+\begin{DoxyItemize}
+\item Proměnná typu Psr -\/ pak je volán tento jeden middleware 
+\item Pole, kde jednotlivé prvky pole jsou proměnné typu Psr -\/ pak je toto pole použitojako definice stacku, je automaticky vytvořen objekt \mbox{\hyperlink{class_pes_1_1_middleware_1_1_dispatcher}{Dispatcher}}, který zajistí volání jednotlivých middleware ve stacku. 
+\item Closure, která vrací některý z výše uvedených typů, t.\+j. buď objekt typu \mbox{\hyperlink{namespace_pes_1_1_middleware}{Middleware}} nebo pole položek typu \mbox{\hyperlink{namespace_pes_1_1_middleware}{Middleware}}. Tato varianta pak pracuje \char`\"{}lazy load\char`\"{} a jednotlivá middleware jsou instancována až v okamžiku jejich volání. 
+\end{DoxyItemize}
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$stack} & \\
+\hline
+\textbackslash{}\+Pes\textbackslash{}\+Middleware\textbackslash{}callable & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_middleware_1_1_selector_item_interface}{Selector\+Item\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Middleware/Selector\+Item.\+php\end{DoxyCompactItemize}

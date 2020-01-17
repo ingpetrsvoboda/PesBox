@@ -1,0 +1,8 @@
+[info] [2019-05-10 23:31:46] Logger start. Log file: Logs/Bootstrap/Bootstrap.log.
+[info] Bootstrap: include "BootstrapDefaults.php"
+[info] Bootstrap: include C:\xampp\htdocs\PesBox\testApplication/Bootstrap/AutoloaderSet.php
+[info] GlobalsSet: nastaveny hodnoty - force_development: , force_production: , development: development mode by environment, production: , running_on_production_host: 
+[warning] Je vypnutý 'session.use_strict_mode'!
+[warning] Garbage collection se spouští jen jednou za 1000 spuštění skriptu! Např. session tak může být uklizena za dlouhou dobu.
+[info] Date default timezone set: date_default_timezone_set("Europe/Prague");
+[info] Set locale: Czech_Czechia.1250

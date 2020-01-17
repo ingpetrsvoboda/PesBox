@@ -1,0 +1,47 @@
+running composer global installs the packages into %APPDATA%\Composer (or ~/.composer/ in Linux)
+
+Just the commands:
+
+composer global require "phpunit/phpunit=8.2"
+composer global require "phpunit/phpunit-skeleton-generator=*"
+composer global require "squizlabs/php_codesniffer=*"
+composer global require "phpmd/phpmd=@stable"
+composer global require apigen/apigen:~2.8
+
+Then the files to call are in C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\
+Global packages
+
+
+PHPUnit
+
+From the installation instructions (https://phpunit.de/manual/current/en/installation.html) do:
+
+composer global require "phpunit/phpunit=6.4"
+
+This installs PHPUnit to C:\Users\[username]\AppData\Roaming\Composer\vendor\phpunit and puts the binary to use in Netbeans in C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpunit.bat
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpunit.bat into Netbeans Tools > Options > PHP (tab) > Frameworks & Tools (tab) > PHPUnit section.
+Skeleton Generator
+
+From the installation instructions (https://github.com/sebastianbergmann/phpunit-skeleton-generator) run:
+
+composer global require "phpunit/phpunit-skeleton-generator=*"
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpunit-skelgen.bat into Netbeans Tools > Options > PHP (tab) > Frameworks & Tools (tab) > PHPUnit section.
+PHP_CodeSniffer
+
+composer global require "squizlabs/php_codesniffer=*"
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpcs.bat into Netbeans Tools > Options > PHP (tab) > Code Analysis (tab) > Code Sniffer section.
+Mess Detector
+
+composer global require "phpmd/phpmd=@stable"
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\phpmd.bat into Netbeans Tools > Options > PHP (tab) > Code Analysis (tab) > Mess Detector section.
+apigen
+
+composer global require apigen/apigen:~2.8
+
+For me this failed see apigen issue #316. The answer to that was to use ~4.0, but that requires PHP >= 5.4
+
+Then put C:\Users\[username]\AppData\Roaming\Composer\vendor\bin\apigen.bat into Netbeans Tools > Options > PHP (tab) > Code Analysis (tab) > ApiGen section.

@@ -1,0 +1,83 @@
+\hypertarget{class_pes_1_1_http_1_1_body_1_1_body_parser}{}\section{Body\+Parser Class Reference}
+\label{class_pes_1_1_http_1_1_body_1_1_body_parser}\index{Body\+Parser@{Body\+Parser}}
+Inheritance diagram for Body\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_http_1_1_body_1_1_body_parser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_body_1_1_body_parser_a4a4b88a924a83a6b552827f4472931f6}\label{class_pes_1_1_http_1_1_body_1_1_body_parser_a4a4b88a924a83a6b552827f4472931f6}} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_pes_1_1_http_1_1_request_1_1_media_content_resolver_interface}{Media\+Content\+Resolver\+Interface}} \$request\+Media\+Content\+Resolver=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_body_1_1_body_parser_a25bb60104b8414e955c9462104e44743}{register\+Media\+Parser}} (\$media\+Type, callable \$callable)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_body_1_1_body_parser_a60ebb3c19a4dbeebbab0a5c5c7882d53}{parse}} (Server\+Request\+Interface \$request)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_http_1_1_body_1_1_body_parser}{Body\+Parser}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_body_1_1_body_parser_a60ebb3c19a4dbeebbab0a5c5c7882d53}\label{class_pes_1_1_http_1_1_body_1_1_body_parser_a60ebb3c19a4dbeebbab0a5c5c7882d53}} 
+\index{Pes\+::\+Http\+::\+Body\+::\+Body\+Parser@{Pes\+::\+Http\+::\+Body\+::\+Body\+Parser}!parse@{parse}}
+\index{parse@{parse}!Pes\+::\+Http\+::\+Body\+::\+Body\+Parser@{Pes\+::\+Http\+::\+Body\+::\+Body\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily parse (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request }\end{DoxyParamCaption})}
+
+\{Vrací parsovaný obsah body. Pokud body neexistuje, M\+U\+SÍ vracet N\+U\+LL. 
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\} Parsování body provede pomocí media parseru registrovaného pro nedia typ requestu. Pokud není zaregistrován vhodný media type parser, metoda vrací N\+U\+LL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_body_1_1_body_parser_interface_a60ebb3c19a4dbeebbab0a5c5c7882d53}{Body\+Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_body_1_1_body_parser_a25bb60104b8414e955c9462104e44743}\label{class_pes_1_1_http_1_1_body_1_1_body_parser_a25bb60104b8414e955c9462104e44743}} 
+\index{Pes\+::\+Http\+::\+Body\+::\+Body\+Parser@{Pes\+::\+Http\+::\+Body\+::\+Body\+Parser}!register\+Media\+Parser@{register\+Media\+Parser}}
+\index{register\+Media\+Parser@{register\+Media\+Parser}!Pes\+::\+Http\+::\+Body\+::\+Body\+Parser@{Pes\+::\+Http\+::\+Body\+::\+Body\+Parser}}
+\subsubsection{\texorpdfstring{register\+Media\+Parser()}{registerMediaParser()}}
+{\footnotesize\ttfamily register\+Media\+Parser (\begin{DoxyParamCaption}\item[{}]{\$media\+Type,  }\item[{callable}]{\$callable }\end{DoxyParamCaption})}
+
+Registruje media parser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$media\+Type} & A H\+T\+TP media type (bez ostatních parametrů content-\/type. \\
+\hline
+callable & {\em \$callable} & Callable, která vrací obsah parsovaný podle media type. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_body_1_1_body_parser_interface_a25bb60104b8414e955c9462104e44743}{Body\+Parser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Body/Body\+Parser.\+php\end{DoxyCompactItemize}

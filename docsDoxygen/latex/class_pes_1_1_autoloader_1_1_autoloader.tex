@@ -1,0 +1,156 @@
+\hypertarget{class_pes_1_1_autoloader_1_1_autoloader}{}\section{Autoloader Class Reference}
+\label{class_pes_1_1_autoloader_1_1_autoloader}\index{Autoloader@{Autoloader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_autoloader_1_1_autoloader_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_autoloader_1_1_autoloader_afdf0b976693d442488b04e52b99c7649}{add\+Namespace}} (\$prefix, \$base\+\_\+dir, \$prepend=false)
+\item 
+\mbox{\hyperlink{class_pes_1_1_autoloader_1_1_autoloader_a2052406898892891865b67c4f06159d3}{add\+Prefix}} (\$prefix, \$base\+\_\+dir, \$prepend=false)
+\item 
+\mbox{\hyperlink{class_pes_1_1_autoloader_1_1_autoloader_a8326a997d0cfe76d80196f60d240d144}{load\+Class}} (\$class)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_a56e71099de3d892626872a77665e21c0}\label{class_pes_1_1_autoloader_1_1_autoloader_a56e71099de3d892626872a77665e21c0}} 
+const {\bfseries D\+I\+R\+E\+C\+T\+O\+R\+Y\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR} = \textquotesingle{}/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_a7d12fe829cb7ac5c0b0f650355b038b5}\label{class_pes_1_1_autoloader_1_1_autoloader_a7d12fe829cb7ac5c0b0f650355b038b5}} 
+const {\bfseries F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+P\+R\+E\+F\+IX} = \textquotesingle{}F\+A\+L\+L\+B\+A\+CK\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_autoloader_1_1_autoloader_a21e9141a0afc86bf7869c37394b22e19}{load\+Mapped\+File}} (\$prefix, \$relative\+\_\+class)
+\item 
+\mbox{\hyperlink{class_pes_1_1_autoloader_1_1_autoloader_a6e45e88bb3272cdfbac850a8789683d3}{require\+File}} (\$file)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_a8dd2685d77e3731afd50eaa21c4f2055}\label{class_pes_1_1_autoloader_1_1_autoloader_a8dd2685d77e3731afd50eaa21c4f2055}} 
+{\bfseries \$prefixes} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An example of a general-\/purpose implementation that includes the optional functionality of allowing multiple base directories for a single namespace prefix.
+
+E\+X\+A\+M\+P\+LE 1\+: /path/to/packages/foo-\/bar/ src/ Baz.\+php \# Foo Qux/ Quux.\+php \# Foo tests/ Baz\+Test.\+php \# Foo Qux/ Quux\+Test.\+php \# Foo
+
+... \begin{DoxyVerb} $loader = new \Example\Psr4AutoloaderClass;
+ $loader->register();
+ $loader->addNamespace('Foo\Bar', '/path/to/packages/foo-bar/src');
+ $loader->addNamespace('Foo\Bar', '/path/to/packages/foo-bar/tests');
+\end{DoxyVerb}
+
+
+E\+X\+A\+M\+P\+LE 2 -\/ kombinace s Composer autoloaderem\+: use Pes; \$pes\+Autoloader = new Autoloader(); \$pes\+Autoloader-\/$>$\mbox{\hyperlink{class_pes_1_1_autoloader_1_1_autoloader_acc294a6cc8e69743746820e3d15e3f78}{register()}}; \$pes\+Autoloader-\/$>$add\+Namespace(\textquotesingle{}Pes\textquotesingle{}, \textquotesingle{}vendor/\+Pes/src/\textquotesingle{}); //autoload pro namespace Pes \$pes\+Autoloader-\/$>$add\+Namespace(\textquotesingle{}Menu\textquotesingle{}, \textquotesingle{}Menu/\textquotesingle{}); //autoload pro namespace \$pes\+Autoloader-\/$>$add\+Namespace(\textquotesingle{}Konverze\textquotesingle{}, \textquotesingle{}Konverze/\textquotesingle{}); \$pes\+Autoloader-\/$>$add\+Namespace(\textquotesingle{}Database\textquotesingle{}, \textquotesingle{}Database/\textquotesingle{}); \$pes\+Autoloader-\/$>$add\+Namespace(\textquotesingle{}Helper\textquotesingle{}, \textquotesingle{}Helper/\textquotesingle{}); // přidání autoloaderu vytvořeného Composerem\+: include \textquotesingle{}vendor/autoload.\+php\textquotesingle{}; 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_afdf0b976693d442488b04e52b99c7649}\label{class_pes_1_1_autoloader_1_1_autoloader_afdf0b976693d442488b04e52b99c7649}} 
+\index{Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}!add\+Namespace@{add\+Namespace}}
+\index{add\+Namespace@{add\+Namespace}!Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}}
+\subsubsection{\texorpdfstring{add\+Namespace()}{addNamespace()}}
+{\footnotesize\ttfamily add\+Namespace (\begin{DoxyParamCaption}\item[{}]{\$prefix,  }\item[{}]{\$base\+\_\+dir,  }\item[{}]{\$prepend = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Adds a base directory for a namespace prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & The namespace prefix. \\
+\hline
+string & {\em \$base\+\_\+dir} & A base directory for class files in the namespace. \\
+\hline
+bool & {\em \$prepend} & If true, prepend the base directory to the stack instead of appending it; this causes it to be searched first rather than last. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_a2052406898892891865b67c4f06159d3}\label{class_pes_1_1_autoloader_1_1_autoloader_a2052406898892891865b67c4f06159d3}} 
+\index{Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}!add\+Prefix@{add\+Prefix}}
+\index{add\+Prefix@{add\+Prefix}!Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}}
+\subsubsection{\texorpdfstring{add\+Prefix()}{addPrefix()}}
+{\footnotesize\ttfamily add\+Prefix (\begin{DoxyParamCaption}\item[{}]{\$prefix,  }\item[{}]{\$base\+\_\+dir,  }\item[{}]{\$prepend = {\ttfamily false} }\end{DoxyParamCaption})}
+
+For P\+E\+AR and P\+S\+R-\/0 like autoloading 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$prefix} & \\
+\hline
+type & {\em \$base\+\_\+dir} & \\
+\hline
+type & {\em \$prepend} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_a8326a997d0cfe76d80196f60d240d144}\label{class_pes_1_1_autoloader_1_1_autoloader_a8326a997d0cfe76d80196f60d240d144}} 
+\index{Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}!load\+Class@{load\+Class}}
+\index{load\+Class@{load\+Class}!Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}}
+\subsubsection{\texorpdfstring{load\+Class()}{loadClass()}}
+{\footnotesize\ttfamily load\+Class (\begin{DoxyParamCaption}\item[{}]{\$class }\end{DoxyParamCaption})}
+
+Loads the class file for a given class name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & The fully-\/qualified class name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The mapped file name on success, or boolean false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_a21e9141a0afc86bf7869c37394b22e19}\label{class_pes_1_1_autoloader_1_1_autoloader_a21e9141a0afc86bf7869c37394b22e19}} 
+\index{Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}!load\+Mapped\+File@{load\+Mapped\+File}}
+\index{load\+Mapped\+File@{load\+Mapped\+File}!Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}}
+\subsubsection{\texorpdfstring{load\+Mapped\+File()}{loadMappedFile()}}
+{\footnotesize\ttfamily load\+Mapped\+File (\begin{DoxyParamCaption}\item[{}]{\$prefix,  }\item[{}]{\$relative\+\_\+class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load the mapped file for a namespace prefix and relative class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & The namespace prefix. \\
+\hline
+string & {\em \$relative\+\_\+class} & The relative class name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Boolean false if no mapped file can be loaded, or the name of the mapped file that was loaded. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_acc294a6cc8e69743746820e3d15e3f78}\label{class_pes_1_1_autoloader_1_1_autoloader_acc294a6cc8e69743746820e3d15e3f78}} 
+\index{Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}!register@{register}}
+\index{register@{register}!Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}}
+\subsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Register loader with S\+PL autoloader stack.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_autoloader_1_1_autoloader_a6e45e88bb3272cdfbac850a8789683d3}\label{class_pes_1_1_autoloader_1_1_autoloader_a6e45e88bb3272cdfbac850a8789683d3}} 
+\index{Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}!require\+File@{require\+File}}
+\index{require\+File@{require\+File}!Pes\+::\+Autoloader\+::\+Autoloader@{Pes\+::\+Autoloader\+::\+Autoloader}}
+\subsubsection{\texorpdfstring{require\+File()}{requireFile()}}
+{\footnotesize\ttfamily require\+File (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+If a file exists, require it from the file system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & The file to require. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the file exists, false if not. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Autoloader/Autoloader.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+[30-Nov-2018 17:08:58 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Liveblock\Middleware\Web\ApplicationDevelopment' not found in C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php:24
+Stack trace:
+#0 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[30-Nov-2018 17:17:03 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Liveblock\Middleware\Web\ApplicationDevelopment' not found in C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php:24
+Stack trace:
+#0 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[11-Dec-2018 09:27:01 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Http\Factory\ResponseFactory' not found in C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php:64
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php(27): Liveblock\Middleware\Web\WebDevelopmentVersion->process(Object(Pes\Http\Request))
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[11-Dec-2018 11:46:57 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Http\Factory\ResponseFactory' not found in C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php:64
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php(27): Liveblock\Middleware\Web\WebDevelopmentVersion->process(Object(Pes\Http\Request))
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[11-Dec-2018 11:51:54 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Pes\Http\Factory\ResponseFactory' not found in C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php:64
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php(27): Liveblock\Middleware\Web\WebDevelopmentVersion->process(Object(Pes\Http\Request))
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[11-Dec-2018 11:55:30 Europe/Prague] PHP Fatal error:  Uncaught Error: Call to undefined function Liveblock\Middleware\Web\getBody() in C:\xampp\htdocs\PesBox\JSON_Ajax_API\Middleware\Web\WebDevelopmentVersion.php:65
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\JSON_Ajax_API\index.php(27): Liveblock\Middleware\Web\WebDevelopmentVersion->process(Object(Pes\Http\Request))
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39

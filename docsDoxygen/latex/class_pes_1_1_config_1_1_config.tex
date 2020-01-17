@@ -1,0 +1,74 @@
+\hypertarget{class_pes_1_1_config_1_1_config}{}\section{Config Class Reference}
+\label{class_pes_1_1_config_1_1_config}\index{Config@{Config}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_config_1_1_config_adef937c6028e2bd19a29d69b818909ef}\label{class_pes_1_1_config_1_1_config_adef937c6028e2bd19a29d69b818909ef}} 
+{\bfseries \+\_\+\+\_\+construct} (\$xml\+Full\+File\+Name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_config_1_1_config_afb39046d4d674fe9e6eaeb70c9f68917}{get\+Element}} (\$element\+Name, \$atribute\+Name=\textquotesingle{}\textquotesingle{}, \$atribute\+Value=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{class_pes_1_1_config_1_1_config_a0132586da9e016d05f6c09595bd54124}\label{class_pes_1_1_config_1_1_config_a0132586da9e016d05f6c09595bd54124}} 
+{\bfseries query\+Element} (\$xpath\+Query)
+\item 
+\mbox{\hyperlink{class_pes_1_1_config_1_1_config_a69b8f6a56f006f65cdfdb8a8884eb420}{get\+Section}} (\$section)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Třída vytváří objekt s načtenou konfigurací. Konfiguraci načítá ze souboru ve formátu xml. Soubor s konfigurací obsahuje jednotlivé elementy -\/ sekce konfigurace. Kořenová úrověň obsahuje pouze element $<$root$>$, první úroveň pak jednotlivé elemty sekcí, např. $<$directories$>$ nebo $<$db$>$. Pokud se některá sekce konfigurace má vyskytovat více než jednou, budou všechny tyto sekce konfigurace obsaženy v elementu se stejným tagem a je nutné jednotlivé sekce odlišit atributem. Např. $<$db database=\char`\"{}\+Projektor\char`\"{}$>$ a $<$db database=\char`\"{}\+Information\+Schema\char`\"{}$>$. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_config_1_1_config_afb39046d4d674fe9e6eaeb70c9f68917}\label{class_pes_1_1_config_1_1_config_afb39046d4d674fe9e6eaeb70c9f68917}} 
+\index{Pes\+::\+Config\+::\+Config@{Pes\+::\+Config\+::\+Config}!get\+Element@{get\+Element}}
+\index{get\+Element@{get\+Element}!Pes\+::\+Config\+::\+Config@{Pes\+::\+Config\+::\+Config}}
+\subsubsection{\texorpdfstring{get\+Element()}{getElement()}}
+{\footnotesize\ttfamily get\+Element (\begin{DoxyParamCaption}\item[{}]{\$element\+Name,  }\item[{}]{\$atribute\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$atribute\+Value = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Metoda vrací objekt s konfiguračními informacemi obsaženými v jednom elementu xml konfiguračního souboru. Elemnt vyhbírá podle jména elementu a případně podle nepovinných parametrů jméno a hodnoty atributu elementu. Polde jméno a hodnoty atributu elementu lze element hledat při výskytu více lementů stejného jména v xml konfiguraci.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$element\+Name} & Název elementu (jm=no xml elementu) \\
+\hline
+string & {\em \$atribute\+Name} & Název atributu pažadovaného elementu \\
+\hline
+string & {\em \$atribute\+Value} & Hodnota atributu požadovaného elementu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_config_1_1_config_a69b8f6a56f006f65cdfdb8a8884eb420}\label{class_pes_1_1_config_1_1_config_a69b8f6a56f006f65cdfdb8a8884eb420}} 
+\index{Pes\+::\+Config\+::\+Config@{Pes\+::\+Config\+::\+Config}!get\+Section@{get\+Section}}
+\index{get\+Section@{get\+Section}!Pes\+::\+Config\+::\+Config@{Pes\+::\+Config\+::\+Config}}
+\subsubsection{\texorpdfstring{get\+Section()}{getSection()}}
+{\footnotesize\ttfamily get\+Section (\begin{DoxyParamCaption}\item[{}]{\$section }\end{DoxyParamCaption})}
+
+Metoda vrací jednu sekci konfigurace. Sekce jsou pouze xml elementy v první úrovni pod keřenovým elementem. Jméno sekce je jméno elementu. Sekce jednoho jména smí být v xml inicilizačním souboru pouze jedna.
+
+Metoda sekci vrací jako standartní php objekt (instanci std\+Class) s jednotlivými vlastnostmi odpovídajícími položkám v nejvyšší úrovni sekce. Pokud sekce má do hloubky více úrovní, je vlastnost objektu vždy znovu instance std\+Class rekurzivně. Pokud v úrovnije více elementá stejného jména, je vlastností pole objketů std\+Class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$section} & Název sekce (jméno xml elementu sekce) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Config/Config.\+php\end{DoxyCompactItemize}

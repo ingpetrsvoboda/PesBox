@@ -1,0 +1,80 @@
+\hypertarget{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view}{}\section{Text\+View Class Reference}
+\label{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view}\index{Text\+View@{Text\+View}}
+Inheritance diagram for Text\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a37f379cfd1340ce50b22a4c8e4b68a83}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}} \$view)
+\item 
+\mbox{\hyperlink{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a50677812ea3f0258f7d03bbac5265413}{get\+View}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a7897d55e6d6983b1f2cfa7214eaed267}{get\+Text}} (\$data=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view}{Text\+View}} je zjednodušeným modelem elementu node v D\+OM H\+T\+ML. Má pouze textový obsah. Textový obsah je vytvářen \char`\"{}lazy\char`\"{} při ~\newline
+volání metody get\+Text() a je generován pomocí view -\/ objektem typu View\+Interface -\/ zadaným v konstruktoru.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a37f379cfd1340ce50b22a4c8e4b68a83}\label{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a37f379cfd1340ce50b22a4c8e4b68a83}} 
+\index{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_view_interface}{View\+Interface}}}]{\$view }\end{DoxyParamCaption})}
+
+Prijímá View určený ge generování textového obsahu. View generuje (lazy) textový obsah s použitím dat zadaných při volání matody get\+Text(\$data).
+
+
+\begin{DoxyParams}[1]{Parameters}
+View\+Interface & {\em \$view} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a7897d55e6d6983b1f2cfa7214eaed267}\label{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a7897d55e6d6983b1f2cfa7214eaed267}} 
+\index{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View}}
+\subsubsection{\texorpdfstring{get\+Text()}{getText()}}
+{\footnotesize\ttfamily get\+Text (\begin{DoxyParamCaption}\item[{}]{\$data = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Vrací návratovou hodnotu renderování view zadaného jako prametr konstruktoru. V této metodě je volána metoda render() zadaného view a jsou jí předána data zadaná jako parametr metody (\$view-\/$>$render(N\+U\+LL, \$data)). View objekt tedy generuje textový obsah s použitím template zadané metodou set\+Template() a dat zadaných metodou set\+Data() nebo dat zadaných při volání této matody.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a50677812ea3f0258f7d03bbac5265413}\label{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_a50677812ea3f0258f7d03bbac5265413}} 
+\index{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View}!get\+View@{get\+View}}
+\index{get\+View@{get\+View}!Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+View}}
+\subsubsection{\texorpdfstring{get\+View()}{getView()}}
+{\footnotesize\ttfamily get\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+View\+Interface 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_dom_1_1_node_1_1_text_1_1_text_view_interface_a50677812ea3f0258f7d03bbac5265413}{Text\+View\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Dom/\+Node/\+Text/Text\+View.\+php\end{DoxyCompactItemize}

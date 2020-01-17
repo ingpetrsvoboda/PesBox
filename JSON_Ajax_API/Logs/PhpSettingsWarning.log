@@ -1,0 +1,3 @@
+[info] [2018-12-11 11:56:45]Start logger: Logs/PhpSettingsWarning.log.
+[warning] [2018-12-11 11:56:45] Je vypnutý 'session.use_strict_mode'!
+[warning] [2018-12-11 11:56:45] Garbage collection se spouští jen jednou za 1000 spuštění skriptu! Např. session tak může být uklizena za dlouhou dobu.

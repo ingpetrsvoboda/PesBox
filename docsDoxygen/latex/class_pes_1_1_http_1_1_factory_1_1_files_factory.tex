@@ -1,0 +1,77 @@
+\hypertarget{class_pes_1_1_http_1_1_factory_1_1_files_factory}{}\section{Files\+Factory Class Reference}
+\label{class_pes_1_1_http_1_1_factory_1_1_files_factory}\index{Files\+Factory@{Files\+Factory}}
+Inheritance diagram for Files\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_http_1_1_factory_1_1_files_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_files_factory_af8ddc9154d8a4b8724714c21efcfa47d}{create\+From\+Environment}} (\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} \$env)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_files_factory_a381f2024f052049eb0b77ee47199861b}{normalize\+Files}} (array \$files)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_uploaded_file_factory}{Uploaded\+File\+Factory}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_factory_1_1_files_factory_af8ddc9154d8a4b8724714c21efcfa47d}\label{class_pes_1_1_http_1_1_factory_1_1_files_factory_af8ddc9154d8a4b8724714c21efcfa47d}} 
+\index{Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory}!create\+From\+Environment@{create\+From\+Environment}}
+\index{create\+From\+Environment@{create\+From\+Environment}!Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Environment()}{createFromEnvironment()}}
+{\footnotesize\ttfamily create\+From\+Environment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}}}]{\$env }\end{DoxyParamCaption})}
+
+Create a normalized tree of \mbox{\hyperlink{class_pes_1_1_http_1_1_uploaded_file}{Uploaded\+File}} instances from the \mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} & {\em \$env} & The environment\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$null A normalized tree of \mbox{\hyperlink{class_pes_1_1_http_1_1_uploaded_file}{Uploaded\+File}} instances or null if none are provided. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_factory_1_1_environment_accept_interface}{Environment\+Accept\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_factory_1_1_files_factory_a381f2024f052049eb0b77ee47199861b}\label{class_pes_1_1_http_1_1_factory_1_1_files_factory_a381f2024f052049eb0b77ee47199861b}} 
+\index{Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory}!normalize\+Files@{normalize\+Files}}
+\index{normalize\+Files@{normalize\+Files}!Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Files\+Factory}}
+\subsubsection{\texorpdfstring{normalize\+Files()}{normalizeFiles()}}
+{\footnotesize\ttfamily static normalize\+Files (\begin{DoxyParamCaption}\item[{array}]{\$files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalize uploaded files
+
+Transforms each value into an Uploaded\+File\+Interface instance, and ensures that nested arrays are normalized.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$files} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & for unrecognized values \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Factory/Files\+Factory.\+php\end{DoxyCompactItemize}

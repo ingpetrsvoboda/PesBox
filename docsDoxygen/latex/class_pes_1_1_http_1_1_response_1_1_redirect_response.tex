@@ -1,0 +1,47 @@
+\hypertarget{class_pes_1_1_http_1_1_response_1_1_redirect_response}{}\section{Redirect\+Response Class Reference}
+\label{class_pes_1_1_http_1_1_response_1_1_redirect_response}\index{Redirect\+Response@{Redirect\+Response}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_http_1_1_response_1_1_redirect_response_a0e72ae5d7ce9a3d618b360d6cffdef6f}{with\+Redirect}} (Response\+Interface \$response, \$url, \$status=null)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_http_1_1_response_1_1_redirect_response}{Redirect\+Response}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_1_1_redirect_response_a0e72ae5d7ce9a3d618b360d6cffdef6f}\label{class_pes_1_1_http_1_1_response_1_1_redirect_response_a0e72ae5d7ce9a3d618b360d6cffdef6f}} 
+\index{Pes\+::\+Http\+::\+Response\+::\+Redirect\+Response@{Pes\+::\+Http\+::\+Response\+::\+Redirect\+Response}!with\+Redirect@{with\+Redirect}}
+\index{with\+Redirect@{with\+Redirect}!Pes\+::\+Http\+::\+Response\+::\+Redirect\+Response@{Pes\+::\+Http\+::\+Response\+::\+Redirect\+Response}}
+\subsubsection{\texorpdfstring{with\+Redirect()}{withRedirect()}}
+{\footnotesize\ttfamily static with\+Redirect (\begin{DoxyParamCaption}\item[{Response\+Interface}]{\$response,  }\item[{}]{\$url,  }\item[{}]{\$status = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tato třída vytvoří response se zadaným status kódem odpovídajícímm přesměrování a přidanou hlavičkou \char`\"{}\+Location\+:\char`\"{} a zadanou url.
+
+Pokud nezadáte status code a status code zadaného (nepřesměrovaného) requestu je 200 OK, třída doplní default hodnotu status code přesměrovanému requestu 302 Found.
+
+info ke status kódu\+: The H\+T\+TP status code changes the way browsers and robots handle redirects, so if you are using header(\+Location\+:) it\textquotesingle{}s a good idea to set the status code at the same time. Browsers typically re-\/request a 307 page every time, cache a 302 page for the session, and cache a 301 page for longer, or even indefinitely. Search engines typically transfer \char`\"{}page rank\char`\"{} to the new location for 301 redirects, but not for 302, 303 or 307. If the status code is not specified, header(\textquotesingle{}Location\+:\textquotesingle{}) defaults to 302.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Response\+Interface & {\em \$response} & \\
+\hline
+string & {\em \$url} & \\
+\hline
+int & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Response/Redirect\+Response.\+php\end{DoxyCompactItemize}

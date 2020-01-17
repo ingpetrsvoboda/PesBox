@@ -1,0 +1,64 @@
+\hypertarget{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory}{}\section{Text\+Factory Class Reference}
+\label{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory}\index{Text\+Factory@{Text\+Factory}}
+Inheritance diagram for Text\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory_a9793d54d2e9e11035e272c9eee7a27ae}{\+\_\+\+\_\+construct}} (\textbackslash{}Closure \$text\+Factory)
+\item 
+\mbox{\hyperlink{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory_a30976462a9b118ae09717b3179751e10}{get\+Text}} (\$data=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory}{Text\+Factory}} je zjednodušeným modelem elementu node v D\+OM H\+T\+ML. Má pouze textový obsah. Textový obsah je vytvářen \char`\"{}lazy\char`\"{} při volání metody get\+Text() a to pomocí Closure -\/ text factory, která je zadána v konstruktoru.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory_a9793d54d2e9e11035e272c9eee7a27ae}\label{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory_a9793d54d2e9e11035e272c9eee7a27ae}} 
+\index{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\textbackslash{}Closure}]{\$text\+Factory }\end{DoxyParamCaption})}
+
+Přijímá Closure určenou ke generování textového obsahu. Closure generuje (lazy) textový obsah s použitím dat zadaných při volání matody get\+Text(\$data).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$text\+Factory} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory_a30976462a9b118ae09717b3179751e10}\label{class_pes_1_1_dom_1_1_node_1_1_text_1_1_text_factory_a30976462a9b118ae09717b3179751e10}} 
+\index{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory@{Pes\+::\+Dom\+::\+Node\+::\+Text\+::\+Text\+Factory}}
+\subsubsection{\texorpdfstring{get\+Text()}{getText()}}
+{\footnotesize\ttfamily get\+Text (\begin{DoxyParamCaption}\item[{}]{\$data = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Vrací návratovou hodnotu Closure zadané jako prametr konstruktoru. V této metodě je Closure volána a jsou jí předána data zadaná jako parametr metody. Closure tedy generuje textový obsah s použitím dat zadaných při volání této matody. Closure musí být implementována tak, aby vracela string vhodný jako textový obsah tagu (nodu).
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Dom/\+Node/\+Text/Text\+Factory.\+php\end{DoxyCompactItemize}

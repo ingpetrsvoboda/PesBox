@@ -1,0 +1,74 @@
+\hypertarget{class_pes_1_1_http_1_1_factory_1_1_headers_factory}{}\section{Headers\+Factory Class Reference}
+\label{class_pes_1_1_http_1_1_factory_1_1_headers_factory}\index{Headers\+Factory@{Headers\+Factory}}
+Inheritance diagram for Headers\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_http_1_1_factory_1_1_headers_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_headers_factory_a1f73343634b92b36d1967217c008e396}{create\+From\+Environment}} (\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} \$environment)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$special}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_http_1_1_factory_1_1_headers_factory}{Headers\+Factory}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_factory_1_1_headers_factory_a1f73343634b92b36d1967217c008e396}\label{class_pes_1_1_http_1_1_factory_1_1_headers_factory_a1f73343634b92b36d1967217c008e396}} 
+\index{Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory}!create\+From\+Environment@{create\+From\+Environment}}
+\index{create\+From\+Environment@{create\+From\+Environment}!Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Environment()}{createFromEnvironment()}}
+{\footnotesize\ttfamily static create\+From\+Environment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}}}]{\$environment }\end{DoxyParamCaption})}
+
+Vytvoří novou kolekci hlaviček -\/ objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_headers}{Headers}}. Použije objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}}, ze kterého získává globální proměnné P\+HP. 
+
+Hlavičky v objektu \mbox{\hyperlink{class_pes_1_1_http_1_1_headers}{Headers}} tvoří z key/value párů nalezených v hlavičkách přijaatého H\+T\+TP requstu\+: 
+\begin{DoxyItemize}
+\item s klíči uvedenými v poli self\+::\$special  
+\item s klíči začínajícími řetězcem \char`\"{}\+H\+T\+T\+P\+\_\+\char`\"{} s výjimkou proměnné s klíčem H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+L\+E\+N\+G\+TH, která neobsahuje hodnoty hlavičky. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}} & {\em \$environment} & Objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_environment}{Environment}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pes 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_factory_1_1_environment_accept_interface}{Environment\+Accept\+Interface}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_factory_1_1_headers_factory_aac9b8e6c2865946aa0c0155dfbd03c99}\label{class_pes_1_1_http_1_1_factory_1_1_headers_factory_aac9b8e6c2865946aa0c0155dfbd03c99}} 
+\index{Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory}!\$special@{\$special}}
+\index{\$special@{\$special}!Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory@{Pes\+::\+Http\+::\+Factory\+::\+Headers\+Factory}}
+\subsubsection{\texorpdfstring{\$special}{$special}}
+{\footnotesize\ttfamily \$special\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        \textcolor{stringliteral}{'CONTENT\_TYPE'} => 1
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Factory/Headers\+Factory.\+php\end{DoxyCompactItemize}

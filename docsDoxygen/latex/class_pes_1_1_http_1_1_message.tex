@@ -1,0 +1,320 @@
+\hypertarget{class_pes_1_1_http_1_1_message}{}\section{Message Class Reference}
+\label{class_pes_1_1_http_1_1_message}\index{Message@{Message}}
+Inheritance diagram for Message\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_http_1_1_message}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a83c2703c91959192f759992ad5640b67}{\+\_\+\+\_\+set}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a915c3328b367338a7c0eddb1e3294e9a}{get\+Protocol\+Version}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a96527577349f271afb58287162b40e67}{with\+Protocol\+Version}} (\$version)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a157e0005d82edaa21cbea07fdc5c62da}{get\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_ad506774d2e42c7e4ec4b5f05009889b4}{has\+Header}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a5b0169d9fabf145a619f35da410bc5d0}{get\+Header}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a365fa6b4f521682cab038b8ad9bff195}{get\+Header\+Line}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a7bcc16e8478896e34d4c54cfb3c5eab5}{with\+Header}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a05ad08277c49a818e9c1a6ef4d613683}{with\+Added\+Header}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a0760196405b22044faa1ed0b8f36e540}{without\+Header}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_ad7bab1db052fb9fcc8bd0b4f3eac29ac}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_message_a0a434fb2c8bb00e0e0e3505991e2eaaf}{with\+Body}} (Stream\+Interface \$body)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_af2ca53cd4f10c15159b38f779039efba}\label{class_pes_1_1_http_1_1_message_af2ca53cd4f10c15159b38f779039efba}} 
+{\bfseries \$protocol\+Version} = \textquotesingle{}1.\+1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a52500036ee807241b8b4b7e2367c49ef}\label{class_pes_1_1_http_1_1_message_a52500036ee807241b8b4b7e2367c49ef}} 
+{\bfseries \$headers}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a26b9f9373f7bb79dfcf8a86dff086b45}\label{class_pes_1_1_http_1_1_message_a26b9f9373f7bb79dfcf8a86dff086b45}} 
+{\bfseries \$body}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$valid\+Protocol\+Versions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract message (base class for \mbox{\hyperlink{class_pes_1_1_http_1_1_request}{Request}} and \mbox{\hyperlink{class_pes_1_1_http_1_1_response}{Response}})
+
+This class represents a general H\+T\+TP message. It provides common properties and methods for the H\+T\+TP request and response, as defined in the P\+S\+R-\/7 Message\+Interface.
+
+\mbox{\hyperlink{}{Pes  Pes }}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a83c2703c91959192f759992ad5640b67}\label{class_pes_1_1_http_1_1_message_a83c2703c91959192f759992ad5640b67}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!\+\_\+\+\_\+set@{\+\_\+\+\_\+set}}
+\index{\+\_\+\+\_\+set@{\+\_\+\+\_\+set}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+set()}{\_\_set()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+set (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Disable magic setter to ensure immutability \mbox{\Hypertarget{class_pes_1_1_http_1_1_message_ad7bab1db052fb9fcc8bd0b4f3eac29ac}\label{class_pes_1_1_http_1_1_message_ad7bab1db052fb9fcc8bd0b4f3eac29ac}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!get\+Body@{get\+Body}}
+\index{get\+Body@{get\+Body}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{get\+Body()}{getBody()}}
+{\footnotesize\ttfamily get\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the body of the message.
+
+\begin{DoxyReturn}{Returns}
+Stream\+Interface Returns the body as a stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a5b0169d9fabf145a619f35da410bc5d0}\label{class_pes_1_1_http_1_1_message_a5b0169d9fabf145a619f35da410bc5d0}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{get\+Header()}{getHeader()}}
+{\footnotesize\ttfamily get\+Header (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Retrieves a message header value by the given case-\/insensitive name.
+
+This method returns an array of all the header values of the given case-\/insensitive header name.
+
+If the header does not appear in the message, this method M\+U\+ST return an empty array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} An array of string values as provided for the given header. If the header does not appear in the message, this method M\+U\+ST return an empty array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a365fa6b4f521682cab038b8ad9bff195}\label{class_pes_1_1_http_1_1_message_a365fa6b4f521682cab038b8ad9bff195}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!get\+Header\+Line@{get\+Header\+Line}}
+\index{get\+Header\+Line@{get\+Header\+Line}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{get\+Header\+Line()}{getHeaderLine()}}
+{\footnotesize\ttfamily get\+Header\+Line (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Retrieves a comma-\/separated string of the values for a single header.
+
+This method returns all of the header values of the given case-\/insensitive header name as a string concatenated together using a comma.
+
+N\+O\+TE\+: Not all header values may be appropriately represented using comma concatenation. For such headers, use \mbox{\hyperlink{class_pes_1_1_http_1_1_message_a5b0169d9fabf145a619f35da410bc5d0}{get\+Header()}} instead and supply your own delimiter when concatenating.
+
+If the header does not appear in the message, this method M\+U\+ST return an empty string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A string of values as provided for the given header concatenated together using a comma. If the header does not appear in the message, this method M\+U\+ST return an empty string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a157e0005d82edaa21cbea07fdc5c62da}\label{class_pes_1_1_http_1_1_message_a157e0005d82edaa21cbea07fdc5c62da}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!get\+Headers@{get\+Headers}}
+\index{get\+Headers@{get\+Headers}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{get\+Headers()}{getHeaders()}}
+{\footnotesize\ttfamily get\+Headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vrací objekt \mbox{\hyperlink{class_pes_1_1_http_1_1_headers}{Headers}}. Toto neplatí\+: Retrieves all message header values.
+
+The keys represent the header name as it will be sent over the wire, and each value is an array of strings associated with the header. \begin{DoxyVerb}// Represent the headers as a string
+foreach ($message->getHeaders() as $name => $values) {
+    echo $name . ": " . implode(", ", $values);
+}
+
+// Emit headers iteratively:
+foreach ($message->getHeaders() as $name => $values) {
+    foreach ($values as $value) {
+        header(sprintf('%s: %s', $name, $value), false);
+    }
+}
+\end{DoxyVerb}
+
+
+While header names are not case-\/sensitive, \mbox{\hyperlink{class_pes_1_1_http_1_1_message_a157e0005d82edaa21cbea07fdc5c62da}{get\+Headers()}} will preserve the exact case in which headers were originally specified.
+
+\begin{DoxyReturn}{Returns}
+array Returns an associative array of the message\textquotesingle{}s headers. Each key M\+U\+ST be a header name, and each value M\+U\+ST be an array of strings for that header. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a915c3328b367338a7c0eddb1e3294e9a}\label{class_pes_1_1_http_1_1_message_a915c3328b367338a7c0eddb1e3294e9a}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!get\+Protocol\+Version@{get\+Protocol\+Version}}
+\index{get\+Protocol\+Version@{get\+Protocol\+Version}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{get\+Protocol\+Version()}{getProtocolVersion()}}
+{\footnotesize\ttfamily get\+Protocol\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the H\+T\+TP protocol version as a string.
+
+The string M\+U\+ST contain only the H\+T\+TP version number (e.\+g., \char`\"{}1.\+1\char`\"{}, \char`\"{}1.\+0\char`\"{}).
+
+\begin{DoxyReturn}{Returns}
+string H\+T\+TP protocol version. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_ad506774d2e42c7e4ec4b5f05009889b4}\label{class_pes_1_1_http_1_1_message_ad506774d2e42c7e4ec4b5f05009889b4}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!has\+Header@{has\+Header}}
+\index{has\+Header@{has\+Header}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{has\+Header()}{hasHeader()}}
+{\footnotesize\ttfamily has\+Header (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Checks if a header exists by the given case-\/insensitive name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if any header names match the given header name using a case-\/insensitive string comparison. Returns false if no matching header name is found in the message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a05ad08277c49a818e9c1a6ef4d613683}\label{class_pes_1_1_http_1_1_message_a05ad08277c49a818e9c1a6ef4d613683}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!with\+Added\+Header@{with\+Added\+Header}}
+\index{with\+Added\+Header@{with\+Added\+Header}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{with\+Added\+Header()}{withAddedHeader()}}
+{\footnotesize\ttfamily with\+Added\+Header (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Return an instance with the specified header appended with the given value.
+
+Existing values for the specified header will be maintained. The new value(s) will be appended to the existing list. If the header did not exist previously, it will be added.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the new header and/or value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name to add. \\
+\hline
+ & {\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$value Header value(s). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a0a434fb2c8bb00e0e0e3505991e2eaaf}\label{class_pes_1_1_http_1_1_message_a0a434fb2c8bb00e0e0e3505991e2eaaf}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!with\+Body@{with\+Body}}
+\index{with\+Body@{with\+Body}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{with\+Body()}{withBody()}}
+{\footnotesize\ttfamily with\+Body (\begin{DoxyParamCaption}\item[{Stream\+Interface}]{\$body }\end{DoxyParamCaption})}
+
+Return an instance with the specified message body.
+
+The body M\+U\+ST be a Stream\+Interface object.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return a new instance that has the new body stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$body} & \mbox{\hyperlink{class_pes_1_1_http_1_1_body}{Body}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a7bcc16e8478896e34d4c54cfb3c5eab5}\label{class_pes_1_1_http_1_1_message_a7bcc16e8478896e34d4c54cfb3c5eab5}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!with\+Header@{with\+Header}}
+\index{with\+Header@{with\+Header}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{with\+Header()}{withHeader()}}
+{\footnotesize\ttfamily with\+Header (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Return an instance with the provided value replacing the specified header.
+
+While header names are case-\/insensitive, the casing of the header will be preserved by this function, and returned from \mbox{\hyperlink{class_pes_1_1_http_1_1_message_a157e0005d82edaa21cbea07fdc5c62da}{get\+Headers()}}.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the new and/or updated header and value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+ & {\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$value Header value(s). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a0760196405b22044faa1ed0b8f36e540}\label{class_pes_1_1_http_1_1_message_a0760196405b22044faa1ed0b8f36e540}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!without\+Header@{without\+Header}}
+\index{without\+Header@{without\+Header}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{without\+Header()}{withoutHeader()}}
+{\footnotesize\ttfamily without\+Header (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Return an instance without the specified header.
+
+Header resolution M\+U\+ST be done without case-\/sensitivity.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that removes the named header.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_a96527577349f271afb58287162b40e67}\label{class_pes_1_1_http_1_1_message_a96527577349f271afb58287162b40e67}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!with\+Protocol\+Version@{with\+Protocol\+Version}}
+\index{with\+Protocol\+Version@{with\+Protocol\+Version}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{with\+Protocol\+Version()}{withProtocolVersion()}}
+{\footnotesize\ttfamily with\+Protocol\+Version (\begin{DoxyParamCaption}\item[{}]{\$version }\end{DoxyParamCaption})}
+
+Return an instance with the specified H\+T\+TP protocol version.
+
+The version string M\+U\+ST contain only the H\+T\+TP version number (e.\+g., \char`\"{}1.\+1\char`\"{}, \char`\"{}1.\+0\char`\"{}).
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the new protocol version.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$version} & H\+T\+TP protocol version \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if the http version is an invalid number \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_message_aa358daa0d72216d30c2e5323a792e037}\label{class_pes_1_1_http_1_1_message_aa358daa0d72216d30c2e5323a792e037}} 
+\index{Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}!\$valid\+Protocol\+Versions@{\$valid\+Protocol\+Versions}}
+\index{\$valid\+Protocol\+Versions@{\$valid\+Protocol\+Versions}!Pes\+::\+Http\+::\+Message@{Pes\+::\+Http\+::\+Message}}
+\subsubsection{\texorpdfstring{\$valid\+Protocol\+Versions}{$validProtocolVersions}}
+{\footnotesize\ttfamily \$valid\+Protocol\+Versions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        \textcolor{stringliteral}{'1.0'} => \textcolor{keyword}{true}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/Message.\+php\end{DoxyCompactItemize}

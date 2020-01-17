@@ -1,0 +1,60 @@
+\hypertarget{class_pes_1_1_utils_1_1_directory}{}\section{Directory Class Reference}
+\label{class_pes_1_1_utils_1_1_directory}\index{Directory@{Directory}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_utils_1_1_directory_a209a82b49fda412f00ebbc45eb0df76a}{normalize\+Path}} (\$directory\+Path)
+\item 
+static \mbox{\hyperlink{class_pes_1_1_utils_1_1_directory_a7e9ff114e0b84dab030cf9e2f8b7b978}{create\+Directory}} (\$directory\+Path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of Folder
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_utils_1_1_directory_a7e9ff114e0b84dab030cf9e2f8b7b978}\label{class_pes_1_1_utils_1_1_directory_a7e9ff114e0b84dab030cf9e2f8b7b978}} 
+\index{Pes\+::\+Utils\+::\+Directory@{Pes\+::\+Utils\+::\+Directory}!create\+Directory@{create\+Directory}}
+\index{create\+Directory@{create\+Directory}!Pes\+::\+Utils\+::\+Directory@{Pes\+::\+Utils\+::\+Directory}}
+\subsubsection{\texorpdfstring{create\+Directory()}{createDirectory()}}
+{\footnotesize\ttfamily static create\+Directory (\begin{DoxyParamCaption}\item[{}]{\$directory\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Vytvoří neexistující složky a podsložky. Přijímá celou cestu a vytvoří všechny případně neexistující složky v řadě. Pokud cesta již existovala, pak pouze interně použitá P\+HP funkce mkdir() vytvoří chybu E\+\_\+\+W\+A\+R\+N\+I\+NG. Metoda vrací normalizovaná tvar vytvořené (nebo již existující) cesty. V případě neúspěchu vyhodí výjimku.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory\+Path} & Cesta k vytvoření \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Normalizovaná vytvořená cesta 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Create\+Directory\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_utils_1_1_directory_a209a82b49fda412f00ebbc45eb0df76a}\label{class_pes_1_1_utils_1_1_directory_a209a82b49fda412f00ebbc45eb0df76a}} 
+\index{Pes\+::\+Utils\+::\+Directory@{Pes\+::\+Utils\+::\+Directory}!normalize\+Path@{normalize\+Path}}
+\index{normalize\+Path@{normalize\+Path}!Pes\+::\+Utils\+::\+Directory@{Pes\+::\+Utils\+::\+Directory}}
+\subsubsection{\texorpdfstring{normalize\+Path()}{normalizePath()}}
+{\footnotesize\ttfamily static normalize\+Path (\begin{DoxyParamCaption}\item[{}]{\$directory\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Nahradí levá lomítka za pravá a zajistí, aby cesta končila koncovým pravým lomítkem 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Utils/Directory.\+php\end{DoxyCompactItemize}

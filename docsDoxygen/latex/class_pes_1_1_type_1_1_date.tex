@@ -1,0 +1,139 @@
+\hypertarget{class_pes_1_1_type_1_1_date}{}\section{Date Class Reference}
+\label{class_pes_1_1_type_1_1_date}\index{Date@{Date}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_type_1_1_date_a59cfeb98da819352b75ba73269469726}{get\+Php\+Date\+Time}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_type_1_1_date_a34148c99daa1f26eb7ba41e38f585b48}{get\+Quickform\+Date}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_type_1_1_date_a88025aaf181d1703946b116b8d32a270}{get\+Sql\+Date}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_type_1_1_date_aed10fcc22bc0e41c4fa06292016297f4}{get\+Czech\+String\+Date}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_type_1_1_date_a5203259eabfb8390c55644f069cf50dd}{get\+Czech\+String\+Year}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_type_1_1_date_af1e393aa6d7074ae6ddc34df2ed39c03}{now}} ()
+\item 
+static \mbox{\hyperlink{class_pes_1_1_type_1_1_date_a1e6beffe36efe1c6fd1a81c67dca04bf}{create\+From\+Czech\+String\+Date}} (\$retezec\+Datum=false)
+\item 
+static \mbox{\hyperlink{class_pes_1_1_type_1_1_date_a3a426b05a315cf4ea83224984a675344}{create\+From\+Sql\+Date}} (\$sql\+Datum)
+\item 
+static \mbox{\hyperlink{class_pes_1_1_type_1_1_date_aa8f285391dc63530f78a35c9e3ec0dee}{create\+From\+Quickform\+Array}} (\$pole)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a19d0e865e523d457d83191d23ba1d89b}\label{class_pes_1_1_type_1_1_date_a19d0e865e523d457d83191d23ba1d89b}} 
+const {\bfseries S\+Q\+L\+\_\+\+F\+O\+R\+M\+AT} = \char`\"{}Y-\/m-\/d\char`\"{}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a6f1d8f1fb2c6b1c6afe4ca45fdf6494e}\label{class_pes_1_1_type_1_1_date_a6f1d8f1fb2c6b1c6afe4ca45fdf6494e}} 
+const {\bfseries S\+T\+R\+I\+N\+G\+\_\+\+F\+O\+R\+M\+AT} = \char`\"{}d.\+m.\+Y\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a1e6beffe36efe1c6fd1a81c67dca04bf}\label{class_pes_1_1_type_1_1_date_a1e6beffe36efe1c6fd1a81c67dca04bf}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!create\+From\+Czech\+String\+Date@{create\+From\+Czech\+String\+Date}}
+\index{create\+From\+Czech\+String\+Date@{create\+From\+Czech\+String\+Date}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{create\+From\+Czech\+String\+Date()}{createFromCzechStringDate()}}
+{\footnotesize\ttfamily static create\+From\+Czech\+String\+Date (\begin{DoxyParamCaption}\item[{}]{\$retezec\+Datum = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$retezec\+Datum} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Projektor2\+\_\+\+Date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_aa8f285391dc63530f78a35c9e3ec0dee}\label{class_pes_1_1_type_1_1_date_aa8f285391dc63530f78a35c9e3ec0dee}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!create\+From\+Quickform\+Array@{create\+From\+Quickform\+Array}}
+\index{create\+From\+Quickform\+Array@{create\+From\+Quickform\+Array}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{create\+From\+Quickform\+Array()}{createFromQuickformArray()}}
+{\footnotesize\ttfamily static create\+From\+Quickform\+Array (\begin{DoxyParamCaption}\item[{}]{\$pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$pole} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Projektor2\+\_\+\+Date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a3a426b05a315cf4ea83224984a675344}\label{class_pes_1_1_type_1_1_date_a3a426b05a315cf4ea83224984a675344}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!create\+From\+Sql\+Date@{create\+From\+Sql\+Date}}
+\index{create\+From\+Sql\+Date@{create\+From\+Sql\+Date}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{create\+From\+Sql\+Date()}{createFromSqlDate()}}
+{\footnotesize\ttfamily static create\+From\+Sql\+Date (\begin{DoxyParamCaption}\item[{}]{\$sql\+Datum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql\+Datum} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Projektor2\+\_\+\+Date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_aed10fcc22bc0e41c4fa06292016297f4}\label{class_pes_1_1_type_1_1_date_aed10fcc22bc0e41c4fa06292016297f4}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!get\+Czech\+String\+Date@{get\+Czech\+String\+Date}}
+\index{get\+Czech\+String\+Date@{get\+Czech\+String\+Date}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{get\+Czech\+String\+Date()}{getCzechStringDate()}}
+{\footnotesize\ttfamily get\+Czech\+String\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a5203259eabfb8390c55644f069cf50dd}\label{class_pes_1_1_type_1_1_date_a5203259eabfb8390c55644f069cf50dd}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!get\+Czech\+String\+Year@{get\+Czech\+String\+Year}}
+\index{get\+Czech\+String\+Year@{get\+Czech\+String\+Year}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{get\+Czech\+String\+Year()}{getCzechStringYear()}}
+{\footnotesize\ttfamily get\+Czech\+String\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a59cfeb98da819352b75ba73269469726}\label{class_pes_1_1_type_1_1_date_a59cfeb98da819352b75ba73269469726}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!get\+Php\+Date\+Time@{get\+Php\+Date\+Time}}
+\index{get\+Php\+Date\+Time@{get\+Php\+Date\+Time}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{get\+Php\+Date\+Time()}{getPhpDateTime()}}
+{\footnotesize\ttfamily get\+Php\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a34148c99daa1f26eb7ba41e38f585b48}\label{class_pes_1_1_type_1_1_date_a34148c99daa1f26eb7ba41e38f585b48}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!get\+Quickform\+Date@{get\+Quickform\+Date}}
+\index{get\+Quickform\+Date@{get\+Quickform\+Date}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{get\+Quickform\+Date()}{getQuickformDate()}}
+{\footnotesize\ttfamily get\+Quickform\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_a88025aaf181d1703946b116b8d32a270}\label{class_pes_1_1_type_1_1_date_a88025aaf181d1703946b116b8d32a270}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!get\+Sql\+Date@{get\+Sql\+Date}}
+\index{get\+Sql\+Date@{get\+Sql\+Date}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{get\+Sql\+Date()}{getSqlDate()}}
+{\footnotesize\ttfamily get\+Sql\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_type_1_1_date_af1e393aa6d7074ae6ddc34df2ed39c03}\label{class_pes_1_1_type_1_1_date_af1e393aa6d7074ae6ddc34df2ed39c03}} 
+\index{Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}!now@{now}}
+\index{now@{now}!Pes\+::\+Type\+::\+Date@{Pes\+::\+Type\+::\+Date}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily static now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+Projektor2\+\_\+\+Date 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Type/Date.\+php\end{DoxyCompactItemize}

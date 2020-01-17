@@ -1,0 +1,228 @@
+[04-Nov-2018 21:42:26 Europe/Prague] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Pes\Http\Environment::__construct(), 1 passed in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php on line 19 and exactly 2 expected in C:\xampp\htdocs\Pes\Pes\src\Http\Environment.php:32
+Stack trace:
+#0 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php(19): Pes\Http\Environment->__construct(Array)
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowException(Object(ArgumentCountError), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(ArgumentCountError))
+#2 {main}
+  thrown in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[04-Nov-2018 21:51:14 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Middleware\Web\ApplicationDevelopment' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:25
+Stack trace:
+#0 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[06-Nov-2018 23:38:28 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Middleware\Web\ApplicationDevelopment' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+Stack trace:
+#0 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[06-Nov-2018 23:45:24 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Middleware\Web\ApplicationDevelopment' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+Stack trace:
+#0 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[06-Nov-2018 23:58:55 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Helper\TestHelper' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:37
+Stack trace:
+#0 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 00:03:31 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Liveblock\Middleware\Web\ContainerFactory' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:52
+Stack trace:
+#0 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#1 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowException(Object(Error), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(Error))
+#2 {main}
+  thrown in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 00:05:52 Europe/Prague] PHP Fatal error:  Class 'Pes\Container\ContainerFactoryAbstract' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerFactory.php on line 33
+[07-Nov-2018 00:05:52 Europe/Prague] PHP Stack trace:
+[07-Nov-2018 00:05:52 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:0
+[07-Nov-2018 00:05:52 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process($request = *uninitialized*, $handler = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+[07-Nov-2018 00:05:52 Europe/Prague] PHP   3. spl_autoload_call(*uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:52
+[07-Nov-2018 00:05:52 Europe/Prague] PHP   4. Composer\Autoload\ClassLoader->loadClass($class = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:52
+[07-Nov-2018 00:05:52 Europe/Prague] PHP   5. Composer\Autoload\includeFile($file = *uninitialized*) C:\xampp\htdocs\Pes\vendor\composer\ClassLoader.php:301
+[07-Nov-2018 00:05:52 Europe/Prague] PHP   6. include() C:\xampp\htdocs\Pes\vendor\composer\ClassLoader.php:412
+[07-Nov-2018 08:26:01 Europe/Prague] PHP Fatal error:  Class 'Pes\Container\ContainerConfiguratorHttpAbstract' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php on line 27
+[07-Nov-2018 08:26:01 Europe/Prague] PHP Stack trace:
+[07-Nov-2018 08:26:01 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:0
+[07-Nov-2018 08:26:01 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process($request = *uninitialized*, $handler = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+[07-Nov-2018 08:26:01 Europe/Prague] PHP   3. spl_autoload_call(*uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:52
+[07-Nov-2018 08:26:01 Europe/Prague] PHP   4. Composer\Autoload\ClassLoader->loadClass($class = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:52
+[07-Nov-2018 08:26:01 Europe/Prague] PHP   5. Composer\Autoload\includeFile($file = *uninitialized*) C:\xampp\htdocs\Pes\vendor\composer\ClassLoader.php:301
+[07-Nov-2018 08:26:01 Europe/Prague] PHP   6. include() C:\xampp\htdocs\Pes\vendor\composer\ClassLoader.php:412
+[07-Nov-2018 08:30:00 Europe/Prague] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Pes\Container\ContainerConfiguratorHttpAbstract::__construct() must be an instance of Pes\Container\Http\RequestInterface or null, instance of Pes\Http\Request given, called in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 51 and defined in C:\xampp\htdocs\Pes\Pes\src\Container\ContainerConfiguratorHttpAbstract.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(51): Pes\Container\ContainerConfiguratorHttpAbstract->__construct(Object(Pes\Http\Request))
+#1 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowExceptio in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 08:32:41 Europe/Prague] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Pes\Container\ContainerConfiguratorHttpAbstract::__construct() must be an instance of Pes\Http\RequestInterface or null, instance of Pes\Http\Request given, called in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 51 and defined in C:\xampp\htdocs\Pes\Pes\src\Container\ContainerConfiguratorHttpAbstract.php:33
+Stack trace:
+#0 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(51): Pes\Container\ContainerConfiguratorHttpAbstract->__construct(Object(Pes\Http\Request))
+#1 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php(74): flushOutputBufferAndThrowException(Object(T in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 08:35:27 Europe/Prague] PHP Notice:  Undefined property: Liveblock\Middleware\Web\ContainerConfigurator::$request in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php on line 52
+[07-Nov-2018 08:35:27 Europe/Prague] PHP Stack trace:
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:0
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process($request = *uninitialized*, $handler = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   3. Pes\Container\Container->get($serviceName = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:53
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   4. Pes\Container\Container->Pes\Container\{closure}() C:\xampp\htdocs\Pes\Pes\src\Container\Container.php:183
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   5. Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}($c = *uninitialized*) C:\xampp\htdocs\Pes\Pes\src\Container\Container.php:85
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   6. Pes\Container\Container->get($serviceName = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:39
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   7. Pes\Container\Container->Pes\Container\{closure}() C:\xampp\htdocs\Pes\Pes\src\Container\Container.php:183
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   8. Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}($c = *uninitialized*) C:\xampp\htdocs\Pes\Pes\src\Container\Container.php:85
+[07-Nov-2018 08:35:27 Europe/Prague] PHP   9. Pes\Container\Container->get($serviceName = *uninitialized*) C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:53
+[07-Nov-2018 08:35:27 Europe/Prague] PHP  10. Pes\Container\Container->Pes\Container\{closure}() C:\xampp\htdocs\Pes\Pes\src\Container\Container.php:183
+[07-Nov-2018 08:35:27 Europe/Prague] PHP  11. Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(*uninitialized*) C:\xampp\htdocs\Pes\Pes\src\Container\Container.php:85
+[07-Nov-2018 08:35:27 Europe/Prague] PHP Fatal error:  Uncaught Error: Call to a member function getQueryParam() on null in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:52
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(53): Pes\Container\Container->get('mainTemplate')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(39): Pes\Container\Container->get('mainAttributes in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 08:39:35 Europe/Prague] PHP Fatal error:  Uncaught Error: Call to undefined method Pes\Http\Request::getQueryParam() in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:52
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(53): Pes\Container\Container->get('mainTemplate')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(39): Pes\Container\Container->get('mainA in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 08:47:42 Europe/Prague] PHP Fatal error:  Uncaught Error: Call to undefined method Pes\Http\Request::getQueryParam() in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:52
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(53): Pes\Container\Container->get('mainTemplate')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(39): Pes\Container\Container->get('mainA in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 08:51:08 Europe/Prague] PHP Fatal error:  Uncaught Error: Call to undefined method Pes\Http\Request::getQueryParam() in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:52
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(53): Pes\Container\Container->get('mainTemplate')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(39): Pes\Container\Container->get('mainA in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[07-Nov-2018 18:55:01 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Model\UvodniStranka' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:64
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(56): Pes\Container\Container->get('uvodniSlovo')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(42): Pes\Container\Container->get('uvodniStranka')
+#6 C:\xampp in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[19-Nov-2018 08:56:42 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Model\UvodniStranka' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:64
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(56): Pes\Container\Container->get('uvodniSlovo')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(42): Pes\Container\Container->get('uvodniStranka')
+#6 C:\xampp in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[19-Nov-2018 09:08:32 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Model\UvodniStranka' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:64
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(56): Pes\Container\Container->get('uvodniSlovo')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(42): Pes\Container\Container->get('uvodniStranka')
+#6 C:\xampp in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[19-Nov-2018 09:09:10 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Model\UvodniStranka' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:64
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(56): Pes\Container\Container->get('uvodniSlovo')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(42): Pes\Container\Container->get('uvodniStranka')
+#6 C:\xampp in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[19-Nov-2018 09:15:25 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Model\UvodniStranka' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:64
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(56): Pes\Container\Container->get('uvodniSlovo')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(42): Pes\Container\Container->get('uvodniStranka')
+#6 C:\xampp in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[19-Nov-2018 09:21:25 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Model\UvodniStranka' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:64
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(56): Pes\Container\Container->get('uvodniSlovo')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(42): Pes\Container\Container->get('uvodniStranka')
+#6 C:\xampp in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[19-Nov-2018 09:45:10 Europe/Prague] PHP Fatal error:  Uncaught Error: Class 'Model\UvodniStranka' not found in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php:64
+Stack trace:
+#0 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#1 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#2 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(56): Pes\Container\Container->get('uvodniSlovo')
+#3 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(85): Liveblock\Middleware\Web\ContainerConfigurator->Liveblock\Middleware\Web\{closure}(Object(Pes\Container\Container))
+#4 C:\xampp\htdocs\Pes\Pes\src\Container\Container.php(183): Pes\Container\Container->Pes\Container\{closure}()
+#5 C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ContainerConfigurator.php(42): Pes\Container\Container->get('uvodniStranka')
+#6 C:\xampp in C:\xampp\htdocs\Pes\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[19-Nov-2018 09:52:23 Europe/Prague] PHP Warning:  include(contents/ajaxindex.php): failed to open stream: No such file or directory in C:\xampp\htdocs\Pes\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[19-Nov-2018 09:52:23 Europe/Prague] PHP Stack trace:
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:0
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\Pes\Pes\src\View\View.php:122
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\Pes\Pes\src\View\Renderer\PhpRenderer.php:89
+[19-Nov-2018 09:52:23 Europe/Prague] PHP Warning:  include(): Failed opening 'contents/ajaxindex.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Pes\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[19-Nov-2018 09:52:23 Europe/Prague] PHP Stack trace:
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:0
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\Pes\Pes\src\View\View.php:122
+[19-Nov-2018 09:52:23 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\Pes\Pes\src\View\Renderer\PhpRenderer.php:89
+[19-Nov-2018 09:52:24 Europe/Prague] PHP Notice:  Undefined variable: testHtml in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 64
+[19-Nov-2018 09:52:24 Europe/Prague] PHP Stack trace:
+[19-Nov-2018 09:52:24 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:0
+[19-Nov-2018 09:52:24 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+[19-Nov-2018 09:52:24 Europe/Prague] PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 64
+[19-Nov-2018 09:52:24 Europe/Prague] PHP Stack trace:
+[19-Nov-2018 09:52:24 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:0
+[19-Nov-2018 09:52:24 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\index.php:24
+[19-Nov-2018 09:52:24 Europe/Prague] PHP   3. implode() C:\xampp\htdocs\Pes\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:64

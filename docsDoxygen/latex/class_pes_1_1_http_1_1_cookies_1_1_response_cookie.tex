@@ -1,0 +1,83 @@
+\hypertarget{class_pes_1_1_http_1_1_cookies_1_1_response_cookie}{}\section{Response\+Cookie Class Reference}
+\label{class_pes_1_1_http_1_1_cookies_1_1_response_cookie}\index{Response\+Cookie@{Response\+Cookie}}
+Inheritance diagram for Response\+Cookie\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_http_1_1_cookies_1_1_response_cookie}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a3d0963e68bb313b163a73f2803c64600}\label{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a3d0963e68bb313b163a73f2803c64600}} 
+{\bfseries get\+Name} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a2fe666694997d047711d7653eca2f132}\label{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a2fe666694997d047711d7653eca2f132}} 
+{\bfseries set\+Name} (\$name)
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_ac0bc18784b182c89fcfd276625aef435}\label{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_ac0bc18784b182c89fcfd276625aef435}} 
+{\bfseries get\+Value} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_afbe85ec4b9947cc951c67d63911cf0a4}\label{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_afbe85ec4b9947cc951c67d63911cf0a4}} 
+{\bfseries get\+Attributes} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a284ad325a01dfad382452db96d0cd5c0}\label{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a284ad325a01dfad382452db96d0cd5c0}} 
+{\bfseries set\+Value} (\$value=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a9510d3a1a07572eeb03d9ccd1c4290c2}{set\+Attributes}} (array \$attributes=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of Cookie
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a9510d3a1a07572eeb03d9ccd1c4290c2}\label{class_pes_1_1_http_1_1_cookies_1_1_response_cookie_a9510d3a1a07572eeb03d9ccd1c4290c2}} 
+\index{Pes\+::\+Http\+::\+Cookies\+::\+Response\+Cookie@{Pes\+::\+Http\+::\+Cookies\+::\+Response\+Cookie}!set\+Attributes@{set\+Attributes}}
+\index{set\+Attributes@{set\+Attributes}!Pes\+::\+Http\+::\+Cookies\+::\+Response\+Cookie@{Pes\+::\+Http\+::\+Cookies\+::\+Response\+Cookie}}
+\subsubsection{\texorpdfstring{set\+Attributes()}{setAttributes()}}
+{\footnotesize\ttfamily set\+Attributes (\begin{DoxyParamCaption}\item[{array}]{\$attributes = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Nstavení atributů, které josu přeneseny do atributů set-\/cookie, které bude vloženo do response. Pokud některý atribut není nastaven, použijí se defaultní hodnoty atributů objektu \mbox{\hyperlink{class_pes_1_1_http_1_1_cookies_1_1_response_cookies}{Response\+Cookies}}. Obvyklým užitím tedy je spíše použití této metody pro nastavení odlišných, zvláštních atributů jednotlivých \mbox{\hyperlink{class_pes_1_1_http_1_1_cookies_1_1_response_cookie}{Response\+Cookie}} a použití defaultních atributů \mbox{\hyperlink{class_pes_1_1_http_1_1_cookies_1_1_response_cookies}{Response\+Cookies}} objektu.
+
+Jména atributů set-\/cookies\+: 
+\begin{DoxyItemize}
+\item \textquotesingle{}Domain\textquotesingle{} String. Pokud hodnota není zadána, cookie jsou přidány je k requestu, který směřuje přesně na url skriptu, kterým byl vygenerován response (ne na subdomény). Pokud je zadána, jsou cookies přidány jen k requestům směřujících na zadanou doménu a subdomény. 
+\item \textquotesingle{}Host\+Only\textquotesingle{} Boolean. Pokud je hodnota zadána, cookie je odeslána jen pokud host v url přesně odpovídá zadanému Domain atributu cookie.  
+\item \textquotesingle{}Path\textquotesingle{} String. Pokud je cesta zadána, prohlížeč přidá cookies jen k requestu, kde cesta je podřetězcem url. Pokud je více cookies se stejným jménem a doménou, pak by měl prohlížeč dle R\+FC 6265 řadit cookies tak, že přednot ma cookie s delší shodou path a url a odesílat je první cookie. Nelze na to spoléhat, modrní prohlížeče takto řadí, ale nově také odesílají více cookies. 
+\item \textquotesingle{}Max-\/\+Age\textquotesingle{} Integer. Doba života cookie v sekundách. 
+\item \textquotesingle{}Expires\textquotesingle{} Instance  nebo integer nebo string. Atribut Expire udává datum a čas, kdy vyprší platnost cookie, po tomto čase prohlížeč cookie dále neodesílá (a měl by ji zahodit). Nesmí být současně zadán atribut Max-\/\+Age, pokud je zadán, prohlížeč použije May-\/\+Age a atribut Expires zahodí. 
+\begin{DoxyItemize}
+\item Hodnota může být zadána jako instance , pak je z ní získán správný G\+MT datum a čas v závislosti na nastavené časové zóně systému.  
+\item Hodnota může být zadána jako integer, pak se chápe jako počet sekund a současnosti a datum je vypočítáno.  
+\item Hodnota múže být zadána zako řetězec a to ve formátu, který je vyhodnotitelný funkcí strtotime(). Datum a čas Expires je vytvořen právě funkcí strtotime() ze zadané hodnoty atributu. Doporučuji přečíst dokumentaci, zajímavé jsou relativní formáty data. Funkce strtotime() hlásí E\+\_\+\+N\+O\+T\+I\+CE anebo E\+\_\+\+S\+T\+R\+I\+CT nebo E\+\_\+\+W\+A\+R\+N\+I\+NG pro něsprávně nastavenou časovou zónu. 
+\end{DoxyItemize}
+\item \textquotesingle{}Secure\textquotesingle{} Boolean. Pokud je zadána hodnota T\+R\+UE, je cookie klientem odesílána je při použití zabezpečeného (https) spojení pro odeslání requestu. Nové verze prohlížečů navíc cookie s nastaveným atributem Secure zahazují už kdyř je taková cookie přijatá v responsu, který byl poskutnut nezabezpečeným kanálem a takovou cookie vůbec neukládají. 
+\item \textquotesingle{}Http\+Only\textquotesingle{} Boolean. Pokud je hodnota zadána T\+R\+UE, je obsah cookie v prohlížeči dostupný jen pro vytvoření H\+T\+TP request, není dostupný pro javascript. 
+\item \textquotesingle{}Same\+Site\textquotesingle{} String. 
+\begin{DoxyItemize}
+\item Hodnota může být strict. \mbox{\hyperlink{namespace_pes_1_1_http_1_1_cookies}{Cookies}} budou odesílány pouze s requesty směřujícími na url ze stejné \char`\"{}site\char`\"{}, tedy na stejné url, ze kterého byl odeslán response, který cookie nastavil.  
+\item Hodnota může být lax. \mbox{\hyperlink{namespace_pes_1_1_http_1_1_cookies}{Cookies}} nebodou odesílány s requesty automaticky vzniklými při vykreslování stránky, jako jsou načítané obrázky nebo framy, ale budou odesílánz, pokud request vznikne aktivním kliknutím uživatele, například na tag a (anchor).
+\end{DoxyItemize}
+\end{DoxyItemize}
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_http_1_1_cookies_1_1_response_cookie_interface}{Response\+Cookie\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/\+Cookies/Response\+Cookie.\+php\end{DoxyCompactItemize}

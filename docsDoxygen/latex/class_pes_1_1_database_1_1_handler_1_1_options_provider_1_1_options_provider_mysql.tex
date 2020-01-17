@@ -1,0 +1,90 @@
+\hypertarget{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql}{}\section{Options\+Provider\+Mysql Class Reference}
+\label{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql}\index{Options\+Provider\+Mysql@{Options\+Provider\+Mysql}}
+Inheritance diagram for Options\+Provider\+Mysql\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql_a7762424987993a98ba044cf1715dd44f}{get\+Options\+Array}} (\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}} \$connection\+Info, \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$default\+Options}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provider poskytuje výchozí options pro My\+S\+QL. 
+
+Nastavuje\+:
+
+
+\begin{DoxyItemize}
+\item P\+D\+O\+::\+M\+Y\+S\+Q\+L\+\_\+\+A\+T\+T\+R\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS = T\+R\+UE -\/ příkaz \$statement-\/$>$row\+Count() vrací počet nalezených a nikoli počet skutečně dotčenývh řádků 
+\item P\+D\+O\+::\+M\+Y\+S\+Q\+L\+\_\+\+A\+T\+T\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+O\+M\+M\+A\+ND = S\+ET N\+A\+M\+ES charset C\+O\+L\+L\+A\+TE collation -\/ Nastavuje charset a collation na hodnoty uložené v předaném parametru \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}
+\end{DoxyItemize}
+
+Pro vytvoření options používá objekt \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}} a z něj\+: 
+\begin{DoxyItemize}
+\item znakovou sadu (charset) 
+\item řazení (collation)
+\end{DoxyItemize}
+
+Podrobnosti\+:
+
+Příkaz Pdo\+Statement\+::row\+Count() defaultně vrací počet nalezených řádků a nikoli počet dotčených řádků. Při U\+P\+D\+A\+TE řádku stejnými hodnotami, které již jsou v tabulce zapsány My\+S\+QL vrací count affected rows 0. Pokud chci v kódu testovat úspěšnost zápisu při příkazu U\+P\+D\+A\+TE je lepší vracet počet nalezených řádků.
+
+Pro nastavení kódování a řazení pro připojení se nastaví jako inicializační příkaz (volaný vždy při vytoření handleru) S\+ET N\+A\+M\+ES charset C\+O\+L\+L\+A\+TE collation s hodnotami charset a collation získanými z \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}. Pozn. nastavení kódování a collationv dsn funguje různě v různých verzích P\+HP a někdy vůbec.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql_a7762424987993a98ba044cf1715dd44f}\label{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql_a7762424987993a98ba044cf1715dd44f}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql@{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql}!get\+Options\+Array@{get\+Options\+Array}}
+\index{get\+Options\+Array@{get\+Options\+Array}!Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql@{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql}}
+\subsubsection{\texorpdfstring{get\+Options\+Array()}{getOptionsArray()}}
+{\footnotesize\ttfamily static get\+Options\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}}]{\$connection\+Info,  }\item[{}]{\$options = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}} & {\em \$connection\+Info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_interface}{Options\+Provider\+Interface}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql_a5b060dd94ee5476aa989c591f9aca43c}\label{class_pes_1_1_database_1_1_handler_1_1_options_provider_1_1_options_provider_mysql_a5b060dd94ee5476aa989c591f9aca43c}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql@{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql}!\$default\+Options@{\$default\+Options}}
+\index{\$default\+Options@{\$default\+Options}!Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql@{Pes\+::\+Database\+::\+Handler\+::\+Options\+Provider\+::\+Options\+Provider\+Mysql}}
+\subsubsection{\texorpdfstring{\$default\+Options}{$defaultOptions}}
+{\footnotesize\ttfamily \$default\+Options\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        
+        
+        
+        \(\backslash\)PDO::MYSQL\_ATTR\_FOUND\_ROWS => TRUE
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/\+Options\+Provider/Options\+Provider\+Mysql.\+php\end{DoxyCompactItemize}

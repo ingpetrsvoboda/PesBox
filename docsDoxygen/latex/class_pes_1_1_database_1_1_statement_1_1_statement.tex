@@ -1,0 +1,220 @@
+\hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement}{}\section{Statement Class Reference}
+\label{class_pes_1_1_database_1_1_statement_1_1_statement}\index{Statement@{Statement}}
+Inheritance diagram for Statement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_database_1_1_statement_1_1_statement}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_statement_1_1_statement_ad86fa5498ac1054e414a91fa4a6a7dfd}{get\+Instance\+Info}} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_a1dc8694f56e4b9ed603f8c27be444751}\label{class_pes_1_1_database_1_1_statement_1_1_statement_a1dc8694f56e4b9ed603f8c27be444751}} 
+{\bfseries set\+Fetch\+Mode} (\$fetch\+Mode, \$arg2=null, \$arg3=null)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_statement_1_1_statement_a5b20a3b5483f33168970c1ff76758042}{fetch}} (\$fetch\+\_\+style=null, \$cursor\+\_\+orientation=\textbackslash{}P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+O\+R\+I\+\_\+\+N\+E\+XT, \$cursor\+\_\+offset=0)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_statement_1_1_statement_ace36703cecd9de1814b68fc8d0e69c73}{fetch\+All}} (\$fetch\+\_\+style=N\+U\+LL, \$fetch\+\_\+argument=N\+U\+LL, \$ctor\+\_\+args=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_statement_1_1_statement_addad8fb3f107b88d79d94550582a4355}{execute}} (\$input\+\_\+parameters=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_statement_1_1_statement_a5b8b69a18923922832bcd98438c28908}{bind\+Param}} (\$parameter, \&\$variable, \$data\+\_\+type=\textbackslash{}P\+D\+O\+::\+P\+A\+R\+A\+M\+\_\+\+S\+TR, \$length=N\+U\+LL, \$driver\+\_\+options=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_statement_1_1_statement_ae35efa31b4405c6db7af0de9add27eb2}{bind\+Value}} (\$parameter, \$value, \$data\+\_\+type=\textbackslash{}P\+D\+O\+::\+P\+A\+R\+A\+M\+\_\+\+S\+TR)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_a2bd426f7ee55a596b1893454a77a006a}\label{class_pes_1_1_database_1_1_statement_1_1_statement_a2bd426f7ee55a596b1893454a77a006a}} 
+{\bfseries \+\_\+\+\_\+construct} (Logger\+Interface \$logger)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_aebfec76216371ef236acc5910e90933d}\label{class_pes_1_1_database_1_1_statement_1_1_statement_aebfec76216371ef236acc5910e90933d}} 
+{\bfseries \$logger}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_a5b8b69a18923922832bcd98438c28908}\label{class_pes_1_1_database_1_1_statement_1_1_statement_a5b8b69a18923922832bcd98438c28908}} 
+\index{Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}!bind\+Param@{bind\+Param}}
+\index{bind\+Param@{bind\+Param}!Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}}
+\subsubsection{\texorpdfstring{bind\+Param()}{bindParam()}}
+{\footnotesize\ttfamily bind\+Param (\begin{DoxyParamCaption}\item[{}]{\$parameter,  }\item[{\&}]{\$variable,  }\item[{}]{\$data\+\_\+type = {\ttfamily \textbackslash{}PDO\+:\+:PARAM\+\_\+STR},  }\item[{}]{\$length = {\ttfamily NULL},  }\item[{}]{\$driver\+\_\+options = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Binds a parameter to the specified variable name \mbox{\hyperlink{}{mixed \$parameter }} Parameter identifier. For a prepared statement using named placeholders, this will be a parameter name of the form \+:name. For a prepared statement using question mark placeholders, this will be the 1-\/indexed position of the parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$variable} & \\
+\hline
+\end{DoxyParams}
+Name of the P\+HP variable to bind to the S\+QL statement parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$data\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Explicit data type for the parameter using the P\+D\+O\+::\+P\+A\+R\+A\+M\+\_\+$\ast$ constants. To return an I\+N\+O\+UT parameter from a stored procedure, use the bitwise OR operator to set the P\+D\+O\+::\+P\+A\+R\+A\+M\+\_\+\+I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT bits for the {\itshape data\+\_\+type} parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Length of the data type. To indicate that a parameter is an O\+UT parameter from a stored procedure, you must explicitly set the length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$driver\+\_\+options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_statement_1_1_p_d_o_statement_interface_adc9b9b9ea817f2aa9cd9d649821f2997}{P\+D\+O\+Statement\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_ae35efa31b4405c6db7af0de9add27eb2}\label{class_pes_1_1_database_1_1_statement_1_1_statement_ae35efa31b4405c6db7af0de9add27eb2}} 
+\index{Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}!bind\+Value@{bind\+Value}}
+\index{bind\+Value@{bind\+Value}!Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}}
+\subsubsection{\texorpdfstring{bind\+Value()}{bindValue()}}
+{\footnotesize\ttfamily bind\+Value (\begin{DoxyParamCaption}\item[{}]{\$parameter,  }\item[{}]{\$value,  }\item[{}]{\$data\+\_\+type = {\ttfamily \textbackslash{}PDO\+:\+:PARAM\+\_\+STR} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 1.\+0.\+0)~\newline
+ Binds a value to a parameter \mbox{\hyperlink{}{mixed \$parameter }} Parameter identifier. For a prepared statement using named placeholders, this will be a parameter name of the form \+:name. For a prepared statement using question mark placeholders, this will be the 1-\/indexed position of the parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The value to bind to the parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$data\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Explicit data type for the parameter using the P\+D\+O\+::\+P\+A\+R\+A\+M\+\_\+$\ast$ constants. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_statement_1_1_p_d_o_statement_interface_ab9f2884830bd9b2063f3422be69015dd}{P\+D\+O\+Statement\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_addad8fb3f107b88d79d94550582a4355}\label{class_pes_1_1_database_1_1_statement_1_1_statement_addad8fb3f107b88d79d94550582a4355}} 
+\index{Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}!execute@{execute}}
+\index{execute@{execute}!Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily execute (\begin{DoxyParamCaption}\item[{}]{\$input\+\_\+parameters = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Executes a prepared statement \mbox{\hyperlink{}{array \$input\+\_\+parameters \mbox{[}optional\mbox{]} }} An array of values with as many elements as there are bound parameters in the S\+QL statement being executed. All values are treated as {\bfseries P\+D\+O\+::\+P\+A\+R\+A\+M\+\_\+\+S\+TR}. 
+
+You cannot bind multiple values to a single parameter; for example, you cannot bind two values to a single named parameter in an I\+N() clause. 
+
+You cannot bind more values than specified; if more keys exist in {\itshape input\+\_\+parameters} than in the S\+QL specified in the {\bfseries P\+D\+O\+::prepare}, then the statement will fail and an error is emitted. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries T\+R\+UE} on success or {\bfseries F\+A\+L\+SE} on failure. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_statement_1_1_p_d_o_statement_interface_a0e8db3191f62e77a6dac20beb5bd28e7}{P\+D\+O\+Statement\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_a5b20a3b5483f33168970c1ff76758042}\label{class_pes_1_1_database_1_1_statement_1_1_statement_a5b20a3b5483f33168970c1ff76758042}} 
+\index{Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}!fetch@{fetch}}
+\index{fetch@{fetch}!Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}}
+\subsubsection{\texorpdfstring{fetch()}{fetch()}}
+{\footnotesize\ttfamily fetch (\begin{DoxyParamCaption}\item[{}]{\$fetch\+\_\+style = {\ttfamily null},  }\item[{}]{\$cursor\+\_\+orientation = {\ttfamily \textbackslash{}PDO\+:\+:FETCH\+\_\+ORI\+\_\+NEXT},  }\item[{}]{\$cursor\+\_\+offset = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Fetches the next row from a result set \mbox{\hyperlink{}{int \$fetch\+\_\+style \mbox{[}optional\mbox{]} }} Controls how the next row will be returned to the caller. This value must be one of the P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+$\ast$ constants, defaulting to value of P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+E\+T\+C\+H\+\_\+\+M\+O\+DE (which defaults to P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+B\+O\+TH). 
+
+P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+A\+S\+S\+OC\+: returns an array indexed by column name as returned in your result set 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$cursor\+\_\+orientation} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+For a P\+D\+O\+Statement object representing a scrollable cursor, this value determines which row will be returned to the caller. This value must be one of the P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+O\+R\+I\+\_\+$\ast$ constants, defaulting to P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+O\+R\+I\+\_\+\+N\+E\+XT. To request a scrollable cursor for your P\+D\+O\+Statement object, you must set the P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+C\+U\+R\+S\+OR attribute to P\+D\+O\+::\+C\+U\+R\+S\+O\+R\+\_\+\+S\+C\+R\+O\+LL when you prepare the S\+QL statement with {\bfseries P\+D\+O\+::prepare}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$cursor\+\_\+offset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The return value of this function on success depends on the fetch type. In all cases, {\bfseries F\+A\+L\+SE} is returned on failure. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_statement_1_1_p_d_o_statement_interface_a442adc7aeb1b6d8f275aa93a700d7cac}{P\+D\+O\+Statement\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_ace36703cecd9de1814b68fc8d0e69c73}\label{class_pes_1_1_database_1_1_statement_1_1_statement_ace36703cecd9de1814b68fc8d0e69c73}} 
+\index{Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}!fetch\+All@{fetch\+All}}
+\index{fetch\+All@{fetch\+All}!Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}}
+\subsubsection{\texorpdfstring{fetch\+All()}{fetchAll()}}
+{\footnotesize\ttfamily fetch\+All (\begin{DoxyParamCaption}\item[{}]{\$fetch\+\_\+style = {\ttfamily NULL},  }\item[{}]{\$fetch\+\_\+argument = {\ttfamily NULL},  }\item[{}]{\$ctor\+\_\+args = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+0, P\+HP 7, P\+E\+CL pdo $>$= 0.\+1.\+0)~\newline
+ Returns an array containing all of the result set rows \mbox{\hyperlink{}{int \$fetch\+\_\+style \mbox{[}optional\mbox{]} }} Controls the contents of the returned array as documented in {\bfseries P\+D\+O\+Statement\+::fetch}. Defaults to value of {\bfseries P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+E\+T\+C\+H\+\_\+\+M\+O\+DE} (which defaults to {\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+B\+O\+TH}) 
+
+To return an array consisting of all values of a single column from the result set, specify {\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+C\+O\+L\+U\+MN}. You can specify which column you want with the {\itshape fetch\+\_\+argument} parameter. 
+
+To fetch only the unique values of a single column from the result set, bitwise-\/\+OR {\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+C\+O\+L\+U\+MN} with {\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+U\+N\+I\+Q\+UE}. 
+
+To return an associative array grouped by the values of a specified column, bitwise-\/\+OR {\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+C\+O\+L\+U\+MN} with {\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+G\+R\+O\+UP}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$fetch\+\_\+argument} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This argument has a different meaning depending on the value of the {\itshape fetch\+\_\+style} parameter\+: 
+
+{\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+C\+O\+L\+U\+MN}\+: Returns the indicated 0-\/indexed column. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$ctor\+\_\+args} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Arguments of custom class constructor when the {\itshape fetch\+\_\+style} parameter is {\bfseries P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+C\+L\+A\+SS}. 
+
+\begin{DoxyReturn}{Returns}
+array {\bfseries P\+D\+O\+Statement\+::fetch\+All} returns an array containing all of the remaining rows in the result set. The array represents each row as either an array of column values or an object with properties corresponding to each column name. An empty array is returned if there are zero results to fetch, or {\bfseries F\+A\+L\+SE} on failure. 
+\end{DoxyReturn}
+
+
+Using this method to fetch large result sets will result in a heavy demand on system and possibly network resources. Rather than retrieving all of the data and manipulating it in P\+HP, consider using the database server to manipulate the result sets. For example, use the W\+H\+E\+RE and O\+R\+D\+ER BY clauses in S\+QL to restrict results before retrieving and processing them with P\+HP. 
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_statement_1_1_p_d_o_statement_interface_a5721d6df319aed83538605d4c6486947}{P\+D\+O\+Statement\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_statement_1_1_statement_ad86fa5498ac1054e414a91fa4a6a7dfd}\label{class_pes_1_1_database_1_1_statement_1_1_statement_ad86fa5498ac1054e414a91fa4a6a7dfd}} 
+\index{Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}!get\+Instance\+Info@{get\+Instance\+Info}}
+\index{get\+Instance\+Info@{get\+Instance\+Info}!Pes\+::\+Database\+::\+Statement\+::\+Statement@{Pes\+::\+Database\+::\+Statement\+::\+Statement}}
+\subsubsection{\texorpdfstring{get\+Instance\+Info()}{getInstanceInfo()}}
+{\footnotesize\ttfamily get\+Instance\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vrací informaci umožňující rozlišit konkrétní instanci objektu, obvykle pro účely debugování a logování. Implememntace N\+E\+S\+MÍ vracet citlivé informace o databázovém připojení. 
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_statement_1_1_statement_interface_ad86fa5498ac1054e414a91fa4a6a7dfd}{Statement\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Statement/Statement.\+php\end{DoxyCompactItemize}

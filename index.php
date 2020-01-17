@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        echo 'Pes framework není ukořeněn!';
+        echo 'PesBox není ukořeněn!';
         ?>
     </body>
 </html>

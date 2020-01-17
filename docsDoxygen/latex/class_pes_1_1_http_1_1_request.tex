@@ -1,0 +1,571 @@
+\hypertarget{class_pes_1_1_http_1_1_request}{}\section{Request Class Reference}
+\label{class_pes_1_1_http_1_1_request}\index{Request@{Request}}
+Inheritance diagram for Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_http_1_1_request}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a47593cf6b1ffe99d8d3d36d5a92685ba}{\+\_\+\+\_\+construct}} ( \$method, Uri\+Interface \$uri, \mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}} \$headers, array \$cookies, array \$server\+Params, Stream\+Interface \$body, array \$uploaded\+Files=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{interface_pes_1_1_http_1_1_request_1_1_media_content_resolver_interface}{Media\+Content\+Resolver\+Interface}} \$request\+Media\+Content\+Resolver=N\+U\+LL, \mbox{\hyperlink{interface_pes_1_1_http_1_1_body_1_1_body_parser_interface}{Body\+Parser\+Interface}} \$body\+Parser=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_af3e37e1a6ed9b8c87f86f659873a83b7}{get\+Method}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_ac4df752c7c8100d173304e336d665c2b}{with\+Method}} (\$method)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a042c696b418d7e63ed4d1bb549291a84}{get\+Request\+Target}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_ac3ea96f04513448629aa7b03b0fb414a}{with\+Request\+Target}} (\$request\+Target)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a2ac86cae38fbe15a019d075d485ab702}{get\+Uri}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a1d0023caa7d9c3a9c672538692fc1456}{with\+Uri}} (Uri\+Interface \$uri, \$preserve\+Host=false)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a9ff463aec362b0a45e64656b62d939bd}{get\+Cookie\+Params}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_af76ba304dae426a1a86906ee48f6efdc}{with\+Cookie\+Params}} (array \$cookies)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_ad6cfc3d6f17c43225f95e793da56b337}{get\+Query\+Params}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a2d8091f3537004c1a0241c00f0612cd3}{with\+Query\+Params}} (array \$query)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a37e4a06ea2cd48bddfd2d86e127394c6}{get\+Uploaded\+Files}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a74e948aa5aa4eaccb08debcf9ff989b0}{with\+Uploaded\+Files}} (array \$uploaded\+Files)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_abe2174960ca9d241f83fabd7d2dd8e84}{get\+Server\+Params}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a40e8ccedfa17d0219e2e21e96968ed66}{get\+Attribute}} (\$name, \$default=null)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a198860db2088101b62e531a1db45aa5b}{with\+Attribute}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a812202259b9a1683a64bb699ef988dd5}{with\+Attributes}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_af72260a94d2ebbc771a53ba854ae1863}{without\+Attribute}} (\$name)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_adf5a4f6e03b33e876c065ca9a1409f38}{get\+Parsed\+Body}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a1ec2d8653dc9bb73297657ce57ce14d6}{with\+Parsed\+Body}} (\$data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_a53898ae51d98cbd7a413a0f2d348781e}{filter\+Method}} (\$method)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a0cf8e361952ccfd37629d55ed28f75d2}\label{class_pes_1_1_http_1_1_request_a0cf8e361952ccfd37629d55ed28f75d2}} 
+{\bfseries \$original\+Method}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a12661b2fc0f57f97e30a1620889ce9c6}\label{class_pes_1_1_http_1_1_request_a12661b2fc0f57f97e30a1620889ce9c6}} 
+{\bfseries \$method}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a653b5458163d338546c47271b4fb81b7}\label{class_pes_1_1_http_1_1_request_a653b5458163d338546c47271b4fb81b7}} 
+{\bfseries \$uri}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a52500036ee807241b8b4b7e2367c49ef}\label{class_pes_1_1_http_1_1_request_a52500036ee807241b8b4b7e2367c49ef}} 
+{\bfseries \$headers}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a65b242932f93e360399f74d03ed4783e}\label{class_pes_1_1_http_1_1_request_a65b242932f93e360399f74d03ed4783e}} 
+{\bfseries \$request\+Target}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a1027826079dfee260e56bc2b07a31d4e}\label{class_pes_1_1_http_1_1_request_a1027826079dfee260e56bc2b07a31d4e}} 
+{\bfseries \$query\+Params}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_aef9f7eafd54f6e36423347bed723c67e}\label{class_pes_1_1_http_1_1_request_aef9f7eafd54f6e36423347bed723c67e}} 
+{\bfseries \$cookies}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a692c293d73070bda1a5b900a3b3ab878}\label{class_pes_1_1_http_1_1_request_a692c293d73070bda1a5b900a3b3ab878}} 
+{\bfseries \$server\+Params}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_adc851f7a62250e75df0490c0280aef4c}\label{class_pes_1_1_http_1_1_request_adc851f7a62250e75df0490c0280aef4c}} 
+{\bfseries \$attributes}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a26b9f9373f7bb79dfcf8a86dff086b45}\label{class_pes_1_1_http_1_1_request_a26b9f9373f7bb79dfcf8a86dff086b45}} 
+{\bfseries \$body}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_acafb476e2c1ae064806866cb8e8be20f}\label{class_pes_1_1_http_1_1_request_acafb476e2c1ae064806866cb8e8be20f}} 
+{\bfseries \$body\+Parsed} = false
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a4743f9d986debd632acb75b012a7e293}\label{class_pes_1_1_http_1_1_request_a4743f9d986debd632acb75b012a7e293}} 
+{\bfseries \$body\+Parsers} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a4278c5b4416595b5dd125eada16c4324}\label{class_pes_1_1_http_1_1_request_a4278c5b4416595b5dd125eada16c4324}} 
+{\bfseries \$uploaded\+Files}
+\item 
+{\bfseries \$valid\+Methods}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request}{Request}}
+
+This class represents an H\+T\+TP request. It manages the request method, U\+RI, headers, cookies, and body according to the P\+S\+R-\/7 standard.
+
+\mbox{\hyperlink{}{\href{https://github.com/php-fig/http-message/blob/master/src/RequestInterface.php}{\tt https\+://github.\+com/php-\/fig/http-\/message/blob/master/src/\+Request\+Interface.\+php}  \href{https://github.com/php-fig/http-message/blob/master/src/ServerRequestInterface.php}{\tt https\+://github.\+com/php-\/fig/http-\/message/blob/master/src/\+Server\+Request\+Interface.\+php} }}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a47593cf6b1ffe99d8d3d36d5a92685ba}\label{class_pes_1_1_http_1_1_request_a47593cf6b1ffe99d8d3d36d5a92685ba}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$method,  }\item[{Uri\+Interface}]{\$uri,  }\item[{\mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}}}]{\$headers,  }\item[{array}]{\$cookies,  }\item[{array}]{\$server\+Params,  }\item[{Stream\+Interface}]{\$body,  }\item[{array}]{\$uploaded\+Files = {\ttfamily \mbox{[}\mbox{]}},  }\item[{\mbox{\hyperlink{interface_pes_1_1_http_1_1_request_1_1_media_content_resolver_interface}{Media\+Content\+Resolver\+Interface}}}]{\$request\+Media\+Content\+Resolver = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{interface_pes_1_1_http_1_1_body_1_1_body_parser_interface}{Body\+Parser\+Interface}}}]{\$body\+Parser = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+H\+T\+TP request.
+
+Přidává hlavičku \char`\"{}host\char`\"{}, pokud v requestu není obsažena a je definován host v uri. Pokud nebyl zadán media parser (body parser), metoda requestu je P\+O\+ST a media type (část content-\/type) je \textquotesingle{}application/x-\/www-\/form-\/urlencoded\textquotesingle{} nebo \textquotesingle{}multipart/form-\/data\textquotesingle{} použije defaultní media parser Body\+Parser\+Post\+Copy(). Ten pro uvedenou situaci vždy jako parsed body vrací \$\+\_\+\+P\+O\+ST (viz P\+S\+R-\/7).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & The request method \\
+\hline
+Uri\+Interface & {\em \$uri} & The request U\+RI object \\
+\hline
+\mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}} & {\em \$headers} & The request headers collection \\
+\hline
+array & {\em \$cookies} & The request cookies collection \\
+\hline
+array & {\em \$server\+Params} & The server environment object \\
+\hline
+Stream\+Interface & {\em \$body} & The request body object \\
+\hline
+array & {\em \$uploaded\+Files} & The request uploaded\+Files collection \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_ad0cb87b388bc74d63dc884accdca8713}\label{class_pes_1_1_http_1_1_request_ad0cb87b388bc74d63dc884accdca8713}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is applied to the cloned object after P\+HP performs an initial shallow-\/copy. This method completes a deep-\/copy by creating new objects for the cloned object\textquotesingle{}s internal reference pointers. \mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a53898ae51d98cbd7a413a0f2d348781e}\label{class_pes_1_1_http_1_1_request_a53898ae51d98cbd7a413a0f2d348781e}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!filter\+Method@{filter\+Method}}
+\index{filter\+Method@{filter\+Method}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{filter\+Method()}{filterMethod()}}
+{\footnotesize\ttfamily filter\+Method (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate the H\+T\+TP method
+
+
+\begin{DoxyParams}[1]{Parameters}
+null | string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a40e8ccedfa17d0219e2e21e96968ed66}\label{class_pes_1_1_http_1_1_request_a40e8ccedfa17d0219e2e21e96968ed66}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Attribute@{get\+Attribute}}
+\index{get\+Attribute@{get\+Attribute}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Attribute()}{getAttribute()}}
+{\footnotesize\ttfamily get\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$default = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Retrieve a single derived request attribute.
+
+Retrieves a single derived request attribute as described in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes()}}. If the attribute has not been previously set, returns the default value as provided.
+
+This method obviates the need for a has\+Attribute() method, as it allows specifying a default value to return if the attribute is not found.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The attribute name. \\
+\hline
+mixed & {\em \$default} & Default value to return if the attribute does not exist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}\label{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Attributes@{get\+Attributes}}
+\index{get\+Attributes@{get\+Attributes}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Attributes()}{getAttributes()}}
+{\footnotesize\ttfamily get\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve attributes derived from the request.
+
+The request \char`\"{}attributes\char`\"{} may be used to allow injection of any parameters derived from the request\+: e.\+g., the results of path match operations; the results of decrypting cookies; the results of deserializing non-\/form-\/encoded message bodies; etc. Attributes will be application and request specific, and C\+AN be mutable.
+
+\begin{DoxyReturn}{Returns}
+array Attributes derived from the request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a9ff463aec362b0a45e64656b62d939bd}\label{class_pes_1_1_http_1_1_request_a9ff463aec362b0a45e64656b62d939bd}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Cookie\+Params@{get\+Cookie\+Params}}
+\index{get\+Cookie\+Params@{get\+Cookie\+Params}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Cookie\+Params()}{getCookieParams()}}
+{\footnotesize\ttfamily get\+Cookie\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve cookies.
+
+Retrieves cookies sent by the client to the server.
+
+The data M\+U\+ST be compatible with the structure of the \$\+\_\+\+C\+O\+O\+K\+IE superglobal.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_af3e37e1a6ed9b8c87f86f659873a83b7}\label{class_pes_1_1_http_1_1_request_af3e37e1a6ed9b8c87f86f659873a83b7}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Method@{get\+Method}}
+\index{get\+Method@{get\+Method}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Method()}{getMethod()}}
+{\footnotesize\ttfamily get\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the H\+T\+TP method of the request.
+
+\begin{DoxyReturn}{Returns}
+string Returns the request method. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_adf5a4f6e03b33e876c065ca9a1409f38}\label{class_pes_1_1_http_1_1_request_adf5a4f6e03b33e876c065ca9a1409f38}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Parsed\+Body@{get\+Parsed\+Body}}
+\index{get\+Parsed\+Body@{get\+Parsed\+Body}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Parsed\+Body()}{getParsedBody()}}
+{\footnotesize\ttfamily get\+Parsed\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve any parameters provided in the request body.
+
+If the request Content-\/\+Type is either application/x-\/www-\/form-\/urlencoded or multipart/form-\/data, and the request method is P\+O\+ST, this method M\+U\+ST return the contents of \$\+\_\+\+P\+O\+ST.
+
+Otherwise, this method may return any results of deserializing the request body content; as parsing returns structured content, the potential types M\+U\+ST be arrays or objects only. A null value indicates the absence of body content.
+
+\begin{DoxyReturn}{Returns}
+null$\vert$array$\vert$object The deserialized body parameters, if any. These will typically be an array or object. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & if the request body media type parser returns an invalid value \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_ad6cfc3d6f17c43225f95e793da56b337}\label{class_pes_1_1_http_1_1_request_ad6cfc3d6f17c43225f95e793da56b337}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Query\+Params@{get\+Query\+Params}}
+\index{get\+Query\+Params@{get\+Query\+Params}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Query\+Params()}{getQueryParams()}}
+{\footnotesize\ttfamily get\+Query\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve query string arguments.
+
+Retrieves the deserialized query string arguments, if any.
+
+Note\+: the query params might not be in sync with the U\+RI or server params. If you need to ensure you are only getting the original values, you may need to parse the query string from {\ttfamily \mbox{\hyperlink{class_pes_1_1_http_1_1_request_a2ac86cae38fbe15a019d075d485ab702}{get\+Uri()}}-\/$>$get\+Query()} or from the {\ttfamily Q\+U\+E\+R\+Y\+\_\+\+S\+T\+R\+I\+NG} server param.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a042c696b418d7e63ed4d1bb549291a84}\label{class_pes_1_1_http_1_1_request_a042c696b418d7e63ed4d1bb549291a84}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Request\+Target@{get\+Request\+Target}}
+\index{get\+Request\+Target@{get\+Request\+Target}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Request\+Target()}{getRequestTarget()}}
+{\footnotesize\ttfamily get\+Request\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the message\textquotesingle{}s request target.
+
+Retrieves the message\textquotesingle{}s request-\/target either as it will appear (for clients), as it appeared at request (for servers), or as it was specified for the instance (see \mbox{\hyperlink{class_pes_1_1_http_1_1_request_ac3ea96f04513448629aa7b03b0fb414a}{with\+Request\+Target()}}).
+
+In most cases, this will be the origin-\/form of the composed U\+RI, unless a value was provided to the concrete implementation (see \mbox{\hyperlink{class_pes_1_1_http_1_1_request_ac3ea96f04513448629aa7b03b0fb414a}{with\+Request\+Target()}} below).
+
+If no U\+RI is available, and no request-\/target has been specifically provided, this method M\+U\+ST return the string \char`\"{}/\char`\"{}.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_abe2174960ca9d241f83fabd7d2dd8e84}\label{class_pes_1_1_http_1_1_request_abe2174960ca9d241f83fabd7d2dd8e84}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Server\+Params@{get\+Server\+Params}}
+\index{get\+Server\+Params@{get\+Server\+Params}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Server\+Params()}{getServerParams()}}
+{\footnotesize\ttfamily get\+Server\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve server parameters.
+
+Retrieves data related to the incoming request environment, typically derived from P\+HP\textquotesingle{}s \$\+\_\+\+S\+E\+R\+V\+ER superglobal. The data IS N\+OT R\+E\+Q\+U\+I\+R\+ED to originate from \$\+\_\+\+S\+E\+R\+V\+ER.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a37e4a06ea2cd48bddfd2d86e127394c6}\label{class_pes_1_1_http_1_1_request_a37e4a06ea2cd48bddfd2d86e127394c6}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Uploaded\+Files@{get\+Uploaded\+Files}}
+\index{get\+Uploaded\+Files@{get\+Uploaded\+Files}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Uploaded\+Files()}{getUploadedFiles()}}
+{\footnotesize\ttfamily get\+Uploaded\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve normalized file upload data.
+
+This method returns upload metadata in a normalized tree, with each leaf an instance of Psr.
+
+These values M\+AY be prepared from \$\+\_\+\+F\+I\+L\+ES or the message body during instantiation, or M\+AY be injected via \mbox{\hyperlink{class_pes_1_1_http_1_1_request_a74e948aa5aa4eaccb08debcf9ff989b0}{with\+Uploaded\+Files()}}.
+
+\begin{DoxyReturn}{Returns}
+array An array tree of Uploaded\+File\+Interface instances; an empty array M\+U\+ST be returned if no data is present. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a2ac86cae38fbe15a019d075d485ab702}\label{class_pes_1_1_http_1_1_request_a2ac86cae38fbe15a019d075d485ab702}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!get\+Uri@{get\+Uri}}
+\index{get\+Uri@{get\+Uri}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{get\+Uri()}{getUri()}}
+{\footnotesize\ttfamily get\+Uri (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the U\+RI instance.
+
+This method M\+U\+ST return a Uri\+Interface instance.
+
+\mbox{\hyperlink{}{Uri\+Interface Returns a Uri\+Interface instance representing the U\+RI of the request. }}\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a198860db2088101b62e531a1db45aa5b}\label{class_pes_1_1_http_1_1_request_a198860db2088101b62e531a1db45aa5b}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Attribute@{with\+Attribute}}
+\index{with\+Attribute@{with\+Attribute}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Attribute()}{withAttribute()}}
+{\footnotesize\ttfamily with\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Return an instance with the specified derived request attribute.
+
+This method allows setting a single derived request attribute as described in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes()}}.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the updated attribute.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The attribute name. \\
+\hline
+mixed & {\em \$value} & The value of the attribute. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a812202259b9a1683a64bb699ef988dd5}\label{class_pes_1_1_http_1_1_request_a812202259b9a1683a64bb699ef988dd5}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Attributes@{with\+Attributes}}
+\index{with\+Attributes@{with\+Attributes}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Attributes()}{withAttributes()}}
+{\footnotesize\ttfamily with\+Attributes (\begin{DoxyParamCaption}\item[{array}]{\$attributes }\end{DoxyParamCaption})}
+
+Create a new instance with the specified derived request attributes.
+
+Note\+: This method is not part of the P\+S\+R-\/7 standard.
+
+This method allows setting all new derived request attributes as described in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes()}}.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return a new instance that has the updated attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & New attributes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_af76ba304dae426a1a86906ee48f6efdc}\label{class_pes_1_1_http_1_1_request_af76ba304dae426a1a86906ee48f6efdc}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Cookie\+Params@{with\+Cookie\+Params}}
+\index{with\+Cookie\+Params@{with\+Cookie\+Params}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Cookie\+Params()}{withCookieParams()}}
+{\footnotesize\ttfamily with\+Cookie\+Params (\begin{DoxyParamCaption}\item[{array}]{\$cookies }\end{DoxyParamCaption})}
+
+Return an instance with the specified cookies.
+
+The data IS N\+OT R\+E\+Q\+U\+I\+R\+ED to come from the \$\+\_\+\+C\+O\+O\+K\+IE superglobal, but M\+U\+ST be compatible with the structure of \$\+\_\+\+C\+O\+O\+K\+IE. Typically, this data will be injected at instantiation.
+
+This method M\+U\+ST N\+OT update the related Cookie header of the request instance, nor related values in the server params.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the updated cookie values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$cookies} & Array of key/value pairs representing cookies. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_ac4df752c7c8100d173304e336d665c2b}\label{class_pes_1_1_http_1_1_request_ac4df752c7c8100d173304e336d665c2b}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Method@{with\+Method}}
+\index{with\+Method@{with\+Method}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Method()}{withMethod()}}
+{\footnotesize\ttfamily with\+Method (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})}
+
+Return an instance with the provided H\+T\+TP method.
+
+While H\+T\+TP method names are typically all uppercase characters, H\+T\+TP method names are case-\/sensitive and thus implementations S\+H\+O\+U\+LD N\+OT modify the given string.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the changed request method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & Case-\/sensitive method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_af72260a94d2ebbc771a53ba854ae1863}\label{class_pes_1_1_http_1_1_request_af72260a94d2ebbc771a53ba854ae1863}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!without\+Attribute@{without\+Attribute}}
+\index{without\+Attribute@{without\+Attribute}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{without\+Attribute()}{withoutAttribute()}}
+{\footnotesize\ttfamily without\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Return an instance that removes the specified derived request attribute.
+
+This method allows removing a single derived request attribute as described in \mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes()}}.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that removes the attribute.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_request_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The attribute name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a1ec2d8653dc9bb73297657ce57ce14d6}\label{class_pes_1_1_http_1_1_request_a1ec2d8653dc9bb73297657ce57ce14d6}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Parsed\+Body@{with\+Parsed\+Body}}
+\index{with\+Parsed\+Body@{with\+Parsed\+Body}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Parsed\+Body()}{withParsedBody()}}
+{\footnotesize\ttfamily with\+Parsed\+Body (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Return an instance with the specified body parameters.
+
+These M\+AY be injected during instantiation.
+
+If the request Content-\/\+Type is either application/x-\/www-\/form-\/urlencoded or multipart/form-\/data, and the request method is P\+O\+ST, use this method O\+N\+LY to inject the contents of \$\+\_\+\+P\+O\+ST.
+
+The data IS N\+OT R\+E\+Q\+U\+I\+R\+ED to come from \$\+\_\+\+P\+O\+ST, but M\+U\+ST be the results of deserializing the request body content. Deserialization/parsing returns structured data, and, as such, this method O\+N\+LY accepts arrays or objects, or a null value if nothing was available to parse.
+
+As an example, if content negotiation determines that the request data is a J\+S\+ON payload, this method could be used to create a request instance with the deserialized parameters.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the updated body parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+null | array | object & {\em \$data} & The deserialized body data. This will typically be in an array or object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a2d8091f3537004c1a0241c00f0612cd3}\label{class_pes_1_1_http_1_1_request_a2d8091f3537004c1a0241c00f0612cd3}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Query\+Params@{with\+Query\+Params}}
+\index{with\+Query\+Params@{with\+Query\+Params}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Query\+Params()}{withQueryParams()}}
+{\footnotesize\ttfamily with\+Query\+Params (\begin{DoxyParamCaption}\item[{array}]{\$query }\end{DoxyParamCaption})}
+
+Return an instance with the specified query string arguments.
+
+These values S\+H\+O\+U\+LD remain immutable over the course of the incoming request. They M\+AY be injected during instantiation, such as from P\+HP\textquotesingle{}s \$\+\_\+\+G\+ET superglobal, or M\+AY be derived from some other value such as the U\+RI. In cases where the arguments are parsed from the U\+RI, the data M\+U\+ST be compatible with what P\+HP\textquotesingle{}s parse\+\_\+str() would return for purposes of how duplicate query parameters are handled, and how nested sets are handled.
+
+Setting query string arguments M\+U\+ST N\+OT change the U\+RI stored by the request, nor the values in the server params.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the updated query string arguments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$query} & Array of query string arguments, typically from \$\+\_\+\+G\+ET. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_ac3ea96f04513448629aa7b03b0fb414a}\label{class_pes_1_1_http_1_1_request_ac3ea96f04513448629aa7b03b0fb414a}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Request\+Target@{with\+Request\+Target}}
+\index{with\+Request\+Target@{with\+Request\+Target}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Request\+Target()}{withRequestTarget()}}
+{\footnotesize\ttfamily with\+Request\+Target (\begin{DoxyParamCaption}\item[{}]{\$request\+Target }\end{DoxyParamCaption})}
+
+Return an instance with the specific request-\/target.
+
+If the request needs a non-\/origin-\/form request-\/target — e.\+g., for specifying an absolute-\/form, authority-\/form, or asterisk-\/form — this method may be used to create an instance with the specified request-\/target, verbatim.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the changed request target.
+
+\mbox{\hyperlink{}{(for the various request-\/target forms allowed in request messages)  mixed \$request\+Target  self  Invalid\+Argument\+Exception if the request target is invalid }}\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a74e948aa5aa4eaccb08debcf9ff989b0}\label{class_pes_1_1_http_1_1_request_a74e948aa5aa4eaccb08debcf9ff989b0}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Uploaded\+Files@{with\+Uploaded\+Files}}
+\index{with\+Uploaded\+Files@{with\+Uploaded\+Files}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Uploaded\+Files()}{withUploadedFiles()}}
+{\footnotesize\ttfamily with\+Uploaded\+Files (\begin{DoxyParamCaption}\item[{array}]{\$uploaded\+Files }\end{DoxyParamCaption})}
+
+Create a new instance with the specified uploaded files.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the updated body parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$uploaded\+Files} & An array tree of Uploaded\+File\+Interface instances. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_a1d0023caa7d9c3a9c672538692fc1456}\label{class_pes_1_1_http_1_1_request_a1d0023caa7d9c3a9c672538692fc1456}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!with\+Uri@{with\+Uri}}
+\index{with\+Uri@{with\+Uri}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{with\+Uri()}{withUri()}}
+{\footnotesize\ttfamily with\+Uri (\begin{DoxyParamCaption}\item[{Uri\+Interface}]{\$uri,  }\item[{}]{\$preserve\+Host = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Returns an instance with the provided U\+RI.
+
+This method M\+U\+ST update the Host header of the returned request by default if the U\+RI contains a host component. If the U\+RI does not contain a host component, any pre-\/existing Host header M\+U\+ST be carried over to the returned request.
+
+You can opt-\/in to preserving the original state of the Host header by setting {\ttfamily \$preserve\+Host} to {\ttfamily true}. When {\ttfamily \$preserve\+Host} is set to {\ttfamily true}, this method interacts with the Host header in the following ways\+:
+
+
+\begin{DoxyItemize}
+\item If the the Host header is missing or empty, and the new U\+RI contains a host component, this method M\+U\+ST update the Host header in the returned request.
+\item If the Host header is missing or empty, and the new U\+RI does not contain a host component, this method M\+U\+ST N\+OT update the Host header in the returned request.
+\item If a Host header is present and non-\/empty, this method M\+U\+ST N\+OT update the Host header in the returned request.
+\end{DoxyItemize}
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the new Uri\+Interface instance.
+
+\mbox{\hyperlink{}{Uri\+Interface \$uri New request U\+RI to use.  bool \$preserve\+Host Preserve the original state of the Host header.  self }}
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_request_aeb678b532c9dd148d3a4174d03c861e7}\label{class_pes_1_1_http_1_1_request_aeb678b532c9dd148d3a4174d03c861e7}} 
+\index{Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}!\$valid\+Methods@{\$valid\+Methods}}
+\index{\$valid\+Methods@{\$valid\+Methods}!Pes\+::\+Http\+::\+Request@{Pes\+::\+Http\+::\+Request}}
+\subsubsection{\texorpdfstring{\$valid\+Methods}{$validMethods}}
+{\footnotesize\ttfamily \$valid\+Methods\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        \textcolor{stringliteral}{'CONNECT'} => 1
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/Request.\+php\end{DoxyCompactItemize}

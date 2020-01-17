@@ -1,0 +1,39 @@
+\hypertarget{namespace_pes_1_1_database_1_1_handler}{}\section{Pes\textbackslash{}Database\textbackslash{}Handler Namespace Reference}
+\label{namespace_pes_1_1_database_1_1_handler}\index{Pes\textbackslash{}\+Database\textbackslash{}\+Handler@{Pes\textbackslash{}\+Database\textbackslash{}\+Handler}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_pes_1_1_database_1_1_handler_1_1_mini}{Mini}}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}
+\item 
+interface \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface}{Connection\+Info\+Interface}}
+\item 
+class \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_db_type_enum}{Db\+Type\+Enum}}
+\item 
+class \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_handler}{Handler}}
+\item 
+interface \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_handler_interface}{Handler\+Interface}}
+\item 
+class \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_nested_transaction_handler}{Nested\+Transaction\+Handler}}
+\item 
+interface \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_p_d_o_interface}{P\+D\+O\+Interface}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Emuluje enum typ Db\+Type.
+
+\begin{DoxyAuthor}{Author}
+pes2704
+\end{DoxyAuthor}
+Základní handler objekt pro S\+QL databáze. Využívá hotovou abstrakci P\+HP P\+DO a jde o adapter a wrapper pro P\+DO. Pro vytvoření instance využívá dsn provider, který musí generovat dsn pro připojení k databázi, options provider, který pokytuje options pro volání P\+DO konstruktoru (před vytvořením P\+DO) a attribute setter, který může nastavit atrinuty vytvořeného objektu (po vytvoření P\+DO). Objekt implementuje všechny metody P\+DO (jako wrapper) a přidává metody vlastní (jako adapter).
+
+\begin{DoxyAuthor}{Author}
+pes2704
+
+pes2704 
+\end{DoxyAuthor}

@@ -1,0 +1,18 @@
+[info] [2018-12-30 13:01:37]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] RuntimeException exception [2018-12-30 13:01:37] Nepodařilo se nastartovat session. on line 123 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Session\SessionHandler.php
+[info] [2019-01-13 10:16:45]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] RuntimeException exception [2019-01-13 10:16:45] Nepodařilo se nastartovat session. on line 122 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Session\SessionStatusHandler.php
+[info] [2019-01-13 21:34:14]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ArgumentCountError [2019-01-13 21:34:14] Too few arguments to function Pes\Http\Cookies\RequestCookies::__construct(), 0 passed in C:\xampp\htdocs\PesBox\testApplication\index.php on line 73 and exactly 1 expected on line 34 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\RequestCookies.php
+[info] [2019-01-15 00:00:41]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] TypeError [2019-01-15 00:00:41] Argument 1 passed to Pes\Http\Cookies\ResponseCookies::setResponseCookie() must implement interface Pes\Http\Cookies\ResponseCookieInterface, null given, called in C:\xampp\htdocs\PesBox\testApplication\index.php on line 82 on line 98 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[info] [2019-01-15 00:06:27]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] TypeError [2019-01-15 00:06:27] Argument 1 passed to Pes\Http\Cookies\ResponseCookies::setResponseCookie() must implement interface Pes\Http\Cookies\ResponseCookieInterface, null given, called in C:\xampp\htdocs\PesBox\testApplication\index.php on line 82 on line 98 in file C:\xampp\htdocs\PesBox\vendor\Pes\src\Http\Cookies\ResponseCookies.php
+[info] [2019-01-16 22:23:29]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-01-16 22:23:29] Class 'TestApplication\Controller\NestedFilesUpload' not found on line 63 in file C:\xampp\htdocs\PesBox\testApplication\index.php
+[info] [2019-01-16 22:25:42]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-01-16 22:25:42] Call to undefined method Pes\Http\Headers::add() on line 247 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Message.php
+[info] [2019-01-19 22:06:54]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ArgumentCountError [2019-01-19 22:06:54] Too few arguments to function Pes\Http\Cookies\ResponseCookies::setDefaults(), 0 passed in C:\xampp\htdocs\PesBox\testApplication\index.php on line 80 and exactly 1 expected on line 87 in file C:\xampp\htdocs\PesBox\Pes\src\Http\Cookies\ResponseCookies.php
+[info] [2019-01-19 23:38:58]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Pes\Http\Exception\UploadException exception [2019-01-19 23:38:58] Cannot retrieve stream due to upload error Upload error message: No file was uploaded on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Http\UploadedFile.php

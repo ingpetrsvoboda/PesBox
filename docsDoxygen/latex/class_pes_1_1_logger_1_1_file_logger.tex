@@ -1,0 +1,143 @@
+\hypertarget{class_pes_1_1_logger_1_1_file_logger}{}\section{File\+Logger Class Reference}
+\label{class_pes_1_1_logger_1_1_file_logger}\index{File\+Logger@{File\+Logger}}
+Inheritance diagram for File\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_logger_1_1_file_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_ad0cb87b388bc74d63dc884accdca8713}\label{class_pes_1_1_logger_1_1_file_logger_ad0cb87b388bc74d63dc884accdca8713}} 
+{\bfseries \+\_\+\+\_\+clone} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a19dd44fe063cfd1cbafe97452e57666c}\label{class_pes_1_1_logger_1_1_file_logger_a19dd44fe063cfd1cbafe97452e57666c}} 
+{\bfseries \+\_\+\+\_\+wakeup} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_file_logger_a142f6bf4e86dc16e0bae4cff1de0dd44}{log}} (\$level, \$message, array \$context=array())
+\item 
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a1b5c6bbd99933e67397d80f3b950f76d}\label{class_pes_1_1_logger_1_1_file_logger_a1b5c6bbd99933e67397d80f3b950f76d}} 
+{\bfseries get\+Log\+File\+Path} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_file_logger_af6241fe7e24b92b848c0341d8e134211}{get\+Log\+Text}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_file_logger_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_file_logger_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_logger_1_1_file_logger_a601307f5beafcd15acf6fd66caeb373a}{get\+Instance}} (\$log\+Directory\+Path, \$log\+File\+Name, \$mode=self\+::\+R\+E\+W\+R\+I\+T\+E\+\_\+\+L\+OG)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a4cc0bf0de9d2cb44f59125463000d07e}\label{class_pes_1_1_logger_1_1_file_logger_a4cc0bf0de9d2cb44f59125463000d07e}} 
+const {\bfseries O\+D\+S\+A\+Z\+E\+NI} = \char`\"{} \char`\"{}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a9bbdaa07fb1cf9339554f90594532912}\label{class_pes_1_1_logger_1_1_file_logger_a9bbdaa07fb1cf9339554f90594532912}} 
+const {\bfseries R\+E\+W\+R\+I\+T\+E\+\_\+\+L\+OG} = \textquotesingle{}w+\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a7122354c96472b1a74c9a438862a4c8c}\label{class_pes_1_1_logger_1_1_file_logger_a7122354c96472b1a74c9a438862a4c8c}} 
+const {\bfseries A\+P\+P\+E\+N\+D\+\_\+\+T\+O\+\_\+\+L\+OG} = \textquotesingle{}a+\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_logger_1_1_file_logger}{File\+Logger}} Třída loguje tak, že zapisuje do souboru. Pro každý soubor vytváří jednu istanci objektu Projektor\+\_\+\+Model\+\_\+\+Auto\+\_\+\+Autocode\+\_\+\+Logger, je to singleton pro jeden logovací soubor.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a421831a265621325e1fdd19aace0c758}\label{class_pes_1_1_logger_1_1_file_logger_a421831a265621325e1fdd19aace0c758}} 
+\index{Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destruktor. Zavře logovací soubor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a7516ca30af0db3cdbf9a7739b48ce91d}\label{class_pes_1_1_logger_1_1_file_logger_a7516ca30af0db3cdbf9a7739b48ce91d}} 
+\index{Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
+\index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+to\+String()}{\_\_toString()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Magická metoda. Umožňuje například předávat objekt loggeru jako proměnnou do kontextu View -\/ pak dojde k volání této metody obvykle až když dochází k převodu view a proměnných kontextu na string. To se v Pes view obvykle dějě až na konci běhu skriptu nebo při vytváření bydy responsu a v té době již log obsahuje údaje zapsané v průběhu běhu skriptu.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a601307f5beafcd15acf6fd66caeb373a}\label{class_pes_1_1_logger_1_1_file_logger_a601307f5beafcd15acf6fd66caeb373a}} 
+\index{Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static get\+Instance (\begin{DoxyParamCaption}\item[{}]{\$log\+Directory\+Path,  }\item[{}]{\$log\+File\+Name,  }\item[{}]{\$mode = {\ttfamily self\+:\+:REWRITE\+\_\+LOG} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Factory metoda, metoda vrací instanci objektu. Objekt je vytvářen jako singleton -\/ vždy pro jeden logovací soubor. Parametr \$mode určuje zda soubor je při zahájení logování přepsán novým obsahem -\/ log obsahuje zápisy jen z jednoho běhu skriptu nebo zda nový obsah je přidáván na konec souboru -\/ log obsahuje všechny zápisy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$log\+Directory\+Path} & Pokud parametr není zadán, třída loguje do složky, ve které je soubor s definicí třídy. \\
+\hline
+string & {\em \$log\+File\+Name} & Název logovacího souboru (řetězec ve formátu jméno.\+přípona např. Mujlogsoubor.\+log). \\
+\hline
+type & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pes_1_1_logger_1_1_file_logger}{File\+Logger}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_af6241fe7e24b92b848c0341d8e134211}\label{class_pes_1_1_logger_1_1_file_logger_af6241fe7e24b92b848c0341d8e134211}} 
+\index{Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}!get\+Log\+Text@{get\+Log\+Text}}
+\index{get\+Log\+Text@{get\+Log\+Text}!Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}}
+\subsubsection{\texorpdfstring{get\+Log\+Text()}{getLogText()}}
+{\footnotesize\ttfamily get\+Log\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vrací aktuální obsah logovacího souboru.. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_logger_1_1_file_logger_a142f6bf4e86dc16e0bae4cff1de0dd44}\label{class_pes_1_1_logger_1_1_file_logger_a142f6bf4e86dc16e0bae4cff1de0dd44}} 
+\index{Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}!log@{log}}
+\index{log@{log}!Pes\+::\+Logger\+::\+File\+Logger@{Pes\+::\+Logger\+::\+File\+Logger}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily log (\begin{DoxyParamCaption}\item[{}]{\$level,  }\item[{}]{\$message,  }\item[{array}]{\$context = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Zápis jednoho záznamu do logu.
+
+Záznam začíná prefixem uzavřeným do hranatých závorek, následuje zpráva.
+
+Podřetězce zprávy mohou být nahrazeny hodnotami z asociativního pole context. Metoda použije zprávu jako šablonu a ve zprávě nahradí řetězce uzavřené ve složených závorkách hodnotami pole \$context s klíčem rovným nahrazovanému řetězci.
+
+Víceřádková zpráva je uložena do více řádek logu tak, že první řádka obsahuje prefix v hranatých závorkách a další řádky jsou zleva odsazeny.
+
+Příklad\+: volání logger-\/$>$log(\textquotesingle{}P\+O\+Z\+O\+R!\textquotesingle{}, \textquotesingle{}Toto je hlášení o chybě \textquotesingle{}.P\+H\+P\+\_\+\+E\+OL.\textquotesingle{}v souboru file na řádku line.\textquotesingle{}, \mbox{[}\textquotesingle{}file=$>$\textquotesingle{}Ukázka.\+ext\textquotesingle{}, \textquotesingle{}line\textquotesingle{}=$>$159\mbox{]} vytvoří záznam\+: 
+\begin{DoxyPre}
+[POZOR!] Toto je hlášení o chybě
+    v souboru Ukázka.ext na řádku 159.
+\end{DoxyPre}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$level} & Prefix záznamu zdůrazněný uzavřením do hranatých závorek \\
+\hline
+string & {\em \$message} & Zpráva pro zaznamenání do logu \\
+\hline
+array & {\em \$context} & Pole náhrad. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Logger/File\+Logger.\+php\end{DoxyCompactItemize}

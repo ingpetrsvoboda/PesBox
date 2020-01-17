@@ -1,0 +1,65 @@
+\hypertarget{class_pes_1_1_view_1_1_view_factory}{}\section{View\+Factory Class Reference}
+\label{class_pes_1_1_view_1_1_view_factory}\index{View\+Factory@{View\+Factory}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_view_1_1_view_factory_a99c2532e2aa286f9b117deaec80acd0d}{view\+With\+Php\+Template}} (\$template\+Filename, \$data=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{interface_pes_1_1_view_1_1_recorder_1_1_recorder_provider_interface}{Recorder\+Provider\+Interface}} \$recorder\+Provider=N\+U\+LL)
+\item 
+static \mbox{\hyperlink{class_pes_1_1_view_1_1_view_factory_ac1aadfc1f7905b16ef3d0b674e3c393d}{view\+With\+Node}} (\mbox{\hyperlink{interface_pes_1_1_dom_1_1_node_1_1_node_interface}{Node\+Interface}} \$node, \mbox{\hyperlink{interface_pes_1_1_view_1_1_recorder_1_1_recorder_provider_interface}{Recorder\+Provider\+Interface}} \$recorder\+Provider=N\+U\+LL)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_view_1_1_view_factory}{View\+Factory}}
+
+Vytvoří nový view.
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_factory_ac1aadfc1f7905b16ef3d0b674e3c393d}\label{class_pes_1_1_view_1_1_view_factory_ac1aadfc1f7905b16ef3d0b674e3c393d}} 
+\index{Pes\+::\+View\+::\+View\+Factory@{Pes\+::\+View\+::\+View\+Factory}!view\+With\+Node@{view\+With\+Node}}
+\index{view\+With\+Node@{view\+With\+Node}!Pes\+::\+View\+::\+View\+Factory@{Pes\+::\+View\+::\+View\+Factory}}
+\subsubsection{\texorpdfstring{view\+With\+Node()}{viewWithNode()}}
+{\footnotesize\ttfamily static view\+With\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pes_1_1_dom_1_1_node_1_1_node_interface}{Node\+Interface}}}]{\$node,  }\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_recorder_1_1_recorder_provider_interface}{Recorder\+Provider\+Interface}}}]{\$recorder\+Provider = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Vytvoří nový view a nastaví mu rendererer a zadaný tag. 
+\begin{DoxyParams}[1]{Parameters}
+Tag\+Interface & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view}{View}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_view_1_1_view_factory_a99c2532e2aa286f9b117deaec80acd0d}\label{class_pes_1_1_view_1_1_view_factory_a99c2532e2aa286f9b117deaec80acd0d}} 
+\index{Pes\+::\+View\+::\+View\+Factory@{Pes\+::\+View\+::\+View\+Factory}!view\+With\+Php\+Template@{view\+With\+Php\+Template}}
+\index{view\+With\+Php\+Template@{view\+With\+Php\+Template}!Pes\+::\+View\+::\+View\+Factory@{Pes\+::\+View\+::\+View\+Factory}}
+\subsubsection{\texorpdfstring{view\+With\+Php\+Template()}{viewWithPhpTemplate()}}
+{\footnotesize\ttfamily static view\+With\+Php\+Template (\begin{DoxyParamCaption}\item[{}]{\$template\+Filename,  }\item[{}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{\mbox{\hyperlink{interface_pes_1_1_view_1_1_recorder_1_1_recorder_provider_interface}{Recorder\+Provider\+Interface}}}]{\$recorder\+Provider = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Vytvoří nový view, přímo přetypovatelný na text. Pokud jsou zadána data, nastaví tomuto view i data, to je třeba, pokud zadaná šablona obsahuje proměnné. Vytvořený objekt view je vhodný jako proměnná do šablony nebo jako view pro node typu Text\+View.
+
+Podrobně\+: Vytvoří nový objekt view typu Stringable\+View\+Interface, nastaví mu nově vytvořený renderer a template. Typy view, rendereru a template jsou dány deklaracemi use uvedenými ve třídě \mbox{\hyperlink{class_pes_1_1_view_1_1_view_factory}{View\+Factory}}. Metoda vytvořenému view nastaví data potřebná pro renderování a případně i záznamový objekt pro záznam o užití dat při renderování. Výsledný view obsahuje vše potřebné pro renderování a lze ho kdykoli přetypovat na text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$template\+Filename} & \\
+\hline
+type & {\em \$data} & \\
+\hline
+Record\+Logger\+Interface & {\em \$recorder\+Provider} & \\
+\hline
+\end{DoxyParams}
+Nastaví objekt pro logování informací o užití proměnných v šabloně. Pokud je nastaven \$recorder\+Provider a zde vytvářený template renderer je typu Recordable\+Renderer\+Interface poskytne tento Rocord\+Logger rekorder a renderer zaznamená užití dat při renderování šablon.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pes_1_1_view_1_1_view}{View}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+View/View\+Factory.\+php\end{DoxyCompactItemize}

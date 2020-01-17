@@ -1,0 +1,161 @@
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Warning:  include(contents/ajaxindex.php): failed to open stream: No such file or directory in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Warning:  include(): Failed opening 'contents/ajaxindex.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Notice:  Undefined variable: testHtml in C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 64
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 64
+[28-Nov-2018 23:09:17 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:09:17 Europe/Prague] PHP   3. implode() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:64
+[28-Nov-2018 23:12:00 Europe/Prague] PHP Warning:  include(contents/ajaxindex.php): failed to open stream: No such file or directory in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:12:00 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:12:00 Europe/Prague] PHP Warning:  include(): Failed opening 'contents/ajaxindex.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:12:00 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:12:00 Europe/Prague] PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 64
+[28-Nov-2018 23:12:00 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:12:00 Europe/Prague] PHP   3. implode() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:64
+[28-Nov-2018 23:13:03 Europe/Prague] PHP Warning:  include(contents/ajaxindex.php): failed to open stream: No such file or directory in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:13:03 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:13:03 Europe/Prague] PHP Warning:  include(): Failed opening 'contents/ajaxindex.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:13:03 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:13:03 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:17:21 Europe/Prague] PHP Warning:  include(contents/ajaxindex.php): failed to open stream: No such file or directory in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:17:21 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:17:21 Europe/Prague] PHP Warning:  include(): Failed opening 'contents/ajaxindex.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:17:21 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:17:21 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:19:26 Europe/Prague] PHP Warning:  include(contents/ajaxindex.php): failed to open stream: No such file or directory in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:19:26 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:19:26 Europe/Prague] PHP Warning:  include(): Failed opening 'contents/ajaxindex.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php on line 172
+[28-Nov-2018 23:19:26 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   3. Pes\View\View->render() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:54
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   4. Pes\View\Renderer\PhpRenderer->render() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\View.php:122
+[28-Nov-2018 23:19:26 Europe/Prague] PHP   5. Pes\View\Renderer\PhpRenderer->includeToProtectedScope() C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Renderer\PhpRenderer.php:89
+[28-Nov-2018 23:24:08 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Neexistuje nebo není čitelný soubor contents/ajaxindex.php. in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php:35
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(50): Pes\View\Template\PhpTemplate->__construct('contents/ajaxin...')
+#1 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[28-Nov-2018 23:25:41 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Neexistuje nebo není čitelný soubor contents/ajaxindex.php. in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php:35
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(50): Pes\View\Template\PhpTemplate->__construct('contents/ajaxin...')
+#1 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[28-Nov-2018 23:26:33 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Neexistuje nebo není čitelný soubor contents/ajaxindex.php. in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php:35
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(50): Pes\View\Template\PhpTemplate->__construct('contents/ajaxin...')
+#1 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[28-Nov-2018 23:31:14 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Neexistuje nebo není čitelný soubor contents/ajaxindex.php. in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php:35
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(50): Pes\View\Template\PhpTemplate->__construct('contents/ajaxin...')
+#1 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[28-Nov-2018 23:31:36 Europe/Prague] PHP Warning:  realpath() expects exactly 1 parameter, 0 given in C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php on line 49
+[28-Nov-2018 23:31:36 Europe/Prague] PHP Stack trace:
+[28-Nov-2018 23:31:36 Europe/Prague] PHP   1. {main}() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:0
+[28-Nov-2018 23:31:36 Europe/Prague] PHP   2. Liveblock\Middleware\Web\ApplicationDevelopment->process($request = *uninitialized*, $handler = *uninitialized*) C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php:24
+[28-Nov-2018 23:31:36 Europe/Prague] PHP   3. realpath() C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php:49
+[28-Nov-2018 23:32:21 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Neexistuje nebo není čitelný soubor contents/ajaxindex.php. in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php:35
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(50): Pes\View\Template\PhpTemplate->__construct('contents/ajaxin...')
+#1 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39
+[28-Nov-2018 23:33:13 Europe/Prague] PHP Fatal error:  Uncaught UnexpectedValueException: Neexistuje nebo není čitelný soubor contents/ajaxindex.php. in C:\xampp\htdocs\PesBox\vendor\Pes\src\View\Template\PhpTemplate.php:35
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\Middleware\Web\ApplicationDevelopment.php(50): Pes\View\Template\PhpTemplate->__construct('contents/ajaxin...')
+#1 C:\xampp\htdocs\PesBox\piskoviste\JSON_Ajax_API\index.php(24): Liveblock\Middleware\Web\ApplicationDevelopment->process(Object(Pes\Http\Request))
+#2 {main}
+
+Next Exception: Výjimka zpracována funkcí logExceptionHandler v Pes\Bootstrap -  in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php:39
+Stack trace:
+#0 C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php(77): flushOutputBufferAndThrowException(Object(UnexpectedValueException), 'logExceptionHan...')
+#1 [internal function]: logExceptionHandler(Object(UnexpectedValueException))
+#2 {main}
+  thrown in C:\xampp\htdocs\PesBox\Pes\src\Bootstrap\ErrorHandlingSet.php on line 39

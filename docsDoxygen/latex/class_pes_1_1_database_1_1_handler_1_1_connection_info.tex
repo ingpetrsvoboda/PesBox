@@ -1,0 +1,218 @@
+\hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info}{}\section{Connection\+Info Class Reference}
+\label{class_pes_1_1_database_1_1_handler_1_1_connection_info}\index{Connection\+Info@{Connection\+Info}}
+Inheritance diagram for Connection\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pes_1_1_database_1_1_handler_1_1_connection_info}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_a781e3c770ff984c6c0163cc88652351b}{\+\_\+\+\_\+construct}} (\$db\+Nick, \$db\+Type, \$db\+Host, \$user, \$pass, \$db\+Name=N\+U\+LL, \$charset=\textquotesingle{}utf8\textquotesingle{}, \$collation=\textquotesingle{}utf8\+\_\+czech\+\_\+ci\textquotesingle{}, \$db\+Port=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_a4d9813fea8525b19a1d370eeb8fe41d6}{serialize}} ()
+\item 
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_a91b3cb8a65e42152cacf1cf222bd26f6}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_a91b3cb8a65e42152cacf1cf222bd26f6}} 
+{\bfseries unserialize} (\$data)
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_a05c8fadf9d084bd94acc30760baae90f}{get\+Db\+Nick}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_a36e6adfcbef4d922b36b8c6cea954c5c}{get\+Db\+Type}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_a4949c3e4d80c0d275c80e0c1c3b5b280}{get\+Db\+Name}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_ae81b7186fb97a7c6457edcc68c9aa2ef}{get\+User}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_ad855d2dfa322f4566b89fcc00fd0e282}{get\+Db\+Host}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_add0a7153055b0ebf4d84b7a235fee1c7}{get\+Db\+Port}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_abca2d528da8311b6fcfe040768cbaa24}{get\+Charset}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info_a8a2e3a5e3b3b7a164c858bcfdd49ac71}{get\+Collation}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_a781e3c770ff984c6c0163cc88652351b}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_a781e3c770ff984c6c0163cc88652351b}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$db\+Nick,  }\item[{}]{\$db\+Type,  }\item[{}]{\$db\+Host,  }\item[{}]{\$user,  }\item[{}]{\$pass,  }\item[{}]{\$db\+Name = {\ttfamily NULL},  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}utf8\textquotesingle{}},  }\item[{}]{\$collation = {\ttfamily \textquotesingle{}utf8\+\_\+czech\+\_\+ci\textquotesingle{}},  }\item[{}]{\$db\+Port = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Všechny vlastnosti objektu jsou zadány jako instanční proměnnné do konstruktoru. Nelze je později měnit, třída neobsahuje settery. Pro získání hodnot vlastností třída používá gettery, výjimkou je vlastnost pass, která z bezpečnostních důvodů getter nemá. 
+
+{\bfseries charset a collation}~\newline
+ Některé parametry mají defaultní hodnoty, které předpokládají předávání dat v kódování utf8 a s řazením utf8\+\_\+czech\+\_\+ci. Pro jiné kódování a řazení je třeba zadat příslušné hodnoty, zadání N\+U\+LL způsobí použití default hodnot databáze nebo My\+S\+QL aplikace. Pokud \$charset nebo \$collation jsou nastaveny na N\+U\+LL, použije My\+S\+QL defaultní hodnoty pro konkrétní databázi nastavené při vytváření databáze např.\+:
+
+
+\begin{DoxyPre}
+CREATE DATABASE mydb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8\_general\_ci;
+\end{DoxyPre}
+ nebo defaultní hodnotu pro My\+S\+Ql aplikaci nastavené v konfiguraci např.\+: 
+\begin{DoxyPre}
+ [mysqld]
+ character-set-server=utf8
+ collation-server=utf8\_general\_ci
+\end{DoxyPre}
+ 
+
+{\bfseries port}~\newline
+ Nepovinný parametr, pokud není zadán nikde v handleru se nepoužije a My\+S\+QL driver sám použije default (well known) port 3306. Pokud chceš používat jiný port, musí se vždy jako parametr db\+Host použít IP adresa. Např. nesmí být host zadán jako \char`\"{}localhost\char`\"{}, musí být 127.\+0.\+0.\+1
+
+{\bfseries db\+Name}~\newline
+ Parametr \$db\+Name je skutečné aktuální jméno databáze a je nepovinný. Pokud databáze dosud neexistuje je parametr prázdný. S připojením vytvořeným bez jména databáze je možné vytvořit novou databázi (C\+R\+E\+A\+TE D\+A\+T\+A\+B\+A\+SE). Nelze však použít postup\+: new \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}} bez db\+Name -\/$>$ new Handler(\+Connection\+Info) -\/$>$ C\+R\+E\+A\+TE D\+A\+T\+A\+B\+A\+SE dabaname -\/$>$ U\+SE dabaname -\/$>$ Connection\+Info-\/$>$set\+Db\+Name(dabaname). Namísto toho je třeba spojení zahodit a vytvořit nové s použitím nového \mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_connection_info}{Connection\+Info}}, již obsahujícího db\+Name. Toto nové připojení by obvykle mělo mít také jiné parametry user a pass, protože práva pro vytváření databází budou asi jiná než práva ke konkrétní nové databázi.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\+Nick} & Přezdívka databáze \\
+\hline
+string & {\em \$db\+Type} & Typ databáze jako hodnota výčtového typu Pes \\
+\hline
+string & {\em \$db\+Host} & IP adresa nebo doménové jméno hostitelského stroje. Při použití parametru db\+Port je nutné použít IP adresu. \\
+\hline
+string & {\em \$user} & Jméno uživatele pro přihlášení \\
+\hline
+string & {\em \$pass} & Heslo uživatele pro přihlášení (třída nemá metodu get\+Pass()) \\
+\hline
+string & {\em \$db\+Name} & Nepovinný parametr skutečné aktuální jméno databáze. Pokud databáze dosud neexistuje je parametr prázdný. \\
+\hline
+string & {\em \$charset} & Nepovinný parametr, dafault hodnota je \textquotesingle{}utf8\textquotesingle{}, zadání N\+U\+LL způsobí použití default hodnoty databáze nebo My\+S\+QL aplikace \\
+\hline
+string & {\em \$collation} & Nepovinný parametr, dafault hodnota je \textquotesingle{}utf8\+\_\+czech\+\_\+ci\textquotesingle{}, zadání N\+U\+LL způsobí použití default hodnoty databáze nebo My\+S\+QL aplikace \\
+\hline
+integer & {\em \$db\+Port} & Nepovinný parametr, dafault hodnota je N\+U\+LL (pak driver použije standartní port 3306) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_abca2d528da8311b6fcfe040768cbaa24}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_abca2d528da8311b6fcfe040768cbaa24}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+Charset@{get\+Charset}}
+\index{get\+Charset@{get\+Charset}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+Charset()}{getCharset()}}
+{\footnotesize\ttfamily get\+Charset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string Heslo pro přihlášení 
+
+string Označení kódování pro připojení (Connection Character Set) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_abca2d528da8311b6fcfe040768cbaa24}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_a8a2e3a5e3b3b7a164c858bcfdd49ac71}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_a8a2e3a5e3b3b7a164c858bcfdd49ac71}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+Collation@{get\+Collation}}
+\index{get\+Collation@{get\+Collation}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+Collation()}{getCollation()}}
+{\footnotesize\ttfamily get\+Collation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string Označení řazení pro připojení (Connection Collation) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_a8a2e3a5e3b3b7a164c858bcfdd49ac71}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_ad855d2dfa322f4566b89fcc00fd0e282}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_ad855d2dfa322f4566b89fcc00fd0e282}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+Db\+Host@{get\+Db\+Host}}
+\index{get\+Db\+Host@{get\+Db\+Host}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+Db\+Host()}{getDbHost()}}
+{\footnotesize\ttfamily get\+Db\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_ad855d2dfa322f4566b89fcc00fd0e282}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_a4949c3e4d80c0d275c80e0c1c3b5b280}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_a4949c3e4d80c0d275c80e0c1c3b5b280}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+Db\+Name@{get\+Db\+Name}}
+\index{get\+Db\+Name@{get\+Db\+Name}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+Db\+Name()}{getDbName()}}
+{\footnotesize\ttfamily get\+Db\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string Skutečné aktuální jméno databáze 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_a4949c3e4d80c0d275c80e0c1c3b5b280}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_a05c8fadf9d084bd94acc30760baae90f}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_a05c8fadf9d084bd94acc30760baae90f}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+Db\+Nick@{get\+Db\+Nick}}
+\index{get\+Db\+Nick@{get\+Db\+Nick}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+Db\+Nick()}{getDbNick()}}
+{\footnotesize\ttfamily get\+Db\+Nick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string Přezdívka databáze 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_a05c8fadf9d084bd94acc30760baae90f}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_add0a7153055b0ebf4d84b7a235fee1c7}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_add0a7153055b0ebf4d84b7a235fee1c7}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+Db\+Port@{get\+Db\+Port}}
+\index{get\+Db\+Port@{get\+Db\+Port}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+Db\+Port()}{getDbPort()}}
+{\footnotesize\ttfamily get\+Db\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+integer Číslo portu 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_add0a7153055b0ebf4d84b7a235fee1c7}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_a36e6adfcbef4d922b36b8c6cea954c5c}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_a36e6adfcbef4d922b36b8c6cea954c5c}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+Db\+Type@{get\+Db\+Type}}
+\index{get\+Db\+Type@{get\+Db\+Type}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+Db\+Type()}{getDbType()}}
+{\footnotesize\ttfamily get\+Db\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pes_1_1_database_1_1_handler_1_1_db_type_enum}{Db\+Type\+Enum}} Typ databáze jako výčtový typ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_a36e6adfcbef4d922b36b8c6cea954c5c}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_ae81b7186fb97a7c6457edcc68c9aa2ef}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_ae81b7186fb97a7c6457edcc68c9aa2ef}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string Jméno uživatele pro přihlášení 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pes_1_1_database_1_1_handler_1_1_connection_info_interface_ae81b7186fb97a7c6457edcc68c9aa2ef}{Connection\+Info\+Interface}}.
+
+\mbox{\Hypertarget{class_pes_1_1_database_1_1_handler_1_1_connection_info_a4d9813fea8525b19a1d370eeb8fe41d6}\label{class_pes_1_1_database_1_1_handler_1_1_connection_info_a4d9813fea8525b19a1d370eeb8fe41d6}} 
+\index{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}!serialize@{serialize}}
+\index{serialize@{serialize}!Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info@{Pes\+::\+Database\+::\+Handler\+::\+Connection\+Info}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ochrana proti neúmyslnému zobrazení obsahu. Objekt obsahuje citlivá data, pro jistotu bráním jeko serializaci. Vracím potichu Null, nevyhazuji výjimku. \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Database/\+Handler/Connection\+Info.\+php\end{DoxyCompactItemize}

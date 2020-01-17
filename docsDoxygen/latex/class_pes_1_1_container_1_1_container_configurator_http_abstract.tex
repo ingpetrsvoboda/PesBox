@@ -1,0 +1,48 @@
+\hypertarget{class_pes_1_1_container_1_1_container_configurator_http_abstract}{}\section{Container\+Configurator\+Http\+Abstract Class Reference}
+\label{class_pes_1_1_container_1_1_container_configurator_http_abstract}\index{Container\+Configurator\+Http\+Abstract@{Container\+Configurator\+Http\+Abstract}}
+Inheritance diagram for Container\+Configurator\+Http\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_container_1_1_container_configurator_http_abstract}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_container_1_1_container_configurator_http_abstract_ad9fd33cd0f1d244412d6d6398a971dd8}{\+\_\+\+\_\+construct}} (Server\+Request\+Interface \$request=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_configurator_http_abstract_abb35c8495a232b510389fa6d7b15d38a}\label{class_pes_1_1_container_1_1_container_configurator_http_abstract_abb35c8495a232b510389fa6d7b15d38a}} 
+{\bfseries \$request}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of \mbox{\hyperlink{class_pes_1_1_container_1_1_container_configurator_http_abstract}{Container\+Configurator\+Http\+Abstract}}
+
+\begin{DoxyAuthor}{Author}
+pes2704 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_container_1_1_container_configurator_http_abstract_ad9fd33cd0f1d244412d6d6398a971dd8}\label{class_pes_1_1_container_1_1_container_configurator_http_abstract_ad9fd33cd0f1d244412d6d6398a971dd8}} 
+\index{Pes\+::\+Container\+::\+Container\+Configurator\+Http\+Abstract@{Pes\+::\+Container\+::\+Container\+Configurator\+Http\+Abstract}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Container\+::\+Container\+Configurator\+Http\+Abstract@{Pes\+::\+Container\+::\+Container\+Configurator\+Http\+Abstract}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Server\+Request\+Interface}]{\$request = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Abstraktní třída. Přidává konstruktor, který přijímá \mbox{\hyperlink{namespace_pes_1_1_http}{Http}} request objekt. Tento konfigurator se tak hodí pro web (frontend) aplikace nebo middleware, kde často definice služeb závisejí na http requestu. V případě middleware nelze request získávat z globálních proměnných.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Container/Container\+Configurator\+Http\+Abstract.\+php\end{DoxyCompactItemize}

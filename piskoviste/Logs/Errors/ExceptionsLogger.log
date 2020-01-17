@@ -1,0 +1,52 @@
+[info] [2019-02-15 14:29:41]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-02-15 14:29:41] Class 'Pes\Config\stdClass' not found on line 29 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:30:25]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-02-15 14:30:25] Class 'Pes\Config\stdClass' not found on line 29 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:31:31]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-02-15 14:31:31] Class 'Pes\Config\stdClass' not found on line 108 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:32:06]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-02-15 14:32:06] Class 'Pes\Config\stdClass' not found on line 108 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:43:29]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-02-15 14:43:29] Class 'Pes\Config\BadMethodCallException' not found on line 86 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:43:31]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-02-15 14:43:31] Class 'Pes\Config\BadMethodCallException' not found on line 86 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 14:46:52]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] BadMethodCallException exception [2019-02-15 14:46:52] Sekce konfigurace db je v souboru obsažena vícekrát než jednou. on line 85 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 19:42:16]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Exception exception [2019-02-15 19:42:16] String could not be parsed as XML on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 19:46:17]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Exception exception [2019-02-15 19:46:17] String could not be parsed as XML on line 136 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 19:48:55]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 19:48:55] Žádná ze sekcí konfigurace db nemá atribut databaze s hodnotou Projektor. on line 57 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 19:49:42]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] BadMethodCallException exception [2019-02-15 19:49:42] Sekce konfigurace db není v souboru obsažena. on line 88 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 19:50:21]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] BadMethodCallException exception [2019-02-15 19:50:21] Sekce konfigurace connectioninfo není v souboru obsažena. on line 88 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 20:17:57]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ArgumentCountError [2019-02-15 20:17:57] Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected on line 128 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 20:17:57]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ArgumentCountError [2019-02-15 20:17:57] Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected on line 128 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 20:17:57]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ArgumentCountError [2019-02-15 20:17:57] Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected on line 128 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 20:17:57]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ArgumentCountError [2019-02-15 20:17:57] Too few arguments to function Pes\Config\Config::loadConfig(), 0 passed in C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php on line 77 and exactly 1 expected on line 128 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 20:18:43]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 20:18:43] Sekce konfigurace  není v souboru obsažena. on line 86 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 21:07:51]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ParseError [2019-02-15 21:07:51] syntax error, unexpected 'public' (T_PUBLIC) on line 76 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 21:08:44]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] Error [2019-02-15 21:08:44] Call to undefined method Pes\Config\Config::getSectionByAtribute() on line 23 in file C:\xampp\htdocs\PesBox\piskoviste\config.php
+[info] [2019-02-15 21:26:05]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] ParseError [2019-02-15 21:26:05] syntax error, unexpected 'function' (T_FUNCTION), expecting '(' on line 109 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 21:36:09]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 21:36:09] Konfigurace eoobsahuje element connectioninfo s atributem name a hodnotou Pr2ojektor. on line 65 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 21:51:59]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 21:51:59] Konfigurace eoobsahuje element connectioninfo s atributem name a hodnotou Pr2joektor. on line 65 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 21:52:11]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 21:52:11] Konfigurace eoobsahuje element connectioninfo s atributem name a hodnotou Pr2joektor. on line 64 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 21:52:49]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 21:52:49] Konfigurace obsahuje více elementů database/connectioninfo s atributem  a hodnotou . on line 61 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 21:54:34]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 21:54:34] Konfigurace obsahuje více elementů 'database/connectioninfo' s atributem '' a hodnotou ''. on line 61 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php
+[info] [2019-02-15 22:06:21]Start logger: Logs/Errors/ExceptionsLogger.log.
+[critical] UnexpectedValueException exception [2019-02-15 22:06:21] Konfigurace obsahuje více elementů 'database/connectioninfo' s atributem '' a hodnotou ''. on line 61 in file C:\xampp\htdocs\PesBox\Pes\src\Config\Config.php

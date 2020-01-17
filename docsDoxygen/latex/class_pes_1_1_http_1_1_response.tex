@@ -1,0 +1,163 @@
+\hypertarget{class_pes_1_1_http_1_1_response}{}\section{Response Class Reference}
+\label{class_pes_1_1_http_1_1_response}\index{Response@{Response}}
+Inheritance diagram for Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pes_1_1_http_1_1_response}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pes_1_1_http_1_1_response_addbc35df9e7d4a465be0056eeb28c462}{\+\_\+\+\_\+construct}} (\$status=200, \mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}} \$headers=null, Stream\+Interface \$body=null, string \$reason\+Phrase=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_response_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_response_a094778dd1c04fe44626000b47ea0c0bb}{get\+Status\+Code}} ()
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_response_adea4a553d385286f0457844663023b27}{with\+Status}} (\$code, \$reason\+Phrase=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_response_ad2574b5790012944a05218ed095d919d}{get\+Reason\+Phrase}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_response_a8d86609842e7a0a93c0be183b70dbd30}{is\+Valid\+Status\+Code}} (\$status)
+\item 
+\mbox{\hyperlink{class_pes_1_1_http_1_1_response_a6d3d6ad45feb397f6a7591d0c2c65234}{is\+Valid\+Reason\+Phrase}} (\$reason\+Phrase)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_a58391ea75f2d29d5d708d7050b641c33}\label{class_pes_1_1_http_1_1_response_a58391ea75f2d29d5d708d7050b641c33}} 
+{\bfseries \$status} = 200
+\item 
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_a78c4411594f692d36dd7b71e80bc8254}\label{class_pes_1_1_http_1_1_response_a78c4411594f692d36dd7b71e80bc8254}} 
+{\bfseries \$reason\+Phrase} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$messages}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_pes_1_1_http_1_1_response}{Response}}
+
+This class represents an H\+T\+TP response. It manages the response status, headers, and body according to the P\+S\+R-\/7 standard.
+
+\mbox{\hyperlink{}{\href{https://github.com/php-fig/http-message/blob/master/src/ResponseInterface.php}{\tt https\+://github.\+com/php-\/fig/http-\/message/blob/master/src/\+Response\+Interface.\+php} }}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_addbc35df9e7d4a465be0056eeb28c462}\label{class_pes_1_1_http_1_1_response_addbc35df9e7d4a465be0056eeb28c462}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily static \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$status = {\ttfamily 200},  }\item[{\mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}}}]{\$headers = {\ttfamily null},  }\item[{Stream\+Interface}]{\$body = {\ttfamily null},  }\item[{string}]{\$reason\+Phrase = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Create new H\+T\+TP response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & The response status code. \\
+\hline
+\mbox{\hyperlink{interface_pes_1_1_http_1_1_headers_interface}{Headers\+Interface}} | null & {\em \$headers} & The response headers. \\
+\hline
+Stream\+Interface | null & {\em \$body} & The response body. \\
+\hline
+string & {\em \$reason\+Phrase} & Non standard reason phrase. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_ad0cb87b388bc74d63dc884accdca8713}\label{class_pes_1_1_http_1_1_response_ad0cb87b388bc74d63dc884accdca8713}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is applied to the cloned object after P\+HP performs an initial shallow-\/copy. This method completes a deep-\/copy by creating new objects for the cloned object\textquotesingle{}s internal reference pointers. \mbox{\Hypertarget{class_pes_1_1_http_1_1_response_ad2574b5790012944a05218ed095d919d}\label{class_pes_1_1_http_1_1_response_ad2574b5790012944a05218ed095d919d}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!get\+Reason\+Phrase@{get\+Reason\+Phrase}}
+\index{get\+Reason\+Phrase@{get\+Reason\+Phrase}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{get\+Reason\+Phrase()}{getReasonPhrase()}}
+{\footnotesize\ttfamily get\+Reason\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the response reason phrase associated with the status code.
+
+Because a reason phrase is not a required element in a response status line, the reason phrase value M\+AY be null. Implementations M\+AY choose to return the default R\+FC 7231 recommended reason phrase (or those listed in the I\+A\+NA H\+T\+TP Status Code Registry) for the response\textquotesingle{}s status code.
+
+\mbox{\hyperlink{}{\href{http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml}{\tt http\+://www.\+iana.\+org/assignments/http-\/status-\/codes/http-\/status-\/codes.\+xhtml}  string Reason phrase; must return an empty string if none present. }}\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_a094778dd1c04fe44626000b47ea0c0bb}\label{class_pes_1_1_http_1_1_response_a094778dd1c04fe44626000b47ea0c0bb}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!get\+Status\+Code@{get\+Status\+Code}}
+\index{get\+Status\+Code@{get\+Status\+Code}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{get\+Status\+Code()}{getStatusCode()}}
+{\footnotesize\ttfamily get\+Status\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the response status code.
+
+The status code is a 3-\/digit integer result code of the server\textquotesingle{}s attempt to understand and satisfy the request.
+
+\begin{DoxyReturn}{Returns}
+int Status code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_a6d3d6ad45feb397f6a7591d0c2c65234}\label{class_pes_1_1_http_1_1_response_a6d3d6ad45feb397f6a7591d0c2c65234}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!is\+Valid\+Reason\+Phrase@{is\+Valid\+Reason\+Phrase}}
+\index{is\+Valid\+Reason\+Phrase@{is\+Valid\+Reason\+Phrase}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{is\+Valid\+Reason\+Phrase()}{isValidReasonPhrase()}}
+{\footnotesize\ttfamily is\+Valid\+Reason\+Phrase (\begin{DoxyParamCaption}\item[{}]{\$reason\+Phrase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate reason phrase. Reason phrase must be string or object convertible to string (has \+\_\+\+\_\+to\+String() method). 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$reason\+Phrase} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_a8d86609842e7a0a93c0be183b70dbd30}\label{class_pes_1_1_http_1_1_response_a8d86609842e7a0a93c0be183b70dbd30}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!is\+Valid\+Status\+Code@{is\+Valid\+Status\+Code}}
+\index{is\+Valid\+Status\+Code@{is\+Valid\+Status\+Code}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{is\+Valid\+Status\+Code()}{isValidStatusCode()}}
+{\footnotesize\ttfamily is\+Valid\+Status\+Code (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate H\+T\+TP status code. Code must be integer with value from 100 to 599. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_adea4a553d385286f0457844663023b27}\label{class_pes_1_1_http_1_1_response_adea4a553d385286f0457844663023b27}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!with\+Status@{with\+Status}}
+\index{with\+Status@{with\+Status}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{with\+Status()}{withStatus()}}
+{\footnotesize\ttfamily with\+Status (\begin{DoxyParamCaption}\item[{}]{\$code,  }\item[{}]{\$reason\+Phrase = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Return an instance with the specified status code and, optionally, reason phrase.
+
+If no reason phrase is specified, implementations M\+AY choose to default to the R\+FC 7231 or I\+A\+NA recommended reason phrase for the response\textquotesingle{}s status code.
+
+This method M\+U\+ST be implemented in such a way as to retain the immutability of the message, and M\+U\+ST return an instance that has the updated status and reason phrase.
+
+\mbox{\hyperlink{}{\href{http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml}{\tt http\+://www.\+iana.\+org/assignments/http-\/status-\/codes/http-\/status-\/codes.\+xhtml}  int \$code H\+T\+TP result status code to set. Must be he 3-\/digit integer from 100 to 599.  string \$reason\+Phrase The reason phrase to use with the provided status code; if none is provided, the default reason phrase as suggested in the H\+T\+TP specification is used.    Invalid\+Argument\+Exception Form invalid H\+T\+TP status code and invalid reason phrase and for status code which not specifiad in H\+T\+TP specification with no supplied reason phrase. }}
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_pes_1_1_http_1_1_response_a21a183f927a6d243fe6b4ba3a6c4d4c8}\label{class_pes_1_1_http_1_1_response_a21a183f927a6d243fe6b4ba3a6c4d4c8}} 
+\index{Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}!\$messages@{\$messages}}
+\index{\$messages@{\$messages}!Pes\+::\+Http\+::\+Response@{Pes\+::\+Http\+::\+Response}}
+\subsubsection{\texorpdfstring{\$messages}{$messages}}
+{\footnotesize\ttfamily \$messages\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        
+        100 => \textcolor{stringliteral}{'Continue'}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Http/Response.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,1 @@
+"C:\Users\pes2704\AppData\Roaming\Composer\vendor\bin\phpunit.bat" "--colors" "--log-junit" "C:\Users\pes2704\AppData\Local\Temp\nb-phpunit-log.xml" "--configuration" "C:\ApacheRoot\PesBox\phpunit.xml" "C:\Program Files\NetBeans 8.2\php\phpunit\NetBeansSuite.php" "--" "--run=C:\ApacheRoot\PesBox\Pes\tests"

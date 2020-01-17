@@ -1,0 +1,374 @@
+\hypertarget{class_zebra___session}{}\section{Zebra\+\_\+\+Session Class Reference}
+\label{class_zebra___session}\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_zebra___session_ad455e02743bbe3986d80650f417bd206}{\+\_\+\+\_\+construct}} (\&\$link, \$security\+\_\+code, \$session\+\_\+lifetime=\textquotesingle{}\textquotesingle{}, \$lock\+\_\+to\+\_\+user\+\_\+agent=true, \$lock\+\_\+to\+\_\+ip=false, \$gc\+\_\+probability=\textquotesingle{}\textquotesingle{}, \$gc\+\_\+divisor=\textquotesingle{}\textquotesingle{}, \$table\+\_\+name=\textquotesingle{}session\+\_\+data\textquotesingle{}, \$lock\+\_\+timeout=60)
+\item 
+\mbox{\hyperlink{class_zebra___session_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close}} ()
+\item 
+\mbox{\hyperlink{class_zebra___session_aaec5812f6b4eb6835f88d3baa06a002a}{destroy}} (\$session\+\_\+id)
+\item 
+\mbox{\hyperlink{class_zebra___session_a14ff7ef4b198ff14884dd8c564264ca3}{gc}} ()
+\item 
+\mbox{\hyperlink{class_zebra___session_a7d6d31df5f4285519ff1efbc783c36a7}{get\+\_\+active\+\_\+sessions}} ()
+\item 
+\mbox{\hyperlink{class_zebra___session_abcfd9631c087a2aa25d472ad9b450c4f}{get\+\_\+settings}} ()
+\item 
+\mbox{\hyperlink{class_zebra___session_a44a2ac59a3b91f8c18905dce700934d6}{open}} ()
+\item 
+\mbox{\hyperlink{class_zebra___session_a5bbf84ebf657be4eaccc0582377c76bf}{read}} (\$session\+\_\+id)
+\item 
+\mbox{\hyperlink{class_zebra___session_a55c3728e57cce5405330bd67c44906fb}{regenerate\+\_\+id}} ()
+\item 
+\mbox{\hyperlink{class_zebra___session_acc03870f281b5f4c00dc940849b2c83e}{set\+\_\+flashdata}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_zebra___session_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_zebra___session_ad9d124885be93668f1dbf6aace5964f5}{write}} (\$session\+\_\+id, \$session\+\_\+data)
+\item 
+\mbox{\hyperlink{class_zebra___session_af8de5d6fbd0151839a15e38fffaf9897}{\+\_\+manage\+\_\+flashdata}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_zebra___session_ad455e02743bbe3986d80650f417bd206}\label{class_zebra___session_ad455e02743bbe3986d80650f417bd206}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\&}]{\$link,  }\item[{}]{\$security\+\_\+code,  }\item[{}]{\$session\+\_\+lifetime = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$lock\+\_\+to\+\_\+user\+\_\+agent = {\ttfamily true},  }\item[{}]{\$lock\+\_\+to\+\_\+ip = {\ttfamily false},  }\item[{}]{\$gc\+\_\+probability = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$gc\+\_\+divisor = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$table\+\_\+name = {\ttfamily \textquotesingle{}session\+\_\+data\textquotesingle{}},  }\item[{}]{\$lock\+\_\+timeout = {\ttfamily 60} }\end{DoxyParamCaption})}
+
+Constructor of class. Initializes the class and automatically calls \mbox{\hyperlink{}{start\+\_\+session()}}.
+
+{\ttfamily  // first, connect to a database containing the sessions table}
+
+{\ttfamily // include the class require \textquotesingle{}path/to/\+Zebra\+\_\+\+Session.\+php\textquotesingle{};}
+
+{\ttfamily // start the session // where \$link is a connection link returned by mysqli\+\_\+connect \$session = new \mbox{\hyperlink{class_zebra___session}{Zebra\+\_\+\+Session}}(\$link, \textquotesingle{}s\+Ec\+Ur1t\+Y\+\_\+c0dE\textquotesingle{}); }
+
+By default, the cookie used by P\+HP to propagate session data across multiple pages (\textquotesingle{}P\+H\+P\+S\+E\+S\+S\+ID\textquotesingle{}) uses the current top-\/level domain and subdomain in the cookie declaration.
+
+Example\+: www.\+domain.\+com
+
+This means that the session data is not available to other subdomains. Therefore, a session started on www.\+domain.\+com will not be available on blog.\+domain.\+com. The solution is to change the domain P\+HP uses when it sets the \textquotesingle{}P\+H\+P\+S\+E\+S\+S\+ID\textquotesingle{} cookie by calling the line below {\itshape before} instantiating the \mbox{\hyperlink{class_zebra___session}{Zebra\+\_\+\+Session}} library.
+
+{\ttfamily  // takes the domain and removes the subdomain // blog.\+domain.\+com becoming .domain.\+com ini\+\_\+set( \textquotesingle{}session.\+cookie\+\_\+domain\textquotesingle{}, substr(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]}, strpos(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]}, \textquotesingle{}.\textquotesingle{})) ); }
+
+From now on whenever P\+HP sets the \textquotesingle{}P\+H\+P\+S\+E\+S\+S\+ID\textquotesingle{} cookie, the cookie will be available to all subdomains!
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & An object representing the connection to a My\+S\+QL Server, as returned by calling \mbox{\hyperlink{}{mysqli\+\_\+connect}}.\\
+\hline
+\end{DoxyParams}
+If you use \mbox{\hyperlink{}{Zebra\+\_\+\+Database}} to connect to the database, you can get the connection to the My\+S\+QL server via Zebra\+\_\+\+Database\textquotesingle{}s \mbox{\hyperlink{}{get\+\_\+link}} method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$security\+\_\+code} & The value of this argument is appended to the string created by concatenating the user\textquotesingle{}s User Agent (browser) string (or an empty string if \char`\"{}lock\+\_\+to\+\_\+user\+\_\+agent\char`\"{} is F\+A\+L\+SE) and to the user\textquotesingle{}s IP address (or an empty string if \char`\"{}lock\+\_\+to\+\_\+ip\char`\"{} is F\+A\+L\+SE), before creating an M\+D5 hash out of it and storing it in the database.\\
+\hline
+\end{DoxyParams}
+On each call this value will be generated again and compared to the value stored in the database ensuring that the session is correctly linked with the user who initiated the session thus preventing session hijacking.
+
+$<$samp$>$To prevent session hijacking, make sure you choose a string around 12 characters long containing upper-\/ and lowercase letters, as well as digits. To simplify the process, use \mbox{\hyperlink{}{\&len=12\&format=html\&rnd=new this}} link to generate such a random string.$<$/samp$>$
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$session\+\_\+lifetime} & (Optional) The number of seconds after which a session will be considered as {\itshape expired}.\\
+\hline
+\end{DoxyParams}
+Expired sessions are cleaned up from the database whenever the {\itshape garbage collection routine} is run. The probability of the {\itshape garbage collection routine} to be executed is given by the values of {\itshape \$gc\+\_\+probability} and {\itshape \$gc\+\_\+divisor}. See below.
+
+Default is the value of {\itshape session.\+gc\+\_\+maxlifetime} as set in in php.\+ini. Read more at \mbox{\hyperlink{}{http\+://www.\+php.\+net/manual/en/session.\+configuration.\+php}}
+
+To clear any confusions that may arise\+: in reality, {\itshape session.\+gc\+\_\+maxlifetime} does not represent a session\textquotesingle{}s lifetime but the number of seconds after which a session is seen as {\itshape garbage} and is deleted by the {\itshape garbage collection routine}. The P\+HP setting that sets a session\textquotesingle{}s lifetime is {\itshape session.\+cookie\+\_\+lifetime} and is usually set to \char`\"{}0\char`\"{} -\/ indicating that a session is active until the browser/browser tab is closed. When this class is used, a session is active until the browser/browser tab is closed and/or a session has been inactive for more than the number of seconds specified by {\itshape session.\+gc\+\_\+maxlifetime}.
+
+To see the actual value of {\itshape session.\+gc\+\_\+maxlifetime} for your environment, use the \mbox{\hyperlink{class_zebra___session_abcfd9631c087a2aa25d472ad9b450c4f}{get\+\_\+settings()}} method.
+
+Pass an empty string to keep default value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$lock\+\_\+to\+\_\+user\+\_\+agent} & (Optional) Whether to restrict the session to the same User Agent (or browser) as when the session was first opened.\\
+\hline
+\end{DoxyParams}
+{\itshape The user agent check only adds minor security, since an attacker that hijacks the session cookie will most likely have the same user agent.}
+
+In certain scenarios involving Internet Explorer, the browser will randomly change the user agent string from one page to the next by automatically switching into compatibility mode. So, on the first load you would have something like\+:
+
+{\ttfamily Mozilla/4.\+0 (compatible; M\+S\+IE 8.\+0; Windows NT 5.\+1; Trident/4.\+0; etc...}
+
+and reloading the page you would have
+
+{\ttfamily  Mozilla/4.\+0 (compatible; M\+S\+IE 7.\+0; Windows NT 5.\+1; Trident/4.\+0; etc...}
+
+So, if the situation asks for this, change this value to F\+A\+L\+SE.
+
+Default is T\+R\+UE.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$lock\+\_\+to\+\_\+ip} & (Optional) Whether to restrict the session to the same IP as when the session was first opened.\\
+\hline
+\end{DoxyParams}
+Use this with caution as many users have dynamic IP addresses which may change over time, or may come through proxies.
+
+This is mostly useful if your know that all your users come from static I\+Ps.
+
+Default is F\+A\+L\+SE.
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$gc\+\_\+probability} & (Optional) Used in conjunction with {\itshape \$gc\+\_\+divisor}. It defines the probability that the {\itshape garbage collection routine} is started.\\
+\hline
+\end{DoxyParams}
+The probability is expressed by the formula\+:
+
+{\ttfamily  \$probability = \$gc\+\_\+probability / \$gc\+\_\+divisor; }
+
+So, if {\itshape \$gc\+\_\+probability} is 1 and {\itshape \$gc\+\_\+divisor} is 100, it means that there is a 1\% chance the the {\itshape garbage collection routine} will be called on each request.
+
+Default is the value of {\itshape session.\+gc\+\_\+probability} as set in php.\+ini. Read more at \mbox{\hyperlink{}{http\+://www.\+php.\+net/manual/en/session.\+configuration.\+php}}
+
+To see the actual value of {\itshape session.\+gc\+\_\+probability} for your environment, and the computed {\itshape probability}, use the \mbox{\hyperlink{class_zebra___session_abcfd9631c087a2aa25d472ad9b450c4f}{get\+\_\+settings()}} method.
+
+Pass an empty string to keep default value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$gc\+\_\+divisor} & (Optional) Used in conjunction with {\itshape \$gc\+\_\+probability}. It defines the probability that the {\itshape garbage collection routine} is started.\\
+\hline
+\end{DoxyParams}
+The probability is expressed by the formula\+:
+
+{\ttfamily  \$probability = \$gc\+\_\+probability / \$gc\+\_\+divisor; }
+
+So, if {\itshape \$gc\+\_\+probability} is 1 and {\itshape \$gc\+\_\+divisor} is 100, it means that there is a 1\% chance the the {\itshape garbage collection routine} will be called on each request.
+
+Default is the value of {\itshape session.\+gc\+\_\+divisor} as set in php.\+ini. Read more at \mbox{\hyperlink{}{http\+://www.\+php.\+net/manual/en/session.\+configuration.\+php}}
+
+To see the actual value of {\itshape session.\+gc\+\_\+divisor} for your environment, and the computed {\itshape probability}, use the \mbox{\hyperlink{class_zebra___session_abcfd9631c087a2aa25d472ad9b450c4f}{get\+\_\+settings()}} method.
+
+Pass an empty string to keep default value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table\+\_\+name} & (Optional) Name of the My\+S\+QL table used by the class. \begin{DoxyVerb}                                    Default is <i>session_data</i>.
+\end{DoxyVerb}
+\\
+\hline
+string & {\em \$lock\+\_\+timeout} & (Optional) The maximum amount of time (in seconds) for which a lock on the session data can be kept.\\
+\hline
+\end{DoxyParams}
+{\itshape This must be lower than the maximum execution time of the script!}
+
+Session locking is a way to ensure that data is correctly handled in a scenario with multiple concurrent A\+J\+AX requests.
+
+Read more about it at \mbox{\hyperlink{}{http\+://thwartedefforts.\+org/2006/11/11/race-\/conditions-\/with-\/ajax-\/and-\/php-\/sessions/}}
+
+Default is {\itshape 60}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_zebra___session_af8de5d6fbd0151839a15e38fffaf9897}\label{class_zebra___session_af8de5d6fbd0151839a15e38fffaf9897}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!\+\_\+manage\+\_\+flashdata@{\+\_\+manage\+\_\+flashdata}}
+\index{\+\_\+manage\+\_\+flashdata@{\+\_\+manage\+\_\+flashdata}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{\+\_\+manage\+\_\+flashdata()}{\_manage\_flashdata()}}
+{\footnotesize\ttfamily \+\_\+manage\+\_\+flashdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Manages flashdata behind the scenes
+
+private \mbox{\Hypertarget{class_zebra___session_aa69c8bf1f1dcf4e72552efff1fe3e87e}\label{class_zebra___session_aa69c8bf1f1dcf4e72552efff1fe3e87e}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!close@{close}}
+\index{close@{close}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Custom \mbox{\hyperlink{class_zebra___session_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close()}} function
+
+private \mbox{\Hypertarget{class_zebra___session_aaec5812f6b4eb6835f88d3baa06a002a}\label{class_zebra___session_aaec5812f6b4eb6835f88d3baa06a002a}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!destroy@{destroy}}
+\index{destroy@{destroy}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily destroy (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id }\end{DoxyParamCaption})}
+
+Custom \mbox{\hyperlink{class_zebra___session_aaec5812f6b4eb6835f88d3baa06a002a}{destroy()}} function
+
+private \mbox{\Hypertarget{class_zebra___session_a14ff7ef4b198ff14884dd8c564264ca3}\label{class_zebra___session_a14ff7ef4b198ff14884dd8c564264ca3}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!gc@{gc}}
+\index{gc@{gc}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily gc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Custom \mbox{\hyperlink{class_zebra___session_a14ff7ef4b198ff14884dd8c564264ca3}{gc()}} function (garbage collector)
+
+private \mbox{\Hypertarget{class_zebra___session_a7d6d31df5f4285519ff1efbc783c36a7}\label{class_zebra___session_a7d6d31df5f4285519ff1efbc783c36a7}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!get\+\_\+active\+\_\+sessions@{get\+\_\+active\+\_\+sessions}}
+\index{get\+\_\+active\+\_\+sessions@{get\+\_\+active\+\_\+sessions}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{get\+\_\+active\+\_\+sessions()}{get\_active\_sessions()}}
+{\footnotesize\ttfamily get\+\_\+active\+\_\+sessions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the number of active sessions -\/ sessions that have not expired.
+
+{\itshape The returned value does not represent the exact number of active users as some sessions may be unused although they haven\textquotesingle{}t expired.}
+
+{\ttfamily  // first, connect to a database containing the sessions table}
+
+{\ttfamily // include the class require \textquotesingle{}path/to/\+Zebra\+\_\+\+Session.\+php\textquotesingle{};}
+
+{\ttfamily // start the session // where \$link is a connection link returned by mysqli\+\_\+connect \$session = new \mbox{\hyperlink{class_zebra___session}{Zebra\+\_\+\+Session}}(\$link, \textquotesingle{}s\+Ec\+Ur1t\+Y\+\_\+c0dE\textquotesingle{});}
+
+{\ttfamily // get the (approximate) number of active sessions \$active\+\_\+sessions = \$session-\/$>$\mbox{\hyperlink{class_zebra___session_a7d6d31df5f4285519ff1efbc783c36a7}{get\+\_\+active\+\_\+sessions()}}; }
+
+\begin{DoxyReturn}{Returns}
+integer Returns the number of active (not expired) sessions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zebra___session_abcfd9631c087a2aa25d472ad9b450c4f}\label{class_zebra___session_abcfd9631c087a2aa25d472ad9b450c4f}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!get\+\_\+settings@{get\+\_\+settings}}
+\index{get\+\_\+settings@{get\+\_\+settings}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{get\+\_\+settings()}{get\_settings()}}
+{\footnotesize\ttfamily get\+\_\+settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Queries the system for the values of {\itshape session.\+gc\+\_\+maxlifetime}, {\itshape session.\+gc\+\_\+probability} and {\itshape session.\+gc\+\_\+divisor} and returns them as an associative array.
+
+To view the result in a human-\/readable format use\+: {\ttfamily  // include the class require \textquotesingle{}path/to/\+Zebra\+\_\+\+Session.\+php\textquotesingle{};}
+
+{\ttfamily // instantiate the class \$session = new \mbox{\hyperlink{class_zebra___session}{Zebra\+\_\+\+Session()}};}
+
+{\ttfamily // get default settings print\+\_\+r(\textquotesingle{}
+\begin{DoxyPre}');
+print\_r($session->\mbox{\hyperlink{class_zebra___session_abcfd9631c087a2aa25d472ad9b450c4f}{get\_settings()}});\end{DoxyPre}
+}
+
+{\ttfamily 
+\begin{DoxyPre}//  would output something similar to (depending on your actual settings)
+//  Array
+//  (
+//      [session.gc\_maxlifetime] => 1440 seconds (24 minutes)
+//      [session.gc\_probability] => 1
+//      [session.gc\_divisor] => 1000
+//      [probability] => 0.1\%
+//  )
+\end{DoxyPre}
+}
+
+{\ttfamily 
+\begin{DoxyPre}\begin{DoxySince}{Since}
+1.0.8
+\end{DoxySince}
+\begin{DoxyReturn}{Returns}
+array   Returns the values of {\itshape session.gc\_maxlifetime}, {\itshape session.gc\_probability} and {\itshape session.gc\_divisor}
+                as an associative array.
+
+\end{DoxyReturn}
+\end{DoxyPre}
+}\mbox{\Hypertarget{class_zebra___session_a44a2ac59a3b91f8c18905dce700934d6}\label{class_zebra___session_a44a2ac59a3b91f8c18905dce700934d6}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!open@{open}}
+\index{open@{open}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Custom \mbox{\hyperlink{class_zebra___session_a44a2ac59a3b91f8c18905dce700934d6}{open()}} function
+
+private \mbox{\Hypertarget{class_zebra___session_a5bbf84ebf657be4eaccc0582377c76bf}\label{class_zebra___session_a5bbf84ebf657be4eaccc0582377c76bf}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!read@{read}}
+\index{read@{read}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily read (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id }\end{DoxyParamCaption})}
+
+Custom \mbox{\hyperlink{class_zebra___session_a5bbf84ebf657be4eaccc0582377c76bf}{read()}} function
+
+private \mbox{\Hypertarget{class_zebra___session_a55c3728e57cce5405330bd67c44906fb}\label{class_zebra___session_a55c3728e57cce5405330bd67c44906fb}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!regenerate\+\_\+id@{regenerate\+\_\+id}}
+\index{regenerate\+\_\+id@{regenerate\+\_\+id}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{regenerate\+\_\+id()}{regenerate\_id()}}
+{\footnotesize\ttfamily regenerate\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Regenerates the session id.
+
+{\bfseries Call this method whenever you do a privilege change in order to prevent session hijacking!}
+
+{\ttfamily  // first, connect to a database containing the sessions table}
+
+{\ttfamily // include the class require \textquotesingle{}path/to/\+Zebra\+\_\+\+Session.\+php\textquotesingle{};}
+
+{\ttfamily // start the session // where \$link is a connection link returned by mysqli\+\_\+connect \$session = new \mbox{\hyperlink{class_zebra___session}{Zebra\+\_\+\+Session}}(\$link, \textquotesingle{}s\+Ec\+Ur1t\+Y\+\_\+c0dE\textquotesingle{});}
+
+{\ttfamily // regenerate the session\textquotesingle{}s ID \$session-\/$>$\mbox{\hyperlink{class_zebra___session_a55c3728e57cce5405330bd67c44906fb}{regenerate\+\_\+id()}}; }
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zebra___session_acc03870f281b5f4c00dc940849b2c83e}\label{class_zebra___session_acc03870f281b5f4c00dc940849b2c83e}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!set\+\_\+flashdata@{set\+\_\+flashdata}}
+\index{set\+\_\+flashdata@{set\+\_\+flashdata}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{set\+\_\+flashdata()}{set\_flashdata()}}
+{\footnotesize\ttfamily set\+\_\+flashdata (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Sets a \char`\"{}flashdata\char`\"{} session variable which will only be available for the next server request, and which will be automatically deleted afterwards.
+
+Typically used for informational or status messages (for example\+: \char`\"{}data has been successfully updated\char`\"{}).
+
+{\ttfamily  // first, connect to a database containing the sessions table}
+
+{\ttfamily // include the library require \textquotesingle{}path/to/\+Zebra\+\_\+\+Session.\+php\textquotesingle{};}
+
+{\ttfamily // start the session // where \$link is a connection link returned by mysqli\+\_\+connect \$session = new \mbox{\hyperlink{class_zebra___session}{Zebra\+\_\+\+Session}}(\$link, \textquotesingle{}s\+Ec\+Ur1t\+Y\+\_\+c0dE\textquotesingle{});}
+
+{\ttfamily // set \char`\"{}myvar\char`\"{} which will only be available // for the next server request and will be // automatically deleted afterwards \$session-\/$>$set\+\_\+flashdata(\textquotesingle{}myvar\textquotesingle{}, \textquotesingle{}myval\textquotesingle{}); }
+
+Flashdata session variables can be retrieved like any other session variable\+:
+
+{\ttfamily  if (isset(\$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\textquotesingle{}myvar\textquotesingle{}\mbox{]})) \{ // do something here but remember that the // flashdata session variable is available // for a single server request after it has // been set! \} }
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the session variable.\\
+\hline
+string & {\em \$value} & The value of the session variable.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zebra___session_a8b6fc76a620d7557d06e9a11a9ffb509}\label{class_zebra___session_a8b6fc76a620d7557d06e9a11a9ffb509}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!stop@{stop}}
+\index{stop@{stop}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Deletes all data related to the session.
+
+{\itshape This method runs the garbage collector respecting your environment\textquotesingle{}s garbage collector-\/related properties. Read \mbox{\hyperlink{class_zebra___session_ad455e02743bbe3986d80650f417bd206}{here}} for more information.}
+
+{\ttfamily  // first, connect to a database containing the sessions table}
+
+{\ttfamily // include the class require \textquotesingle{}path/to/\+Zebra\+\_\+\+Session.\+php\textquotesingle{};}
+
+{\ttfamily // start the session // where \$link is a connection link returned by mysqli\+\_\+connect \$session = new \mbox{\hyperlink{class_zebra___session}{Zebra\+\_\+\+Session}}(\$link, \textquotesingle{}s\+Ec\+Ur1t\+Y\+\_\+c0dE\textquotesingle{});}
+
+{\ttfamily // end current session \$session-\/$>$\mbox{\hyperlink{class_zebra___session_a8b6fc76a620d7557d06e9a11a9ffb509}{stop()}}; }
+
+\begin{DoxySince}{Since}
+1.\+0.\+1
+\end{DoxySince}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zebra___session_ad9d124885be93668f1dbf6aace5964f5}\label{class_zebra___session_ad9d124885be93668f1dbf6aace5964f5}} 
+\index{Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}!write@{write}}
+\index{write@{write}!Zebra\+\_\+\+Session@{Zebra\+\_\+\+Session}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily write (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id,  }\item[{}]{\$session\+\_\+data }\end{DoxyParamCaption})}
+
+Custom \mbox{\hyperlink{class_zebra___session_ad9d124885be93668f1dbf6aace5964f5}{write()}} function
+
+private 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+Pes\+Box/\+Pes/src/\+Session/vzory/Zebra.\+php\end{DoxyCompactItemize}
